@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -42,3 +42,17 @@ Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l’app
 2. Abandon du panier - engagement moyen - engagement élevé, en général
 3. Courriels de bienvenue — engagement élevé mais pouvant contenir des adresses incorrectes en fonction des méthodes de collecte de vos listes
 4. Courriels de Winback : engagement généralement plus faible
+
+## Ressources spécifiques au produit
+
+**Campaign**
+
+* Pour en savoir plus sur la gestion de la délivrabilité lors du démarrage d&#39;une nouvelle plate-forme avec Adobe Campaign dans [cette section](/help/putting-it-in-practice/ac-starting-new-platform.md).
+* Découvrez comment envoyer en utilisant plusieurs vagues avec Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Classic.*
+* [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Standard.*
+
+## Ressources supplémentaires
+
+* Pour en savoir plus sur l&#39;augmentation de la réputation de votre courriel avec le réchauffement de la propriété intellectuelle, consultez [cette section](/help/additional-resources/increase-reputation-with-ip-warming.md).
