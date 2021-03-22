@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 9e4c4c56a09fb505a431d3799104c2684aed4a70
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Comment transition en douceur lors du changement de plate-forme de messagerie électronique.
+# Transition en douceur lors du changement de plate-forme de messagerie
 
 Lorsque vous déplacez des prestataires de messagerie (ESP), il n’est pas possible de transition également vos adresses IP existantes et établies. Il est important que vous suiviez les meilleures pratiques pour développer une réputation positive lors de votre redémarrage. Comme les nouvelles adresses IP que vous allez utiliser n&#39;ont pas encore de réputation, les FAI ne peuvent pas faire entièrement confiance au courrier qui leur vient et doivent être prudents dans ce qu&#39;ils autorisent à être livrés à leurs clients.
 
