@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: TM
 translation-type: tm+mt
-source-git-commit: 131e3f06ac8d593d4b67711ee3688ff895aa380c
+source-git-commit: ec0bb2f9ee514cc94c764744e0cc51e62e811c20
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 0%
+source-wordcount: '1623'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ La forme la plus courante d&#39;**inscription au site Web** est &quot;inclusion 
 
 * Les adresses électroniques non confirmées peuvent présenter des fautes de frappe ou être mal formées, incorrectes ou utilisées de manière malveillante. Les fautes de frappe et les adresses mal formées provoquent des taux de rebonds élevés, ce qui peut et provoque des blocages émis par les FAI ou une perte de réputation d&#39;IP.
 
-* La soumission malveillante de pièges à spam connus (parfois appelé &quot;empoisonnement de liste&quot;) peut causer d&#39;énormes problèmes de diffusion et de réputation si le propriétaire de ce piège agit. Il est impossible de savoir si le destinataire souhaite vraiment être ajouté à une liste marketing sans confirmation. Il est donc tout aussi impossible de définir les attentes des destinataires et peut entraîner une augmentation des plaintes de spam, et parfois même une placée sur la liste bloquée si le courrier électronique collecté se révèle être un piège de spam.
+* La soumission malveillante de pièges à spam connus (parfois appelé &quot;empoisonnement de liste&quot;) peut causer d&#39;énormes problèmes de diffusion et de réputation si le propriétaire de ce piège agit. Il est impossible de savoir si le destinataire souhaite vraiment être ajouté à une liste marketing sans confirmation. Il est donc tout aussi impossible de définir les attentes des destinataires et peut entraîner une augmentation des plaintes de spam — et parfois de placer sur la liste bloquée si le courriel collecté se trouve être un piège de spam.
 
 Pour obtenir des conseils sur la façon de minimiser les problèmes présentés à la fois dans le magasin physique et dans la souscription unique, consultez la section [Qualité des données et hygiène](#data-quality-and-hygiene) de ce guide pour obtenir les détails et les avantages de la souscription au doublon.
 
@@ -88,5 +88,17 @@ appendCe sont des clients qui ont choisi de s&#39;engager avec votre marque, ce 
 **Foire commerciale ou autre**
 collection de événementsLa collecte d&#39;adresses à un kiosque ou par l&#39;intermédiaire d&#39;une autre méthode officielle et clairement marquée peut s&#39;avérer utile. Le risque est que de nombreux événements comme celui-ci recueillent toutes les adresses et les distribuent par l&#39;intermédiaire du promoteur de événement ou de l&#39;hôte. Ce qui signifie que les propriétaires de ces adresses électroniques n&#39;ont jamais demandé à recevoir de courriels de votre marque. Ces abonnés sont susceptibles de se plaindre et de signaler votre courrier comme indésirable, et ils n&#39;ont peut-être pas fourni de coordonnées exactes.
 
-****
-TirageTirage permet de fournir rapidement un grand nombre d&#39;adresses électroniques. Mais ces abonnés veulent le prix, pas vos courriels. Ils n&#39;ont peut-être même pas prêté attention au nom de qui leur tenterait la main. Il est probable qu&#39;ils se plaignent et signalent votre courrier comme indésirable, et il est peu probable qu&#39;ils s&#39;engagent ou fassent un achat.
+**Tirage**
+
+Les tirages fournissent rapidement un grand nombre d’adresses électroniques. Mais ces abonnés veulent le prix, pas vos courriels. Ils n&#39;ont peut-être même pas prêté attention au nom de qui leur tenterait la main. Il est probable qu&#39;ils se plaignent et signalent votre courrier comme indésirable, et il est peu probable qu&#39;ils s&#39;engagent ou fassent un achat.
+
+## Ressources spécifiques au produit
+
+**Adobe Campaign Classic**
+
+* [Créer un formulaire d’abonnement avec double opt-in](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+
+**Adobe Campaign Standard **
+
+* [Processus de souscription au doublon](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+
