@@ -8,7 +8,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 7e9cc30c6d3fb69f557b17f452b43de08ae85a03
+source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 15%
@@ -39,7 +39,7 @@ Ce guide des meilleures pratiques en matière de délivrabilité couvre les suje
 7. [permanence de l&#39;expéditeur](/help/sender-permanence.md)
 8. [Spécifications du prestataire Internet](/help/internet-service-provider-specifics/overview.md)
 9. [Surveillance en cours](/help/ongoing-monitoring.md)
-10. [Mise en pratique](/help/putting-it-in-practice/how-to-reach-success.md)
+10. [Mise en pratique](/help/putting-it-in-practice/putting-it-in-practice.md)
 11. [Ressources supplémentaires](/help/additional-resources/general-resources.md)
 
 ## Sources
