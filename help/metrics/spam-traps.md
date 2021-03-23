@@ -1,6 +1,6 @@
 ---
-title: Pièges indésirables
-description: Découvrez les différents types de pièges à spam.
+title: Pièges de courriers indésirables
+description: Découvrez les différents types de pièges de courriers indésirables.
 feature: Mesures
 topics: Deliverability
 kt: 7050
@@ -12,28 +12,28 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 3%
+ht-degree: 88%
 
 ---
 
 
-# Pièges indésirables
+# Pièges de courriers indésirables
 
-Il existe des pièges à messages indésirables pour aider à identifier les messages envoyés par des expéditeurs frauduleux ou ceux qui ne suivent pas les meilleures pratiques en matière de messagerie. En règle générale, l&#39;adresse de courriel de piège à spam n&#39;est pas publiée publiquement et est presque impossible à identifier. La diffusion de courriels à des pièges à pourriels peut avoir un impact sur votre réputation avec des degrés de gravité différents selon le type de piège et le fournisseur de services Internet. Pour en savoir plus sur les différents types de pièges à spam, consultez les sections suivantes.
+Il existe des pièges de courriers indésirables qui permettent d’identifier les messages envoyés par des expéditeurs frauduleux ou qui ne suivent pas les bonnes pratiques en matière d&#39;email. En règle générale, l&#39;adresse email du piège de courriers indésirables n&#39;est pas publiée publiquement et est presque impossible à identifier. La diffusion d&#39;emails à des pièges de courriers indésirables peut avoir un impact sur votre réputation avec des degrés de gravité différents selon le type de piège et le FAI. Pour en savoir plus sur les différents types de pièges de courriers indésirables, consultez les sections ci-après.
 
 ## Recyclé
 
-Les pièges à pourriels recyclés sont des adresses qui étaient autrefois valides mais qui ne sont plus utilisées. L&#39;un des moyens clés pour garder les listes aussi propres que possible est d&#39;envoyer régulièrement des courriels à votre liste entière et de supprimer de manière appropriée les courriels rebondis. Cela permet de mettre en quarantaine les adresses électroniques abandonnées et de les empêcher d&#39;être utilisées.
+Les pièges de courriers indésirables recyclés sont des adresses qui étaient autrefois valides mais qui ne sont plus utilisées. L&#39;un des principaux moyens pour garder les listes aussi propres que possible est d&#39;envoyer régulièrement des emails à votre liste entière et de supprimer de manière appropriée les emails bounces. Cela permet de mettre en quarantaine les adresses email abandonnées et de les empêcher d&#39;être utilisées.
 
-Dans certains cas, une adresse peut être recyclée dans les 30 jours. L&#39;envoi régulier est un aspect essentiel d&#39;une bonne hygiène des listes, tout en supprimant régulièrement les utilisateurs inactifs. **Les** campagnes de réengagement font généralement partie de programmes sophistiqués de marketing par courriel. Ce style de campagne permet à l’expéditeur de tenter de récupérer des utilisateurs qui autrement ne seraient plus envoyés par la poste.
+Dans certains cas, une adresse peut être recyclée sous 30 jours. L&#39;envoi régulier est un aspect essentiel d&#39;une bonne hygiène des listes, avec la suppression régulière des utilisateurs inactifs. **Les** campagnes de réengagement font généralement partie de programmes sophistiqués de marketing par courriel. Ce style de campagne permet à l’expéditeur de tenter de récupérer des utilisateurs qui autrement ne feraient plus l&#39;objet d&#39;envois d&#39;emails.
 
-## Typo
+## Coquille
 
-Une erreur typographique de spam est une adresse qui contient une faute d&#39;orthographe ou une déformation. Cela se produit souvent avec des fautes d&#39;orthographe connues de domaines majeurs comme Gmail (ex : gmial est une faute de frappe courante). Les FAI et les autres opérateurs de liste bloquée enregistreront les noms de domaine douteux connus pour être utilisés comme piège à spam afin d&#39;identifier les spammeurs et de mesurer la santé des expéditeurs. Le meilleur moyen d’éviter les pièges à messages indésirables consiste à utiliser un **processus d’inclusion de doublon** pour la collecte de listes.
+Un piège de courrier indésirable avec coquille est une adresse qui contient une faute d&#39;orthographe ou une déformation. Cela se produit souvent avec des fautes d&#39;orthographe connues de domaines majeurs comme Gmail (ex : gmial est une faute de frappe courante). Les FAI et les autres opérateurs de liste bloquée enregistreront les mauvais noms de domaine connus pour être utilisés comme piège de courriers indésirables afin d&#39;identifier les spammeurs et de mesurer la santé des expéditeurs. Le meilleur moyen d’éviter les pièges de courriers indésirables consiste à utiliser un **processus de double opt-in** pour la collecte de listes.
 
-## Pristine
+## Intact
 
-Un piège antispam intacte est une adresse qui n&#39;a pas d&#39;utilisateur final et n&#39;a jamais eu d&#39;utilisateur final. Il s’agit d’une adresse créée uniquement pour identifier les messages indésirables. Il s&#39;agit du type de piège à pourriels le plus efficace, car il est pratiquement impossible de l&#39;identifier et nécessite un effort considérable pour nettoyer votre liste. La plupart des listes bloquées utilisent des pièges antispam intacts pour liste des expéditeurs non fiables. La seule façon d&#39;éviter que les pièges à spam ne viennent infecter votre liste de messagerie marketing plus large consiste à utiliser un **processus d&#39;inclusion de doublon** pour la collecte de listes.
+Un piège de courriers indésirables intact est une adresse qui n&#39;a pas d&#39;utilisateur final et n&#39;a jamais eu d&#39;utilisateur final. Il s’agit d’une adresse créée uniquement pour identifier les messages indésirables. Il s&#39;agit du type de piège de courriers indésirables le plus efficace, car il est pratiquement impossible de l&#39;identifier et nécessite un effort considérable pour le nettoyer de votre liste. La plupart des listes bloquées utilisent des pièges de courriers indésirables intacts pour répertorier des expéditeurs non fiables. La seule façon d&#39;éviter que les pièges de courriers indésirables ne viennent infecter votre liste d’emails marketing plus large consiste à utiliser un **processus de double opt-in** pour la collecte de listes.
 
 ## Ressources supplémentaires
 
@@ -44,11 +44,11 @@ Un piège antispam intacte est une adresse qui n&#39;a pas d&#39;utilisateur fin
 
 **Adobe Campaign Classic**
 
-* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=en#using-spamassassin)
+* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=fr#using-spamassassin)
 * [Créer un formulaire d’abonnement avec double opt-in](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard **
 
-* [Prévisualisation de votre analyse de courriel et d&#39;antispam](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html#designing-content)
-* [Processus de souscription au doublon](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+* [Prévisualisation de votre analyse de courriel et d&#39;antispam](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=fr#designing-content)
+* [Processus de double opt-in](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=fr#communication-channels)
 
