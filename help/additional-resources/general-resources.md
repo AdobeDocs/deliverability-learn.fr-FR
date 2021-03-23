@@ -9,15 +9,17 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 29%
+source-wordcount: '101'
+ht-degree: 21%
 
 ---
 
 
 # Ressources supplémentaires - Présentation
+
+## Ressources génériques
 
 Cette section liste des ressources supplémentaires sur la délivrabilité, telles que des recommandations spécifiques et les meilleures pratiques, d&#39;autres outils ou des procédures de dépannage.
 
@@ -25,7 +27,6 @@ Cette section liste des ressources supplémentaires sur la délivrabilité, tell
 * [Augmentez la réputation de vos emails grâce au rodage des adresses IP](../../help/additional-resources/increase-reputation-with-ip-warming.md)
 * [Authentification](../../help/additional-resources/authentication.md)
 * [Doublons](../../help/additional-resources/duplicates.md)
-
 * [Meilleures pratiques de réengagement](../../help/additional-resources/re-engagement.md)
 * [Listes Blackhole en temps réel](../../help/additional-resources/blocklist-databases.md)
 * [Dépannage](../../help/additional-resources/troubleshooting.md)
@@ -33,3 +34,14 @@ Cette section liste des ressources supplémentaires sur la délivrabilité, tell
    <!--
     [IP Certification](../../help/additional-resources/ip-certification.md)
     [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
+
+## Ressources spécifiques au produit
+
+De plus, cette section liste un certain nombre de ressources spécifiques à un produit afin de vous aider à mettre en oeuvre la délivrabilité et à atteindre le succès avec vos solutions d&#39;Adobe.
+
+**Campaign**
+
+* [Configuration du nom de domaine](../../help/additional-resources/ac-domain-name-setup.md)
+* [Processus de demande de certificat CSR et SSL](../../help/additional-resources/ac-ssl-certificate-request.md)
+* [Démarrer une nouvelle plateforme](../../help/additional-resources/ac-starting-new-platform.md)
+* [Campaign Classic - Recommandations techniques](../../help/additional-resources/acc-technical-recommendations.md)
