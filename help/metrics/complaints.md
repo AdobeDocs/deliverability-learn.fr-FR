@@ -1,6 +1,6 @@
 ---
 title: Plaintes
-description: 'Découvrez les plaintes qui sont enregistrées lorsqu’un utilisateur indique qu’un courrier électronique est indésirable ou inattendu. '
+description: 'Découvrez les plaintes qui sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. '
 feature: Mesures
 topics: Deliverability
 kt: 7048
@@ -12,26 +12,26 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 3%
+ht-degree: 96%
 
 ---
 
 
 # Plaintes
 
-Les plaintes sont enregistrées lorsqu’un utilisateur indique qu’un courriel est indésirable ou inattendu. Cette action d’abonnement est généralement consignée par le client de messagerie de l’abonné lorsqu’il clique sur le bouton spam ou par un système de rapports de messages indésirables tiers.
+Les plaintes sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. Cette action d’abonné est généralement consignée par le client de messagerie de l’abonné lorsqu’il clique sur le bouton des messages indésirables ou via un système de signalement de messages indésirables tiers.
 
-## plainte de fournisseur
+## Plaintes des FAI
 
-La plupart des FAI de niveau 1 et certains FAI de niveau 2 fournissent une méthode de rapports antispam à leurs utilisateurs, car les processus d&#39;exclusion et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse électronique. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ceci est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL et permet à Adobe Campaign d&#39;ajouter automatiquement des adresses électroniques qui se sont plaintes à la table de quarantaines pour suppression. Les pics de plaintes des fournisseurs de services Internet peuvent être un indicateur de la mauvaise qualité des listes, des méthodes de collecte de listes moins qu&#39;optimales ou des politiques d&#39;engagement déficientes. Ils sont également souvent notés lorsque le contenu n’est pas pertinent.
+La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méthode de signalement des courriers indésirables à leurs utilisateurs, car les processus d&#39;opt-out et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse email. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ce système est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL. Il permet à Adobe Campaign d&#39;ajouter automatiquement des adresses email à l’origine d’une plainte à la table de mise en quarantaine pour suppression. Les pics des plaintes des FAI peuvent indiquer des listes de mauvaise qualité, des méthodes de collecte de listes qui ne sont pas optimales ou des politiques d&#39;engagement inadaptées. Ils sont également souvent remarqués lorsque le contenu n’est pas pertinent.
 
-## Réclamations de tiers
+## Plaintes de tiers
 
-Il existe plusieurs groupes antispam qui permettent un rapports plus large du spam. Les mesures de plainte utilisées par ces tiers sont utilisées pour baliser le contenu des messages électroniques afin d’identifier les messages indésirables. Ce processus est également appelé empreinte digitale. Les utilisateurs de ces méthodes de traitement des plaintes par des tiers sont généralement plus avertis en ce qui concerne les courriels, de sorte qu&#39;ils peuvent avoir un impact plus important que les autres plaintes si elles n&#39;ont pas reçu de réponse.
+Il existe plusieurs groupes contre les courriers indésirables qui permettent un signalement à un niveau plus large. Les mesures de plainte utilisées par ces tiers servent à marquer le contenu des emails afin d’identifier les emails indésirables. Ce processus est également appelé fingerprinting. Les utilisateurs de ces méthodes de traitement des plaintes de tiers sont généralement plus avisés en ce qui concerne les emails, de sorte qu&#39;ils peuvent avoir un impact plus important que les autres plaintes si elles n&#39;ont pas reçu de réponse.
 
 >[!NOTE]
 >
->Les FSI collectent les plaintes et les utilisent pour déterminer la réputation globale d&#39;un expéditeur. Toutes les plaintes devraient être supprimées et ne plus être contactées aussi rapidement que possible et conformément aux lois et règlements locaux.
+>Les FAI collectent les plaintes et les utilisent pour déterminer la réputation globale d&#39;un expéditeur. Toutes les plaintes doivent être supprimées et ne plus être contactées aussi rapidement que possible et conformément aux lois et règlements en vigueur.
 
 ## Ressources spécifiques au produit
 
@@ -41,4 +41,4 @@ Il existe plusieurs groupes antispam qui permettent un rapports plus large du sp
 
 **Adobe Campaign Standard **
 
-* [Rapport des plaintes](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html#reporting)
+* [Rapport des plaintes](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html?lang=fr#reporting)
