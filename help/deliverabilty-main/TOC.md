@@ -3,7 +3,7 @@ user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 86%
