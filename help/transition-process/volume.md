@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -47,9 +47,9 @@ Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l’app
 
 **Campaign**
 
-* Pour en savoir plus sur la gestion de la délivrabilité lors du démarrage d&#39;une nouvelle plate-forme avec Adobe Campaign dans [cette section](/help/putting-it-in-practice/ac-starting-new-platform.md).
+* Pour en savoir plus sur la gestion de la délivrabilité lors du démarrage d&#39;une nouvelle plate-forme avec Adobe Campaign dans [cette section](/help/additional-resources/ac-starting-new-platform.md).
 * Découvrez comment envoyer en utilisant plusieurs vagues avec Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
-* Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
 * [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Classic.*
 * [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Standard.*
 
