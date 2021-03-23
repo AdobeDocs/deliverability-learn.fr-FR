@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -65,10 +65,10 @@ L&#39;authentification est le processus que les FAI utilisent pour valider l&#39
 
 **Campaign**
 
-* Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
 * [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Classic.*
 * [Panneau de Contrôle : Délégation de sous-domaine complète (didacticiel)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer complètement un sous-domaine à Adobe Campaign Standard.*
-* Pour en savoir plus sur l&#39;implémentation d&#39;une boucle de rétroaction pour une instance de Campaign Classic dans [cette section](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc).
+* Pour en savoir plus sur l&#39;implémentation d&#39;une boucle de rétroaction pour une instance de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ressources supplémentaires
 
