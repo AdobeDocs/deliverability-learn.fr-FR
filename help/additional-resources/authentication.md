@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 51%
@@ -56,7 +56,7 @@ L&#39;utilisation de DKIM nécessite quelques prérequis :
 * **Sécurité** : Le chiffrement est un élément clé du DKIM. Pour garantir le niveau de sécurité du DKIM, la valeur 1024b est la meilleure pratique recommandée pour la taille de chiffrement. Les clés DKIM inférieures ne sont pas considérées comme valides par la majorité des fournisseurs d’accès.
 * **Réputation** : La réputation est basée sur l&#39;IP et/ou le domaine, mais le sélecteur DKIM moins transparent est aussi un élément clé à prendre en compte. Le choix du sélecteur est important : évitez de conserver le &quot;défaut&quot; qui peut être utilisé par n&#39;importe qui et qui a donc une mauvaise réputation. Vous devez implémenter un autre sélecteur pour les communications **de rétention par rapport à l’acquisition** et pour l’authentification.
 
-Pour en savoir plus sur le prérequis DKIM lors de l&#39;utilisation du Campaign Classic dans [cette section](/help/putting-it-in-practice/acc-technical-recommendations.md#dkim-acc).
+Pour en savoir plus sur le prérequis DKIM lors de l&#39;utilisation du Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
 ## DMARC {#dmarc}
 
