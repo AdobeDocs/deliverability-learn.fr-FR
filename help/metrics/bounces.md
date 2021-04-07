@@ -8,16 +8,16 @@ thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Rebonds
+# Bounces
 
 Les bounces sont le résultat d’une tentative de diffusion et d’un échec lorsque le FAI fournit des avis d’échec. Le traitement de la gestion des bounces est un élément essentiel de l&#39;hygiène des listes. Une fois qu’un email donné a fait l’objet de plusieurs bounces, ce processus le signale pour suppression. Le nombre et le type de bounces requis pour déclencher la suppression varient d’un système à un autre. Ce processus empêche les systèmes de continuer à envoyer des adresses email non valides. Les bounces sont l&#39;un des éléments clés de données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est très important de surveiller cette mesure. La méthode la plus courante pour mesurer la diffusion des messages marketing consiste à comparer la mesure « Délivrés » à la mesure « Bounces » : plus le pourcentage Délivrés est élevé, mieux c&#39;est.
 
@@ -53,12 +53,12 @@ Les soft bounces sont des échecs temporaires que les FAI génèrent lorsqu&#39;
 
 **Adobe Campaign Classic**
 
-* [Types de diffusion en échec et raisons](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [Gestion des emails bounce](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
-* [Rapport sur les produits non livrables et les rebonds](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+* [Types de diffusion en échec et raisons](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr-FR#delivery-failure-types-and-reasons)
+* [Gestion des emails bounce](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr-FR#bounce-mail-management)
+* [Rapport sur les emails non remis et les bounces](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=fr-FR#non-deliverables-and-bounces)
 
-**Adobe Campaign Standard **
+**Adobe Campaign Standard**
 
-* [Types de diffusion en échec et raisons](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [Qualification des emails bounce  ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
-* [Rapport récapitulatif des rebonds](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=fr#reporting)
+* [Types de diffusion en échec et raisons](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=fr-FR#delivery-failure-types-and-reasons)
+* [Qualification des emails bounce](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=fr-FR#bounce-mail-qualification)
+* [Rapport récapitulatif des bounces](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=fr-FR#reporting)
