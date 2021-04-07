@@ -8,11 +8,11 @@ thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ Une liste bloquée se produit lorsqu’un responsable de listes bloquées tiers 
 
 ## Ressources supplémentaires
 
-* En savoir plus sur les [Listes Blackhole en temps réel](/help/additional-resources/blocklist-databases.md) qui gèrent des bases de données d&#39;adresses et de domaines IP susceptibles d&#39;être utilisées par les spammeurs.
+* En savoir plus sur les [Listes Blackhole en temps réel](/help/additional-resources/blocklist-databases.md) qui gèrent des bases de données d’adresses IP et de domaines susceptibles d’être utilisées par les spammeurs.
