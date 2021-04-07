@@ -2,11 +2,11 @@
 user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 86%
    + [Pièges de courriers indésirables](/help/metrics/spam-traps.md)
    + [Envoi vers les courriers indésirables et blocage](/help/metrics/bulking-and-blocking.md)
 + [Engagement](/help/engagement.md)
-+ Processus de transition - Changement de plateforme de messagerie {#transition-process}
++ Processus de transition : changement de plateformes de messagerie {#transition-process}
    + [Transition en douceur lors du changement de plateforme de messagerie](/help/transition-process/switching-email-platforms.md)
    + [Infrastructure](/help/transition-process/infrastructure.md)
    + [Critères de ciblage](/help/transition-process/targeting-criteria.md)
@@ -41,19 +41,19 @@ ht-degree: 86%
    + [Verizon Media Group (Yahoo, AOL, Verizon, etc.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Surveillance continue](/help/ongoing-monitoring.md)
 + [Mise en pratique](/help/putting-it-in-practice.md)
-+ Annexe : Ressources supplémentaires {#additional-resources}
++ Annexe : ressources supplémentaires {#additional-resources}
    + [Présentation](/help/additional-resources/general-resources.md)
    + Ressources génériques {#generic-resources}
-      + [Tout sur les pièges à pourriels](/help/additional-resources/all-about-spam-traps.md)
-      + [Augmentez la réputation de vos emails grâce au rodage des adresses IP](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [En savoir plus sur les spam traps](/help/additional-resources/all-about-spam-traps.md)
+      + [Augmentation de la réputation de vos emails grâce au préchauffage des adresses IP](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [Authentification](/help/additional-resources/authentication.md)
       + [Doublons](/help/additional-resources/duplicates.md)
-      + [Meilleures pratiques de réengagement](/help/additional-resources/re-engagement.md)
+      + [Bonnes pratiques en matière de réengagement](/help/additional-resources/re-engagement.md)
       + [Listes Blackhole en temps réel](/help/additional-resources/blocklist-databases.md)
       + [Dépannage](/help/additional-resources/troubleshooting.md)
    + Ressources spécifiques au produit {#product-specific-resources}
-      + Campaign {#campaign}
+      + Campagne {#campaign}
          + [Configuration du nom de domaine](/help/additional-resources/ac-domain-name-setup.md)
          + [Processus de demande de certificat SSL](/help/additional-resources/ac-ssl-certificate-request.md)
-         + [Démarrer une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
-         + [Campaign Classic - Recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
+         + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
+         + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
