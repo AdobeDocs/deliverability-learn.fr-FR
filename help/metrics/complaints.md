@@ -8,11 +8,11 @@ thumbnail: kt7048.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Il existe plusieurs groupes contre les courriers indésirables qui permettent un
 
 **Adobe Campaign Classic**
 
-* [Indicateurs de tracking](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html#tracking-indicators)
+* [Indicateurs de tracking](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr-FR#tracking-indicators)
 
-**Adobe Campaign Standard **
+**Adobe Campaign Standard**
 
-* [Rapport des plaintes](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html?lang=fr#reporting)
+* [Rapport de plaintes](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html?lang=fr#reporting)
