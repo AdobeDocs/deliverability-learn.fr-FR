@@ -8,14 +8,14 @@ thumbnail: kt7050.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 translation-type: ht
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '454'
 ht-degree: 100%
 
 ---
-
 
 # Pièges de courriers indésirables
 
@@ -51,4 +51,3 @@ Un piège de courriers indésirables intact est une adresse qui n&#39;a pas d&#3
 
 * [Prévisualisation de votre analyse email et anti-spam](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=fr#designing-content)
 * [Processus de double opt-in](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=fr#communication-channels)
-
