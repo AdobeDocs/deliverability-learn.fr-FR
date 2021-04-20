@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes de délivrabilité
 description: Apprenez à identifier et à résoudre les problèmes de délivrabilité.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

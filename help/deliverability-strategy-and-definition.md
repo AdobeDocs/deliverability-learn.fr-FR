@@ -1,7 +1,7 @@
 ---
 title: Présentation de la stratégie de délivrabilité et définition de la délivrabilité
 description: Découvrez comment la délivrabilité est définie, pourquoi elle est importante et quelles en sont les mesures clés.
-feature: Délivrabilité
+feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg

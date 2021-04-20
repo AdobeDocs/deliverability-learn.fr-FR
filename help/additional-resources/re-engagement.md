@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques de réengagement
 description: Apprenez à améliorer la délivrabilité grâce à des stratégies de réengagement.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

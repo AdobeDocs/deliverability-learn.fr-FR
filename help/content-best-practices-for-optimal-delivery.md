@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques en matière de contenu pour une délivrabilité optimale
 description: Le contenu est la clé. Vous avez déjà lu notre point de vue sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en matière de contenu.
-feature: Contenu
+feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg

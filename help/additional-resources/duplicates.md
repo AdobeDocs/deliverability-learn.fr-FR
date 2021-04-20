@@ -1,7 +1,7 @@
 ---
 title: Doublons
 description: Découvrez comment identifier et limiter les duplicata pour améliorer la délivrabilité.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

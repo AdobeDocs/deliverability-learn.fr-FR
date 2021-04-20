@@ -1,7 +1,7 @@
 ---
 title: Bloquer les emails et les envoyer vers les courriers indésirables
 description: Découvrez pourquoi les FAI placent des emails dans des dossiers de courriers indésirables ou les bloquent.
-feature: Mesures
+feature: Metrics
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg

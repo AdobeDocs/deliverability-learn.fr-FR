@@ -1,7 +1,7 @@
 ---
 title: Critères de ciblage
 description: Apprenez à établir une réputation positive dès le départ afin de bâtir une confiance efficace avant de faire appel à vos audiences moins fières.
-feature: Processus de transition
+feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg

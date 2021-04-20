@@ -1,7 +1,7 @@
 ---
 title: Campaign Classic - Recommandations techniques
 description: Découvrez les techniques, les configurations et les outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité avec Adobe Campaign Classic.
-feature: Mise en pratique
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

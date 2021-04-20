@@ -1,7 +1,7 @@
 ---
 title: Bounces
 description: Découvrez les différents types de bounces.
-feature: Mesures
+feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg

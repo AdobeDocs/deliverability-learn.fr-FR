@@ -1,7 +1,7 @@
 ---
 title: Configuration du nom de domaine
 description: Découvrez comment déléguer un sous-domaine à Adobe Campaign.
-feature: Mise en pratique
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

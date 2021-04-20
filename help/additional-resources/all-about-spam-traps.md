@@ -1,7 +1,7 @@
 ---
 title: Tout sur les pièges à pourriels
 description: Découvrez comment comprendre, identifier et éviter les pièges à spam lors de la gestion de la délivrabilité.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

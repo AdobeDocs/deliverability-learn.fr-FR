@@ -1,7 +1,7 @@
 ---
 title: Pièges de courriers indésirables
 description: Découvrez les différents types de pièges de courriers indésirables.
-feature: Mesures
+feature: Metrics
 topics: Deliverability
 kt: 7050
 thumbnail: kt7050.jpg

@@ -1,7 +1,7 @@
 ---
 title: Mise en pratique
 description: L'envoi permanent est le processus d'établissement d'un volume d'envoi et d'une stratégie cohérents afin de maintenir la réputation des fournisseurs de services Internet.
-feature: Délivrabilité
+feature: Deliverability
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg

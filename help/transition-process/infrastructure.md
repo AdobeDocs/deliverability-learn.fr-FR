@@ -1,7 +1,7 @@
 ---
 title: Infrastructure
 description: 'Découvrez ce qui est nécessaire pour construire correctement une infrastructure de messagerie. '
-feature: Processus de transition
+feature: Transition Process
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg

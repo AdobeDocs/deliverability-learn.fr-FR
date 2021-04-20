@@ -1,7 +1,7 @@
 ---
 title: Mesures de délivrabilité
 description: Découvrez les mesures clés de délivrabilité à surveiller et comment les utiliser pour identifier un problème de réputation.
-feature: Mesures
+feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg

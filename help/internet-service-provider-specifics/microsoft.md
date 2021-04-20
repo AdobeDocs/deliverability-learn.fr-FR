@@ -1,7 +1,7 @@
 ---
 title: Microsoft (Hotmail, Outlook, Windows Live, etc.)
 description: Microsoft est généralement le deuxième ou le troisième plus grand fournisseur selon la composition de votre liste et il gère le trafic légèrement différent des autres fournisseurs d'accès à Internet.
-feature: FSI
+feature: ISPs
 topics: Deliverability
 kt: 5319
 doc-type: article

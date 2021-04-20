@@ -1,7 +1,7 @@
 ---
 title: Surveillance en cours
 description: Quels problèmes devez-vous surveiller ?
-feature: Surveillance
+feature: Monitoring
 topics: Deliverability
 kt: 5263
 thumbnail: kt5263.jpg

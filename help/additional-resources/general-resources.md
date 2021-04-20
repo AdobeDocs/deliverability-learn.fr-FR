@@ -1,7 +1,7 @@
 ---
 title: Ressources supplémentaires
 description: Cette section liste un certain nombre de ressources supplémentaires sur la délivrabilité.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

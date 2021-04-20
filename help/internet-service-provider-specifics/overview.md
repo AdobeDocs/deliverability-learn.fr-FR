@@ -1,7 +1,7 @@
 ---
 title: Spécifications du prestataire Internet
 description: Les FAI ne sont pas tous les mêmes. Ils se concentrent sur différents éléments lors de la détermination du message électronique à transmettre à la boîte de réception de leurs utilisateurs et du message qui est filtré dans le dossier de messages indésirables ou qui n’est pas transmis du tout. Nous ferons un tour rapide des différences importantes entre une poignée de FAI. Il n'est pas censé être une liste complète de tous les FAI ou couvrir toutes les différences possibles.
-feature: FSI
+feature: ISPs
 topics: Deliverability
 kt: null
 doc-type: article

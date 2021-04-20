@@ -1,7 +1,7 @@
 ---
 title: Présentation des bonnes pratiques en matière de délivrabilité
 description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
-feature: Délivrabilité
+feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article

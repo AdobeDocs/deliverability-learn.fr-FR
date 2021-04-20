@@ -1,7 +1,7 @@
 ---
 title: permanence de l'expéditeur
 description: L'envoi permanent est le processus d'établissement d'un volume d'envoi et d'une stratégie cohérents afin de maintenir la réputation des fournisseurs de services Internet.
-feature: Permanence de l'expéditeur
+feature: Sender Permanence
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg

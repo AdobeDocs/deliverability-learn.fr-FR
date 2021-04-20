@@ -1,7 +1,7 @@
 ---
 title: Augmentez la réputation de vos emails grâce au rodage des adresses IP
 description: Découvrez pourquoi il est important d'améliorer la réputation de votre courriel avec le réchauffement de votre adresse IP et comment procéder pour une délivrabilité optimale.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

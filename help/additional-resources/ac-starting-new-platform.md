@@ -1,7 +1,7 @@
 ---
 title: Démarrer une nouvelle plateforme
 description: En savoir plus sur la gestion de la délivrabilité lors du démarrage d’une nouvelle plateforme avec Adobe Campaign.
-feature: Mise en pratique
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

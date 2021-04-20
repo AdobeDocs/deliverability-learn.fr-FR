@@ -1,7 +1,7 @@
 ---
 title: Courriels de bienvenue
 description: Identifiez les éléments clés à prendre en compte lors de la création de vos e-mails de bienvenue.
-feature: E-mail
+feature: Email
 topics: Deliverability
 kt: 7064
 thumbnail: kt7064.jpg

@@ -1,7 +1,7 @@
 ---
 title: Comment transition en douceur lors du changement de plate-forme de messagerie électronique.
 description: 'Lorsque vous déplacez des prestataires de messagerie (ESP), il n’est pas possible de transition également vos adresses IP existantes et établies. Il est important que vous suiviez les meilleures pratiques pour développer une réputation positive lors de votre redémarrage. '
-feature: Délivrabilité
+feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg

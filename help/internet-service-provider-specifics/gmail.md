@@ -1,7 +1,7 @@
 ---
 title: Gmail
 description: Gmail constitue la plus grande partie des listes de messagerie de la plupart des expéditeurs. Ils ont également tendance à traiter les courriels un peu différemment des autres.
-feature: FSI
+feature: ISPs
 topics: Deliverability
 kt: 5262
 doc-type: article

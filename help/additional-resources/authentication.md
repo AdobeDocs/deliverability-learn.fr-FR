@@ -1,7 +1,7 @@
 ---
 title: Authentification
 description: En savoir plus sur les méthodes d’authentification SPF, DKIM et DMARC.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

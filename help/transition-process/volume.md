@@ -1,7 +1,7 @@
 ---
 title: Volume - Conseils pour une transition fluide
 description: Le volume de courrier que vous envoyez est essentiel pour établir une réputation positive. Apprenez ce que vous pouvez faire pour la transition en douceur.
-feature: Processus de transition
+feature: Transition Process
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg

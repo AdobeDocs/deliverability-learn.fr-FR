@@ -1,7 +1,7 @@
 ---
 title: Plaintes
 description: 'Découvrez les plaintes qui sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. '
-feature: Mesures
+feature: Metrics
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg

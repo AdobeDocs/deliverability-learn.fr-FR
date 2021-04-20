@@ -1,7 +1,7 @@
 ---
 title: 'Premières impressions : collecte de listes et courriels de bienvenue'
 description: 'Découvrez comment vous préparer à exécuter un programme de messagerie efficace en faisant une bonne première impression. '
-feature: Audiences, courriel
+feature: Audiences, Email
 topics: Deliverability
 kt: 5258
 thumbnail: kt5258.jpg

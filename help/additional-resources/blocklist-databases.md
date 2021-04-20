@@ -1,7 +1,7 @@
 ---
 title: Listes Blackhole en temps réel
 description: Découvrez les organisations qui conservent des listes d’adresses et de domaines IP susceptibles d’être utilisées par les spammeurs.
-feature: Ressources supplémentaires
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
