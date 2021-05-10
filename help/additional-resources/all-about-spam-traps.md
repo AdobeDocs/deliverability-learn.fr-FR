@@ -1,56 +1,56 @@
 ---
-title: Tout sur les pièges à pourriels
-description: Découvrez comment comprendre, identifier et éviter les pièges à spam lors de la gestion de la délivrabilité.
-feature: Additional resources
+title: En savoir plus sur les pièges à spam
+description: Découvrez comment comprendre, identifier et éviter les pièges à spam au cours de la gestion de la délivrabilité.
+feature: Ressources supplémentaires
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 3696ec013014ea41c634ac4829ec40977d224ff1
-workflow-type: tm+mt
+exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
+translation-type: ht
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# En savoir plus sur les pièges à spam
 
-# Tout sur les pièges à pourriels
+Un [piège à spam](/help/metrics/spam-traps.md) est une adresse valide, qui n&#39;émet aucun message d&#39;erreur lorsque des emails lui sont envoyés. Un piège à spam a pour mission principale d&#39;identifier les spammeurs ou les expéditeurs n&#39;appliquant aucun processus d&#39;hygiène des données.
 
-Un piège de messages indésirables [spam](/help/metrics/spam-traps.md) est une adresse valide, sans message d&#39;erreur lorsque des messages électroniques sont envoyés à. Un piège à pourriels a pour mission principale : identifier les spammeurs ou les expéditeurs sans processus d&#39;hygiène des données.
+## Qui gère ces adresses de piège à spam ?
 
-## Qui gère ces adresses de piège à spam ?
+Le premier type d&#39;adresse de piège à spam est celui des entreprises de listes bloquées d&#39;adresses IP et de domaines, comme SpamHaus, Sorbs, SpamCop. Ces sociétés ont un immense réseau d&#39;adresses réparties sur diverses pages Internet comme des sites web, des blogs et des forums, ce qui permet à des spammeurs de les collecter.
 
-Le premier type d&#39;adresses de piège de spam est la société de liste bloquée IP et domaine, comme SpamHaus, Sorbs, SpamCop. Ces sociétés ont un immense réseau d&#39;adresses qui sont distribuées sur diverses pages Internet comme site web, blog, forums pour que leurs adresses soient collectées par des spammeurs.
+Le deuxième type de piège à spam se base sur d&#39;anciennes adresses de FAI actives. Ces FAI disposent de leur propre réseau de pièges à spam fondé sur des adresses inactives reconverties en pièges, chaque accès influant sur la réputation de l&#39;adresse IP et du domaine de l&#39;expéditeur.
 
-Le deuxième type de piège antispam est basé sur de vieilles principales adresses de FAI. Ces FAI disposent de leur propre réseau de piège à messages indésirables basé sur des adresses inactives reconverties dans un piège et chaque accès impacte la réputation de l&#39;adresse IP et du domaine de l&#39;expéditeur.
+## Comment cela fonctionne-t-il ?
 
-## Comment fonctionne-t-il ?
+**Adresse email sans utilisateur final** : ces adresses n&#39;ont pas et n&#39;auront jamais d&#39;utilisateur final qui puisse s&#39;inscrire aux newsletters ou à tout autre type de communication.
 
-**Adresse électronique sans utilisateur** final : Ces adresses n&#39;ont pas et n&#39;auront jamais d&#39;utilisateur final qui puisse s&#39;inscrire aux bulletins d&#39;information ou à tout autre type de communication.
+**Adresse email abandonnée par un utilisateur** : suite à une période d&#39;inactivité, les adresses sont désactivées par les FAI. Les messages bounces sont envoyés aux expéditeurs pour les informer de ce nouveau statut. Les expéditeurs doivent envoyer ces adresses en quarantaine ou les supprimer des futures communications. Les FAI utilisent ces adresses transformées en &quot;piège à spam&quot; pour surveiller les expéditeurs qui appliquent de mauvaises pratiques.
 
-**Adresse électronique abandonnée par un utilisateur** : Après une période d’inactivité, les adresses sont désactivées par les FAI. Des messages de rebonds sont envoyés aux expéditeurs pour les informer de ce nouvel état. Les expéditeurs doivent envoyer ces adresses en quarantaine ou les supprimer des futures communications. Les FAI utilisent ces adresses transformées en &quot;piège à spam&quot; pour surveiller les expéditeurs qui ont des mauvaises pratiques.
+## Comment reconnaître ou identifier un piège à spam ?
 
-## Comment reconnaître ou identifier un piège à spam ?
+Il est difficile d&#39;identifier les pièges à spam. Ces adresses doivent rester anonymes car elles sont utilisées pour identifier les expéditeurs malveillants. La plupart des FAI n&#39;ont pas de système de détection d&#39;ouvertures et de clics pour surveiller les accès des expéditeurs inappropriés. Selon les définitions précédentes, il est possible de déterminer un groupe d&#39;adresses suspectes et de tester l&#39;efficacité de la sélection de ce groupe.
 
-Il est difficile d&#39;identifier les pièges à spam, ces adresses doivent rester anonymes car elles sont utilisées pour identifier les mauvais expéditeurs. La plupart des FAI n&#39;ont pas de système ouvert et de clics pour surveiller les accès des expéditeurs inappropriés. Selon les définitions précédentes, il est possible de déterminer une capsule d&#39;adresses suspectes et de tester l&#39;efficacité de la sélection de la capsule.
+## Pourquoi votre base de données est-elle infectée par des pièges à spam ?
 
-## Pourquoi votre base de données est infectée par des pièges à messages indésirables ?
+Comment est-il possible que votre base de données d&#39;adresses email contienne un piège à spam ? Les deux principales raisons sont le manque de procédures d&#39;hygiène dans la base de données ou un dysfonctionnement de la collecte.
 
-Votre base de données d&#39;adresses e-mail contient un piège de spam, comment cela pourrait-il être possible ? Les deux principales raisons sont le manque de procédures d&#39;hygiène dans la base de données ou la collecte des dysfonctionnements.
+Ces quelques points peuvent vous aider à vérifier vos processus :
 
-Ces quelques points vous aident à vérifier vos processus :
-
-* Collect dysfunction :
-   * D&#39;où viennent vos adresses électroniques ? Combien de sources sont utilisées pour collecter ces adresses ? Êtes-vous capable de les identifier ? Interne/d&#39;enregistrement ?
-   * Votre système d’inclusion fonctionne-t-il correctement ?
-   * Avez-vous vérifié les domaines et l&#39;alias de vos adresses ? Faites-le avec le tableau ci-dessous !
-* Processus d&#39;hygiène des bases de données :
-   * Quel est votre processus concernant l&#39;adresse inactive au cours des 12 derniers mois ?
-   * Traitez-vous une quarantaine sur les rebonds logiciels comme &quot;utilisateur inactif&quot; ?
-   * Quand avez-vous pris soin de votre base de données pour la dernière fois et essayé de la nettoyer ? Fais-le régulièrement.
+* Dysfonctionnement de la collecte :
+   * D&#39;où viennent vos adresses électroniques ? Combien de sources sont utilisées pour collecter ces adresses ? Êtes-vous capable de les identifier ? Inscription interne / co-inscription ?
+   * Votre système d&#39;opt-in fonctionne-t-il correctement ?
+   * Avez-vous vérifié les domaines et l&#39;alias de vos adresses ? Faites-le avec le tableau ci-dessous !
+* Processus d&#39;hygiène des bases de données :
+   * Quel est votre processus concernant une adresse inactive au cours des 12 derniers mois ?
+   * Traitez-vous une quarantaine sur les soft bounces comme &quot;utilisateur inactif&quot; ?
+   * Quand avez-vous pris soin de votre base de données pour la dernière fois et essayé de la nettoyer ? Faites-le régulièrement.
 
 ## Alias et domaines à éviter
 
