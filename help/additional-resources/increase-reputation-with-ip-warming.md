@@ -1,23 +1,23 @@
 ---
-title: Augmentez la réputation de vos emails grâce au rodage des adresses IP
-description: Découvrez pourquoi il est important d'améliorer la réputation de votre courriel avec le réchauffement de votre adresse IP et comment procéder pour une délivrabilité optimale.
-feature: Additional resources
+title: Améliorer la réputation de vos emails grâce au réchauffement des adresses IP
+description: Découvrez pourquoi il est important d'améliorer la réputation de vos emails avec le réchauffement de votre adresse IP, et comment procéder pour une délivrabilité optimale.
+feature: Ressources supplémentaires
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
-workflow-type: tm+mt
+exl-id: b553a13e-2055-4abc-b784-fd52792380d0
+translation-type: ht
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
+workflow-type: ht
 source-wordcount: '1602'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-
-# Augmentez la réputation de vos emails grâce au rodage des adresses IP
+# Améliorer la réputation de vos emails grâce au réchauffement des adresses IP
 
 <!--Increase your email reputation with IP warming
 
@@ -27,96 +27,96 @@ In the Adobe Deliverability Consulting and Deliverability Operations teams, we h
 
 ## Prise en main
 
-L&#39;Adobe exige que les clients partagent leur configuration pour aider l&#39;équipe de délivrabilité des Adobes à comprendre votre programme unique. Les questions que nous posons sont conçues pour aider l&#39;équipe de la délivrabilité des Adobes à se faire une idée de votre réputation d&#39;envoi et de votre volume de courrier électronique. Sans une compréhension concrète de votre modèle d&#39;entreprise, des objectifs de marketing par courriel et des mesures de réputation, nous ne serons pas en mesure de personnaliser la stratégie et il y a un risque de problèmes de délivrabilité.
+Adobe demande que les clients partagent leur configuration pour aider l&#39;équipe de délivrabilité d&#39;Adobe à comprendre votre programme spécifique. Les questions que nous posons sont conçues pour aider l&#39;équipe en charge de la délivrabilité d&#39;Adobe à se faire une idée de votre réputation d&#39;envoi et de votre volume d&#39;emails. Faute d&#39;une compréhension concrète de votre modèle commercial, des objectifs de marketing par email et des mesures de réputation, nous ne serons pas en mesure de personnaliser la stratégie, ce qui peut créer un risque de problème de délivrabilité.
 
-Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Protocol). Dans le cadre de l’envoi de courriers électroniques, une adresse IP est l’itinéraire utilisé pour envoyer vos courriers électroniques à vos clients. Les adresses et domaines IP sont utilisés pour identifier les expéditeurs sur un réseau aux fournisseurs d’accès à Internet destinataires. L’Adobe attribue le nombre approprié d’adresses IP dédiées pour l’envoi de courriers électroniques, en fonction du volume d’envoi, des programmes électroniques, des pratiques de segmentation des données et de votre contrat.
+Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Protocol). Dans le cadre de l&#39;envoi d&#39;emails, une adresse IP est l&#39;itinéraire utilisé pour envoyer vos emails à vos clients. Les domaines et adresses IP sont utilisés pour identifier les expéditeurs sur un réseau pour les fournisseurs d&#39;accès à Internet destinataires. Adobe attribue le nombre approprié d&#39;adresses IP dédiées pour l&#39;envoi d&#39;emails, en fonction du volume d&#39;envoi, des programmes d&#39;email, des pratiques de segmentation des données et de votre contrat.
 
 **Rubriques connexes :**
-* [Transition en douceur lors du changement de plate-forme de messagerie](../../help/transition-process/switching-email-platforms.md)
+* [Transition en douceur lors du changement de plateforme de messagerie](../../help/transition-process/switching-email-platforms.md)
 * [Stratégie IP](../../help/transition-process/infrastructure.md#ip-strategy)
-* [Considérations spécifiques aux fournisseurs d’accès lors du réchauffement des IP](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
+* [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
-## Réchauffement IP : Pourquoi est-ce fait ? {#why-ip-warming}
+## Réchauffement d&#39;une adresse IP : pour quoi faire ? {#why-ip-warming}
 
-Les Prestataires Internet (FAI) ou les fournisseurs de boîtes aux lettres (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Il s’agit de la procédure standard associée à toute nouvelle adresse IP d’envoi, quel que soit le type d’expéditeur. Les FAI/MBP surveillent de près l&#39;IP et le domaine d&#39;envoi pour déterminer si les courriels envoyés depuis cette IP et ce domaine sont des spams ou non.  Il s’agit de la procédure standard associée à toute nouvelle adresse IP d’envoi, quel que soit le type d’expéditeur.
+Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur. Les FAI/MBP surveillent de près l&#39;IP et le domaine d&#39;envoi pour déterminer si les emails envoyés depuis cette IP et ce domaine sont des spams ou non.  Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
 
-Les FSI examinent attentivement le volume d&#39;envoi, la fréquence d&#39;envoi, les plaintes et les taux de rebond générés par ces envois. Tous ces éléments sont étroitement contrôlés parce qu&#39;ils sont des indicateurs de la réputation de l&#39;expéditeur - qu&#39;il soit bon ou mauvais.
+Les FAI examinent attentivement le volume d&#39;envoi, la fréquence d&#39;envoi, les plaintes et les taux de rebond générés par ces messages. Tous ces éléments sont étroitement contrôlés parce que, bons ou mauvais, ils représentent des indicateurs de la réputation de l&#39;expéditeur.
 
-Naturellement, ce processus d&#39;examen de ces points de données prend du temps et ne peut être réalisé en un jour ou deux. La réputation est construite au fil du temps. Ce processus est comme laisser un étranger chez lui. Auriez-vous des réserves à faire entrer chez vous quelqu&#39;un que vous n&#39;avez jamais rencontré ?
+Naturellement, ce processus d&#39;examen de ces points de données prend du temps et ne peut être réalisé en un jour ou deux. La réputation se construit au fil du temps. Ce processus revient à envisager de laisser un étranger pénétrer chez soi. Auriez-vous des réserves pour laisser entrer chez vous quelqu&#39;un que vous n&#39;avez jamais rencontré ?
 
-La réponse est très probablement oui. Vous voudriez analyser cette personne et ses motivations. Est-ce qu&#39;ils signifient du mal ? Sont-ils une menace ? Les FAI font de même pour protéger leur réseau du trafic malveillant ou indésirable. Les mesures de réputation positives vous aident à faire un grand pas en avant dans un processus de réchauffement de la PI réussi. C&#39;est pourquoi nous insistons sur l&#39;importance de commencer par envoyer de petits volumes de courriels et de commencer à envoyer d&#39;abord à vos clients les plus engagés. Pour plus d’informations sur ce sujet, voir [Critères de ciblage lors de l’envoi de nouveau trafic](/help/transition-process/targeting-criteria.md).
+La réponse est très probablement oui. Vous voudriez analyser cette personne et ses motivations. Vous veulent-elles du mal ? Représentent-elles une menace ? Les FAI font de même pour protéger leur réseau de tout trafic malveillant ou indésirable. Les mesures de réputation positives vous aident à faire un grand pas en avant dans un processus de réchauffement réussi des adresses IP. C&#39;est pourquoi nous insistons sur l&#39;importance de commencer par envoyer de petits volumes d&#39;emails et d&#39;abord à vos clients les plus engagés. Pour plus d&#39;informations à ce sujet, voir la section [Critères de ciblage lors de l&#39;envoi de nouveau trafic](/help/transition-process/targeting-criteria.md).
 
-L&#39;envoi de grandes quantités d&#39;e-mails à partir d&#39;une adresse IP toute neuve ou d&#39;adresses IP immédiatement à la porte est une mauvaise pratique et vous causera probablement des problèmes de délivrabilité. Il est important de noter que même si vous début envoyer de petits volumes et les augmenter progressivement comme recommandé, il est toujours nécessaire de suivre les meilleures pratiques en matière de messagerie électronique.
+L&#39;envoi de grandes quantités d&#39;emails à partir d&#39;adresses IP dès la phase initiale ou d&#39;une adresse IP complètement nouvelle est une mauvaise pratique et provoquera probablement des problèmes de délivrabilité. Il est important de noter que même si vous commencez à envoyer de petits volumes et que vous les augmentez progressivement comme recommandé, il est toujours nécessaire de suivre les bonnes pratiques en matière de messagerie électronique.
 
 ![](../../help/assets/ip-warming-volume-trend.png)
 
-## Autorisation de courrier (inclusion explicite)
+## Autorisation d&#39;envoyer des emails (opt-in explicite)
 
-Il s’agit du composant le plus important de la gestion et de l’augmentation d’une liste de messagerie d’abonnés. À mesure que les lois antispam se développent et deviennent plus complètes à l’échelle internationale, il devrait être Principal pour les spécialistes du marketing de s’assurer qu’ils ont reçu le consentement explicite (ou explicite) de chaque abonné sur leur liste. Autrement dit, chaque abonné a accepté de recevoir des courriels de votre marque. Ceci diffère du consentement implicite lorsqu’une personne est ajoutée à une liste de messagerie après avoir exécuté une action qui n’était pas explicitement inscrite à un programme de messagerie.
+Il s&#39;agit du composant le plus important de la gestion et du développement d&#39;une liste d&#39;emails d&#39;abonnés. À mesure que les lois antispam se développent et deviennent plus complètes à l&#39;échelle internationale, il devrait être primordial pour les spécialistes du marketing de s&#39;assurer qu&#39;ils ont reçu le consentement explicite (ou formel) de chaque abonné présent dans leurs listes. Autrement dit, chaque abonné a accepté de recevoir des emails de la part de votre marque. Cette démarche se différencie du consentement implicite lorsqu&#39;une personne est ajoutée à une liste d&#39;emails après avoir effectué une action qui n&#39;était pas explicitement une inscription à un programme d&#39;emails.
 
-Pour en savoir plus sur la [politique d&#39;utilisation acceptable de l&#39;Adobe](https://www.adobe.com/fr/legal/terms/aup.html).
+En savoir plus sur la [politique d&#39;utilisation acceptable d&#39;Adobe](https://www.adobe.com/fr/legal/terms/aup.html).
 
-## Mesures de réputation : Que recherchent les FAI ?
+## Mesures de la réputation : que recherchent les FAI ?
 
-Les FAI utilisent une technologie sophistiquée pour prendre des décisions éclairées sur la livraison ou non de courriels qu&#39;ils reçoivent de réseaux externes. Ils ont parfois des algorithmes complexes et propriétaires dans leur ensemble d&#39;outils pour les aider dans ce processus.
+Les FAI utilisent une technologie sophistiquée pour prendre des décisions pertinentes sur la diffusion ou non des emails provenant de réseaux externes. Ils possèdent parfois des algorithmes complexes et exclusifs parmi leurs outils pour les aider dans ce processus.
 
-Voici quelques-uns des points de données examinés :
+Voici quelques-uns des points de données examinés :
 
-* Accès au piège indésirable
-* Accès à la Liste bloquée
-* Retours par courriel
+* Accès aux pièges à spam
+* Accès aux listes bloquées
+* Bounces d&#39;emails
 * Engagement des abonnés
 
-Les fournisseurs de services Internet requièrent des configurations techniques spécifiques qui s&#39;alignent sur leurs politiques et leurs meilleures pratiques. Adobe configure vos adresses IP et sous-domaines délégués afin de vous identifier en tant qu’expéditeur responsable et fiable. Il s’agit de l’authentification [par courrier électronique](/help/transition-process/infrastructure.md#authentication). L’authentification permet aux destinataires de vérifier si un expéditeur dispose des droits d’envoi à partir de cette adresse IP ou de ce domaine.
+Les FAI exigent des configurations techniques spécifiques alignées sur leurs politiques et leurs bonnes pratiques. Adobe configure vos adresses IP et sous-domaines délégués afin de vous identifier en tant qu&#39;expéditeur responsable et fiable. Il s&#39;agit de l&#39;[authentification par email](/help/transition-process/infrastructure.md#authentication). L&#39;authentification permet aux destinataires de vérifier si un expéditeur dispose des droits d&#39;envoi à partir de cette adresse IP ou de ce domaine.
 
-L’authentification permet aux FAI de vérifier que l’envoi de société à partir d’un domaine ou d’une adresse IP a le droit de le faire. C&#39;est essentiellement pour prouver votre identité et pour s&#39;assurer que vous ne faites pas semblant d&#39;être quelqu&#39;un d&#39;autre, et que quelqu&#39;un d&#39;autre ne fait pas semblant d&#39;être vous.
+L&#39;authentification permet aux FAI de vérifier que l&#39;entreprise qui réalise l&#39;envoi à partir d&#39;un domaine ou d&#39;une adresse IP a le droit de le faire. Il s&#39;agit essentiellement de prouver votre identité et de s&#39;assurer que vous ne vous faites pas passer pour quelqu&#39;un d&#39;autre, et inversement, que quelqu&#39;un d&#39;autre n&#39;usurpe pas votre identité.
 
-À l’Adobe, nous configurerons SPF et DKIM par défaut et nous configurerons DMARC sur demande. Les FAI référencent SPF et DKIM comme les Principales formes d&#39;authentification. De nombreux FAI intègrent également DMARC (Domain-based Message Authentication, Rapports &amp; Conformance) dans leurs décisions de filtrage. Les courriels non authentifiés ne sont pas nécessairement bloqués, mais ils sont soumis à un filtrage supplémentaire.
+Chez Adobe, nous configurons SPF et DKIM par défaut et nous configurons DMARC sur demande. Les FAI référencent SPF et DKIM comme principales formes d&#39;authentification. De nombreux FAI intègrent également DMARC (Domain-based Message Authentication, Reports and Conformance) dans leurs décisions de filtrage. Les emails non authentifiés ne sont pas nécessairement bloqués, mais ils sont soumis à un filtrage supplémentaire.
 
-## Réchauffement IP : A quoi s&#39;attendre
+## Réchauffement des adresses IP : à quoi s&#39;attendre ?
 
-### Messagerie limitée ou bloquée
+### Emails limités ou bloqués
 
-Les spammeurs envoient tout le temps de nouvelles adresses IP - ils vont graver à travers un pool d&#39;adresses IP jusqu&#39;à ce qu&#39;ils se ferment et répètent le processus sur un autre pool d&#39;adresses IP. En conséquence, les fournisseurs de services Internet traitent soigneusement le trafic envoyé à partir de nouvelles adresses IP. Ils bloquent l&#39;envoi d&#39;une grande quantité de courriels par IP parce qu&#39;ils soupçonnent qu&#39;il s&#39;agit d&#39;une activité malveillante exécutée par des spammeurs.
+Les spammeurs changent en permanence d&#39;adresses IP pour leurs envois : ils utilisent un pool d&#39;adresses IP jusqu&#39;à ce qu&#39;elles soient fermées, après quoi ils répètent le processus sur un autre pool. Les FAI traitent donc soigneusement le trafic envoyé à partir de nouvelles adresses IP. Ils bloquent l&#39;envoi d&#39;une grande quantité d&#39;emails à partir d&#39;adresses IP parce qu&#39;ils soupçonnent qu&#39;il s&#39;agit d&#39;une activité malveillante exécutée par des spammeurs.
 
-Par conséquent, il n’est pas rare de recevoir des messages de report ou de ralentissement lorsque vous début d’envoyer des messages à partir de vos nouvelles adresses IP. Après quelques Reprises, le message est généralement accepté et remis.
+Il n&#39;est donc pas rare de recevoir des messages de report ou de ralentissement lorsque vous commencez à envoyer des emails à partir de vos nouvelles adresses IP. Après quelques reprises, le message est généralement accepté et remis.
 
-Il peut s&#39;écouler quelques jours avant que les fournisseurs de services Internet ne parviennent à un flux normal de trafic qui retarde l&#39;envoi de nouveaux expéditeurs. Malgré cela, n&#39;arrêtez pas d&#39;envoyer du courrier - continuez à vous concentrer uniquement sur l&#39;envoi à vos abonnés de messagerie les plus engagés.
+Rétablir un flux de trafic normal vers les FAI qui diffèrent les nouveaux expéditeurs peut prendre plusieurs jours. Malgré cela, continuez à envoyer vos emails : concentrez-vous sur les envois aux abonnés les plus engagés de votre messagerie.
 
-Dans de rares cas, le FAI bloque le nouvel expéditeur. L&#39;Adobe surveille votre compte, et si un tel blocage est suspecté, tentera de contacter le fournisseur de services Internet pour essayer de remédier à la situation de la meilleure façon possible.
+Dans de rares cas, le FAI bloque le nouvel expéditeur. Adobe surveille votre compte, et si un tel blocage est suspecté, Adobe contactera le FAI pour essayer de remédier à la situation de la meilleure façon possible.
 
-Rappelez-vous que la cohérence est ici la clé. Des schémas de volume d&#39;envoi irréguliers et des modèles d&#39;envoi peu fréquents entraîneront des problèmes de délivrabilité en cours de route.
+Gardez à l&#39;esprit que l&#39;essentiel ici, c&#39;est la cohérence. Les schémas de volume d&#39;envoi d&#39;emails irréguliers et peu fréquents entraînent des problèmes de délivrabilité au cours du processus.
 
 ### Plaintes
 
-[](/help/metrics/complaints.md) Plaintes lorsqu&#39;un abonné désigne un courriel comme indésirable par l&#39;intermédiaire de son programme électronique. Ceci envoie un avis à l&#39;ISP au sujet de l&#39;activité de la plainte. S&#39;il y a assez de ces plaintes qui arrivent au FAI, ce FAI agira pour protéger ses clients - peut-être bloquer de nombreux courriels pour se rendre aux abonnés ou diriger une partie de ces courriels vers le dossier en vrac plutôt que vers les boîtes de réception des abonnés. Si votre problème de diffusion est causé par des plaintes, il est important de déterminer pourquoi les destinataires se plaignent.
+[Les plaintes](/help/metrics/complaints.md) ont lieu lorsqu&#39;un abonné désigne un email comme indésirable par l&#39;intermédiaire de son programme de messagerie. Un avis est alors envoyé au FAI au sujet de l&#39;activité concernant la plainte. Si un nombre suffisant de plaintes lui parviennent, il interviendra pour protéger ses clients : il s&#39;agira peut-être de bloquer de nombreux emails avant qu&#39;ils n&#39;arrivent aux abonnés, ou de les diriger partiellement vers un dossier de groupage plutôt que vers les boîtes de réception des abonnés. Si votre problème de diffusion résulte de plaintes, il est important de déterminer pourquoi les destinataires les émettent.
 
-Les abonnés se plaignent pour diverses raisons. Parfois, un abonné ne veut plus recevoir d’e-mails de votre part, peut-être parce qu’il a l’impression de recevoir trop de messages sur le même sujet, qu’il n’attendait pas le message ou qu’il ne se souvient pas de s’être inscrit pour recevoir vos e-mails.
+Les abonnés se plaignent pour diverses raisons. Parfois, ils ne veulent plus recevoir d&#39;emails de votre part, peut-être parce qu&#39;ils ont l&#39;impression de recevoir trop de messages sur un même sujet, parce qu&#39;ils ne s&#39;attendaient pas au message, ou qu&#39;ils ne se souviennent pas de s&#39;être inscrits pour les recevoir.
 
 ### Validité des données
 
-Les erreurs hard se produisent lorsque vous effectuez un envoi à une adresse en échec d’un FAI. Une adresse peut être non livrable pour de nombreuses raisons, comme une erreur de saisie de l&#39;adresse ou d&#39;envoi à une adresse qui était auparavant principale mais qui a été fermée ou terminée après une période d&#39;inactivité.
+Les erreurs hard se produisent lorsque vous effectuez un envoi vers une adresse en échec d&#39;un FAI. Une adresse peut être en échec pour différentes raisons, par exemple une erreur de saisie de l&#39;adresse ou d&#39;envoi à une adresse qui était auparavant principale mais qui a été fermée ou résiliée suite à une période d&#39;inactivité.
 
-Si vous rencontrez un nombre important de rebonds durs, il est important de comprendre pourquoi. Vérifiez comment les adresses ont été collectées et confirmez que l&#39;autorisation a été accordée. Parfois, les utilisateurs ferment leur compte de messagerie et n’en informent pas ceux qui ont cette adresse sur leur liste marketing.
+Si vous rencontrez un nombre important de hard bounces, il est important de comprendre pourquoi. Vérifiez comment les adresses ont été collectées et confirmez que l&#39;autorisation a été accordée. Parfois, les utilisateurs ferment leur compte de messagerie et n&#39;en informent pas ceux qui ont placé cette adresse dans leur liste marketing.
 
 ### Engagement
 
-Les FAI recherchent un volume cohérent et une bonne qualité de données. Vous augmenterez lentement et régulièrement le trafic au cours des quatre à huit prochaines semaines. Il arrive que les cumuls nécessitent plus ou moins de temps en fonction de votre volume et de vos objectifs, mais généralement, il s’agit d’un processus d’au moins 8 semaines.
+Les FAI recherchent un volume régulier et une bonne qualité des données. Vous augmenterez progressivement et régulièrement le trafic au cours des quatre à huit semaines suivantes. Il arrive que les cumuls nécessitent plus ou moins de temps en fonction de votre volume et de vos objectifs, mais généralement, il s&#39;agit d&#39;un processus d&#39;au moins 8 semaines.
 
-Le trafic de courrier électronique doit être déployé avec une progression lente et régulière, augmentant chaque semaine jusqu’à l’envoi de la liste entière. En outre, chaque segment suivra le calendrier jusqu&#39;à l&#39;achèvement. Début avec les abonnés les plus récents en premier, et finir avec les abonnés les moins engagés en dernier. Veuillez également noter que certains FAI peuvent nécessiter une approche plus personnalisée en raison de leur gestion du nouveau trafic.
+Le trafic des emails doit être déployé avec une progression lente et régulière, augmentant chaque semaine jusqu&#39;à l&#39;envoi de la liste complète. En outre, chaque segment suit le calendrier jusqu&#39;à l&#39;achèvement. Commencez avec les abonnés les plus récents, et finissez avec les abonnés les moins engagés. À noter également que certains FAI peuvent nécessiter une approche plus personnalisée en raison de leur gestion du nouveau trafic.
 
-En savoir plus sur [l&#39;engagement](/help/engagement.md).
+En savoir plus sur l&#39;[engagement](/help/engagement.md).
 
-## Restez en cours
+## Garder le cap
 
-Vous pouvez être tenté d&#39;accélérer le processus de réchauffement de la propriété intellectuelle en envoyant plus de volume que ce qui est recommandé, en négligeant de passer du temps à identifier vos abonnés les plus engagés et en ne les envoyant pas par la poste d&#39;abord à ces abonnés afin de bâtir une réputation positive. Résistez à cette envie ! Cela ne vous aidera pas à long terme.
+Vous pouvez être tenté d&#39;accélérer le processus de réchauffement des adresses IP en diffusant un volume supérieur à celui recommandé, en négligeant de passer du temps à identifier vos abonnés les plus engagés et en n&#39;envoyant pas d&#39;email à ces abonnés lors de la phase initiale pour bâtir une réputation positive. Résistez à cette envie ! Cela ne vous aidera pas à long terme.
 
-Il est très important d&#39;envoyer un début par courrier électronique (avec un email !) abonnés uniquement pour les premières étapes du réchauffement de la propriété intellectuelle. Ces clients sont vos plus précieux et leur propension à ouvrir vos courriels vous aidera à montrer au début que vous êtes un spécialiste du marketing qui envoie des courriels intéressants et recherchés. Il montre également les fournisseurs de services Internet que vous suivez les règles et les bonnes pratiques.
+Il est très important de commencer à contacter vos abonnés les plus engagés (par email !) uniquement, lors des étapes initiales du réchauffement des adresses IP. Ces clients sont les plus précieux et leur propension à ouvrir vos emails vous aidera à montrer aux FAI que vous êtes un spécialiste marketing qui envoie des emails intéressants et recherchés. La démarche indique également aux FAI que vous suivez les règles et les bonnes pratiques.
 
 ## Conclusion
 
-Rappelez-vous : Le réchauffement IP est un marathon - pas un sprint !  Bien que le processus puisse sembler lourd et chronophage, il serait plus difficile de réparer une réputation endommagée par le fait de ne pas suivre les bonnes pratiques éprouvées en matière de messagerie électronique.
+Gardez à l&#39;esprit que le réchauffement des adresses IP est un marathon, pas un sprint !  Bien que le processus puisse sembler lourd et fastidieux, il serait plus difficile de réparer une réputation altérée par l&#39;omission des bonnes pratiques éprouvées en matière de messagerie électronique.
 
-Plus vos pratiques d&#39;envoi sont efficaces et plus vos scores de réputation sont élevés avec les FAI, plus vos courriels seront probablement diffusés. Le réchauffement et l&#39;augmentation des adresses IP, ainsi que le suivi des meilleures pratiques pour la conception de votre envoi, vous aideront à optimiser votre diffusion de boîte de réception.
+Plus vos pratiques d&#39;envoi sont efficaces et plus vos scores de réputation sont élevés auprès des FAI, plus vos emails auront une forte probabilité de diffusion. Le réchauffement et la montée en puissance des adresses IP, ainsi que l&#39;application des bonnes pratiques pour la conception de votre envoi, vous aideront à optimiser votre diffusion en boîte de réception.
 
-Notre équipe de livraison mondiale est votre partenaire dans ce processus et vous aidera durant cette phase de réchauffement de la IP à vous positionner pour le succès.
+Notre équipe de délivrabilité mondiale est votre partenaire dans ce processus et vous aidera, au cours de cette phase de réchauffement des adresses IP, à vous positionner pour réussir.
