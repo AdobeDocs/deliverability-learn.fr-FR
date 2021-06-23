@@ -2,11 +2,10 @@
 user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
-translation-type: ht
-source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: ht
-source-wordcount: '165'
-ht-degree: 100%
+source-git-commit: fb66dc0e4efc61b6303b7857b9c56b2c478642c4
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +25,7 @@ ht-degree: 100%
    + [Transition en douceur lors du changement de plateforme de messagerie](/help/transition-process/switching-email-platforms.md)
    + [Infrastructure](/help/transition-process/infrastructure.md)
    + [Critères de ciblage](/help/transition-process/targeting-criteria.md)
-   + [Considérations spécifiques aux fournisseurs d’accès lors du réchauffement des IP](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
+   + [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
    + [Volume](/help/transition-process/volume.md)
 + Premières impressions — Collecte de listes et emails de bienvenue {#first-impressions}
    + [Premières impressions — Collecte de listes et emails de bienvenue](/help/first-impressions/introduction.md)
@@ -44,8 +43,8 @@ ht-degree: 100%
 + Annexe : ressources supplémentaires {#additional-resources}
    + [Présentation](/help/additional-resources/general-resources.md)
    + Ressources génériques {#generic-resources}
-      + [En savoir plus sur les spam traps](/help/additional-resources/all-about-spam-traps.md)
-      + [Augmentation de la réputation de vos emails grâce au préchauffage des adresses IP](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [En savoir plus sur les pièges à spam](/help/additional-resources/all-about-spam-traps.md)
+      + [Améliorer la réputation de vos emails grâce au réchauffement des adresses IP](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [Authentification](/help/additional-resources/authentication.md)
       + [Doublons](/help/additional-resources/duplicates.md)
       + [Bonnes pratiques en matière de réengagement](/help/additional-resources/re-engagement.md)
@@ -57,3 +56,6 @@ ht-degree: 100%
          + [Processus de demande de certificat SSL](/help/additional-resources/ac-ssl-certificate-request.md)
          + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
          + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
++ Notes techniques (masquées){#technotes}
+   + [Apple Privacy](/help/technotes/apple-mail-privacy-faq.md)
+
