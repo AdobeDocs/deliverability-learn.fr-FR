@@ -1,18 +1,18 @@
 ---
-title: FAQ sur la protection de la confidentialité d’Apple Mail 23 juin 2021
-description: FAQ sur la protection de la confidentialité d’Apple Mail 23 juin 2021
+title: FAQ sur la protection de la confidentialité Apple Mail
+description: FAQ sur la protection de la confidentialité Apple Mail
 feature: Délivrabilité
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: fe42e3a1edfb48192fd1bb3b811247fcd528ab05
+source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# FAQ sur la protection de la confidentialité d’Apple Mail 23 juin 2021
+# FAQ sur la protection de la confidentialité Apple Mail
 
 Ce FAQ fournit des conseils initiaux en réponse à l’annonce d’Apple concernant leur version d’iOS 15, y compris [Protection de la confidentialité du courrier](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Ces modifications auront lieu en septembre. Nous continuerons de mettre à jour ce document et de fournir des conseils à nos clients.
 
