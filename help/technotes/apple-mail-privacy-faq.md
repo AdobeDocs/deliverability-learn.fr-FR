@@ -5,7 +5,7 @@ feature: Délivrabilité
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
+source-git-commit: 7b0f59aed1e4074cb93fdd762bab0b7302a6cbdd
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
@@ -30,8 +30,7 @@ Le suivi des pixels dans Apple Mail sera désactivé, ce qui signifie que les ma
 
 ## Y a-t-il d&#39;autres impacts ?
 
-Par défaut, Apple masque les informations d’adresse IP dans son application de messagerie native, son navigateur Safari et ses services iCloud. La mesure des taux d’ouverture n’est pas le seul aspect du marketing par e-mail affecté par la protection de la confidentialité des emails d’Apple. Le courrier électronique ouvre les stratégies d’optimisation du temps d’envoi des lecteurs, la personnalisation en temps réel, les campagnes de réengagement et les campagnes multi-ondes automatisées. Ces modifications signifient que les marketeurs
-doit commencer à planifier afin de déterminer à quoi ressembleront ces stratégies pour les utilisateurs d’Apple une fois iOS 15 publié et les fonctionnalités de protection de la vie privée mises en place cet automne. Adobe aidera nos clients à naviguer dans ces changements grâce à des mises à jour, des conseils et une direction éclairée.
+Par défaut, Apple masque les informations d’adresse IP dans son application de messagerie native, son navigateur Safari et ses services iCloud. La mesure des taux d’ouverture n’est pas le seul aspect du marketing par e-mail affecté par la protection de la confidentialité des emails d’Apple. Le courrier électronique ouvre les stratégies d’optimisation du temps d’envoi des lecteurs, la personnalisation en temps réel, les campagnes de réengagement et les campagnes multi-ondes automatisées. Ces modifications signifient que les marketeurs doivent commencer à planifier la définition de ces stratégies pour les utilisateurs d’Apple dès qu’iOS 15 sera commercialisé et que les fonctionnalités de protection de la vie privée prendront place cet automne. Adobe aidera nos clients à naviguer dans ces changements grâce à des mises à jour, des conseils et une direction éclairée.
 
 ## Cette annonce concerne-t-elle tous les emails ouverts sur un appareil Apple ?
 
