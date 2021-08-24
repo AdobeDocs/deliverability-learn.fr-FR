@@ -1,41 +1,39 @@
 ---
 title: Microsoft (Hotmail, Outlook, Windows Live, etc.)
-description: Microsoft est généralement le deuxième ou le troisième plus grand fournisseur selon la composition de votre liste et il gère le trafic légèrement différent des autres fournisseurs d'accès à Internet.
-feature: ISPs
+description: Microsoft est généralement le deuxième ou le troisième plus grand fournisseur selon la composition de votre liste et il gère le trafic légèrement différent des autres FAI.
 topics: Deliverability
 kt: 5319
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: 992bfc9d0aff9daf29fa6878ead19372b065b436
+exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 2%
 
 ---
 
-
 # [!DNL Microsoft] ([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live], etc.)
 
-[!DNL Microsoft] est généralement le deuxième ou le troisième plus important fournisseur selon la composition de votre liste, et il gère le trafic légèrement différent des autres FAI.
+[!DNL Microsoft] est généralement le deuxième ou le troisième plus grand fournisseur selon la composition de votre liste et il gère le trafic légèrement différent des autres FAI.
 
 Voici quelques points forts :
 
-## Quelles sont les données importantes ?
+## Quelles données sont importantes ?
 
 [!DNL Microsoft] se concentre sur la réputation de l’expéditeur, les plaintes, l’engagement des utilisateurs et leur propre groupe d’utilisateurs de confiance (également appelés données de réputation de l’expéditeur ou SRD) qu’ils interrogent pour obtenir des commentaires.
 
-## Quelles données sont-elles mises à disposition ?
+## Quelles données mettent-ils à disposition ?
 
-[!DNL Microsoft]L’outil de rapports d’expéditeur propriétaire,  [!DNL Smart Network Data Services] (SNDS), vous permet d’afficher des mesures concernant le volume de courrier que vous envoyez et le volume de courrier accepté, ainsi que les plaintes et les pièges à messages indésirables. Gardez à l’esprit que les données partagées constituent un échantillon et ne reflètent pas les nombres exacts, mais qu’elles représentent mieux la façon dont [!DNL Microsoft] vous vue en tant qu’expéditeur. [!DNL Microsoft] ne fournit pas publiquement d’informations sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles par l’intermédiaire du  [!DNL Return Path Certification] programme moyennant un supplément.
+[!DNL Microsoft]L’outil de reporting  [!DNL Smart Network Data Services] des expéditeurs propriétaires de , (SNDS), vous permet d’afficher des mesures relatives au volume de messages que vous envoyez et à la quantité de messages acceptés, ainsi que les plaintes et pièges à spam. Gardez à l’esprit que les données partagées sont un échantillon et ne reflètent pas des nombres exacts, mais qu’elles représentent le mieux la façon dont [!DNL Microsoft] vous considère comme un expéditeur. [!DNL Microsoft] ne fournit pas d’informations publiques sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles via le  [!DNL Return Path Certification] programme, moyennant des frais supplémentaires.
 
-## la réputation de l&#39;expéditeur
+## Réputation de l&#39;expéditeur
 
-[!DNL Microsoft] a toujours été axé sur l’envoi de la PI dans leurs évaluations de réputation et leurs décisions de filtrage. Ils s&#39;efforcent également d&#39;étendre leurs capacités de domaine d&#39;envoi. Tous deux sont en grande partie conduits par les influenceurs traditionnels de réputation, comme les plaintes et les pièges à pourriels. La délivrabilité peut également être fortement influencée par le programme de certification des chemins de retour, qui comporte des exigences spécifiques en matière de programme quantitatif et qualitatif.
+[!DNL Microsoft] est traditionnellement axé sur l’envoi d’adresses IP dans leurs évaluations de réputation et décisions de filtrage. Ils travaillent également activement à l’extension de leurs fonctionnalités de domaine d’envoi. Tous deux sont en grande partie pilotés par les influenceurs traditionnels de réputation, comme les plaintes et les pièges à spam. La délivrabilité peut également être fortement influencée par le programme de certification Return Path, qui comporte des exigences de programme quantitatives et qualitatives spécifiques.
 
 ## Insights
 
-[!DNL Microsoft] combine tous leurs domaines de réception pour établir et suivre la réputation d’envoi. Cela inclut [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live], etc., ainsi que tout courrier électronique hébergé par Office 365. [!DNL Microsoft] peut être particulièrement sensible aux fluctuations du volume. Par conséquent, pensez à appliquer des stratégies spécifiques pour augmenter ou diminuer les émissions à partir de grandes émissions plutôt que de permettre des changements soudains basés sur le volume.
+[!DNL Microsoft] combine tous leurs domaines de réception pour établir et suivre la réputation de l’envoi. Cela inclut [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live], etc., ainsi que tout courrier électronique hébergé par Office 365. [!DNL Microsoft] peuvent être particulièrement sensibles aux fluctuations du volume. Par conséquent, envisagez d’appliquer des stratégies spécifiques pour augmenter ou diminuer les envois à partir de grands envois plutôt que de permettre des changements soudains basés sur le volume.
 
-[!DNL Microsoft] est également particulièrement stricte pendant les premiers jours du réchauffement de la PI, ce qui signifie généralement que la plupart des courriels sont filtrés initialement. La plupart des FAI considèrent que les expéditeurs sont innocents jusqu&#39;à preuve de culpabilité. [!DNL Microsoft] est le contraire et vous considère coupable jusqu&#39;à ce que vous vous prouviez innocent.
+[!DNL Microsoft] est également particulièrement strict pendant les premiers jours du réchauffement de la IP, ce qui signifie généralement que la plupart des mails sont filtrés initialement. La plupart des FAI considèrent les expéditeurs comme innocents jusqu&#39;à ce qu&#39;ils soient reconnus coupables. [!DNL Microsoft] est le contraire et vous considère coupable jusqu&#39;à ce que vous vous prouviez innocent.
