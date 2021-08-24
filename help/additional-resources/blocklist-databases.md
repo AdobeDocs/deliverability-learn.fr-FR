@@ -1,21 +1,19 @@
 ---
 title: Listes Blackhole en temps réel
-description: Découvrez les organisations qui conservent des listes d’adresses et de domaines IP susceptibles d’être utilisées par les spammeurs.
-feature: Additional resources
+description: Découvrez les organisations qui conservent des listes d’adresses IP et de domaines susceptibles d’être utilisés par les spammeurs.
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 84%
+source-wordcount: '407'
+ht-degree: 85%
 
 ---
-
 
 # Listes Blackhole en temps réel
 
@@ -23,9 +21,9 @@ Plusieurs organisations recensent les adresses IP et les domaines réputés pour
 
 Ces bases sont appelées RBL (Real-time Blackhole List) et leur consultation repose sur le mécanisme du DNS. On distingue trois types de RBL :
 
-* Par adresse IP : recense les adresses IP émettrices de spam ou susceptibles de relayer du spam.
+* Par adresse IP : recense les adresses IP émettrices de spam ou susceptibles de relayer du spam.
 * Par domaine d&#39;envoi : recense les domaines d&#39;envoi (domaine complet de l&#39;adresse de mails rebonds) émetteurs de spam ou présentant un défaut de configuration.
-* Par domaine Web : liste les domaines (domaines de haut niveau enregistrés auprès des bureaux d’enregistrement) figurant dans les URL des liens et images contenus dans le contenu des messages indésirables. Dans les solutions d’Adobe, le domaine à prendre en compte est généralement l’adresse utilisée pour le suivi.
+* Par domaine web : répertorie les domaines (domaines de haut niveau tels qu’enregistrés auprès des registrars) trouvés dans les URL des liens et des images contenus dans les spams. Dans les solutions Adobe, le domaine à prendre en compte est généralement l’adresse utilisée pour le suivi.
 
 La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir une liste plus complète, consultez la page [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
