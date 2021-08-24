@@ -1,7 +1,6 @@
 ---
 title: Bounces
 description: Découvrez les différents types de bounces.
-feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg
@@ -9,15 +8,14 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '478'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '477'
 ht-degree: 100%
 
 ---
 
-# Bounces
+# Rebonds
 
 Les bounces sont le résultat d’une tentative de diffusion et d’un échec lorsque le FAI fournit des avis d’échec. Le traitement de la gestion des bounces est un élément essentiel de l&#39;hygiène des listes. Une fois qu’un email donné a fait l’objet de plusieurs bounces, ce processus le signale pour suppression. Le nombre et le type de bounces requis pour déclencher la suppression varient d’un système à un autre. Ce processus empêche les systèmes de continuer à envoyer des adresses email non valides. Les bounces sont l&#39;un des éléments clés de données que les FAI utilisent pour déterminer la réputation des adresses IP. Il est très important de surveiller cette mesure. La méthode la plus courante pour mesurer la diffusion des messages marketing consiste à comparer la mesure « Délivrés » à la mesure « Bounces » : plus le pourcentage Délivrés est élevé, mieux c&#39;est.
 
