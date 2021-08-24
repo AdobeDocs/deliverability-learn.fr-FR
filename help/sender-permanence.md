@@ -1,34 +1,32 @@
 ---
-title: permanence de l'expéditeur
-description: L'envoi permanent est le processus d'établissement d'un volume d'envoi et d'une stratégie cohérents afin de maintenir la réputation des fournisseurs de services Internet.
-feature: Sender Permanence
+title: Permanence de l'expéditeur
+description: L’envoi permanent est le processus d’établissement d’un volume d’envoi et d’une stratégie cohérents afin de maintenir la réputation du FAI.
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+exl-id: f57de522-1361-43a3-8f8b-f9a191986529
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 2%
+source-wordcount: '135'
+ht-degree: 5%
 
 ---
 
+# Permanence de l&#39;expéditeur
 
-# permanence de l&#39;expéditeur
+L’envoi permanent est le processus d’établissement d’un volume d’envoi et d’une stratégie cohérents afin de maintenir la réputation du FAI. Voici quelques raisons pour lesquelles la permanence de l’expéditeur est importante :
 
-L&#39;envoi permanent est le processus d&#39;établissement d&#39;un volume d&#39;envoi et d&#39;une stratégie cohérents afin de maintenir la réputation des fournisseurs de services Internet. Voici quelques raisons pour lesquelles la permanence des expéditeurs est importante :
-
-* En règle générale, les spammeurs &quot;hop d’adresse IP&quot; signifie qu’ils déplacent constamment le trafic sur de nombreuses adresses IP pour éviter les problèmes de réputation.
+* En règle générale, les spammeurs &quot;saut d’adresse IP&quot;, ce qui signifie qu’ils déplacent constamment le trafic entre plusieurs adresses IP pour éviter des problèmes de réputation.
 * La cohérence est essentielle pour prouver aux FAI que l&#39;expéditeur est fiable et ne tente pas de contourner les problèmes de réputation dus à de mauvaises pratiques d&#39;envoi.
-* Il faut maintenir ces stratégies cohérentes sur une longue période avant que certains FAI ne considèrent même l&#39;expéditeur comme étant fiable.
+* Le maintien de ces stratégies cohérentes sur une longue période de temps est nécessaire avant que certains FAI ne considèrent même l&#39;expéditeur comme tout simplement fiable.
 
 **Voici quelques exemples :**
 
-![Bonne permanence d&#39;envoi](assets/Sender_Permanence_1.png)
+![Bonne permanence des envois](assets/Sender_Permanence_1.png)
 
-![Mauvaise permanence d&#39;envoi](assets/Sender_Permanence_2.png)
+![Mauvaise permanence de l’envoi](assets/Sender_Permanence_2.png)
 
-![permanence d’envoi acceptable](assets/Sender_Permanence_3.png)
+![Persistance d’envoi acceptable](assets/Sender_Permanence_3.png)
