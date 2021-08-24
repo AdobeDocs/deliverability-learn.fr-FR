@@ -1,7 +1,6 @@
 ---
 title: Améliorer la réputation de vos emails grâce au réchauffement des adresses IP
 description: Découvrez pourquoi il est important d'améliorer la réputation de vos emails avec le réchauffement de votre adresse IP, et comment procéder pour une délivrabilité optimale.
-feature: Ressources supplémentaires
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '1602'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '1600'
 ht-degree: 100%
 
 ---
@@ -27,7 +25,7 @@ In the Adobe Deliverability Consulting and Deliverability Operations teams, we h
 
 ## Prise en main
 
-Adobe demande que les clients partagent leur configuration pour aider l&#39;équipe de délivrabilité d&#39;Adobe à comprendre votre programme spécifique. Les questions que nous posons sont conçues pour aider l&#39;équipe en charge de la délivrabilité d&#39;Adobe à se faire une idée de votre réputation d&#39;envoi et de votre volume d&#39;emails. Faute d&#39;une compréhension concrète de votre modèle commercial, des objectifs de marketing par email et des mesures de réputation, nous ne serons pas en mesure de personnaliser la stratégie, ce qui peut créer un risque de problème de délivrabilité.
+Adobe demande que les clients partagent leur configuration pour aider l&#39;équipe d&#39;Adobe chargée de la délivrabilité à comprendre votre programme spécifique. Les questions que nous posons sont conçues pour aider l&#39;équipe d&#39;Adobe chargée de la délivrabilité à se faire une idée de votre réputation d&#39;envoi et de votre volume d&#39;emails. Faute d&#39;une compréhension concrète de votre modèle commercial, des objectifs de marketing par email et des mesures de réputation, nous ne serons pas en mesure de personnaliser la stratégie, ce qui peut créer un risque de problème de délivrabilité.
 
 Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Protocol). Dans le cadre de l&#39;envoi d&#39;emails, une adresse IP est l&#39;itinéraire utilisé pour envoyer vos emails à vos clients. Les domaines et adresses IP sont utilisés pour identifier les expéditeurs sur un réseau pour les fournisseurs d&#39;accès à Internet destinataires. Adobe attribue le nombre approprié d&#39;adresses IP dédiées pour l&#39;envoi d&#39;emails, en fonction du volume d&#39;envoi, des programmes d&#39;email, des pratiques de segmentation des données et de votre contrat.
 
@@ -36,7 +34,7 @@ Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Proto
 * [Stratégie IP](../../help/transition-process/infrastructure.md#ip-strategy)
 * [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
-## Réchauffement d&#39;une adresse IP : pour quoi faire ? {#why-ip-warming}
+## Réchauffement d&#39;une adresse IP : pour quoi faire ?  {#why-ip-warming}
 
 Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur. Les FAI/MBP surveillent de près l&#39;IP et le domaine d&#39;envoi pour déterminer si les emails envoyés depuis cette IP et ce domaine sont des spams ou non.  Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
 
@@ -119,4 +117,4 @@ Gardez à l&#39;esprit que le réchauffement des adresses IP est un marathon, pa
 
 Plus vos pratiques d&#39;envoi sont efficaces et plus vos scores de réputation sont élevés auprès des FAI, plus vos emails auront une forte probabilité de diffusion. Le réchauffement et la montée en puissance des adresses IP, ainsi que l&#39;application des bonnes pratiques pour la conception de votre envoi, vous aideront à optimiser votre diffusion en boîte de réception.
 
-Notre équipe de délivrabilité mondiale est votre partenaire dans ce processus et vous aidera, au cours de cette phase de réchauffement des adresses IP, à vous positionner pour réussir.
+Notre équipe mondiale chargé de la délivrabilité est votre partenaire dans ce processus et vous aidera, au cours de cette phase de réchauffement des adresses IP, à vous positionner pour réussir.
