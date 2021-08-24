@@ -1,17 +1,15 @@
 ---
 title: Présentation des bonnes pratiques en matière de délivrabilité
 description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
-feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '431'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '430'
 ht-degree: 100%
 
 ---
@@ -33,7 +31,7 @@ Ce guide des bonnes pratiques en matière de délivrabilité aborde les sujets s
 1. [Stratégie et définition de la délivrabilité](/help/deliverability-strategy-and-definition.md)
 2. [Mesures de délivrabilité](/help/metrics/metrics-overview.md)
 3. [Engagement](/help/engagement.md)
-4. [Processus de transition - Changement de plateforme de messagerie](/help/transition-process/switching-email-platforms.md)
+4. [Processus de transition : changement de plateformes de messagerie](/help/transition-process/switching-email-platforms.md)
 5. [Premières impressions - Collecte de listes et emails de bienvenue](/help/first-impressions/address-collection-and-list-growth.md)
 6. [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
 7. [Permanence de l&#39;expéditeur](/help/sender-permanence.md)
