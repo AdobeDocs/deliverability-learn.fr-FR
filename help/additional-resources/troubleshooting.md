@@ -1,21 +1,19 @@
 ---
 title: Résolution des problèmes de délivrabilité
-description: Apprenez à identifier et à résoudre les problèmes de délivrabilité.
-feature: Additional resources
+description: Découvrez comment identifier et résoudre les problèmes de délivrabilité.
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 4cc85124-e7e4-4cd5-99a9-23d2d8cf08fe
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '670'
 ht-degree: 91%
 
 ---
-
 
 # Résolution des problèmes de délivrabilité {#troubleshooting}
 
@@ -65,14 +63,14 @@ Les plaintes proviennent aussi des abonnés qui ne veulent tout simplement plus 
 
 ### Validité des données
 
-**Les erreurs hard** se produisent lorsque vous effectuez un envoi à une **adresse en échec** d’un FAI. Une adresse peut être en échec pour de nombreuses raisons, notamment :
+**Les erreurs hard se produisent lorsque vous effectuez un envoi vers une adresse en échec d&#39;un FAI.****** Une adresse peut être en échec pour de nombreuses raisons, notamment :
 * Adresse mal orthographiée. Il est possible de résoudre ce problème grâce à un service de validation des données en temps réel ou à l’obligation de confirmer l’accord préalable avant d’envoyer des emails marketing à cette adresse.
 * Liste ou source de données incorrecte. Si les adresses proviennent d’une nouvelle source, vérifiez comment elles ont été collectées et assurez-vous que leur utilisation a été autorisée.
 * Envoi à une adresse active à un moment donné, mais fermée ou supprimée suite à une période d’inactivité.
 
 ### Engagement
 
-Outre les plaintes et la validité des données, les FAI privilégient plus que jamais l’**engagement positif** pour prendre des décisions de diffusion. Ils cherchent à savoir si vos abonnés ouvrent vos emails ou les effacent sans les lire. Etant donné qu’ils ne partagent pas ces données avec les expéditeurs, nous devons utiliser les informations disponibles et traduire les ouvertures/clics/transactions en tant qu’engagement.
+Outre les plaintes et la validité des données, les FAI privilégient plus que jamais l’**engagement positif** pour prendre des décisions de diffusion. Ils cherchent à savoir si vos abonnés ouvrent vos emails ou les effacent sans les lire. Comme ils ne partagent pas ces données avec les expéditeurs, nous devons utiliser les informations disponibles et traduire les ouvertures/clics/transactions en engagements.
 
 Dans le cadre de la gestion permanente de la réputation, il est important de comprendre le niveau d’engagement des abonnés de votre liste et d’établir une **hiérarchie des risques liés à la récence** pour les abonnés de chaque fichier. La récence est définie comme la date d’ouverture/de clic/de transaction ou d’abonnement la plus récente. Cette période peut différer selon la verticale. Pour ce faire :
 
