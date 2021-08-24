@@ -1,49 +1,47 @@
 ---
-title: Campaign Classic - Recommandations techniques
+title: 'Campaign Classic : recommandations techniques'
 description: Découvrez les techniques, les configurations et les outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité avec Adobe Campaign Classic.
-feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '1579'
-ht-degree: 60%
+source-wordcount: '1606'
+ht-degree: 63%
 
 ---
 
+# Campaign Classic : recommandations techniques {#technical-recommendations}
 
-# Campaign Classic - Recommandations techniques {#technical-recommendations}
-
-Vous trouverez ci-dessous la liste de plusieurs techniques, configurations et outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité lors de l’utilisation de Adobe Campaign Classic.
+Vous trouverez ci-dessous plusieurs techniques, configurations et outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité lors de l’utilisation de Adobe Campaign Classic.
 
 ## Configuration {#configuration}
 
 ### Reverse DNS {#reverse-dns}
 
-Adobe Campaign vérifie qu’un reverse DNS est bien renseigné pour une adresse IP et que celui-ci reboucle bien sur l’IP.
+Adobe Campaign vérifie qu’un reverse DNS est bien renseigné pour une adresse IP et que celui-ci reboucle bien sur l’IP.
 
-Un point indispensable de la configuration réseau est d&#39;avoir établi un reverse DNS correct pour chacune des adresses IP d&#39;envoi. Cela signifie que pour une adresse IP donnée, il existe un enregistrement reverse DNS (enregistrement PTR) dont la correspondance DNS (enregistrement A) reboucle sur l&#39;adresse IP initiale.
+Un point indispensable de la configuration réseau est d&#39;avoir établi un reverse DNS correct pour chacune des adresses IP d&#39;envoi. Cela signifie que pour une adresse IP donnée, il existe un enregistrement reverse DNS (enregistrement PTR) dont la correspondance DNS (enregistrement A) reboucle sur l&#39;adresse IP initiale.
 
 Le choix du domaine pour un reverse DNS a une incidence lorsque vous traitez avec certains FAI. AOL, en particulier, n’accepte que les feedback loops dont l’adresse appartient au même domaine que le reverse DNS (voir la section [Feedback loop](#feedback-loop)).
 
 >[!NOTE]
 >
->Vous pouvez utiliser [cet outil externe](https://mxtoolbox.com/SuperTool.aspx) pour vérifier la configuration d&#39;un domaine.
+>Vous pouvez utiliser [cet outil externe](https://mxtoolbox.com/SuperTool.aspx) pour vérifier la configuration d’un domaine.
 
 ### Règles MX {#mx-rules}
 
 Les règles MX (Mail eXchanger) correspondent aux règles de gestion de communication entre un serveur expéditeur et un serveur destinataire.
 
-Plus précisément, ils sont utilisés pour contrôler la vitesse à laquelle l&#39;agent de transfert de messages Adobe Campaign MTA (Message Transfer Agent) envoie des courriers électroniques à chaque domaine de courriel ou FAI individuel (par exemple, hotmail.com, comcast.net). Ces règles sont généralement basées sur les limites publiées par les FAI (par exemple, n’incluez pas plus de 20 messages par connexion SMTP).
+Plus précisément, elles servent à contrôler la vitesse à laquelle le MTA (Message Transfer Agent) Adobe Campaign envoie les emails à chaque domaine d’email ou FAI (par exemple, hotmail.com, comcast.net). Ces règles sont généralement basées sur les limites publiées par les FAI (par exemple, ne pas inclure plus de 20 messages par connexion SMTP).
 
 >[!NOTE]
 >
->Pour en savoir plus sur la gestion MX à Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
 
 ### TLS {#tls}
 
@@ -52,7 +50,7 @@ Plus précisément, ils sont utilisés pour contrôler la vitesse à laquelle l&
 
 ### Domaine de l’expéditeur {#sender-domain}
 
-Pour définir le domaine utilisé pour la commande HELO, modifiez le fichier de configuration de l’instance (conf/config-instance.xml) et définissez un attribut &quot;localDomain&quot; comme suit :
+Pour définir le domaine utilisé pour la commande HELO, éditez le fichier de configuration de l&#39;instance (conf/config-instance.xml) et définissez un attribut &quot;localDomain&quot; comme suit :
 
 ```
 <serverConf>
@@ -62,7 +60,7 @@ Pour définir le domaine utilisé pour la commande HELO, modifiez le fichier de 
 </serverConf>
 ```
 
-Le domaine MAIL FROM est le domaine utilisé dans les messages techniques de rebond. Cette adresse est définie dans l&#39;assistant de déploiement ou via l&#39;option NmsEmail_DefaultErrorAddr.
+Le domaine MAIL FROM est le domaine utilisé dans les messages techniques rebonds. Cette adresse est définie dans l&#39;assistant de déploiement ou via l&#39;option NmsEmail_DefaultErrorAddr .
 
 ### Enregistrement SPF {#dns-configuration}
 
@@ -72,22 +70,22 @@ Un enregistrement SPF peut actuellement être défini sur un serveur DNS comme u
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des courriers électroniques pour le domaine. **~** tous signifie que toute autre adresse doit être interprétée comme un SoftFail.
+définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des emails pour le domaine. **~** tous signifie que toute autre adresse doit être interprétée comme un SoftFail.
 
 Recommendations pour définir un enregistrement SPF :
 
-* Ajoutez **~all** (SoftFail) ou **-all** (Fail) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs seront en mesure de forger ce domaine (avec une évaluation neutre).
-* N&#39;ajoutez pas **ptr** (openspf.org recommande de ne pas ajouter cela comme coûteux et peu fiable).
+* Ajoutez **~all** (SoftFail) ou **-all** (Echec) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs seront en mesure de forger ce domaine (avec une évaluation Neutre).
+* N’ajoutez pas **ptr** (openspf.org recommande de ne pas le définir comme coûteux et peu fiable).
 
 >[!NOTE]
 >
->Pour en savoir plus sur les FPS, consultez [cette section](/help/additional-resources/authentication.md#spf).
+>Pour en savoir plus sur SPF, consultez [cette section](/help/additional-resources/authentication.md#spf).
 
 ## Authentification
 
 >[!NOTE]
 >
->Pour en savoir plus sur les différentes formes d&#39;authentification par courriel, consultez [cette section](/help/additional-resources/authentication.md).
+>Pour en savoir plus sur les différentes formes d&#39;authentification des emails, consultez [cette section](/help/additional-resources/authentication.md).
 
 ### DKIM {#dkim-acc}
 
@@ -97,7 +95,7 @@ Recommendations pour définir un enregistrement SPF :
 
 L’utilisation de [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert les conditions préalables suivantes :
 
-**Déclaration** d&#39;option Adobe Campaign : en Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plate-forme ni dans le courrier électronique. La plate-forme sélectionnera également l&#39;une des clés privées, ce qui signifie que l&#39;authentification a de grandes chances d&#39;échouer.
+**Déclaration** des options Adobe Campaign : dans Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plateforme, ni dans l&#39;email. La plateforme sélectionnera également l’une des clés privées, ce qui signifie que l’authentification a de grandes chances d’échouer.
 
 * Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/clé publique) que pour DomainKeys (qui a remplacé DKIM).
 * Il est inutile d&#39;activer DomainKeys et DKIM pour un même domaine, DKIM étant une version améliorée de DomainKeys.
@@ -105,7 +103,7 @@ L’utilisation de [DKIM](/help/additional-resources/authentication.md#dkim) ave
 
 ## Feedback loop {#feedback-loop-acc}
 
-Une feedback loop fonctionne en déclarant au niveau du FAI une adresse email donnée pour une plage d’adresses IP utilisées pour l’envoi de messages. Le FAI enverra à cette boîte de réception, de la même manière que pour les messages bounce, ces messages qui sont signalés par les destinataires comme spam. La plateforme doit être configurée pour bloquer les futures diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s’ils n’ont pas utilisé le lien d’opt-out approprié. C&#39;est à partir de ces plaintes qu&#39;un FAI ajoutera une adresse IP à sa liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
+Une feedback loop fonctionne en déclarant au niveau du FAI une adresse email donnée pour une plage d’adresses IP utilisées pour l’envoi de messages. Le FAI enverra à cette boîte de réception, de la même manière que pour les messages bounce, ces messages qui sont signalés par les destinataires comme spam. La plateforme doit être configurée pour bloquer les futures diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s’ils n’ont pas utilisé le lien d’opt-out approprié. C’est sur la base de ces plaintes qu’un FAI ajoutera une adresse IP à sa liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
 
 Un standard est en cours d’établissement pour définir le format des messages de feedback loop : l’[ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -116,8 +114,8 @@ La mise en place d&#39;une feedback loop pour une instance suppose d&#39;avoir :
 
 La mise en œuvre d’une feedback loop simple dans Adobe Campaign fait appel à la fonctionnalité de messages rebonds. La boîte email de feedback loop est utilisée comme boîte de rebond et une règle est définie pour détecter ces messages. Les adresses email des destinataires qui ont signalé le message comme indésirable seront ajoutées à la liste des adresses en quarantaine.
 
-* Créez ou modifiez une règle de courrier de rebond, **feedback_loop**, dans **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**, en indiquant la raison **Refusé** et en tapant **Hard**.
-* Si une boîte aux lettres a été définie spécialement pour la boucle de rétroaction, définissez les paramètres pour y accéder en créant un nouveau compte de messagerie de rebonds externe dans **[!UICONTROL Administration > Platform > External accounts]**.
+* Créez ou adaptez une règle de mails rebonds **Feedback_loop** dans **[!UICONTROL Administration>Gestion de campagne>Gestion des NP@I>Jeux de règles mail]** avec la raison **Refusé** et le type **Hard**.
+* Si une boîte a été définie spécialement pour la feedback loop, définissez les paramètres pour relever son contenu en créant un nouveau compte externe de type Mails rebonds dans **[!UICONTROL Administration>Plate-forme>Comptes externes]**.
 
 Le mécanisme est immédiatement opérationnel pour traiter les notifications de plaintes. Pour vérifier le bon fonctionnement de la règle, vous pouvez temporairement désactiver les comptes afin qu&#39;ils ne relèvent pas ces messages, puis vérifier le contenu de la boîte de feedback loop manuellement. Sur le serveur, exécutez les commandes suivantes :
 
@@ -142,7 +140,7 @@ Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux serv
 
 ## List-Unsubscribe {#list-unsubscribe}
 
-### A propos de List-Unsubscribe {#about-list-unsubscribe}
+### À propos de List-Unsubscribe {#about-list-unsubscribe}
 
 L&#39;ajout d&#39;un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour une gestion optimale de la délivrabilité.
 
@@ -168,9 +166,9 @@ List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessa
 
 Gmail, Outlook.com et Microsoft Outlook prennent en charge cette méthode et un bouton de désabonnement est disponible directement dans leur interface. Cette technique réduit le taux de plaintes.
 
-Vous pouvez mettre en oeuvre **Liste-Unsubscription** en procédant comme suit :
+Vous pouvez implémenter **List-Unsubscribe** en :
 
-* [ajout direct de la ligne de commande dans le modèle de diffusion](#adding-a-command-line-in-a-delivery-template)
+* Ajout direct [de la ligne de commande dans le modèle de diffusion](#adding-a-command-line-in-a-delivery-template)
 * [Créer une règle de typologie](#creating-a-typology-rule)
 
 ### Ajouter la ligne de commande dans le modèle de diffusion {#adding-a-command-line-in-a-delivery-template}
@@ -209,10 +207,10 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 SMTP (Simple mail transfer protocol) est une norme Internet pour la transmission des emails.
 
-Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**. Ces messages d’erreur sont par défaut interprétés comme des erreurs paramétrées inatteignables.
+Les erreurs SMTP non vérifiées par une règle sont répertoriées dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]**. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
 
-Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** si vous souhaitez correctement évaluer les commentaires des serveurs SMTP. Sans cela, la plate-forme effectuera des Reprises inutiles (cas d&#39;utilisateurs inconnus) ou placera à tort certains destinataires en quarantaine après un certain nombre de tests.
+Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez correctement qualifier les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
 
 ### Adresses IP dédiées {#dedicated-ips}
 
-Adobe fournit une stratégie IP dédiée pour chaque client avec une adresse IP en phase de montée (ramp-up) afin d&#39;établir une réputation et optimiser les performances de diffusion.
+Adobe fournit une stratégie IP dédiée pour chaque client avec une adresse IP en phase de montée (ramp-up) afin d&#39;établir une réputation et optimiser les performances de diffusion.
