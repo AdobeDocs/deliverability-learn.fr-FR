@@ -1,7 +1,6 @@
 ---
 title: En savoir plus sur les pièges à spam
 description: Découvrez comment comprendre, identifier et éviter les pièges à spam au cours de la gestion de la délivrabilité.
-feature: Ressources supplémentaires
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '442'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
