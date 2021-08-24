@@ -1,25 +1,23 @@
 ---
-title: Meilleures pratiques de réengagement
-description: Apprenez à améliorer la délivrabilité grâce à des stratégies de réengagement.
-feature: Additional resources
+title: Bonnes pratiques en matière de réengagement
+description: Découvrez comment améliorer la délivrabilité grâce à des stratégies de réengagement.
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '926'
 ht-degree: 36%
 
 ---
 
+# Bonnes pratiques en matière de réengagement {#re-engagement}
 
-# Meilleures pratiques de réengagement {#re-engagement}
-
-Lors de la mise en oeuvre de la délivrabilité, certaines des meilleures pratiques consistent à essayer de maintenir une base d&#39;abonnés saine et d&#39;améliorer la délivrabilité par le biais de stratégies de réengagement (ou de reprise).
+Lors de la mise en oeuvre de la délivrabilité, certaines des bonnes pratiques consistent à essayer de maintenir une base d’abonnés saine et d’améliorer la délivrabilité par le biais de stratégies de réengagement (ou de retour).
 
 * Le maintien d’une base d&#39;abonnés solide est l’un des aspects essentiels pour assurer une diffusion satisfaisante et cohérente. Nombre de problèmes de délivrabilité résultent de pratiques et d’opérations de maintenance des données inefficaces.
 * Parmi les difficultés les plus courantes, les marketeurs sont confrontés aujourd’hui à l’inactivité des abonnés (aussi appelée engagement faible ou non-engagement). Ce problème peut avoir une incidence négative sur la diffusion des emails et le ROI (retour sur investissement).
@@ -28,33 +26,33 @@ Lors de la mise en oeuvre de la délivrabilité, certaines des meilleures pratiq
 >
 >Pour plus d’informations sur les stratégies de campagne de réengagement et les services de délivrabilité d’Adobe, contactez votre conseiller en délivrabilité ou votre représentant Adobe.
 
-## Comment les FAI considèrent-ils une activité de non-engagement ?{#how-do-isps-view-non-engagement-activity-}
+## Comment les FAI considèrent-ils une activité de non-engagement ? {#how-do-isps-view-non-engagement-activity-}
 
-Depuis des années, les FAI utilisent les mesures de retour d&#39;intérêt de leurs utilisateurs pour décider où placer les messages ou s&#39;ils doivent les diffuser. L&#39;engagement [des utilisateurs](/help/engagement.md) consiste à la fois en commentaires positifs et négatifs et les FAI surveillent les deux de manière constante. N&#39;avoir aucun engagement est peut-être l&#39;un des principaux contributeurs de l&#39;engagement négatif. Du point de vue de la délivrabilité, l’envoi régulier de campagnes aux utilisateurs qui ne montrent aucun engagement peut également réduire la réputation globale de votre adresse IP et de vos domaines.
+Pendant des années, les FAI ont utilisé les mesures de retour d’engagement de leurs utilisateurs pour décider où placer les messages, ou s’ils doivent les diffuser ou non. L’utilisateur [engagement](/help/engagement.md) est constitué de commentaires positifs et négatifs et les FAI surveillent les deux de manière constante. N&#39;avoir aucun engagement est peut-être l&#39;un des principaux facteurs de l&#39;engagement négatif. Du point de vue de la délivrabilité, l’envoi régulier de campagnes aux utilisateurs qui ne montrent aucun engagement peut également réduire la réputation globale de vos adresses IP et domaines.
 
-Les FAI tels que Gmail, Microsoft et OATH vue ne s’engagent pas en tant qu’e-mail indésirable et début redirigeant les messages vers le dossier de messages indésirables. En outre, ces abonnés peuvent ne plus être propriétaires du compte de messagerie, et cela peut être utilisé comme piège antispam &quot;recyclé&quot;. Cela signifie que l&#39;adresse n&#39;a pas été valide pendant un certain temps et que tous les messages sont rejetés. Si votre système de gestion des abonnés ne supprime pas les adresses &quot;reportées&quot;, il est très probable que l&#39;envoi par courrier postal à des pièges à messages indésirables peut entraîner des problèmes de diffusion importants.
+Les FAI tels que Gmail, Microsoft et OATH considèrent le non-engagement comme un email indésirable et commencent à rediriger les messages vers le dossier spam. En outre, ces abonnés peuvent ne plus être propriétaires du compte de messagerie, qui peut être utilisé comme piège à spam &quot;recyclé&quot;. Cela signifie que l&#39;adresse n&#39;a pas été valide pendant un certain temps et que tous les messages sont rejetés. Si votre système de gestion des abonnés ne supprime pas les adresses &quot;hard bounce&quot;, il est très probable qu’il envoie vers des pièges à spam qui peuvent entraîner des problèmes de diffusion importants.
 
-## Comment aborder l’inactivité ?{#how-should-you-approach-inactivity-}
+## Comment aborder l’inactivité ? {#how-should-you-approach-inactivity-}
 
-Les clients qui utilisent la plate-forme d’Adobe peuvent vue l’inactivité au sein de leur instance en examinant les données d’ouverture et de clic en fonction du segment. Comme le non-engagement peut entraver la diffusion, la première idée peut être de supprimer les abonnés de la base de données. Cependant, cette option peut parfois s&#39;avérer erronée. Par conséquent, une stratégie de réengagement (également connue sous le nom de stratégie de retour sur investissement) est la meilleure recommandation pour retenir les abonnés intéressés à recevoir du courrier et pour éliminer progressivement ceux qui ne font plus activité.
+Les clients qui utilisent la plateforme Adobe peuvent afficher l’inactivité au sein de leur instance en examinant les données d’ouverture et de clic en fonction du segment. Comme le non-engagement peut entraver la diffusion, la première idée peut être de supprimer des abonnés de la base de données. Cependant, cette option peut s’avérer parfois erronée. Par conséquent, une stratégie de réengagement (également appelée &quot;contre-retour&quot;) est la meilleure recommandation pour conserver les abonnés intéressés par la réception du courrier et éliminer progressivement ceux qui ne montrent plus d’activité.
 
-## Les campagnes de réengagement fonctionnent-elles vraiment ?{#do-re-engagement-campaigns-really-work-}
+## Les campagnes de réengagement fonctionnent-elles vraiment ? {#do-re-engagement-campaigns-really-work-}
 
 Selon une étude Return Path, les campagnes de réengagement ont un taux d&#39;ouverture de 12 % par rapport à une moyenne de 14 % pour les campagnes normales. Bien que seulement 24 % des abonnés aient lu la campagne de réengagement, environ 45 % d&#39;entre eux ont lu les messages suivants.
 
 ![](../../help/assets/deliverability_implementation_1.png)
 
-## Comment créer une campagne de réengagement ?{#how-do-you-create-a-re-engagement-campaign-}
+## Comment créer une campagne de réengagement ? {#how-do-you-create-a-re-engagement-campaign-}
 
 ### Phase 1 {#phase-1}
 
-* La première étape consiste à identifier les abonnés qui ont très peu ou pas d’activité d’ouverture ou de clic et, par conséquent, à segmenter ce groupe en fonction d’une période définie. La règle générale consiste à consulter les abonnés qui n’ont pas ouvert ou cliqué sur un courriel au cours des 90 derniers jours. Cependant, cette situation varie en fonction de la nature de l’entreprise (par exemple, l’envoi saisonnier).
-* Un autre point dont vous devez tenir compte lors de la définition des délais est que les FAI et les sociétés de liste bloquée considèrent que l&#39;engagement se situe entre 1,5 et 1,8 an. En outre, les activités comportementales telles que les achats et l’activité du site Web, ou d’autres points de contact, tels que les préférences pendant la phase d’inscription ou le premier point de contact.
+* La première étape consiste à identifier les abonnés qui ont très peu ou pas d’activité d’ouverture ou de clic et, en conséquence, à segmenter ce groupe selon une période définie. La règle de base consiste à passer en revue les abonnés qui n’ont ni ouvert ni cliqué un email au cours des 90 derniers jours. Cependant, cela varie en fonction de la nature de l’entreprise (par exemple, l’envoi saisonnier).
+* Un autre point dont vous devez tenir compte lors de la définition des délais est que les FAI et les sociétés de liste bloquée considèrent que l&#39;engagement se situe entre 1,5 et 1,8 an. En outre, les activités comportementales telles que les achats et l’activité du site web, ou d’autres points de contact, tels que les préférences pendant la phase d’inscription ou le premier point de contact.
 
 ### Phase 2 {#phase-2}
 
-* Une fois qu’un segment est défini, l’étape suivante consiste à créer une campagne de réengagement qui s’adresse à l’abonné en fonction des mesures qui ont été identifiées. La création d’une ligne d’objet aide à accroître l’intérêt de l’abonné. Selon une étude sur le Chemin de retour, les sujets et le contenu qui disent &quot;Vous nous manquez&quot; génèrent des taux de réponse plus élevés que &quot;Nous voulons que vous soyez revenu&quot;.
-* Un incitatif peut également être proposé pour réengager le courrier électronique. Lorsque vous considérez des offres avec des remises, il est préférable d&#39;utiliser des montants en dollars par rapport aux pourcentages. Le chemin de retour suggère également de le faire car il entraîne des taux de réponse plus élevés. Enfin, l’exécution de tests de fractionnement A/B pour examiner les taux de réponse et de réussite est également une option utile.
+* Une fois qu’un segment est défini, l’étape suivante consiste à créer une campagne de réengagement qui s’adresse à l’abonné en fonction des mesures qui ont été identifiées. La création d’un objet permet d’augmenter l’intérêt de l’abonné. Selon une étude Return Path, les objets et le contenu qui indiquent &quot;Vous manquez&quot; génèrent des taux de réponse plus élevés que &quot;Nous voulons vous ramener&quot;.
+* Une incitation peut également être proposée pour réengager l&#39;email. Lorsque vous envisagez des offres avec des remises, il est préférable d’utiliser des montants en euros plutôt que des pourcentages. Return Path suggère également de le faire, car cela entraîne des taux de réponse plus élevés. Enfin, l’exécution de tests de partage A/B pour examiner les taux de réponse et de réussite est également une option utile.
 
 ### Phase 3 {#phase-3}
 
@@ -66,7 +64,7 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 ### Phase 4 {#phase-4}
 
-* La prochaine étape consiste à identifier les abonnés qui ne montrent pas d&#39;activité en permanence et à réduire progressivement l&#39;envoi de courriels vers eux sur une période donnée. S&#39;il n&#39;y a pas d&#39;activité au cours de l&#39;année écoulée, il est bon de mettre l&#39;abonnement de courriel des abonnés en attente. Bien qu’ils n’aient montré aucun intérêt pour le contenu du courrier électronique, il existe toujours une dernière chance de les faire réactiver en envoyant une campagne de confirmation unique à leur abonnement.
+* La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur faire réactiver leur abonnement en envoyant une campagne de reconfirmation ponctuelle.
 * Les campagnes de reconfirmation sont un bon moyen de demander aux abonnés inactifs depuis une longue période s&#39;ils souhaitent être conservés dans la liste d&#39;inscription. Lors de la création de la campagne, il est préférable d&#39;ajouter un lien « cliquez ici » afin que les abonnés puissent confirmer l&#39;action et vérifier leur adresse. De cette façon, l&#39;action peut être enregistrée dans la base de données. Voici un exemple d&#39;email de reconfirmation :
 
    ![](../../help/assets/deliverability_implementation_3.png)
@@ -77,11 +75,11 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 ## Ressources spécifiques au produit
 
-**Adobe Campaign**
+**Adobe Campaign**
 
-* [Logs de tracking en Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Logs de tracking en Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Logs de tracking dans Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
+* [Logs de tracking dans Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
 
-**Gestion des Parcours clients Adobe**
+**Adobe de la gestion des Parcours client**
 
-* [Tracking des messages](https://experienceleague.adobe.com/docs/customer-journey-management/using/reporting/message-tracking.html)
+* [Suivi des messages](https://experienceleague.adobe.com/docs/customer-journey-management/using/reporting/message-tracking.html)
