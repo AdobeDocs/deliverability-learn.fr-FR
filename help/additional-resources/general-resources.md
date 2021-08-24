@@ -1,33 +1,31 @@
 ---
 title: Ressources supplémentaires
-description: Cette section liste un certain nombre de ressources supplémentaires sur la délivrabilité.
-feature: Additional resources
+description: Cette section répertorie un certain nombre de ressources supplémentaires sur la délivrabilité.
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 21%
+source-wordcount: '99'
+ht-degree: 39%
 
 ---
 
-
-# Ressources supplémentaires - Présentation
+# Ressources supplémentaires - Aperçu
 
 ## Ressources génériques
 
-Cette section liste des ressources supplémentaires sur la délivrabilité, telles que des recommandations spécifiques et les meilleures pratiques, d&#39;autres outils ou des procédures de dépannage.
+Cette section répertorie des ressources supplémentaires sur la délivrabilité, telles que des recommandations et bonnes pratiques spécifiques, d’autres outils ou des procédures de dépannage.
 
-* [Tout sur les pièges à pourriels](../../help/additional-resources/all-about-spam-traps.md)
-* [Augmentez la réputation de vos emails grâce au rodage des adresses IP](../../help/additional-resources/increase-reputation-with-ip-warming.md)
+* [En savoir plus sur les pièges à spam](../../help/additional-resources/all-about-spam-traps.md)
+* [Améliorer la réputation de vos emails grâce au réchauffement des adresses IP](../../help/additional-resources/increase-reputation-with-ip-warming.md)
 * [Authentification](../../help/additional-resources/authentication.md)
 * [Doublons](../../help/additional-resources/duplicates.md)
-* [Meilleures pratiques de réengagement](../../help/additional-resources/re-engagement.md)
+* [Bonnes pratiques en matière de réengagement](../../help/additional-resources/re-engagement.md)
 * [Listes Blackhole en temps réel](../../help/additional-resources/blocklist-databases.md)
 * [Dépannage](../../help/additional-resources/troubleshooting.md)
 
@@ -37,11 +35,11 @@ Cette section liste des ressources supplémentaires sur la délivrabilité, tell
 
 ## Ressources spécifiques au produit
 
-De plus, cette section liste un certain nombre de ressources spécifiques à un produit afin de vous aider à mettre en oeuvre la délivrabilité et à atteindre le succès avec vos solutions d&#39;Adobe.
+En outre, cette section répertorie un certain nombre de ressources spécifiques au produit pour vous aider à mettre en oeuvre la délivrabilité et à atteindre le succès avec vos solutions d’Adobe.
 
 **Campaign**
 
 * [Configuration du nom de domaine](../../help/additional-resources/ac-domain-name-setup.md)
 * [Processus de demande de certificat CSR et SSL](../../help/additional-resources/ac-ssl-certificate-request.md)
-* [Démarrer une nouvelle plateforme](../../help/additional-resources/ac-starting-new-platform.md)
-* [Campaign Classic - Recommandations techniques](../../help/additional-resources/acc-technical-recommendations.md)
+* [Démarrage d’une nouvelle plateforme](../../help/additional-resources/ac-starting-new-platform.md)
+* [Campaign Classic : recommandations techniques](../../help/additional-resources/acc-technical-recommendations.md)
