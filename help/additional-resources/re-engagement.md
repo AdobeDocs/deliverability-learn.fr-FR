@@ -2,16 +2,14 @@
 title: Bonnes pratiques en matière de réengagement
 description: Découvrez comment améliorer la délivrabilité grâce à des stratégies de réengagement.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 36%
+source-wordcount: '924'
+ht-degree: 26%
 
 ---
 
@@ -30,7 +28,7 @@ Lors de la mise en oeuvre de la délivrabilité, certaines des bonnes pratiques 
 
 Pendant des années, les FAI ont utilisé les mesures de retour d’engagement de leurs utilisateurs pour décider où placer les messages, ou s’ils doivent les diffuser ou non. L’utilisateur [engagement](/help/engagement.md) est constitué de commentaires positifs et négatifs et les FAI surveillent les deux de manière constante. N&#39;avoir aucun engagement est peut-être l&#39;un des principaux facteurs de l&#39;engagement négatif. Du point de vue de la délivrabilité, l’envoi régulier de campagnes aux utilisateurs qui ne montrent aucun engagement peut également réduire la réputation globale de vos adresses IP et domaines.
 
-Les FAI tels que Gmail, Microsoft et OATH considèrent le non-engagement comme un email indésirable et commencent à rediriger les messages vers le dossier spam. En outre, ces abonnés peuvent ne plus être propriétaires du compte de messagerie, qui peut être utilisé comme piège à spam &quot;recyclé&quot;. Cela signifie que l&#39;adresse n&#39;a pas été valide pendant un certain temps et que tous les messages sont rejetés. Si votre système de gestion des abonnés ne supprime pas les adresses &quot;hard bounce&quot;, il est très probable qu’il envoie vers des pièges à spam qui peuvent entraîner des problèmes de diffusion importants.
+Les FAI tels que Gmail, Microsoft® et OATH considèrent le non-engagement comme un email indésirable et commencent à rediriger les messages vers le dossier spam. En outre, ces abonnés peuvent ne plus être propriétaires du compte de messagerie, qui peut être utilisé comme piège à spam &quot;recyclé&quot;. Cela signifie que l&#39;adresse n&#39;a pas été valide pendant un certain temps et que tous les messages sont rejetés. Si votre système de gestion des abonnés ne supprime pas les adresses &quot;hard bounce&quot;, il est probable qu’il envoie vers des pièges à spam qui peuvent entraîner des problèmes de diffusion importants.
 
 ## Comment aborder l’inactivité ? {#how-should-you-approach-inactivity-}
 
@@ -46,7 +44,7 @@ Selon une étude Return Path, les campagnes de réengagement ont un taux d&#39;o
 
 ### Phase 1 {#phase-1}
 
-* La première étape consiste à identifier les abonnés qui ont très peu ou pas d’activité d’ouverture ou de clic et, en conséquence, à segmenter ce groupe selon une période définie. La règle de base consiste à passer en revue les abonnés qui n’ont ni ouvert ni cliqué un email au cours des 90 derniers jours. Cependant, cela varie en fonction de la nature de l’entreprise (par exemple, l’envoi saisonnier).
+* La première étape consiste à identifier les abonnés qui ont peu ou pas d’activité d’ouverture ou de clic et, en conséquence, à segmenter ce groupe selon une période définie. La règle de base consiste à passer en revue les abonnés qui n’ont ni ouvert ni cliqué un email au cours des 90 derniers jours. Cependant, cela varie en fonction de la nature de l’entreprise (par exemple, l’envoi saisonnier).
 * Un autre point dont vous devez tenir compte lors de la définition des délais est que les FAI et les sociétés de liste bloquée considèrent que l&#39;engagement se situe entre 1,5 et 1,8 an. En outre, les activités comportementales telles que les achats et l’activité du site web, ou d’autres points de contact, tels que les préférences pendant la phase d’inscription ou le premier point de contact.
 
 ### Phase 2 {#phase-2}
@@ -64,12 +62,12 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 ### Phase 4 {#phase-4}
 
-* La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur faire réactiver leur abonnement en envoyant une campagne de reconfirmation ponctuelle.
-* Les campagnes de reconfirmation sont un bon moyen de demander aux abonnés inactifs depuis une longue période s&#39;ils souhaitent être conservés dans la liste d&#39;inscription. Lors de la création de la campagne, il est préférable d&#39;ajouter un lien « cliquez ici » afin que les abonnés puissent confirmer l&#39;action et vérifier leur adresse. De cette façon, l&#39;action peut être enregistrée dans la base de données. Voici un exemple d&#39;email de reconfirmation :
+* La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur faire réactiver leur abonnement en envoyant une campagne de reconfirmation unique.
+* Les campagnes de confirmation sont un bon moyen de demander aux abonnés inactifs depuis longtemps s&#39;ils souhaitent rester sur la liste d&#39;abonnements. Lors de la création de l&#39;opération, il est préférable d&#39;ajouter un lien &quot;cliquez ici&quot; afin qu&#39;il puisse confirmer l&#39;action et vérifier son adresse. Ainsi, l’action peut être enregistrée dans la base de données. Voici un exemple d&#39;email de reconfirmation :
 
    ![](../../help/assets/deliverability_implementation_3.png)
 
-   Une fois que l&#39;abonné a exécuté une action, une landing page avec la confirmation de la réinscription peut être proposée. Voici un exemple de landing page :
+   Une fois que l&#39;abonné a effectué une action, une landing page avec la confirmation de sa réinscription peut être proposée. Voici un exemple de landing page :
 
    ![](../../help/assets/deliverability_implementation_4.png)
 
@@ -82,4 +80,4 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 **Adobe de la gestion des Parcours client**
 
-* [Suivi des messages](https://experienceleague.adobe.com/docs/customer-journey-management/using/reporting/message-tracking.html)
+* [Suivi des messages](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=fr)
