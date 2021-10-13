@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 97%
 
 ---
 
@@ -54,10 +54,22 @@ Pour fournir un service géré en mode cloud, Adobe encourage fortement les clie
 | MX | Spécification des serveurs de messagerie pour les messages entrants | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF (TXT) | Cadre de la politique de l&#39;expéditeur | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM (TXT) | Message identifié DomainKeys | <i>client._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY ICI&quot; |
-| DMARC (TXT) | Authentification de message basée sur un domaine | Rapports et conformité | _dmarc.email.example.com</br>&quot;v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com&quot; |
 | Enregistrements hôtes (A) | Pages miroir, hébergement d&#39;images et liens de suivi, tous les domaines d&#39;envoi | m.email.example.com DANS A 123.111.100.99</br>t.email.example.com DANS A 123.111.100.98</br>email.example.com DANS A 123.111.100.97 |
 | DNS inversé (PTR) | Mappe les adresses IP du client avec un nom d&#39;hôte de marque client. | 18.101.100.192.in-addr.arpa pointeur de nom de domaine r18.email.example.com |
-| CNAME | Fournit un alias à un autre nom de domaine | t1.email.example.com est un alias pour | t1.email.example.campaign.adobe.com |
+| CNAME | Fournit un alias à un autre nom de domaine | t1.email.example.com est un alias pour t1.email.example.campaign.adobe.com |
+
+
+L’authentification, le reporting et la conformité basés sur le domaine (DMARC) sont recommandés pour authentifier les expéditeurs de courrier électronique et pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés depuis votre domaine.
+
+Exemple d’enregistrement DMARC TXT :
+
+```
+_dmarc.email.example.com
+
+“v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
+```
+
+Vous pouvez mettre en oeuvre DMARC manuellement ou contacter l’Adobe pour vous aider à configurer DMARC pour votre marque.
 
 ## Configuration requise
 

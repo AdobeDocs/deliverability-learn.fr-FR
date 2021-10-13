@@ -2,21 +2,19 @@
 title: Mise en oeuvre des indicateurs de marque de Gmail pour l’identification des messages (BIMI)
 description: Découvrez comment implémenter BIMI
 topics: Deliverability
-hide: true
-hidefromtoc: true
-source-git-commit: ab1595bac7ef136eb001609b9017950a2d01cbb4
+exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
+source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
 
-
-# Mise en oeuvre des indicateurs de marque de Gmail pour l’identification des messages (BIMI)
+# Mise en oeuvre de [!DNL Brand Indicators for Message Identification] de Gmail (BIMI)
 
 Gmail a récemment annoncé qu&#39;il allait [déployer le soutien général de BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). Vous devrez traiter un certain nombre d’éléments avant de pouvoir en profiter, notamment : Certificats de marque vérifiés, logos marqués, logos correctement formatés, configuration DMARC, et enfin publication d’un enregistrement BIMI sur votre DNS. Nous passerons en revue toutes ces étapes dans cet article.
 
-Les indicateurs de marque pour l’identification des messages (BIMI) sont une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes. Non seulement cet oeil accroche peut-être l&#39;engagement, mais il aide aussi à confirmer l&#39;authenticité de l&#39;expéditeur en réduisant le risque de phishing et d&#39;autres tactiques d&#39;espionnage.
+[!DNL Brand Indicators for Message Identification] (BIMI) est une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes. Non seulement cet oeil accroche peut-être l&#39;engagement, mais il aide aussi à confirmer l&#39;authenticité de l&#39;expéditeur en réduisant le risque de phishing et d&#39;autres tactiques d&#39;espionnage.
 
 ## Certificat de marque vérifié
 
@@ -26,7 +24,7 @@ Les VMC ressembleront d’une certaine manière aux certificats SSL. Vous aurez 
 
 ## Logo Marque
 
-Avant d’obtenir votre VMC, une autre étape clé doit être effectuée : pour obtenir un VMC, le logo que vous souhaitez afficher doit être enregistré auprès de l’un des 8 bureaux mondiaux de marques et de brevets approuvés.
+Avant de pouvoir obtenir votre VMC, une autre étape clé doit être effectuée. Pour obtenir un VMC, le logo que vous souhaitez afficher doit être enregistré auprès de l’un des 8 bureaux mondiaux de marques et de brevets approuvés.
 
 * Office des brevets et des marques des États-Unis (USPTO)
 * Bureau de la propriété intellectuelle du Canada
@@ -41,7 +39,9 @@ Si le logo que vous souhaitez afficher n’est pas enregistré ou n’est pas en
 
 ## Logo Image Format
 
-Cela serait également un bon moment pour vous assurer que votre logo répondra aux exigences de format du logo BIMI. Il doit être au format SVG et se conformer au profil SVG Portable/Secure (SVG-P/S). Vous trouverez des conseils pour ce faire au [Groupe de travail BIMI](https://bimigroup.org/svg-conversion-tools-released).
+Cela serait également un bon moment pour vous assurer que votre logo répondra aux exigences de format du logo BIMI.
+
+Il doit être au format SVG et se conformer au profil SVG Portable/Secure (SVG-P/S) . Vous trouverez des conseils pour ce faire au [Groupe de travail BIMI](https://bimigroup.org/svg-conversion-tools-released).
 
 ## DMARC
 
@@ -64,7 +64,7 @@ Vous pouvez obtenir les détails de cette entrée et même utiliser un vérifica
 
 ## Principales mesures à prendre
 
-Si vous êtes un client Adobe Campaign ou Marketo, Adobe peut vous aider à créer la mise à jour DNS BIMI : contactez l’assistance clientèle d’Adobe pour en demander une. Adobe peut également vous aider à résoudre les problèmes si BIMI ne fonctionne pas correctement.
+Si vous êtes un client [!DNL Adobe Campaign] ou Marketo, Adobe peut vous aider à créer la mise à jour DNS BIMI : contactez l’assistance clientèle d’Adobe pour en demander une. Adobe peut également vous aider à résoudre les problèmes si BIMI ne fonctionne pas correctement.
 
 Pour obtenir de l’aide sur les marques ou les certificats de marque vérifiés, travaillez avec votre équipe juridique et un fournisseur VMC autorisé.
 

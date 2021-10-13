@@ -6,14 +6,21 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 39%
+source-wordcount: '126'
+ht-degree: 31%
 
 ---
 
 # Ressources supplémentaires - Aperçu
+
+## Nouveautés
+
+Consultez les technotes suivantes pour en savoir plus sur les mises à jour récentes concernant la délivrabilité.
+
+* [Mise en oeuvre des indicateurs de marque de Gmail pour l’identification des messages (BIMI)](../technotes/implement-bimi.md)
+* [FAQ sur la protection de la confidentialité dans Apple Mail](../technotes/apple-mail-privacy-faq.md)
 
 ## Ressources génériques
 
@@ -35,7 +42,7 @@ Cette section répertorie des ressources supplémentaires sur la délivrabilité
 
 En outre, cette section répertorie un certain nombre de ressources spécifiques au produit pour vous aider à mettre en oeuvre la délivrabilité et à atteindre le succès avec vos solutions d’Adobe.
 
-**Campaign**
+**[!DNL Adobe Campaign]**
 
 * [Configuration du nom de domaine](../../help/additional-resources/ac-domain-name-setup.md)
 * [Processus de demande de certificat CSR et SSL](../../help/additional-resources/ac-ssl-certificate-request.md)

@@ -23,7 +23,7 @@ Lors du déplacement des fournisseurs de services de messagerie électronique (E
 
 ![Processus de transition](../assets/transition-process.png)
 
-Le temps nécessaire pour réchauffer vos adresses et domaines IP peut varier, mais jusqu’à huit semaines de référence est courant pour les expéditeurs types d’établir une réputation dans la plupart des FAI de niveau 1 (Gmail, Microsoft, Verizon/Yahoo/AOL, etc.).
+Le temps nécessaire au contrôle de vos adresses et domaines IP peut varier, mais jusqu’à huit semaines de référence est courant pour les expéditeurs types d’établir une réputation dans la plupart des FAI de niveau 1 (Gmail, Microsoft, Verizon/Yahoo/AOL, etc.).
 
 Dans les sections suivantes, nous allons étudier certains domaines clés sur lesquels se concentrer pour embarquer correctement :
 
