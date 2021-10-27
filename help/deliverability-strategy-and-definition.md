@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
 ht-degree: 100%
 
@@ -91,8 +91,8 @@ Voici quelques facteurs importants concernant le taux de clic :
 Voici quelques facteurs importants concernant la conversion :
 
 * Tous les éléments ci-dessus
-* Transition de l&#39;email via une URL vers une landing page ou une page de vente
-* Expérience relative à la landing page
+* Transition de l&#39;e-mail via une URL vers une page de destination ou une page de vente
+* Expérience relative à la page de destination
 * Reconnaissance de la marque, perception et fidélité
 
 ### Impact potentiel sur le chiffre d’affaires
