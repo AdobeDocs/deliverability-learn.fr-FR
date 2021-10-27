@@ -28,7 +28,7 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 
 >[!CAUTION]
 >
->Avant d’installer un certificat SSL, vérifiez que vous connaissez les conditions préalables répertoriées sur [cette page](://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate).
+>Avant d’installer un certificat SSL, vérifiez que vous connaissez les conditions préalables répertoriées sur [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate).
 >
 >Adobe ne prend en charge que les certificats 2 048 bits maximum. Les certificats 4 096 bits ne sont pas encore pris en charge.
 
