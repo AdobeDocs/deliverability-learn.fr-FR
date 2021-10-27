@@ -8,7 +8,7 @@ activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -32,10 +32,10 @@ Ce guide des bonnes pratiques en matière de délivrabilité aborde les sujets s
 2. [Mesures de délivrabilité](/help/metrics/metrics-overview.md)
 3. [Engagement](/help/engagement.md)
 4. [Processus de transition : changement de plateformes de messagerie](/help/transition-process/switching-email-platforms.md)
-5. [Premières impressions - Collecte de listes et emails de bienvenue](/help/first-impressions/address-collection-and-list-growth.md)
+5. [Premières impressions : collecte de listes et emails de bienvenue](/help/first-impressions/address-collection-and-list-growth.md)
 6. [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
 7. [Permanence de l&#39;expéditeur](/help/sender-permanence.md)
-8. [Éléments spécifiques au FAI](/help/internet-service-provider-specifics/overview.md)
+8. [Éléments spécifiques aux FAI](/help/internet-service-provider-specifics/overview.md)
 9. [Surveillance continue](/help/ongoing-monitoring.md)
 10. [Mise en pratique](/help/putting-it-in-practice.md)
 
