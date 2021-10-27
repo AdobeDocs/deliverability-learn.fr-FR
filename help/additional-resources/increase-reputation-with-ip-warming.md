@@ -7,7 +7,7 @@ activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
 ht-degree: 100%
 
@@ -30,9 +30,9 @@ Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Proto
 **Rubriques connexes :**
 * [Transition en douceur lors du changement de plateforme de messagerie](../../help/transition-process/switching-email-platforms.md)
 * [Stratégie IP](../../help/transition-process/infrastructure.md#ip-strategy)
-* [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
+* [Considérations spécifiques aux fournisseurs d’accès (FAI) lors du préchauffage des adresses IP](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
-## Réchauffement d&#39;une adresse IP : pour quoi faire ?  {#why-ip-warming}
+## Préchauffage d’une adresse IP : pour quoi faire ?  {#why-ip-warming}
 
 Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur. Les FAI/MBP surveillent de près l&#39;IP et le domaine d&#39;envoi pour déterminer si les emails envoyés depuis cette IP et ce domaine sont des spams ou non.  Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
 
