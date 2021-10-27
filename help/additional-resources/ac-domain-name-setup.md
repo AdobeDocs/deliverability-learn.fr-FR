@@ -7,15 +7,15 @@ activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2061'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Configuration du nom de domaine
 
-Ce document décrit les exigences commerciales et techniques de la configuration et de la délégation des noms de domaine. Vous devez sélectionner un sous-domaine d&#39;envoi d&#39;email et, éventuellement, un sous-domaine associé à l&#39;extérieur pour héberger les composants Web (pages de destination, page d&#39;opt-out) pour la plateforme Adobe que vous utilisez.
+Ce document décrit les exigences commerciales et techniques de la configuration et de la délégation des noms de domaine. Vous devez sélectionner un sous-domaine d&#39;envoi d&#39;e-mail et, éventuellement, un sous-domaine associé à l&#39;extérieur pour héberger les composants web (pages de destination, page d&#39;opt-out) pour la plateforme Adobe que vous utilisez.
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ Pour fournir un service géré en mode cloud, Adobe encourage fortement les clie
 | CNAME | Fournit un alias à un autre nom de domaine | t1.email.example.com est un alias pour t1.email.example.campaign.adobe.com |
 
 
-L’authentification, le reporting et la conformité basés sur le domaine (DMARC) sont recommandés pour authentifier les expéditeurs de courrier électronique et pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés depuis votre domaine.
+DMARC (Domain-based Message Authentication, Reporting, and Conformance) est recommandé pour authentifier les expéditeurs d’emails et faire en sorte que les systèmes de messagerie de destination acceptent les messages envoyés depuis votre domaine comme fiables.
 
-Exemple d’enregistrement DMARC TXT :
+Exemple d’un enregistrement TXT DMARC :
 
 ```
 _dmarc.email.example.com
@@ -69,7 +69,7 @@ _dmarc.email.example.com
 “v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
 ```
 
-Vous pouvez mettre en oeuvre DMARC manuellement ou contacter l’Adobe pour vous aider à configurer DMARC pour votre marque.
+Vous pouvez mettre en œuvre DMARC manuellement ou contacter Adobe pour vous aider à configurer DMARC pour votre marque.
 
 ## Configuration requise
 
@@ -94,7 +94,7 @@ Si le client choisit d&#39;utiliser des CNAME plutôt que de déléguer un sous-
 
 ## Exigences générales relatives au déploiement
 
-Lors de la mise en œuvre d&#39;une nouvelle solution de marketing d&#39;entreprise, des composants externes sont requis.  Il s&#39;agit notamment de l&#39;hébergement de pages de destination et de formulaires Web, de la configuration de liens et de pages Web à suivre, de l&#39;affichage des pages miroir et de la configuration d&#39;une page d&#39;opt-out.
+Lors de la mise en œuvre d&#39;une nouvelle solution de marketing d&#39;entreprise, des composants externes sont requis.  Il s&#39;agit notamment de l&#39;hébergement de pages de destination et de formulaires Web, de la configuration de liens et de pages web à suivre, de l&#39;affichage des pages miroir et de la configuration d&#39;une page d&#39;opt-out.
 
 Bien que ces exigences soient gérées au moyen de composants hébergés à la fois par Adobe et le client, elles incluent des URL visibles par les destinataires des emails.  Afin d&#39;éviter que des URL indiquant la solution technique sous-jacente ou le fournisseur d&#39;hébergement ne soient installées, il est possible de configurer des sous-domaines pour rendre cette opération transparente pour les destinataires des emails.  Par exemple, lorsque vous consultez une URL telle que http://www.customer.com/, le domaine est &quot;www.customer.com&quot;.  Le sous-domaine de ce site serait &quot;www&quot;.
 
@@ -140,7 +140,7 @@ Une fois que le ou les sous-domaine(s) d&#39;envoi d&#39;email sont correctement
 
 Cela ne s&#39;applique que si Adobe Campaign Classic est entièrement hébergé dans le cloud par Adobe.  Il s&#39;agit d&#39;une configuration facultative.
 
-Tous les questionnaires, formulaires Web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud.  Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l&#39;utiliser pour tous les composants Web de l&#39;outil.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
+Tous les questionnaires, formulaires web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud.  Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l&#39;utiliser pour tous les composants Web de l&#39;outil.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -154,7 +154,7 @@ Tous les questionnaires, formulaires Web et pages de destination à développer 
 
 Dans le cas où l&#39;instance de marketing Adobe Campaign Classic est hébergée sur site au niveau du client, des configurations techniques supplémentaires devront être apportées par le client.
 
-Tous les questionnaires, formulaires Web et pages de destination à développer sont gérés par l&#39;instance de marketing Adobe Campaign, où se trouvent les enregistrements destinataires.
+Tous les questionnaires, formulaires web et pages de destination à développer sont gérés par l&#39;instance de marketing Adobe Campaign, où se trouvent les enregistrements destinataires.
 
 Une configuration DNS CNAME supplémentaire est requise pour déployer des composants Web externes hébergés par l&#39;instance de marketing Adobe Campaign.  Cela permet aux composants Web (par exemple, web.customer.com) d&#39;être accessibles au public sur Internet et d&#39;être marqués avec le domaine du client.
 
