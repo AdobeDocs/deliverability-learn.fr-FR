@@ -1,22 +1,22 @@
 ---
-title: FAQ sur la protection de la confidentialité dans Apple Mail
-description: FAQ sur la protection de la confidentialité dans Apple Mail
+title: FAQ sur la protection de la confidentialité dʼApple Mail
+description: FAQ sur la protection de la confidentialité dʼApple Mail
 topics: Deliverability
 exl-id: c4b9839d-db1a-4bbc-a1d5-385dddca95a8
-source-git-commit: c66a1d519ab844d103de5b6dd64c5f7f40c3d8d9
+source-git-commit: 994e31f8038f2a6d9ec986f93dc2640e6a8796d7
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 0%
+source-wordcount: '1106'
+ht-degree: 1%
 
 ---
 
-# FAQ sur la protection de la confidentialité dans Apple Mail
+# FAQ sur la protection de la confidentialité dʼApple Mail
 
-Ce FAQ fournit des conseils initiaux en réponse à l’annonce d’Apple concernant leur version 15 d’iOS, y compris [Protection de la confidentialité des emails](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Ces modifications auront lieu en septembre. Nous continuerons de mettre à jour ce document et de fournir des conseils à nos clients.
+Ce FAQ fournit des conseils initiaux en réponse à l’annonce d’Apple concernant leur version 15 d’iOS, notamment : [Protection de la confidentialité des emails](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Ces modifications auront lieu en septembre. Nous continuerons de mettre à jour ce document et de fournir des conseils à nos clients.
 
 ## Qu’a annoncé Apple ?
 
-Le 7 juin, lors de la conférence annuelle Apple Worldwide Developers Conference (WWDC 2021), ils ont annoncé dans leur version 15 d’iOS que [Protection de la confidentialité du courrier](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) serait activée sur l’application de messagerie native sur tous les appareils Apple - iPhone, iPad et Mac. Selon Apple, &quot;la protection de la confidentialité des emails empêche les expéditeurs d’utiliser des pixels invisibles pour collecter des informations sur l’utilisateur, ce qui empêche les expéditeurs de savoir quand ils ouvrent un email et masquent leur adresse IP afin qu’elle ne puisse pas être liée à d’autres activités en ligne ou utilisée pour déterminer leur emplacement.&quot; Cela signifie que les marketeurs ne savent pas quand ou si un utilisateur a ouvert son email dans l’application de messagerie d’Apple. La restriction, qui nécessite le consentement de l’utilisateur, s’applique à tout courrier électronique ouvert sur l’application de messagerie d’Apple (Gmail, Yahoo, Outlook, etc.).
+Le 7 juin, lors de la conférence annuelle Apple Worldwide Developers Conference (WWDC 2021), ils ont annoncé dans leur version 15 d’iOS que [Protection de la confidentialité des emails](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) est activé sur l’application de messagerie native sur tous les appareils Apple - iPhone, iPad et Mac. Selon Apple, &quot;la protection de la confidentialité des emails empêche les expéditeurs d’utiliser des pixels invisibles pour collecter des informations sur l’utilisateur, ce qui empêche les expéditeurs de savoir quand ils ouvrent un email et masquent leur adresse IP afin qu’elle ne puisse pas être liée à d’autres activités en ligne ou utilisée pour déterminer leur emplacement.&quot; Cela signifie que les marketeurs ne savent pas quand ou si un utilisateur a ouvert son email dans l’application de messagerie d’Apple. La restriction, qui nécessite le consentement de l’utilisateur, s’applique à tout courrier électronique ouvert sur l’application de messagerie d’Apple (Gmail, Yahoo, Outlook, etc.).
 
 ## Quand cela entrera-t-il en vigueur ?
 
@@ -24,7 +24,9 @@ La version 15 d’iOS sera disponible à l’automne, peut-être dès le mois de
 
 ## Quel impact cela aura-t-il sur le suivi et la mesure des résultats des campagnes email ?
 
-Le suivi des pixels dans Apple Mail sera désactivé, ce qui signifie que les marketeurs ne sauront plus de manière fiable quand un email est ouvert. Bien que la désactivation des pixels de suivi ne soit pas une nouveauté, plusieurs fournisseurs ont déjà pris des mesures similaires dans le passé. L’application de messagerie d’Apple est largement adoptée par de nombreux fournisseurs. Par conséquent, l’impact peut être plus important que précédemment lorsque d’autres fournisseurs ont choisi de désactiver les pixels de suivi par défaut. Les protections de confidentialité, qui nécessitent le consentement de l’utilisateur, s’appliquent à tout courrier électronique ouvert sur l’application de messagerie d’Apple (Gmail, Yahoo, Outlook, etc.). Si l’utilisateur utilise l’application Gmail ou une autre application de messagerie, les contrôles de confidentialité ne seront pas affectés. Dans le contexte, la [part de marché des appareils mobiles Apple](https://www.counterpointresearch.com/global-smartphone-share/) pour le premier trimestre était de 17 % dans le monde et de 55 % aux États-Unis.
+Les données issues du suivi des pixels dans Apple Mail ne seront plus exactes, ce qui signifie que les marketeurs ne seront plus en mesure de déterminer de manière fiable à quel moment un email est ouvert. Bien que le préchargement d’images et de pixels et l’utilisation de proxies pour anonymiser les données ne soient pas nouveaux, plusieurs fournisseurs ont pris des mesures similaires par le passé, l’étendue, la méthode et la portée de la mise en oeuvre sont nouvelles.
+
+L’application de messagerie d’Apple est largement adoptée par de nombreux fournisseurs. Par conséquent, l’impact peut être plus important que précédemment lorsque d’autres fournisseurs ont choisi de désactiver les pixels de suivi par défaut. Les protections de confidentialité, qui nécessitent le consentement de l’utilisateur, s’appliquent à tout courrier électronique ouvert sur l’application de messagerie d’Apple (Gmail, Yahoo, Outlook, etc.). Si l’utilisateur utilise l’application Gmail ou une autre application de messagerie, les contrôles de confidentialité ne seront pas affectés. Pour le contexte, la variable [Part de marché des appareils mobiles Apple](https://www.counterpointresearch.com/global-smartphone-share/) pour le premier trimestre, le taux était de 17 % dans le monde et de 55 % aux États-Unis.
 
 ## Y a-t-il d&#39;autres impacts ?
 
@@ -52,4 +54,4 @@ Actuellement, nous pensons que cette fonctionnalité de confidentialité n’aur
 
 ## Comment Adobe prend-il en charge nos clients ?
 
-Nous publierons du contenu supplémentaire qui décrit notre fichier POV et des stratégies suggérées (à court et à long terme). En outre, les clients peuvent télécharger un [guide de délivrabilité](../introduction.md), suivre un [cours sur la délivrabilité](http://bit.ly/Deliverability-Course) et consulter un [webinaire récent](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a) sur la délivrabilité pour suivre les dernières tendances et bonnes pratiques. Les clients peuvent bien sûr garder un oeil sur les prochaines publications de blog, les webinaires et les mises à jour concernant la délivrabilité, ainsi que d’autres dynamiques évolutives liées à la confidentialité.
+Nous publierons du contenu supplémentaire qui décrit notre fichier POV et des stratégies suggérées (à court et à long terme). En outre, les clients peuvent télécharger une [Guide de délivrabilité](../introduction.md), prenez une [cours sur la délivrabilité](http://bit.ly/Deliverability-Course), puis affichez un [webinaire récent](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a) sur la délivrabilité pour suivre les dernières tendances et bonnes pratiques. Les clients peuvent bien sûr garder un oeil sur les prochaines publications de blog, les webinaires et les mises à jour concernant la délivrabilité, ainsi que d’autres dynamiques évolutives liées à la confidentialité.
