@@ -27,23 +27,23 @@ Quelle que soit votre stratégie, il est peu probable que les abonnés qui ne re
 
 Voici quelques éléments clés à prendre en compte lors de la création de votre ou de vos emails de bienvenue :
 
-**Envoyez votre message**
-ASAPI. Si vous proposez une promotion, votre nouvel abonné attendra probablement sur le site web d’obtenir l’e-mail avant d’effectuer son achat. Un retard de 5 à 10 minutes peut signifier une perte de vente. Même si vous n’avez pas de promotion, ils expriment actuellement de l’intérêt pour votre marque. Vous devez donc vous engager avec eux pendant que leur intérêt est au plus haut au lieu de prendre une chance ultérieurement.
+**Envoyez votre message le plus rapidement possible**
+Si vous proposez une promotion, votre nouvel abonné attendra probablement sur le site web d’obtenir l’e-mail avant d’effectuer son achat. Un retard de 5 à 10 minutes peut signifier une perte de vente. Même si vous n’avez pas de promotion, ils expriment actuellement de l’intérêt pour votre marque. Vous devez donc vous engager avec eux pendant que leur intérêt est au plus haut au lieu de prendre une chance ultérieurement.
 
-**Créer des objets forts et des**
-en-têtes avancésVous devez non seulement les remercier de vous être inscrits, mais aussi attirer leur attention et leur donner une raison de vouloir ouvrir l&#39;email. N’oubliez pas de capitaliser sur la pièce supplémentaire dans le pré-titre pour défendre votre point de vue.
+**Créer des objets et des pré-en-têtes performants**
+Vous devez non seulement les remercier de vous être inscrits, mais aussi attirer leur attention et leur donner une raison de vouloir ouvrir l&#39;email. N’oubliez pas de capitaliser sur la pièce supplémentaire dans le pré-titre pour défendre votre point de vue.
 
-**Définition des**
-attentesIl est clair que vous vous concentrez sur une expérience positive pour eux. Indiquez ce qu&#39;ils doivent attendre de vous et à quelle fréquence. Fournir un moyen pour eux de gérer facilement leur expérience (c’est-à-dire un lien vers un centre de préférences) est également une bonne idée. Pensez également à ajouter des liens à du contenu précédent afin que les utilisateurs puissent référencer le contenu auquel ils s’abonnent.
+**Définition des attentes**
+Soyez clair que vous vous concentrez sur une expérience positive pour eux. Indiquez ce qu&#39;ils doivent attendre de vous et à quelle fréquence. Fournir un moyen pour eux de gérer facilement leur expérience (c’est-à-dire un lien vers un centre de préférences) est également une bonne idée. Pensez également à ajouter des liens à du contenu précédent afin que les utilisateurs puissent référencer le contenu auquel ils s’abonnent.
 
-**Qu&#39;ils se sentent pour votre**
-marque. Chaque marque a une voix. Laissez le vôtre clairement affiché dans votre email de bienvenue. Cela permet à votre nouvel abonné de se connecter davantage à la marque et leur évite de se sentir surpris par un changement de style avec les emails ultérieurs.
+**Qu’ils se sentent concernés par votre marque**
+Chaque marque a une voix. Laissez le vôtre clairement affiché dans votre email de bienvenue. Cela permet à votre nouvel abonné de se connecter davantage à la marque et leur évite de se sentir surpris par un changement de style avec les emails ultérieurs.
 
-**Gardez-le**
-concis. Vous avez beaucoup à dire et une oreille attentive dans votre nouvel abonné. Mais votre premier message devrait être court, simple, à la base, et non écrasant.
+**Soyez concis**
+Vous avez beaucoup à dire et une oreille attentive dans votre nouvel abonné. Mais votre premier message devrait être court, simple, à la base, et non écrasant.
 
-**Envoyez une série d&#39;**
-emails. Comme nous l&#39;avons déjà mentionné, vous avez beaucoup à dire à un public attentif. La création d’une série complète de messages de bienvenue (3 à 5 emails) vous permet de garder chacun d’eux à ce point tout en couvrant toutes les informations que vous souhaitez partager. Elle favorise également l’intérêt constant de l’abonné, ce qui entraîne un engagement positif continu, une réputation renforcée et une meilleure délivrabilité.
+**Envoi d’une série d’emails**
+Comme nous l&#39;avons déjà mentionné, vous avez beaucoup à dire à un public attentif. La création d’une série complète de messages de bienvenue (3 à 5 emails) vous permet de garder chacun d’eux à ce point tout en couvrant toutes les informations que vous souhaitez partager. Elle favorise également l’intérêt constant de l’abonné, ce qui entraîne un engagement positif continu, une réputation renforcée et une meilleure délivrabilité.
 
-**Soyez**
-personnel : si vous effectuez une série d’emails de bienvenue, utilisez l’un d’eux pour afficher la touche personnelle. Utilisez toutes les informations que vous avez collectées lors de l’inscription ou de leur achat pour montrer comment vous pouvez rendre leur expérience unique et plus précieuse pour eux. Si vous ne collectez pas encore de données, utilisez-le comme une opportunité pour montrer ce que vous pouvez faire si vous en avez l’occasion. Demandez-leur ensuite les informations dont vous avez besoin pour enrichir leur expérience.
+**Obtenir des informations personnelles**
+Si vous effectuez une série d’emails de bienvenue, utilisez l’un d’eux pour afficher la touche personnelle. Utilisez toutes les informations que vous avez collectées lors de l’inscription ou de leur achat pour montrer comment vous pouvez rendre leur expérience unique et plus précieuse pour eux. Si vous ne collectez pas encore de données, utilisez-le comme une opportunité pour montrer ce que vous pouvez faire si vous en avez l’occasion. Demandez-leur ensuite les informations dont vous avez besoin pour enrichir leur expérience.

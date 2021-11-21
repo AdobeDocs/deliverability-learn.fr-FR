@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: d781a0b6-5670-4958-8649-f061e7e9a84f
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Les mesures constituent l’un des meilleurs moyens d’identifier un problème 
 
 ## Ressources spécifiques au produit
 
-**Adobe Campaign Classic**
+**Adobe Campaign Classic**
 
 * [Surveillance des diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr-FR)
 * [Surveillance de la délivrabilité](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html?lang=fr-FR)

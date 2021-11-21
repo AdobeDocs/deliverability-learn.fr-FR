@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Les plaintes sont enregistrées lorsqu’un utilisateur indique qu’un email es
 
 ## Plaintes des FAI
 
-La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méthode de signalement des courriers indésirables à leurs utilisateurs, car les processus d&#39;opt-out et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse email. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ce système est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL. Il permet à Adobe Campaign d&#39;ajouter automatiquement des adresses email à l’origine d’une plainte à la table de mise en quarantaine pour suppression. Les pics des plaintes des FAI peuvent indiquer des listes de mauvaise qualité, des méthodes de collecte de listes qui ne sont pas optimales ou des politiques d&#39;engagement inadaptées. Ils sont également souvent remarqués lorsque le contenu n’est pas pertinent.
+La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méthode de signalement des courriers indésirables à leurs utilisateurs, car les processus d&#39;opt-out et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse email. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ce système est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL. Il permet à Adobe Campaign d&#39;ajouter automatiquement des adresses email à l’origine d’une plainte à la table de mise en quarantaine pour suppression. Les pics des plaintes des FAI peuvent indiquer des listes de mauvaise qualité, des méthodes de collecte de listes qui ne sont pas optimales ou des politiques d&#39;engagement inadaptées. Ils sont également souvent remarqués lorsque le contenu n’est pas pertinent.
 
 ## Plaintes de tiers
 
@@ -33,7 +33,7 @@ Il existe plusieurs groupes contre les courriers indésirables qui permettent un
 
 ## Ressources spécifiques au produit
 
-**Adobe Campaign Classic**
+**Adobe Campaign Classic**
 
 * [Indicateurs de tracking](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr-FR#tracking-indicators)
 

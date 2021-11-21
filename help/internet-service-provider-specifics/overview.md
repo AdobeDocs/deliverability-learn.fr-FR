@@ -1,5 +1,5 @@
 ---
-title: Éléments spécifiques au FAI
+title: Éléments spécifiques aux FAI
 description: Les FAI ne sont pas tous les mêmes. Ils se concentrent sur différents éléments lors de la détermination de l’adresse électronique à autoriser à accéder à la boîte de réception de leurs utilisateurs et de l’adresse électronique qui est filtrée dans le dossier de messages indésirables ou qui ne peut pas être transmise du tout. Nous allons faire un tour rapide des différences importantes entre une poignée de FAI. Il ne s’agit pas d’une liste complète de tous les FAI ni de couvrir toutes les différences possibles.
 topics: Deliverability
 kt: null
@@ -14,7 +14,7 @@ ht-degree: 14%
 
 ---
 
-# Éléments spécifiques au FAI
+# Éléments spécifiques aux FAI
 
 Les FAI ne sont pas tous les mêmes. Ils se concentrent sur différents éléments lors de la détermination de l’adresse électronique à autoriser à accéder à la boîte de réception de leurs utilisateurs et de l’adresse électronique qui est filtrée dans le dossier de messages indésirables ou qui ne peut pas être transmise du tout.
 

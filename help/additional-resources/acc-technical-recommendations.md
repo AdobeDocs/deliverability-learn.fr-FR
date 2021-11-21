@@ -1,5 +1,5 @@
 ---
-title: 'Campaign Classic : recommandations techniques'
+title: 'Campaign Classic : recommandations techniques'
 description: Découvrez les techniques, les configurations et les outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité avec Adobe Campaign Classic.
 topics: Deliverability
 doc-type: article
@@ -13,7 +13,7 @@ ht-degree: 63%
 
 ---
 
-# Campaign Classic : recommandations techniques {#technical-recommendations}
+# Campaign Classic : recommandations techniques {#technical-recommendations}
 
 Vous trouverez ci-dessous plusieurs techniques, configurations et outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité lors de l’utilisation de Adobe Campaign Classic.
 
@@ -21,7 +21,7 @@ Vous trouverez ci-dessous plusieurs techniques, configurations et outils que vou
 
 ### Reverse DNS {#reverse-dns}
 
-Adobe Campaign vérifie qu’un reverse DNS est bien renseigné pour une adresse IP et que celui-ci reboucle bien sur l’IP.
+Adobe Campaign vérifie qu’un reverse DNS est bien renseigné pour une adresse IP et que celui-ci reboucle bien sur l’IP.
 
 Un point indispensable de la configuration réseau est d&#39;avoir établi un reverse DNS correct pour chacune des adresses IP d&#39;envoi. Cela signifie que pour une adresse IP donnée, il existe un enregistrement reverse DNS (enregistrement PTR) dont la correspondance DNS (enregistrement A) reboucle sur l&#39;adresse IP initiale.
 
@@ -39,7 +39,7 @@ Plus précisément, elles servent à contrôler la vitesse à laquelle le MTA (M
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, reportez-vous à la section [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
 
 ### TLS {#tls}
 
@@ -68,22 +68,22 @@ Un enregistrement SPF peut actuellement être défini sur un serveur DNS comme u
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des emails pour le domaine. **~** tous signifie que toute autre adresse doit être interprétée comme un SoftFail.
+définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des emails pour le domaine. **~all** signifie que toute autre adresse doit être interprétée comme un SoftFail.
 
 Recommendations pour définir un enregistrement SPF :
 
-* Ajoutez **~all** (SoftFail) ou **-all** (Echec) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs seront en mesure de forger ce domaine (avec une évaluation Neutre).
-* N’ajoutez pas **ptr** (openspf.org recommande de ne pas le définir comme coûteux et peu fiable).
+* Ajouter **~all** (SoftFail) ou **-all** (Échec) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs seront en mesure de forger ce domaine (avec une évaluation Neutre).
+* Ne pas ajouter **ptr** (openspf.org recommande de ne pas le considérer comme coûteux et peu fiable).
 
 >[!NOTE]
 >
->Pour en savoir plus sur SPF, consultez [cette section](/help/additional-resources/authentication.md#spf).
+>En savoir plus sur SPF dans [cette section](/help/additional-resources/authentication.md#spf).
 
 ## Authentification
 
 >[!NOTE]
 >
->Pour en savoir plus sur les différentes formes d&#39;authentification des emails, consultez [cette section](/help/additional-resources/authentication.md).
+>En savoir plus sur les différentes formes d’authentification des emails dans [cette section](/help/additional-resources/authentication.md).
 
 ### DKIM {#dkim-acc}
 
@@ -91,13 +91,13 @@ Recommendations pour définir un enregistrement SPF :
 >
 >Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), la signature de l’authentification des emails DKIM est effectuée par celui-ci pour tous les messages et domaines.
 
-L’utilisation de [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert les conditions préalables suivantes :
+Utilisation [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic, les conditions préalables suivantes sont requises :
 
-**Déclaration** des options Adobe Campaign : dans Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plateforme, ni dans l&#39;email. La plateforme sélectionnera également l’une des clés privées, ce qui signifie que l’authentification a de grandes chances d’échouer.
+**Déclaration des options Adobe Campaign**: dans Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plateforme, ni dans l&#39;email. La plateforme sélectionnera également l’une des clés privées, ce qui signifie que l’authentification a de grandes chances d’échouer.
 
 * Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/clé publique) que pour DomainKeys (qui a remplacé DKIM).
 * Il est inutile d&#39;activer DomainKeys et DKIM pour un même domaine, DKIM étant une version améliorée de DomainKeys.
-* Les domaines validant actuellement DKIM sont les suivants : AOL, Gmail.
+* Les domaines validant actuellement DKIM sont les suivants : AOL, Gmail.
 
 ## Feedback loop {#feedback-loop-acc}
 
@@ -105,7 +105,7 @@ Une feedback loop fonctionne en déclarant au niveau du FAI une adresse email do
 
 Un standard est en cours d’établissement pour définir le format des messages de feedback loop : l’[ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
-La mise en place d&#39;une feedback loop pour une instance suppose d&#39;avoir :
+La mise en place d&#39;une feedback loop pour une instance suppose d&#39;avoir :
 
 * une boîte mail dédiée à l&#39;instance, qui peut éventuellement être la boîte de mails rebonds,
 * des adresses IP d&#39;envoi dédiées à l&#39;instance.
@@ -113,16 +113,16 @@ La mise en place d&#39;une feedback loop pour une instance suppose d&#39;avoir :
 La mise en œuvre d’une feedback loop simple dans Adobe Campaign fait appel à la fonctionnalité de messages rebonds. La boîte email de feedback loop est utilisée comme boîte de rebond et une règle est définie pour détecter ces messages. Les adresses email des destinataires qui ont signalé le message comme indésirable seront ajoutées à la liste des adresses en quarantaine.
 
 * Créez ou adaptez une règle de mails rebonds **Feedback_loop** dans **[!UICONTROL Administration>Gestion de campagne>Gestion des NP@I>Jeux de règles mail]** avec la raison **Refusé** et le type **Hard**.
-* Si une boîte a été définie spécialement pour la feedback loop, définissez les paramètres pour relever son contenu en créant un nouveau compte externe de type Mails rebonds dans **[!UICONTROL Administration>Plate-forme>Comptes externes]**.
+* Si une boîte a été définie spécialement pour la feedback loop, définissez les paramètres pour relever son contenu en créant un nouveau compte externe de type Mails rebonds dans **[!UICONTROL Administration>Plateforme>Comptes externes]**.
 
-Le mécanisme est immédiatement opérationnel pour traiter les notifications de plaintes. Pour vérifier le bon fonctionnement de la règle, vous pouvez temporairement désactiver les comptes afin qu&#39;ils ne relèvent pas ces messages, puis vérifier le contenu de la boîte de feedback loop manuellement. Sur le serveur, exécutez les commandes suivantes :
+Le mécanisme est immédiatement opérationnel pour traiter les notifications de plaintes. Pour vérifier le bon fonctionnement de la règle, vous pouvez temporairement désactiver les comptes afin qu&#39;ils ne relèvent pas ces messages, puis vérifier le contenu de la boîte de feedback loop manuellement. Sur le serveur, exécutez les commandes suivantes :
 
 ```
 nlserver stop inMail@instance,
 nlserver inMail -instance:instance -verbose.
 ```
 
-Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour plusieurs instances, il faudra :
+Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour plusieurs instances, il faudra :
 
 * répliquer les messages reçus sur autant de boîtes qu&#39;il existe d&#39;instances,
 * faire relever chaque boîte par une seule instance,
@@ -134,7 +134,7 @@ Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour p
    </serverConf>
    ```
 
-Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux services de feedback loop pour les FAI suivants : AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux services de feedback loop pour les FAI suivants : AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -146,7 +146,7 @@ Cet en-tête pourra être utilisé comme une alternative à l&#39;icône &quot;S
 
 L&#39;utilisation de cette fonctionnalité protège votre réputation et le feedback sera exécuté comme une désinscription.
 
-Pour utiliser List-Unsubscribe, vous devez entrer une ligne de commande similaire à celle-ci :
+Pour utiliser List-Unsubscribe, vous devez entrer une ligne de commande similaire à celle-ci :
 
 ```
 List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe
@@ -156,7 +156,7 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 >
 >L&#39;exemple ci-dessus est basé sur la table des destinataires. Si l&#39;implémentation de la base de données est faite à partir d&#39;une autre table, pensez à reformuler la ligne de commande avec l&#39;information correcte.
 
-La ligne de commande suivante peut-être utilisée pour créer un **List-Unsubscribe** dynamique :
+La ligne de commande suivante peut-être utilisée pour créer un **List-Unsubscribe** dynamique :
 
 ```
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
@@ -164,9 +164,9 @@ List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessa
 
 Gmail, Outlook.com et Microsoft Outlook prennent en charge cette méthode et un bouton de désabonnement est disponible directement dans leur interface. Cette technique réduit le taux de plaintes.
 
-Vous pouvez implémenter **List-Unsubscribe** en :
+Vous pouvez mettre en oeuvre le **List-Unsubscribe** par :
 
-* Ajout direct [de la ligne de commande dans le modèle de diffusion](#adding-a-command-line-in-a-delivery-template)
+* Directement [l&#39;ajout de la ligne de commande dans le modèle de diffusion](#adding-a-command-line-in-a-delivery-template)
 * [Créer une règle de typologie](#creating-a-typology-rule)
 
 ### Ajouter la ligne de commande dans le modèle de diffusion {#adding-a-command-line-in-a-delivery-template}
@@ -181,7 +181,7 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 >[!NOTE]
 >
->La création d&#39;une règle de typologie est recommandée : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque email.
+>La création d&#39;une règle de typologie est recommandée : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque email.
 
 1. List-Unsubscribe: &lt;mailto:unsubscribe@domain.com>
 
@@ -205,9 +205,9 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 SMTP (Simple mail transfer protocol) est une norme Internet pour la transmission des emails.
 
-Les erreurs SMTP non vérifiées par une règle sont répertoriées dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]**. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
+Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]** dossier. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
 
-Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez correctement qualifier les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
+Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez qualifier correctement les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
 
 ### Adresses IP dédiées {#dedicated-ips}
 

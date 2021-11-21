@@ -26,7 +26,7 @@ Voici quelques points forts :
 
 ## Quelles données sont disponibles ?
 
-[!DNL Gmail] ne fournit qu’une connaissance limitée de la manière dont ils voient vos pratiques d’envoi via leurs  [!DNL Gmail Postmaster] outils. Cet outil vous permet d’avoir une vue d’ensemble de la réputation de votre adresse IP et de votre domaine d’envoi, des résultats d’authentification et des problèmes de plaintes.
+[!DNL Gmail] ne fournit qu’une connaissance limitée de la manière dont ils voient vos pratiques d’envoi par le biais de leur [!DNL Gmail Postmaster] Outils. Cet outil vous permet d’avoir une vue d’ensemble de la réputation de votre adresse IP et de votre domaine d’envoi, des résultats d’authentification et des problèmes de plaintes.
 
 >[!NOTE]
 >
@@ -40,6 +40,6 @@ Voici quelques points forts :
 
 [!DNL Gmail] Les vues des abonnés engagés diffèrent de celles de la plupart des expéditeurs. Un expéditeur peut définir une liste principale ou engagée comme une personne ayant ouvert un email dans les 30, 90 ou 180 jours (selon le modèle d’entreprise). [!DNL Gmail], en revanche, examine la fréquence à laquelle les utilisateurs interagissent avec vos messages.
 
-Par exemple, si vous envoyez 3 emails par semaine sur 90 jours, ce serait environ 39 emails. En utilisant la méthode traditionnelle, si l&#39;abonné a ouvert l&#39;un de ces 39 emails, il est engagé. Pour [!DNL Gmail], cela signifie qu’ils ont ignoré 38 emails et ne sont pas engagés. Vous pouvez obtenir une idée approximative des niveaux d’engagement de vos propres utilisateurs à [!DNL Gmail] en les évaluant sur le nombre d’ouvertures sur les 10 derniers emails. Ainsi, un abonné associé à 7 ouvertures de vos 10 derniers emails est plus engagé que quelqu’un qui a ouvert 2 des 10. L’envoi moins fréquent d’emails à ces utilisateurs moins engagés vous aidera à améliorer votre réputation d’envoi à [!DNL Gmail].
+Par exemple, si vous envoyez 3 emails par semaine sur 90 jours, ce serait environ 39 emails. En utilisant la méthode traditionnelle, si l&#39;abonné a ouvert l&#39;un de ces 39 emails, il est engagé. À [!DNL Gmail], cela signifie qu’ils ont ignoré 38 emails et ne sont pas engagés. Vous pouvez obtenir une perception approximative des niveaux d’engagement de vos propres utilisateurs à l’adresse [!DNL Gmail] en les évaluant sur le nombre d’ouvertures sur les 10 derniers emails. Ainsi, un abonné associé à 7 ouvertures de vos 10 derniers emails est plus engagé que quelqu’un qui a ouvert 2 des 10. L’envoi moins fréquent d’emails aux utilisateurs les moins engagés vous aidera à améliorer votre réputation d’envoi à l’adresse [!DNL Gmail].
 
-[!DNL Gmail] utilise différents onglets pour permettre aux utilisateurs de distinguer différents types de courrier. Il s’agit de *Boîte de réception*, *Social* et *Promotionnel*. Même si le courrier est diffusé dans l’onglet Promotionnel, il est toujours considéré comme une diffusion de boîte de réception. Les utilisateurs ont le contrôle de modifier leur vue et leurs onglets.
+[!DNL Gmail] utilise différents onglets pour permettre aux utilisateurs de distinguer différents types de courrier. Voici les *Boîte de réception*, *Social*, et *Promotionnel*. Même si le courrier est diffusé dans l’onglet Promotionnel, il est toujours considéré comme une diffusion de boîte de réception. Les utilisateurs ont le contrôle de modifier leur vue et leurs onglets.

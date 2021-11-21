@@ -19,7 +19,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques pour mieux identifier et ré
 
 ## Identifier un problème de délivrabilité {#identify-deliverability-issue}
 
-Pour identifier un problème possible, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peuvent attirer votre attention.
+Pour identifier un problème possible, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peut attirer votre attention.
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.

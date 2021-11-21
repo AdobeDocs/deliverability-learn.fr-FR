@@ -26,7 +26,7 @@ Voici quelques points forts :
 
 ## Quelles données mettent-ils à disposition ?
 
-[!DNL Microsoft]L’outil de reporting  [!DNL Smart Network Data Services] des expéditeurs propriétaires de , (SNDS), vous permet d’afficher des mesures relatives au volume de messages que vous envoyez et à la quantité de messages acceptés, ainsi que les plaintes et pièges à spam. Gardez à l’esprit que les données partagées sont un échantillon et ne reflètent pas des nombres exacts, mais qu’elles représentent le mieux la façon dont [!DNL Microsoft] vous considère comme un expéditeur. [!DNL Microsoft] ne fournit pas d’informations publiques sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles via le  [!DNL Return Path Certification] programme, moyennant des frais supplémentaires.
+[!DNL Microsoft]l’outil de reporting propriétaire de l’expéditeur, [!DNL Smart Network Data Services] (SNDS) vous permet d’afficher des mesures relatives au volume de courrier que vous envoyez et au nombre de courriers acceptés, ainsi que les plaintes et pièges à spam. Gardez à l’esprit que les données partagées sont un échantillon et ne reflètent pas des nombres exacts, mais qu’elles représentent le mieux la manière dont les [!DNL Microsoft] vous considère comme un expéditeur. [!DNL Microsoft] ne fournit pas d’informations publiques sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles via la variable [!DNL Return Path Certification] pour des frais supplémentaires.
 
 ## Réputation de l&#39;expéditeur
 
@@ -34,6 +34,6 @@ Voici quelques points forts :
 
 ## Insights
 
-[!DNL Microsoft] combine tous leurs domaines de réception pour établir et suivre la réputation de l’envoi. Cela inclut [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live], etc., ainsi que tout courrier électronique hébergé par Office 365. [!DNL Microsoft] peuvent être particulièrement sensibles aux fluctuations du volume. Par conséquent, envisagez d’appliquer des stratégies spécifiques pour augmenter ou diminuer les envois à partir de grands envois plutôt que de permettre des changements soudains basés sur le volume.
+[!DNL Microsoft] combine tous leurs domaines de réception pour établir et suivre la réputation de l’envoi. Cela inclut [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live], etc., ainsi que tout courrier électronique hébergé par une entreprise Office 365. [!DNL Microsoft] peuvent être particulièrement sensibles aux fluctuations du volume. Par conséquent, envisagez d’appliquer des stratégies spécifiques pour augmenter ou diminuer les envois à partir de grands envois plutôt que de permettre des changements soudains basés sur le volume.
 
 [!DNL Microsoft] est également particulièrement strict pendant les premiers jours du réchauffement de la IP, ce qui signifie généralement que la plupart des mails sont filtrés initialement. La plupart des FAI considèrent les expéditeurs comme innocents jusqu&#39;à ce qu&#39;ils soient reconnus coupables. [!DNL Microsoft] est le contraire et vous considère coupable jusqu&#39;à ce que vous vous prouviez innocent.

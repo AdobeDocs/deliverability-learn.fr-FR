@@ -30,7 +30,7 @@ VMG dispose d’une FBL utilisée pour transmettre les informations de plainte a
 
 ## Réputation de l&#39;expéditeur
 
-La réputation d’un expéditeur est composée d’une combinaison d’adresse IP, de domaine et d’adresse. La réputation est calculée à l’aide des composants traditionnels, y compris les plaintes, les pièges à spam, les adresses inactives ou mal formées et l’engagement. VMG utilise la limitation de débit (également appelée ralentissement) ainsi que le pliage en masse pour se défendre contre le spam. Elles complètent leurs systèmes de filtrage internes avec certaines listes bloquées [!DNL Spamhaus], y compris la PBL, SBL et XBL pour protéger leurs utilisateurs.
+La réputation d’un expéditeur est composée d’une combinaison d’adresse IP, de domaine et d’adresse. La réputation est calculée à l’aide des composants traditionnels, y compris les plaintes, les pièges à spam, les adresses inactives ou mal formées et l’engagement. VMG utilise la limitation de débit (également appelée ralentissement) ainsi que le pliage en masse pour se défendre contre le spam. Ils complètent leurs systèmes de filtrage internes avec certains [!DNL Spamhaus] listes bloquées, y compris la PBL, SBL et XBL pour protéger leurs utilisateurs.
 
 ## Insights
 

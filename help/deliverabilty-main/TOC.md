@@ -3,14 +3,14 @@ user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 
 ---
 
 
-# Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe Campaign {#deliverability-best-practice-guide}
+# Guide des bonnes pratiques en matière de délivrabilité d&#39;Adobe Campaign {#deliverability-best-practice-guide}
 
 + [Introduction](/help/introduction.md)
 + [Stratégie et définition de la délivrabilité](/help/deliverability-strategy-and-definition.md)
@@ -54,7 +54,7 @@ ht-degree: 100%
       + [Configuration du nom de domaine](/help/additional-resources/ac-domain-name-setup.md)
       + [Processus de demande de certificat SSL](/help/additional-resources/ac-ssl-certificate-request.md)
       + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
-      + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
+      + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
    + Notes techniques{#technotes}
       + [FAQ sur la confidentialité d’Apple](/help/technotes/apple-mail-privacy-faq.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)

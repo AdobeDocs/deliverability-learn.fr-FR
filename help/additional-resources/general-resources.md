@@ -9,7 +9,7 @@ exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
 source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 31%
 Consultez les technotes suivantes pour en savoir plus sur les mises à jour récentes concernant la délivrabilité.
 
 * [Mise en oeuvre des indicateurs de marque de Gmail pour l’identification des messages (BIMI)](../technotes/implement-bimi.md)
-* [FAQ sur la protection de la confidentialité dans Apple Mail](../technotes/apple-mail-privacy-faq.md)
+* [FAQ sur la protection de la confidentialité dʼApple Mail](../technotes/apple-mail-privacy-faq.md)
 
 ## Ressources génériques
 
@@ -47,4 +47,4 @@ En outre, cette section répertorie un certain nombre de ressources spécifiques
 * [Configuration du nom de domaine](../../help/additional-resources/ac-domain-name-setup.md)
 * [Processus de demande de certificat CSR et SSL](../../help/additional-resources/ac-ssl-certificate-request.md)
 * [Démarrage d’une nouvelle plateforme](../../help/additional-resources/ac-starting-new-platform.md)
-* [Campaign Classic : recommandations techniques](../../help/additional-resources/acc-technical-recommendations.md)
+* [Campaign Classic : recommandations techniques](../../help/additional-resources/acc-technical-recommendations.md)

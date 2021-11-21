@@ -26,7 +26,7 @@ Vous trouverez ci-dessous quelques moyens d’identifier un problème potentiel 
 
 ## Ressources spécifiques au produit
 
-**Adobe Campaign Classic**
+**Adobe Campaign Classic**
 
 * [Surveillance des diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr-FR)
 * [Rapports sur les diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=fr)

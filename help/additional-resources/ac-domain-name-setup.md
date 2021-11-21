@@ -1,13 +1,13 @@
 ---
 title: Configuration du nom de domaine
-description: Découvrez comment déléguer un sous-domaine à Adobe Campaign.
+description: Découvrez comment déléguer un sous-domaine à Adobe Campaign.
 topics: Deliverability
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Ce document décrit les exigences commerciales et techniques de la configuration
 
 >[!NOTE]
 >
->Vous pouvez également configurer de nouveaux sous-domaines à l&#39;aide du panneau de contrôle (disponible en version bêta). En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr#must-read).
+>Vous pouvez également configurer de nouveaux sous-domaines à l&#39;aide du Panneau de contrôle (disponible en version bêta). En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr#must-read).
 
 ## Sous-domaines
 
@@ -29,23 +29,23 @@ La création d&#39;un sous-domaine pour les campagnes par email permet aux marqu
 
 ### Délégation
 
-La délégation de noms de domaine est une méthode qui permet au propriétaire d&#39;un nom de domaine (techniquement : une zone DNS) de déléguer une sous-division (techniquement : une zone DNS située au-dessous, qui peut être appelée sous-zone) à une autre entité. En fait, si un client traite la zone &quot;exemple.com&quot;, il peut déléguer la sous-zone &quot;marketing.exemple.com&quot; à Adobe Campaign.
+La délégation de noms de domaine est une méthode qui permet au propriétaire d&#39;un nom de domaine (techniquement : une zone DNS) de déléguer une sous-division (techniquement : une zone DNS située au-dessous, qui peut être appelée sous-zone) à une autre entité. En fait, si un client traite la zone &quot;exemple.com&quot;, il peut déléguer la sous-zone &quot;marketing.exemple.com&quot; à Adobe Campaign.
 
-En d&#39;autres termes, les serveurs DNS d&#39;Adobe Campaign disposent d&#39;une autorité totale spécifiquement sur cette zone et non sur le domaine de niveau supérieur. Les serveurs DNS d&#39;Adobe Campaign fourniront des réponses faisant autorité aux requêtes concernant les noms de domaines de cette zone, comme &quot;t.marketing.exemple.com&quot; lui-même, mais pas &quot;www.example.com&quot;.
+En d&#39;autres termes, les serveurs DNS d&#39;Adobe Campaign disposent d&#39;une autorité totale spécifiquement sur cette zone et non sur le domaine de niveau supérieur. Les serveurs DNS d&#39;Adobe Campaign fourniront des réponses faisant autorité aux requêtes concernant les noms de domaines de cette zone, comme &quot;t.marketing.exemple.com&quot; lui-même, mais pas &quot;www.example.com&quot;.
 
-En déléguant un sous-domaine à utiliser avec Adobe Campaign, les clients peuvent compter sur Adobe pour gérer l&#39;infrastructure DNS requise afin de répondre aux exigences de délivrabilité standard de leurs domaines de marketing par email, tout en continuant à gérer et à contrôler le DNS de leurs domaines de messagerie internes.  La délégation de sous-domaines permet :
+En déléguant un sous-domaine à utiliser avec Adobe Campaign, les clients peuvent compter sur Adobe pour gérer l&#39;infrastructure DNS requise afin de répondre aux exigences de délivrabilité standard de leurs domaines de marketing par email, tout en continuant à gérer et à contrôler le DNS de leurs domaines de messagerie internes.  La délégation de sous-domaines permet :
 
-Pour les clients : de conserver l&#39;image de leur marque en utilisant un alias DNS avec ses noms de domaine.
-Pour Adobe : de mettre en œuvre de manière autonome les bonnes pratiques techniques afin d&#39;optimiser pleinement la délivrabilité lors de l&#39;envoi d&#39;emails.
+Pour les clients : de conserver l&#39;image de leur marque en utilisant un alias DNS avec ses noms de domaine.
+Pour Adobe : de mettre en œuvre de manière autonome les bonnes pratiques techniques afin d&#39;optimiser pleinement la délivrabilité lors de l&#39;envoi d&#39;emails.
 
 ## Options de configuration DNS
 
-Pour fournir un service géré en mode cloud, Adobe encourage fortement les clients à utiliser la délégation de sous-domaines lors du déploiement d&#39;Adobe Campaign.  Toutefois, Adobe propose aux clients une autre option, la configuration CNAME, pour configurer le DNS.
+Pour fournir un service géré en mode cloud, Adobe encourage fortement les clients à utiliser la délégation de sous-domaines lors du déploiement d&#39;Adobe Campaign.  Toutefois, Adobe propose aux clients une autre option, la configuration CNAME, pour configurer le DNS.
 
 | Option | Description | Responsabilités d&#39;Adobe | Responsabilités du client |
 |--- |------- |--- |--- |
-| Délégation de sous-domaine à Adobe Campaign | Le client délègue un sous-domaine (email.example.com) à Adobe. Dans ce scénario, Adobe est en mesure de fournir une campagne sous la forme d&#39;un service géré en contrôlant et en conservant tous les aspects du DNS nécessaires à la diffusion, au rendu et au suivi des campagnes par email. | Gestion complète du sous-domaine et de tous les enregistrements DNS requis pour Adobe Campaign. | Délégation appropriée du sous-domaine à Adobe |
-| Utilisation des CNAME | Le client crée un sous-domaine et utilise des CNAME pour pointer vers des enregistrements spécifiques à Adobe.  Grâce à cette configuration, Adobe et le client partagent la responsabilité de la maintenance du DNS. | Gestion des enregistrements DNS requis pour Adobe Campaign. | Création et contrôle du sous-domaine et création/gestion des enregistrements CNAME requis pour Adobe Campaign. |
+| Délégation de sous-domaine à Adobe Campaign | Le client délègue un sous-domaine (email.example.com) à Adobe. Dans ce scénario, Adobe est en mesure de fournir une campagne sous la forme d&#39;un service géré en contrôlant et en conservant tous les aspects du DNS nécessaires à la diffusion, au rendu et au suivi des campagnes par email. | Gestion complète du sous-domaine et de tous les enregistrements DNS requis pour Adobe Campaign. | Délégation appropriée du sous-domaine à Adobe |
+| Utilisation des CNAME | Le client crée un sous-domaine et utilise des CNAME pour pointer vers des enregistrements spécifiques à Adobe.  Grâce à cette configuration, Adobe et le client partagent la responsabilité de la maintenance du DNS. | Gestion des enregistrements DNS requis pour Adobe Campaign. | Création et contrôle du sous-domaine et création/gestion des enregistrements CNAME requis pour Adobe Campaign. |
 
 ## Enregistrements DNS requis
 
@@ -84,13 +84,13 @@ marketing.example.com. NS c.ns.campaign.adobe.com.
 marketing.example.com. NS d.ns.campaign.adobe.com.
 ```
 
-La délégation d&#39;un nom de domaine implique que ce domaine sera dédié à la diffusion d&#39;emails via la plateforme Adobe Campaign et ne peut donc pas être utilisé pour d&#39;autres moyens (par exemple, l&#39;envoi d&#39;emails à partir d&#39;une autre infrastructure de messagerie).
+La délégation d&#39;un nom de domaine implique que ce domaine sera dédié à la diffusion d&#39;emails via la plateforme Adobe Campaign et ne peut donc pas être utilisé pour d&#39;autres moyens (par exemple, l&#39;envoi d&#39;emails à partir d&#39;une autre infrastructure de messagerie).
 
 Au cours du processus de configuration, Adobe s&#39;assure que le domaine est attaché à l&#39;infrastructure d&#39;email entrant d&#39;Adobe afin de gérer et de traiter les emails rebonds revenant à ces domaines (configuration d&#39;enregistrement DNS de type MX).
 
 ### Utilisation des CNAME
 
-Si le client choisit d&#39;utiliser des CNAME plutôt que de déléguer un sous-domaine à Adobe, au cours de la phase de configuration, Adobe fournit les enregistrements à placer dans les serveurs DNS client et configure les valeurs correspondantes dans les serveurs DNS Adobe Campaign.
+Si le client choisit d&#39;utiliser des CNAME plutôt que de déléguer un sous-domaine à Adobe, au cours de la phase de configuration, Adobe fournit les enregistrements à placer dans les serveurs DNS client et configure les valeurs correspondantes dans les serveurs DNS Adobe Campaign.
 
 ## Exigences générales relatives au déploiement
 
@@ -100,7 +100,7 @@ Bien que ces exigences soient gérées au moyen de composants hébergés à la f
 
 ### Exigences relatives aux sous-domaines
 
-Déterminez le ou les sous-domaine(s) à utiliser pour les URL de marque (pages miroir et URL de suivi) à partir de l&#39;application Adobe Campaign.  Décidez également de l&#39;adresse d&#39;origine, du nom de l&#39;expéditeur et de l&#39;adresse de réponse pour chaque sous-domaine des diffusions par email.
+Déterminez le ou les sous-domaine(s) à utiliser pour les URL de marque (pages miroir et URL de suivi) à partir de l&#39;application Adobe Campaign.  Décidez également de l&#39;adresse d&#39;origine, du nom de l&#39;expéditeur et de l&#39;adresse de réponse pour chaque sous-domaine des diffusions par email.
 
 Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exemple.
 
@@ -114,13 +114,13 @@ Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exem
 >* Le champ &quot;Adresse de réponse&quot; a pour objet de demander au destinataire de répondre à une adresse différente de celle de l&#39;adresse d&#39;origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
 >* Si aucune &quot;adresse de réponse&quot; n&#39;est choisie par le client, l&#39;adresse par défaut est toujours `<tenant>-<type>-<env>@<subdomain>`.
 >* Lorsque l&#39;adresse de réponse est configurée de cette façon, les réponses sont envoyées à une boîte de réception non contrôlée.
->* Lors de l&#39;envoi d&#39;emails à partir d&#39;Adobe Campaign, la boîte de réception &quot;Adresse d&#39;origine&quot; n&#39;est pas surveillée et les utilisateurs marketing ne peuvent pas accéder à cette boîte de réception. Adobe Campaign n&#39;offre pas non plus la possibilité de répondre automatiquement ou de transférer automatiquement les messages reçus dans cette boîte de réception.
+>* Lors de l&#39;envoi d&#39;emails à partir d&#39;Adobe Campaign, la boîte de réception &quot;Adresse d&#39;origine&quot; n&#39;est pas surveillée et les utilisateurs marketing ne peuvent pas accéder à cette boîte de réception. Adobe Campaign n&#39;offre pas non plus la possibilité de répondre automatiquement ou de transférer automatiquement les messages reçus dans cette boîte de réception.
 >* L&#39;adresse de l&#39;expéditeur Campaign et l&#39;adresse d&#39;erreur ne peuvent pas être &quot;abus&quot; ou &quot;maître de poste&quot;.
 
 
 ## Délégation de sous-domaines
 
-Le ou les sous-domaine(s) choisi(s) pour la plateforme Adobe Campaign doivent être délégués à travers la création de quatre enregistrements de serveur de noms.  Cela permet de déléguer correctement le sous-domaine à Adobe.  Vous trouverez ci-dessous un exemple de délégation de sous-domaines et les instructions DNS correspondantes.  Veuillez remplacer &quot;emails.customer.com&quot; par le sous-domaine que vous souhaitez déléguer.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être déjà utilisé par une autre partie (par exemple, un fournisseur de services internet - FAI ou un fournisseur de services gérés - MSP).
+Le ou les sous-domaine(s) choisi(s) pour la plateforme Adobe Campaign doivent être délégués à travers la création de quatre enregistrements de serveur de noms.  Cela permet de déléguer correctement le sous-domaine à Adobe.  Vous trouverez ci-dessous un exemple de délégation de sous-domaines et les instructions DNS correspondantes.  Veuillez remplacer &quot;emails.customer.com&quot; par le sous-domaine que vous souhaitez déléguer.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être déjà utilisé par une autre partie (par exemple, un fournisseur de services internet - FAI ou un fournisseur de services gérés - MSP).
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -128,7 +128,7 @@ Le ou les sous-domaine(s) choisi(s) pour la plateforme Adobe Campaign doivent ê
 
 ## Suivi, pages miroir, ressources
 
-Une fois que le ou les sous-domaine(s) d&#39;envoi d&#39;email sont correctement délégués à Adobe Campaign, l&#39;équipe TechOps d&#39;Adobe crée deux domaines de niveau inférieur, ou plus, pour gérer le suivi et les pages miroir de manière indépendante.
+Une fois que le ou les sous-domaine(s) d&#39;envoi d&#39;email sont correctement délégués à Adobe Campaign, l&#39;équipe TechOps d&#39;Adobe crée deux domaines de niveau inférieur, ou plus, pour gérer le suivi et les pages miroir de manière indépendante.
 
 | Type | Domaine |
 |--- |--- |
@@ -138,9 +138,9 @@ Une fois que le ou les sous-domaine(s) d&#39;envoi d&#39;email sont correctement
 
 ## Déploiement dans le cloud (facultatif)
 
-Cela ne s&#39;applique que si Adobe Campaign Classic est entièrement hébergé dans le cloud par Adobe.  Il s&#39;agit d&#39;une configuration facultative.
+Cela ne s&#39;applique que si Adobe Campaign Classic est entièrement hébergé dans le cloud par Adobe.  Il s&#39;agit d&#39;une configuration facultative.
 
-Tous les questionnaires, formulaires web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud.  Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l&#39;utiliser pour tous les composants Web de l&#39;outil.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
+Tous les questionnaires, formulaires web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud.  Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l&#39;utiliser pour tous les composants Web de l&#39;outil.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -152,13 +152,13 @@ Tous les questionnaires, formulaires web et pages de destination à développer 
 
 ## Déploiement de la messagerie Cloud (facultatif)
 
-Dans le cas où l&#39;instance de marketing Adobe Campaign Classic est hébergée sur site au niveau du client, des configurations techniques supplémentaires devront être apportées par le client.
+Dans le cas où l&#39;instance de marketing Adobe Campaign Classic est hébergée sur site au niveau du client, des configurations techniques supplémentaires devront être apportées par le client.
 
-Tous les questionnaires, formulaires web et pages de destination à développer sont gérés par l&#39;instance de marketing Adobe Campaign, où se trouvent les enregistrements destinataires.
+Tous les questionnaires, formulaires web et pages de destination à développer sont gérés par l&#39;instance de marketing Adobe Campaign, où se trouvent les enregistrements destinataires.
 
-Une configuration DNS CNAME supplémentaire est requise pour déployer des composants Web externes hébergés par l&#39;instance de marketing Adobe Campaign.  Cela permet aux composants Web (par exemple, web.customer.com) d&#39;être accessibles au public sur Internet et d&#39;être marqués avec le domaine du client.
+Une configuration DNS CNAME supplémentaire est requise pour déployer des composants Web externes hébergés par l&#39;instance de marketing Adobe Campaign.  Cela permet aux composants Web (par exemple, web.customer.com) d&#39;être accessibles au public sur Internet et d&#39;être marqués avec le domaine du client.
 
-Les pare-feu devront également être configurés pour autoriser l&#39;accès à l&#39;instance de marketing Adobe Campaign qui héberge ces composants Web (sur le port 80 ou 443).
+Les pare-feu devront également être configurés pour autoriser l&#39;accès à l&#39;instance de marketing Adobe Campaign qui héberge ces composants Web (sur le port 80 ou 443).
 
 **Recommendations concernant les bonnes pratiques :**
 
@@ -176,7 +176,7 @@ S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécuris�
 * Création de boîtes de réception &quot;maître de poste&quot; et &quot;abus&quot;
 * Configuration de boucles de commentaires pour le domaine délégué
 * Sur demande, Adobe configure également un enregistrement DMARC tel que spécifié. Votre conseiller en délivrabilité peut vous aider à concevoir une stratégie DMARC à long terme et à planifier vos domaines d&#39;envoi.
-Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
+Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
 
 ## Conditions de facturation et de mise en œuvre
 
@@ -184,7 +184,7 @@ Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment o
 * En plus de ces délégations ajoutées, d&#39;autres seront facturées.
 * La méthode de facturation de ces délégations supplémentaires est calculée sous la forme d&#39;un coût mensuel supplémentaire, comme indiqué dans le contrat initial.
 
-Elles sont acceptées à condition que le CLIENT choisisse les noms de domaine associés dédiés aux diffusions via l&#39;outil Adobe Campaign et que les conditions préalables à la délégation décrites dans le document approprié soient correctement mises en œuvre.
+Elles sont acceptées à condition que le CLIENT choisisse les noms de domaine associés dédiés aux diffusions via l&#39;outil Adobe Campaign et que les conditions préalables à la délégation décrites dans le document approprié soient correctement mises en œuvre.
 
 ## Interruption des services
 
@@ -196,14 +196,14 @@ Adobe sera déchargé de toute responsabilité pour l&#39;engagement du taux de 
 
 La résiliation du service Marketing Cloud entraînera automatiquement la fin des délégations de domaines et la maintenance DNS de ces domaines par Adobe.
 
-## Surveillance des sous-domaines à l&#39;aide du panneau de contrôle
+## Surveillance des sous-domaines à l&#39;aide du Panneau de contrôle
 
-Une fois les sous-domaines configurés pour votre instance, vous pouvez les surveiller à l&#39;aide du panneau de contrôle.
+Une fois les sous-domaines configurés pour votre instance, vous pouvez les surveiller à l&#39;aide du Panneau de contrôle.
 
-Vous pouvez ainsi afficher tous les sous-domaines délégués à Adobe Campaign, mais aussi demander le renouvellement de leurs certificats SSL.
+Vous pouvez ainsi afficher tous les sous-domaines délégués à Adobe Campaign, mais aussi demander le renouvellement de leurs certificats SSL.
 
 Consultez à ce sujet la [documentation dédiée](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=fr#subdomains-and-certificates).
 
 >[!NOTE]
 >
->[Le panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr) est disponible uniquement pour les clients qui utilisent Adobe Managed Services.
+>[Le Panneau de contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr) est disponible uniquement pour les clients qui utilisent Adobe Managed Services.

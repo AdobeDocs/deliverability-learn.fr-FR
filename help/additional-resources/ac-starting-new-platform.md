@@ -1,6 +1,6 @@
 ---
 title: Démarrage d’une nouvelle plateforme
-description: En savoir plus sur la gestion de la délivrabilité lors du démarrage d’une nouvelle plateforme avec Adobe Campaign.
+description: En savoir plus sur la gestion de la délivrabilité lors du démarrage d’une nouvelle plateforme avec Adobe Campaign.
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -32,11 +32,11 @@ Vous trouverez ci-dessous la liste des principes essentiels à respecter lors du
 * Configurez un sous-domaine dédié spécifique aux campagnes par e-mail envoyées depuis Adobe.
 
 * Si vous disposez de ces informations, **importez des adresses non valides dans la table des quarantaines**.
-Le démarrage d’une plate-forme s’accompagne souvent de l’utilisation d’une liste d’adresses inconnues jusqu’ici, qui n’est pas entièrement qualifiée. L’envoi de messages à des adresses non valides ou à des adresses servant de leurres contribuera à affaiblir la réputation de la plate-forme.
+Le démarrage d’une plateforme s’accompagne souvent de l’utilisation d’une liste d’adresses inconnues jusqu’ici, qui n’est pas entièrement qualifiée. L’envoi de messages à des adresses non valides ou à des adresses servant de leurres contribuera à affaiblir la réputation de la plateforme.
 
-   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est accessible à partir des menus **[!UICONTROL Administration > Gestion de campagne > Gestion des NP@I > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** (Campaign Standard).
+   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est disponible via le **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** menus (Campaign Standard).
 
-   * Si on souhaite malgré tout requalifier les adresses invalides, il est nettement préférable de le faire une fois la réputation de la Plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l&#39;usage des mauvaises adresses.
+   * Si on souhaite malgré tout requalifier les adresses invalides, il est nettement préférable de le faire une fois la réputation de la plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l&#39;usage des mauvaises adresses.
 
 * **Limitez le débit** en limitant le nombre de mtachilds. Pour plus d’informations sur la modification de ce paramètre technique, contactez votre administrateur Adobe Campaign.
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur les principes répertoriés ci-dessus et leur mis
 * [Améliorer la réputation de vos emails grâce au réchauffement des adresses IP](../../help/additional-resources/increase-reputation-with-ip-warming.md)
 * [En savoir plus sur les pièges à spam](../../help/additional-resources/all-about-spam-traps.md)
 
-**Adobe Campaign Classic**
+**Adobe Campaign Classic**
 
 * [Optimiser votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
 * [Identifier les adresses en quarantaine pour l’ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)

@@ -34,8 +34,8 @@ Une partie du processus d’intégration des nouveaux expéditeurs sur les plate
 
 Il est important de former une stratégie IP bien structurée pour aider à établir une réputation positive. Le nombre d’adresses IP et de configurations varie en fonction de votre modèle d’entreprise et de vos objectifs marketing. Travailler avec un expert pour élaborer une stratégie claire pour commencer correctement. Tenez compte des points importants à noter :
 
-* **Trop d’** adresses IPscan provoquent des problèmes de réputation, car il s’agit d’une tactique courante consistant à utiliser des spammeurs pour la  **chaussure de neige**, une tactique utilisée par les spammeurs où le trafic est réparti sur de nombreuses adresses IP afin de maximiser la diffusion des spammeurs. Même si vous n’êtes pas un spammeur, vous pouvez ressembler à un si vous utilisez trop d’adresses IP, en particulier si ces adresses IP n’ont pas eu de trafic précédent.
-* **Trop peu d’** adresses IPscan posent des problèmes de débit et peuvent potentiellement déclencher des problèmes de réputation. Le débit varie en fonction du FAI. Le degré et la rapidité d’acceptation d’un FAI dépendent généralement de son infrastructure et de son seuil de réputation.
+* **Trop d’adresses IP** peut déclencher des problèmes de réputation, car il s’agit d’une tactique courante pour **raquette**, qui est une tactique utilisée par les spammeurs où le trafic est réparti sur de nombreuses adresses IP afin de maximiser la diffusion des spammeurs. Même si vous n’êtes pas un spammeur, vous pouvez ressembler à un si vous utilisez trop d’adresses IP, en particulier si ces adresses IP n’ont pas eu de trafic précédent.
+* **Trop peu d’adresses IP** peut entraîner des problèmes de débit et peut éventuellement déclencher des problèmes de réputation. Le débit varie en fonction du FAI. Le degré et la rapidité d’acceptation d’un FAI dépendent généralement de son infrastructure et de son seuil de réputation.
 * La séparation du trafic pour les types de messages est essentielle. Il est important, au minimum, de séparer le marketing et le courrier transactionnel dans des groupes d’adresses IP distincts.
 * En fonction de votre stratégie de messagerie, il peut également être conseillé de séparer différents produits ou flux marketing sur différents pools d’adresses IP si votre réputation est radicalement différente. Certains spécialistes du marketing segmentent également par région. La séparation de l’adresse IP pour le trafic ayant une réputation plus faible ne corrige pas le problème de réputation, mais empêchera les problèmes liés à vos diffusions email de &quot;bonne réputation&quot;. Après tout, vous ne voulez pas sacrifier votre bonne audience pour une audience plus risquée.
 
@@ -45,7 +45,7 @@ En arrière-plan, les plateformes d’Adobe traitent des données concernant les
 
 ## Authentification {#authentication}
 
-L’authentification est le processus que les FAI utilisent pour valider l’identité d’un expéditeur. Les deux protocoles d’authentification les plus courants sont [!DNL Sender Policy Framework] (SPF) et [!DNL DomainKeys Identified Mail] (DKIM). Ils ne sont pas visibles par l’utilisateur final mais aident les FAI à filtrer les emails des expéditeurs vérifiés. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) gagne en popularité, bien que ses politiques ne soient pas encore intégrées par tous les FAI dans leurs systèmes de réputation.
+L’authentification est le processus que les FAI utilisent pour valider l’identité d’un expéditeur. Les deux protocoles d’authentification les plus courants sont les suivants : [!DNL Sender Policy Framework] (SPF) et [!DNL DomainKeys Identified Mail] (DKIM). Ils ne sont pas visibles par l’utilisateur final mais aident les FAI à filtrer les emails des expéditeurs vérifiés. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) gagne en popularité, bien que ses politiques ne soient pas encore intégrées par tous les FAI dans leurs systèmes de réputation.
 
 ### SPF
 
@@ -64,11 +64,11 @@ L’authentification est le processus que les FAI utilisent pour valider l’ide
 **Campaign**
 
 * Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
-* [Panneau de Contrôle : Délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
-* [Panneau de Contrôle : Délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
+* [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
+* [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
 * En savoir plus sur l’implémentation d’une feedback loop pour une instance de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ressources supplémentaires
 
-* Pour en savoir plus sur les méthodes d’authentification SPF, DKIM et DMARC, consultez [cette section](/help/additional-resources/authentication.md).
-* Pour en savoir plus sur l&#39;amélioration de la réputation de vos emails avec le réchauffement des adresses IP, consultez [cette section](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* En savoir plus sur les méthodes d’authentification SPF, DKIM et DMARC dans [cette section](/help/additional-resources/authentication.md).
+* En savoir plus sur l’amélioration de la réputation de vos emails grâce au réchauffement des adresses IP dans [cette section](/help/additional-resources/increase-reputation-with-ip-warming.md).
