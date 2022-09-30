@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -45,7 +45,7 @@ La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir u
 
 * **SURBL**
 
-   Consulter la page [http://www.surbl.org/](http://www.surbl.org/)
+   Voir [https://surbl.org/](https://surbl.org/)
 
    SURBL identifie les sites web qui apparaissent régulièrement dans les spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
