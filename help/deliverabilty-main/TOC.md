@@ -2,9 +2,9 @@
 user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
-source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
+source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
@@ -56,5 +56,4 @@ ht-degree: 100%
       + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
    + Notes techniques{#technotes}
-      + [FAQ sur la confidentialité d’Apple](/help/technotes/apple-mail-privacy-faq.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)

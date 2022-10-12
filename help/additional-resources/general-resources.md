@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
+source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 35%
+source-wordcount: '121'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 35%
 Consultez les technotes suivantes pour en savoir plus sur les mises à jour récentes concernant la délivrabilité.
 
 * [Mise en oeuvre des indicateurs de marque de Gmail pour l’identification des messages (BIMI)](../technotes/implement-bimi.md)
-* [FAQ sur la protection de la confidentialité dʼApple Mail](../technotes/apple-mail-privacy-faq.md)
 
 ## Ressources génériques
 
