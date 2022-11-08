@@ -3,16 +3,16 @@ title: Mise en oeuvre des indicateurs de marque de Gmail pour l’identification
 description: Découvrez comment implémenter BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
+source-git-commit: 683ffd3c87a4849aa9fa48fbf50db9ade97991af
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 # Mise en oeuvre de Gmail [!DNL Brand Indicators for Message Identification] (BIMI)
 
-Gmail a récemment annoncé qu&#39;ils seraient [déploiement du soutien général de BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). Vous devrez traiter un certain nombre d’éléments avant de pouvoir en profiter, notamment : Certificats de marque vérifiés, logos marqués, logos correctement formatés, configuration DMARC, et enfin publication d’un enregistrement BIMI sur votre DNS. Nous passerons en revue toutes ces étapes dans cet article.
+Gmail a récemment annoncé qu&#39;ils seraient [déploiement du soutien général de BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace){target=&quot;_blank&quot;}. Vous devrez traiter un certain nombre d’éléments avant de pouvoir en profiter, notamment : Certificats de marque vérifiés, logos marqués, logos correctement formatés, configuration DMARC, et enfin publication d’un enregistrement BIMI sur votre DNS. Nous passerons en revue toutes ces étapes dans cet article.
 
 [!DNL Brand Indicators for Message Identification] (BIMI) est une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes. Non seulement cet oeil accroche peut-être l&#39;engagement, mais il aide aussi à confirmer l&#39;authenticité de l&#39;expéditeur en réduisant le risque de phishing et d&#39;autres tactiques d&#39;espionnage.
 
@@ -41,7 +41,7 @@ Si le logo que vous souhaitez afficher n’est pas enregistré ou n’est pas en
 
 Cela serait également un bon moment pour vous assurer que votre logo répondra aux exigences de format du logo BIMI.
 
-Il doit être au format SVG et se conformer au profil SVG Portable/Secure (SVG-P/S) . Vous trouverez des conseils pour ce faire dans la section [Groupe de travail BIMI](https://bimigroup.org/svg-conversion-tools-released).
+Il doit être au format SVG et se conformer au profil SVG Portable/Secure (SVG-P/S) . Vous trouverez des conseils pour ce faire dans la section [Groupe de travail BIMI](https://bimigroup.org/svg-conversion-tools-released){target=&quot;_blank&quot;}.
 
 ## DMARC
 
@@ -59,12 +59,14 @@ Voici une entrée simple qui doit ressembler à ceci :
 default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
 ```
 
-Vous pouvez obtenir des informations détaillées sur cette entrée et même utiliser un vérificateur BIMI gratuit à l’adresse [Site du groupe de travail BIMI](https://bimigroup.org/implementation-guide).
+Vous pouvez obtenir des informations détaillées sur cette entrée et même utiliser un vérificateur BIMI gratuit à l’adresse [Site du groupe de travail BIMI](https://bimigroup.org/implementation-guide){target=&quot;_blank&quot;}.
 
 
-## Principales mesures à prendre
+## Points clés
 
-Si vous êtes un [!DNL Adobe Campaign] Pour le client Marketo, Adobe peut vous aider à créer la mise à jour DNS BIMI : contactez l’assistance clientèle d’Adobe pour en demander une. Adobe peut également vous aider à résoudre les problèmes si BIMI ne fonctionne pas correctement.
+Si vous êtes un [!DNL Adobe Campaign], Adobe peut vous aider à créer la mise à jour DNS BIMI : contactez l’assistance clientèle d’Adobe pour en demander une. Adobe peut également vous aider à résoudre les problèmes si BIMI ne fonctionne pas correctement.
+
+Si vous êtes un client Marketo, reportez-vous à la section [billet de blog](https://nation.marketo.com/t5/support-blogs/how-to-bimi/ba-p/296966){target=&quot;_blank&quot;} pour obtenir des instructions sur la création de votre enregistrement BIMI.
 
 Pour obtenir de l’aide sur les marques ou les certificats de marque vérifiés, travaillez avec votre équipe juridique et un fournisseur VMC autorisé.
 
