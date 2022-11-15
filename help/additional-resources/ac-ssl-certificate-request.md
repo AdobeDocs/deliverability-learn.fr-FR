@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2253'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,7 @@ Le texte du fichier CSR obtenu doit commencer par **&quot;—COMMENCER LA DEMAND
 Une fois que vous avez reçu le fichier CSR d’Adobe, procédez comme suit :
 
 1. Copiez et collez le texte du fichier CSR dans un décodeur en ligne tel que https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> ou https://www.entrust.net/ssl-technical/csr-viewer.cfm.
-Vous pouvez également utiliser la variable *OpenSSL* sur une machine Linux. Voir à ce sujet la section [cette page externe](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
+Vous pouvez également utiliser la variable *OpenSSL* sur une machine Linux.
 1. Vérifiez que toutes les vérifications sont réussies.
 1. Vérifiez que les paramètres et noms de domaine corrects sont inclus.
 1. Vérifiez que toutes les autres données correspondent aux détails que vous avez fournis lors de l’envoi de votre demande.
@@ -207,7 +207,7 @@ Une fois que vous êtes certain que les certificats SSL demandés sont correctem
 
 >[!NOTE]
 >
->Pour Campaign Classic, les URL à mettre à jour se trouvent principalement dans la variable [Assistant de déploiement](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) et dans le [Comptes externes](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (suivi, page miroir et domaines de ressources publiques). Pour le Campaign Standard, reportez-vous à la section [Paramétrage de l&#39;identité graphique](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>Pour Campaign Classic, les URL à mettre à jour se trouvent principalement dans la variable [Assistant de déploiement](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) et dans le [Comptes externes](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=fr) (suivi, page miroir et domaines de ressources publiques). Pour le Campaign Standard, reportez-vous à la section [Paramétrage de l&#39;identité graphique](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 Une fois les configurations mises à jour, de nouveaux emails sont envoyés avec des URL HTTPS plutôt qu’avec le protocole HTTP. Pour vérifier que les URL sont désormais sécurisées, vous pouvez rapidement effectuer les tests suivants :
 
