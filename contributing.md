@@ -1,8 +1,7 @@
 ---
-source-git-commit: 321dc7eb5ec9e3d82d7d133689104282b553efd1
+source-git-commit: 8ccd915f558f3b06e9ac4b97dc45aefd6b27a4f1
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
@@ -18,7 +17,7 @@ Ce projet respecte le [Code de conduite](code-of-conduct.md) Adobe. En participa
 
 ## Guide du contributeur pour la documentation
 
-Consultez le [Guide du contributeur](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consultez le [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 ## Une question ?
 
@@ -30,7 +29,7 @@ Toutes les contributions tierces à ce projet doivent être accompagnées d’un
 
 ## Révisions du code
 
-Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/articles/about-pull-requests/) pour en savoir plus sur l’envoi de requêtes de tirage.
+Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/fr/articles/about-pull-requests/) pour en savoir plus sur l’envoi de requêtes de tirage.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
