@@ -2,9 +2,7 @@
 title: Mise à jour de la qualification des bounces après une interruption de service en ligne Italia
 description: Découvrez comment mettre à jour la qualification des bounces après une panne Italia Online
 feature: Deliverability
-hide: true
-hidefromtoc: true
-source-git-commit: dfa9b3c9537847c79e612bdcfcacc8e0dccd01ea
+source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 25%
