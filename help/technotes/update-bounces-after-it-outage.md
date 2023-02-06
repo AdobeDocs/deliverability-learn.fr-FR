@@ -2,7 +2,7 @@
 title: Mise à jour de la qualification des bounces après une interruption de service en ligne Italia
 description: Découvrez comment mettre à jour la qualification des bounces après une panne Italia Online
 feature: Deliverability
-source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
+source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 25%
@@ -39,7 +39,7 @@ Selon la logique standard de gestion des bounces, Adobe Campaign a automatiquem
 Pour trouver les destinataires qui ont été affectés par ce problème , ou au cas où cela se reproduirait avec un autre FAI, référez-vous aux instructions ci-dessous:
 
 * Pour Campaign Classic v7 et Campaign v8, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Pour le Campaign Standard, reportez-vous à la section [cette page](https://experienceleague.corp.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Pour le Campaign Standard, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 
 
