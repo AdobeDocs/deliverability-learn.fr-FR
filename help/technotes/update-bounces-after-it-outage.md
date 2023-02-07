@@ -2,10 +2,11 @@
 title: Mise à jour de la qualification des bounces après une interruption de service en ligne Italia
 description: Découvrez comment mettre à jour la qualification des bounces après une panne Italia Online
 feature: Deliverability
-source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
+exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
+source-git-commit: e4efde4b7caac1bcf11d24632ec9982f98f958a2
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 21%
 
 ---
 
@@ -34,6 +35,8 @@ Les symptômes étaient les suivants :
 
 ## Processus de mise à jour{#outage-update}
 
+### Adobe Campaign{#ac-update}
+
 Selon la logique standard de gestion des bounces, Adobe Campaign a automatiquement ajouté ces destinataires à la liste de quarantaine avec un **[!UICONTROL Statut]** de **[!UICONTROL Quarantaine]**. Pour corriger ce problème, vous devez mettre à jour votre table de quarantaines dans Campaign en recherchant et en supprimant ces destinataires ou en basculant leur **[!UICONTROL Statut]** sur **[!UICONTROL Valide]** afin que le processus de nettoyage de nuit les supprime.
 
 Pour trouver les destinataires qui ont été affectés par ce problème , ou au cas où cela se reproduirait avec un autre FAI, référez-vous aux instructions ci-dessous:
@@ -41,5 +44,11 @@ Pour trouver les destinataires qui ont été affectés par ce problème , ou au 
 * Pour Campaign Classic v7 et Campaign v8, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 * Pour le Campaign Standard, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
+### Adobe Journey Optimizer{#ajo-update}
 
+Selon une logique standard de gestion des rebonds, Adobe Journey Optimizer a automatiquement ajouté ces adresses électroniques à la liste de suppression avec une **[!UICONTROL Motif]** paramètre de **[!UICONTROL Destinataire non valide]**. Pour corriger ce problème, vous devez mettre à jour la liste de suppression en recherchant et en supprimant ces adresses électroniques.
+
+Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du **[!UICONTROL Supprimer]** bouton . Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
+
+En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
