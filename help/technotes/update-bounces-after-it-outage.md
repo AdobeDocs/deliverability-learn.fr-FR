@@ -5,10 +5,10 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: 016d7f9da67193d893e762fbe6e191cf87d5b030
+source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 21%
+source-wordcount: '430'
+ht-degree: 20%
 
 ---
 
@@ -27,11 +27,11 @@ En savoir plus dans la communication officielle [here](https://tecnologia.libero
 
 ## Impact{#outage-impact}
 
-Comme dans la plupart des cas, lorsqu’un FAI est en panne, certains emails envoyés via Campaign sont marqués à tort comme des bounces. Cela n&#39;a pas seulement eu un impact sur l&#39;Adobe, mais tout le monde essayant de se faire livrer des emails à Italia Online pendant la durée de la panne.
+Comme dans la plupart des cas, lorsqu’un fournisseur d’accès Internet (FAI) est en panne, certains emails envoyés via Campaign ou Journey Optimizer sont marqués à tort comme des bounces. Cela n&#39;a pas seulement eu un impact sur l&#39;Adobe, mais tout le monde essayant de se faire livrer des emails à Italia Online pendant la durée de la panne.
 
 Les symptômes étaient les suivants :
 
-* **Rebonds au report** avec le message `452 requested action aborted: try again later` - ont été automatiquement relancés et aucune action n’est nécessaire.
+* **Soft bounces** avec le message `452 requested action aborted: try again later` - ont été automatiquement relancés et aucune action n’est nécessaire.
 
 * **Hard bounces** avec le message `550 <email address> recipient rejected` ont été renvoyés par le FAI le 26 janvier, de 8h00 à 14h00, heure locale, pour empêcher les expéditeurs de continuer à surcharger leurs serveurs. Comme le confirme le Postmaster en ligne Italia, il ne s&#39;agit pas de vrais hard bounces, nous vous recommandons donc de mettre en quarantaine toutes les adresses email qui ont été exclues le 26 janvier 2023 en raison de ce message.
 
