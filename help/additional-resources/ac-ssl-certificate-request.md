@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
+source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 Vous devez identifier les noms de domaine et les fonctions (tracking, pages miroir, applications web, etc.) pour sécuriser.
 >[!NOTE]
 >
->Adobe peut vous aider à définir les noms de domaine et les fonctions à impliquer. Pour plus d’informations, contactez votre Adobe Customer Success Manager.
+>Adobe peut vous aider à définir les noms de domaine et les fonctions à impliquer. Pour plus d’informations, contactez votre équipe de compte d’Adobe.
 
 ### Étape 1 - Obtention d’un fichier CSR
 
@@ -160,7 +160,7 @@ Vous pouvez également utiliser la variable *OpenSSL* sur une machine Linux. Voi
 
 ### Étape 5 - Demander l’installation du certificat SSL
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate) pour télécharger le certificat vers Panneau de Contrôle.
+* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate) pour télécharger le certificat vers Panneau de Contrôle.
 
 * Sinon, créez un autre ticket d’assistance via https://adminconsole.adobe.com/ pour demander à l’Adobe d’installer le certificat sur le ou les serveurs d’Adobe.
 
@@ -199,7 +199,7 @@ Il vous appartient de vérifier la période de validité. Adobe vous recommande 
 
 * Créez un ticket d’assistance pour demander un certificat mis à jour au moins deux semaines avant la date d’expiration du certificat. Vous n’avez pas besoin de demander une demande de signature de certificat supplémentaire, sauf si les détails de la demande de signature de certificat ont changé.
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)et si votre environnement est hébergé par Adobe dans un environnement AWS, vous pouvez utiliser le Panneau de Contrôle pour renouveler le certificat avant son expiration. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)et si votre environnement est hébergé par Adobe dans un environnement AWS, vous pouvez utiliser le Panneau de Contrôle pour renouveler le certificat avant son expiration. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
 
 ### Etape 8 - Mettre à jour toute configuration spécifique {#update-configuration}
 
