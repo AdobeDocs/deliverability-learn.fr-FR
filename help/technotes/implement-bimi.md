@@ -3,71 +3,109 @@ title: Mise en oeuvre des indicateurs de marque de Gmail pour l’identification
 description: Découvrez comment implémenter BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 683ffd3c87a4849aa9fa48fbf50db9ade97991af
+source-git-commit: 05f6cd331f4e610e2442d43405333823644d349e
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-# Mise en oeuvre de Gmail [!DNL Brand Indicators for Message Identification] (BIMI)
+# Mise en oeuvre [!DNL Brand Indicators for Message Identification] (BIMI)
 
-Gmail a récemment annoncé qu&#39;ils seraient [déploiement du soutien général de BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace){target=&quot;_blank&quot;}. Vous devrez traiter un certain nombre d’éléments avant de pouvoir en profiter, notamment : Certificats de marque vérifiés, logos marqués, logos correctement formatés, configuration DMARC, et enfin publication d’un enregistrement BIMI sur votre DNS. Nous passerons en revue toutes ces étapes dans cet article.
+[!DNL Brand Indicators for Message Identification] (BIMI) est une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes.
 
-[!DNL Brand Indicators for Message Identification] (BIMI) est une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes. Non seulement cet oeil accroche peut-être l&#39;engagement, mais il aide aussi à confirmer l&#39;authenticité de l&#39;expéditeur en réduisant le risque de phishing et d&#39;autres tactiques d&#39;espionnage.
+Grâce à cette norme, une marque peut déterminer un logo qui doit être affiché dans les boîtes de réception des fournisseurs de messagerie. Une fois publié dans un enregistrement appelé BIMI DNS (Domain Name System), un fournisseur de messagerie peut sélectionner ce logo et l’afficher dans la boîte de réception si certains critères sont satisfaits.
 
-## Certificat de marque vérifié
+Les différents fournisseurs effectuent des mises en oeuvre différentes, mais les avantages sont clairs : se démarquer dans la boîte de réception, établir la confiance et contrôler ce qui est affiché.
 
-L’un des composants clés du programme BIMI de Gmail est l’obligation pour les expéditeurs de disposer d’un certificat de marque vérifié (VMC) émis par une autorité de certification valide. Actuellement, ces VMC ne sont disponibles que depuis Entrust et DigiCert, mais cette liste de fournisseurs va probablement s’allonger à la suite de l’annonce de Gmail.
+BIMI n&#39;améliore pas directement la délivrabilité ni votre réputation. Cela peut contribuer à renforcer la confiance avec vos destinataires et donc à augmenter l’engagement.
 
-Les VMC ressembleront d’une certaine manière aux certificats SSL. Vous aurez besoin d’un VMC pour chaque logo que vous souhaitez afficher. Par conséquent, si vous disposez de nombreuses marques, vous devriez prévoir la nécessité de plusieurs VMC. Chaque VMC peut être valide sur plusieurs domaines si vous obtenez un VMC multi-SAN. Ainsi, si vous souhaitez qu’un logo s’affiche sur plusieurs domaines d’envoi, il vous suffit d’un seul VMC.
+## À quoi ça ressemble ?
 
-## Logo Marque
+Vous trouverez quelques exemples de mise en oeuvre de différents fournisseurs et des informations supplémentaires sur les fournisseurs qui affichent le logo sur la page [Page du groupe BIMI](https://bimigroup.org/where-is-my-bimi-logo-displayed/).
 
-Avant de pouvoir obtenir votre VMC, une autre étape clé doit être effectuée. Pour obtenir un VMC, le logo que vous souhaitez afficher doit être enregistré auprès de l’un des 8 bureaux mondiaux de marques et de brevets approuvés.
+## Qui est le groupe BIMI ?
 
-* Office des brevets et des marques des États-Unis (USPTO)
-* Bureau de la propriété intellectuelle du Canada
-* Office de la propriété intellectuelle de l&#39;Union européenne
-* Office de la propriété intellectuelle du Royaume-Uni
-* Deutsches Brevets - und Markenamt
-* Office des marques du Japon
-* Office espagnol des brevets et des marques
-* IP Australia
+Le groupe BIMI est un groupe de travail qui développe le BIMI, car il couvre non seulement le logo mais aussi les exigences techniques, juridiques et de conformité.
 
-Si le logo que vous souhaitez afficher n’est pas enregistré ou n’est pas enregistré auprès de l’une de ces 8 organisations, vous devrez collaborer avec votre équipe juridique pour résoudre ce problème avant de demander le service VMC.
+Le groupe BIMI se compose de plusieurs parties prenantes de différents secteurs de l’industrie : Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail et Validity.
 
-## Logo Image Format
+## Qui soutient BIMI ?
 
-Cela serait également un bon moment pour vous assurer que votre logo répondra aux exigences de format du logo BIMI.
+La liste des fournisseurs de messagerie prenant en charge BIMI ne cesse de s&#39;allonger. Une liste à jour est disponible [here](https://bimigroup.org/bimi-infographic/) tant pour les prestataires d&#39;assistance que pour les prestataires ayant recours à l&#39;IMI.
 
-Il doit être au format SVG et se conformer au profil SVG Portable/Secure (SVG-P/S) . Vous trouverez des conseils pour ce faire dans la section [Groupe de travail BIMI](https://bimigroup.org/svg-conversion-tools-released){target=&quot;_blank&quot;}.
+Depuis avril 2023, la liste inclut Gmail, Yahoo, La Poste, Fastmail, Onet.pl et Zone, Proofpoint en tant qu&#39;outil anti-spam et Apple Mail (à partir d&#39;iOS 16 et plus).
 
-## DMARC
+Les noms les plus en vue sur cette liste sont évidemment Yahoo, Gmail et un dernier adoptant : Apple avec iOS 16. Apple joue un rôle particulier dans la combinaison, car il ne s’agit pas d’un fournisseur de messagerie, mais il a ajouté la prise en charge de BIMI à son application de messagerie native. Les emails conformes à BIMI seront affichés sous la forme d’un &quot;email certifié numérique&quot; qui renforce la confiance dans la marque.
 
-Une fois que votre logo Marqué est correctement formaté et que votre certificat Marque Vérifié est correctement mis en forme, vous devez également vous assurer que DMARC est entièrement configuré sur tout domaine d’envoi pour lequel vous souhaitez que BIMI fonctionne.
+## Mise en œuvre
 
-Cela implique de s’assurer que le paramètre P= est défini sur Quarantaine ou Rejeter. Si votre DMARC utilise P=None, il ne sera pas admissible pour l’IMI. Le paramètre P=Aucun est vivement recommandé pour vous assurer que vous savez quel courrier provient d’un domaine et que rien ne serait accidentellement bloqué si vous passez à &quot;Quarantaine&quot; ou &quot;Rejeter&quot;, pensez-le comme étant la phase de test et de collecte des informations. Vous devrez toutefois passer à l’application avant que l’IMI ne vous soit accessible.
+La mise en oeuvre de BIMI se fait en plusieurs étapes :
 
-## Entrée DNS
+1. Implémentation DMARC (Domain-based Message Authentication, Reporting and Conformance) au niveau de l’application, tant pour le domaine d’envoi que pour son domaine d’organisation - [En savoir plus](#dmarc)
 
-Alors que tout le reste est enfin aligné et prêt à l&#39;emploi, il est temps de mettre à jour l&#39;entrée DNS avec votre BIMI.
+1. Création du logo de votre marque au format SVG TinyPS - [En savoir plus](#create-brand-logo)
 
-Voici une entrée simple qui doit ressembler à ceci :
+1. S’inscrire à un certificat de marque vérifié (nécessaire uniquement pour certains fournisseurs) - [En savoir plus](#vmc)
+
+1. Publier un enregistrement DNS BIMI avec le logo et le certificat - [En savoir plus](#publish-bimi-record)
+
+1. Avoir une bonne réputation - [En savoir plus](#good-reputation)
+
+>[!NOTE]
+>
+>Notez que toutes les étapes doivent être désactivées.
+
+
+### DMARC {#dmarc}
+
+DMARC est une norme qui permet à la marque de décider ce qu’un fournisseur de messagerie doit faire avec un email qui échoue. [authentication](../additional-resources/authentication.md). Les soi-disant politiques vont de &quot;aucun&quot; à &quot;quarantaine&quot; (placement du dossier Spam) en &quot;rejet&quot; (blocage pur et simple du courrier). Seules les deux dernières politiques sont appelées &quot;application&quot; et répondent aux critères du BIMI. Le courrier envoyé par Adobe transmet l’authentification, car SPF (Sender Policy Framework) et DKIM (Domain Keys Identified Mail) sont configurés par défaut. Adobe configure DMARC sur votre domaine d’envoi sur demande.
+
+Outre DMARC sur le domaine d’envoi, DMARC doit également être employé au niveau de l’application pour le domaine d’organisation (si le domaine d’envoi est news.example.com, example.com est le domaine d’organisation).
+
+### Création du logo de votre marque {#create-brand-logo}
+
+La création du logo doit respecter les exigences à 100 %. Veuillez toujours vous reporter à la section [Directives du groupe BIMI](https://bimigroup.org/creating-bimi-svg-logo-files/).
+
+Outre les exigences techniques, il existe des recommandations pratiques telles que le logo carré, la couleur unie de l’arrière-plan et d’autres. Ces recommandations concernent la meilleure visualisation.
+Veuillez noter que la non-conformité peut entraîner l’affichage du logo.
+
+### Certificat de marque vérifié (VMC) {#vmc}
+
+Un certificat de marque vérifié (VMC) n’est nécessaire que pour certains fournisseurs de messagerie tels que Gmail et Apple. Il est donc facultatif. Nous vous recommandons cependant d’obtenir un VMC pour vraiment tirer parti de BIMI.
+
+Un certificat de marque vérifié est une validation légale que la marque peut utiliser le logo. Une autorité de certification vérifie cette information par l’intermédiaire du bureau des marques où le logo de la marque est enregistré. Ce processus implique plusieurs validations et contrôles juridiques, et peut prendre du temps. Actuellement, deux autorités de certification (autorités de certification) émettent des MC : Digicert et Entrust. Les premiers bureaux de marques sont les États-Unis, le Canada, l’UE, le Royaume-Uni, l’Allemagne, le Japon, l’Australie et l’Espagne.
+
+En règle générale, vous aurez besoin d’un VMC par logo. Disposer d’un VMC pour votre domaine d’organisation couvrira les sous-domaines et avec une fonctionnalité ajoutée, même différents domaines. Si vous disposez de logos différents, plusieurs composants VMC sont nécessaires. L’autorité de certification ou le partenaire avec lequel vous choisissez de travailler vous aidera à configurer cette fonctionnalité.
+
+>[!NOTE]
+>
+>Notez que les VMC ont des frais annuels.
+
+### Publication de l’enregistrement BIMI {#publish-bimi-record}
+
+Une fois les autres étapes effectuées, l’enregistrement DNS BIMI peut être publié. L&#39;enregistrement ressemble à ceci :
 
 ```
-default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
+default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 ```
 
-Vous pouvez obtenir des informations détaillées sur cette entrée et même utiliser un vérificateur BIMI gratuit à l’adresse [Site du groupe de travail BIMI](https://bimigroup.org/implementation-guide){target=&quot;_blank&quot;}.
+&quot;URL PEM&quot; est l’emplacement du fichier du certificat de marque vérifié.
 
+Pour votre domaine d’envoi, cela doit être effectué par Adobe.
 
-## Points clés
+### Bonne réputation {#good-reputation}
 
-Si vous êtes un [!DNL Adobe Campaign], Adobe peut vous aider à créer la mise à jour DNS BIMI : contactez l’assistance clientèle d’Adobe pour en demander une. Adobe peut également vous aider à résoudre les problèmes si BIMI ne fonctionne pas correctement.
+La confiance est la clé pour le BIMI. L&#39;utilisateur fait confiance à son fournisseur de boîtes aux lettres pour qu&#39;il affiche uniquement le logo des expéditeurs légitimes. Le fournisseur de boîtes aux lettres doit donc faire confiance à la marque, ce que fait votre réputation d&#39;expéditeur. Si vous avez une bonne réputation, tout est bon, mais si vous ne l&#39;êtes pas, le logo ne s&#39;affichera pas. Malheureusement, il n’existe aucune information ou mesure permettant de déterminer si la réputation est suffisamment élevée.
 
-Si vous êtes un client Marketo, reportez-vous à la section [billet de blog](https://nation.marketo.com/t5/support-blogs/how-to-bimi/ba-p/296966){target=&quot;_blank&quot;} pour obtenir des instructions sur la création de votre enregistrement BIMI.
+Même passer par les efforts et les dépenses d&#39;un VMC n&#39;enlève pas cette partie. Si le fournisseur de messagerie n&#39;a pas confiance en la marque, le logo ne s&#39;affiche pas.
 
-Pour obtenir de l’aide sur les marques ou les certificats de marque vérifiés, travaillez avec votre équipe juridique et un fournisseur VMC autorisé.
+## Conseils et astuces
 
-L’obtention de la configuration BIMI pour Gmail n’est peut-être pas un processus rapide, mais il peut présenter des avantages significatifs du point de vue de Marketing et de la sécurité.
+* Le groupe BIMI offre un outil de validation pratique pour BIMI. Si vous souhaitez vérifier si tout est configuré et prêt, ou simplement si le logo est conforme, accédez à [ce lien](https://bimigroup.org/bimi-generator/). Pour ce dernier, cliquez simplement sur **[!UICONTROL Générer BIMI]** et saisissez un domaine d’espace réservé, mais l’URL de logo correcte. L&#39;inspecteur vous dira si le logo est conforme.
+
+* Vous pouvez démarrer sans risque sans VMC, votre réputation n’est pas entachée si votre enregistrement BIMI n’inclut pas d’URL VMC, mais le logo peut déjà être affiché dans Yahoo.
+
+* La mise en oeuvre de DMARC au niveau organisationnel est une entreprise de grande envergure. Certaines entreprises sont spécialisées pour aider les marques à réaliser une adoption DMARC complète.
+
+* Une liste complète de questions fréquentes est publiée [here](https://bimigroup.org/faqs-for-senders-esps/).
