@@ -3,9 +3,9 @@ title: Mise en oeuvre des indicateurs de marque de Gmail pour l’identification
 description: Découvrez comment implémenter BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
+source-git-commit: aca2bfff9f0315b735cf0a97f2177083c58e0875
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
