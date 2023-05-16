@@ -3,9 +3,9 @@ user-guide-title: Guide des bonnes pratiques en matière de délivrabilité
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Découvrez les termes, les concepts et les approches clés relatifs à la délivrabilité qui vous permettront d'assurer le succès de votre programme marketing.
 source-git-commit: 05604fff57bbe64a02e97a27369c4aff6c999216
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 96%
       + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
    + Notes techniques {#technotes}
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)
-      + [Mise à jour des bounces après une panne de Italia Online](/help/technotes/update-bounces-after-it-outage.md)
+      + [Mettre à jour les bounces après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
 
