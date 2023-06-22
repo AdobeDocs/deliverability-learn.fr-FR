@@ -1,15 +1,15 @@
 ---
 title: Plaintes
-description: 'Découvrez les plaintes qui sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. '
+description: Découvrez les plaintes qui sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu.
 topics: Deliverability
-kt: 7048
+jira: KT-7048
 thumbnail: kt7048.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+workflow-type: ht
 source-wordcount: '290'
 ht-degree: 100%
 
