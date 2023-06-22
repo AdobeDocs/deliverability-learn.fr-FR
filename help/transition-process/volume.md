@@ -2,16 +2,16 @@
 title: 'Volume : conseils pour une transition fluide'
 description: Le volume de courrier que vous envoyez est essentiel pour établir une réputation positive. Apprenez ce que vous pouvez faire pour une transition fluide.
 topics: Deliverability
-kt: 7055
+jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l’app
 **Campaign**
 
 * En savoir plus sur la gestion de la délivrabilité lors du démarrage d’une nouvelle plateforme avec Adobe Campaign dans [cette section](/help/additional-resources/ac-starting-new-platform.md).
-* Découvrez comment envoyer plusieurs vagues avec Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* Découvrez comment envoyer plusieurs vagues avec Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves).
 * Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
 * [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
 * [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*

@@ -1,14 +1,14 @@
 ---
 title: Collecte d'adresses et croissance des listes
-description: 'Découvrez quelles sont les meilleures sources pour les nouvelles adresses email, comment garantir une qualité des données et l’alignement avec les directives juridiques. '
+description: Découvrez quelles sont les meilleures sources pour les nouvelles adresses email, comment garantir une qualité des données et l’alignement avec les directives juridiques.
 topics: Deliverability
-kt: 7063
+jira: KT-7063
 thumbnail: kt7063.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 5%
@@ -81,7 +81,7 @@ Il y a de nombreux types d&#39;adresses électroniques là-bas. Courrier électr
 Si vous avez de la chance, vous obtenez des comptes secondaires, où les gens recherchent des offres et des offres lorsqu’ils sont prêts à acheter quelque chose. Cela se traduit généralement par de faibles niveaux d’engagement, le cas échéant. Si vous n’avez pas de chance, la liste est pleine d’emails inactifs, qui peuvent désormais être des pièges à spam. Souvent, vous obtenez un mélange d’emails secondaires et inactifs. En règle générale, la qualité de ce type de liste fait plus de mal qu&#39;elle ne fait de bien à un programme de messagerie. Cette pratique est interdite par la [Adobe Campaign Acceptable Use Policy](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Listes ajoutées**
-Ce sont des clients qui ont choisi de s&#39;engager avec votre marque, ce qui est génial. Mais ils ont choisi de s&#39;engager par une autre méthode que le courriel (en magasin, les médias sociaux, etc.). Ils n’ont pas pu être réceptifs à l’obtention d’un email non demandé de votre part et peuvent également être inquiets de la façon dont vous avez obtenu leur adresse électronique puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s’est engagé avec votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers votre concurrence. Cette pratique est interdite par la [Adobe Campaign Acceptable Use Policy](https://www.adobe.com/legal/terms/aup.html).
+Ce sont des clients qui ont choisi de s&#39;engager avec votre marque, ce qui est génial. Mais ils ont choisi de s&#39;engager par une autre méthode que le courriel (en magasin, les médias sociaux, etc.). Ils n’ont pas pu être réceptifs à l’obtention d’un email non demandé de votre part et peuvent également être inquiets de la façon dont vous avez obtenu leur adresse électronique puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s’est engagé avec votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers votre concurrence. Cette pratique est interdite par la [Adobe Campaign Acceptable Use Policy](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Salon professionnel ou autre collection d&#39;événements**
 La collecte des adresses sur un stand ou par le biais d&#39;une autre méthode officielle, nettement identifiée, peut s&#39;avérer utile. Le risque est que de nombreux événements comme celui-ci collectent toutes les adresses et les distribuent par l’intermédiaire du promoteur ou de l’hôte de l’événement. Ce qui signifie que les propriétaires de ces adresses email n&#39;ont jamais demandé à recevoir d&#39;emails de votre marque. Il est probable que ces abonnés se plaignent et marquent votre email comme du spam, et qu&#39;ils n&#39;ont pas fourni d&#39;informations de contact précises.
