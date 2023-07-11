@@ -5,9 +5,11 @@ topics: Deliverability
 jira: KT-5319
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: TM
 exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%
@@ -26,7 +28,7 @@ Voici quelques points forts :
 
 ## Quelles données mettent-ils à disposition ?
 
-[!DNL Microsoft]l’outil de reporting propriétaire de l’expéditeur, [!DNL Smart Network Data Services] (SNDS) vous permet d’afficher des mesures relatives au volume de courrier que vous envoyez et au nombre de courriers acceptés, ainsi que les plaintes et pièges à spam. Gardez à l’esprit que les données partagées sont un échantillon et ne reflètent pas des nombres exacts, mais qu’elles représentent le mieux la manière dont les [!DNL Microsoft] vous considère comme un expéditeur. [!DNL Microsoft] ne fournit pas d’informations publiques sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles via la variable [!DNL Return Path Certification] pour des frais supplémentaires.
+[!DNL Microsoft]l’outil de reporting propriétaire de l’expéditeur, [!DNL Smart Network Data Services] (SNDS) vous permet d’afficher des mesures relatives au volume de courrier que vous envoyez et au nombre de courriers acceptés, ainsi que les plaintes et pièges à spam. Gardez à l’esprit que les données partagées sont un échantillon et ne reflètent pas des nombres exacts, mais qu’elles représentent le mieux la manière dont les données sont partagées. [!DNL Microsoft] vous considère comme un expéditeur. [!DNL Microsoft] ne fournit pas d’informations publiques sur leur groupe d’utilisateurs de confiance, mais ces données sont disponibles via la variable [!DNL Return Path Certification] pour des frais supplémentaires.
 
 ## Réputation de l&#39;expéditeur
 

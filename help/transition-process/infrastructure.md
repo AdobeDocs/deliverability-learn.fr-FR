@@ -6,9 +6,11 @@ jira: KT-7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
+role: Admin, Leader
+level: Beginner
 team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 2%
@@ -25,7 +27,7 @@ Les temps ont changé, et certains FAI (comme Gmail et Yahoo) intègrent désorm
 
 Une partie du processus d’intégration des nouveaux expéditeurs sur les plateformes d’Adobe inclut la configuration de vos domaines d’envoi et la vérification de la bonne configuration de votre infrastructure. Vous devez travailler avec un expert sur les domaines que vous prévoyez d’utiliser à long terme. Voici quelques conseils pour définir une bonne stratégie de domaine :
 
-* Soyez aussi clair et réfléchissant que possible à la marque avec le domaine que vous choisissez afin que les utilisateurs n’identifient pas incorrectement l’email comme spam. Voici quelques exemples : newsletter.foo.com, tickets.foo.com, etc.
+* Soyez aussi clair et réfléchissant que possible à la marque avec le domaine que vous choisissez afin que les utilisateurs n&#39;identifient pas incorrectement l&#39;email comme spam. Voici quelques exemples : newsletter.foo.com, tickets.foo.com, etc.
 * Vous ne devez pas utiliser votre domaine parent ou d’entreprise, car cela pourrait avoir un impact sur la diffusion du courrier de votre entreprise aux FAI.
 * Envisagez d’utiliser un sous-domaine de votre domaine parent pour légitimer votre domaine d’envoi.
 * Séparez vos sous-domaines pour les catégories de messages transactionnels et marketing. Cela permettra à votre flux de trafic email d’être plus fiable, car les FAI recherchent cette méthode d’envoi, qui est une bonne pratique connue et vivement recommandée.

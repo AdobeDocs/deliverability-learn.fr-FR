@@ -6,9 +6,11 @@ jira: KT-5257
 thumbnail: kt5257.jpg
 doc-type: article
 activity: understand
+role: Leader, User
+level: Beginner
 team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 2%
@@ -21,9 +23,9 @@ L’engagement est devenu le facteur le plus important qui impacte les décision
 
 Un bon taux d’ouverture et de clic varie en fonction de nombreux facteurs pour différents expéditeurs. Consultez votre conseiller en délivrabilité pour définir des objectifs et des lignes de base spécifiques pour votre programme de messagerie électronique.
 
-L’engagement par courrier électronique est également un terme utilisé pour décrire un type de mesure qui permet de déterminer la réputation des adresses IP. Les FAI qui possèdent leurs propres portails (Hotmail, AOL, Yahoo, Gmail, etc.) disposer d’une quantité considérable de données disponibles concernant les interactions de leurs clients avec leur courrier électronique ; Ils peuvent voir les ouvertures, les clics et de nombreuses autres formes d’interaction, même si le courrier électronique est déplacé dans ou hors du dossier spam. Ils peuvent également vérifier si l’adresse électronique à laquelle il a été envoyé figure dans le carnet d’adresses des clients ou non.
+L’engagement par courrier électronique est également un terme utilisé pour décrire un type de mesure qui permet de déterminer la réputation des adresses IP. Les FAI qui possèdent leurs propres portails (Hotmail, AOL, Yahoo, Gmail, etc.) disposer d’une quantité considérable de données disponibles concernant les interactions de leurs clients avec leur courrier. Ils peuvent voir les ouvertures, les clics et de nombreuses autres formes d’interaction, même si le courrier électronique est déplacé dans ou hors du dossier spam. Ils peuvent également vérifier si l’adresse électronique à laquelle il a été envoyé figure dans le carnet d’adresses des clients ou non.
 
-En tant qu’expéditeur, vous ne pouvez pas suivre toutes les mêmes mesures d’engagement, mais les ouvertures et les clics constituent un bon point de départ. Il est important de noter que les FAI n’ont de visibilité que sur l’engagement par e-mail. Bien que d’autres formes d’engagement soient importantes pour l’ensemble de l’entreprise, les FAI ne disposent que d’une visibilité et rendent des verdicts de filtrage basés sur les mesures des emails.
+En tant qu’expéditeur, vous ne pouvez pas suivre toutes les mêmes mesures d’engagement, mais les ouvertures et les clics constituent un bon point de départ. Il est important de noter que les FAI n’ont de visibilité que sur l’engagement par email. Bien que d’autres formes d’engagement soient importantes pour l’ensemble de l’entreprise, les FAI ne disposent que d’une visibilité et rendent des verdicts de filtrage basés sur les mesures des emails.
 
 ## Qualité sur quantité
 
@@ -51,7 +53,7 @@ Lorsque les destinataires répondent aux emails marketing, une réponse est atte
 
 Il s’agit également d’une bien meilleure expérience client qui contribuera à accroître la perception positive des consommateurs de votre marque. Après tout, rien ne dit &quot;faites affaire avec nous s&#39;il vous plaît&quot; comme &quot;nous voulons avoir de vos nouvelles.&quot;
 
-Un dernier élément clé de la stratégie de réponse est que si vous disposez d’une véritable adresse électronique à laquelle ils peuvent répondre, assurez-vous que quelqu’un la surveille et qu’il ne s’agit pas seulement d’une réponse automatique. Si elle n’est pas surveillée, les attentes manquées peuvent frustrer le client et entraîner des plaintes ou une diminution de l’engagement.
+Un dernier élément clé de la stratégie de réponse est que si vous avez une vraie adresse email à laquelle ils peuvent répondre, assurez-vous que quelqu&#39;un la surveille et ce n&#39;est pas seulement une réponse automatique. Si elle n’est pas surveillée, les attentes manquées peuvent frustrer le client et entraîner des plaintes ou une diminution de l’engagement.
 
 ## Ressources spécifiques au produit
 

@@ -1,39 +1,41 @@
 ---
-title: Mise à jour de la qualification des bounces après une interruption de service en ligne Italia
-description: Découvrez comment mettre à jour la qualification des bounces après une panne Italia Online
+title: Mettre à jour la qualification des bounces après une panne d’Italia Online
+description: Découvrez comment mettre à jour la qualification des bounces après une panne d’Italia Online.
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
+role: Admin
+level: Beginner
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 20%
+ht-degree: 53%
 
 ---
 
-# Mise à jour de hard bounces incorrects après une panne d&#39;Italia Online {#update-bounce-italia}
+# Mettre à jour les hard bounces incorrects après une panne d’Italia Online {#update-bounce-italia}
 
 ## Contexte{#outage-context}
 
 Depuis le 22 janvier (heure locale), Italia Online a subi une panne qui a entraîné plusieurs retards et refusé les emails. Le service a commencé à reprendre avec une capacité limitée le 26 janvier.
 
-Les domaines concernés sont les suivants : **libero.it**, **virgilio.it**, **inwind.it**, **iol.it**, et **blu.it**.
+Les domaines concernés étaient les suivants : **libero.it**, **virgilio.it**, **inwind.it**, **iol.it** et **blu.it**.
 
-Ce problème est survenu du 1/22/2023 au 1/26/2023, mais la plupart des quarantaines incorrectes ont eu lieu le 26 janvier.
+Ce problème s’est produit du 22/01/2023 au 26/01/2023, mais la plupart des mises en quarantaine indésirables ont eu lieu le 26 janvier.
 
-En savoir plus dans la communication officielle [here](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}.
+En savoir plus dans la communication officielle [ici](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}.
 
 
 ## Impact{#outage-impact}
 
-Comme dans la plupart des cas, lorsqu’un fournisseur d’accès Internet (FAI) est en panne, certains emails envoyés via Campaign ou Journey Optimizer sont marqués à tort comme des bounces. Cela n&#39;a pas seulement eu un impact sur l&#39;Adobe, mais tout le monde essayant de se faire livrer des emails à Italia Online pendant la durée de la panne.
+Comme dans la plupart des cas, lorsqu’un fournisseur d’accès Internet (FAI) est en panne, certains emails envoyés via Campaign ou Journey Optimizer sont marqués à tort comme des bounces. Cette panne n’a pas seulement eu un impact sur Adobe, mais aussi sur tous ceux qui essayaient d’envoyer des e-mails sur Italia Online pendant la durée de la panne.
 
-Les symptômes étaient les suivants :
+Les symptômes étaient les suivants :
 
 * **Soft bounces** avec le message `452 requested action aborted: try again later` - ont été automatiquement relancés et aucune action n’est nécessaire.
 
-* **Hard bounces** avec le message `550 <email address> recipient rejected` ont été renvoyés par le FAI le 26 janvier, de 8h00 à 14h00, heure locale, pour empêcher les expéditeurs de continuer à surcharger leurs serveurs. Comme le confirme le Postmaster en ligne Italia, il ne s&#39;agit pas de vrais hard bounces, nous vous recommandons donc de mettre en quarantaine toutes les adresses email qui ont été exclues le 26 janvier 2023 en raison de ce message.
+* Des **Hard bounces** avec le message `550 <email address> recipient rejected` ont été retournés par le FAI le 26 janvier, entre 8 h et 14 h, heure locale, pour éviter que les expéditeurs et les expéditrices ne continuent à surcharger leurs serveurs. Comme l’a confirmé le Postmaster d’Italia Online, il ne s&#39;agit pas de véritables hard bounces. Nous recommandons donc de retirer de la quarantaine toutes les adresses e-mail qui ont été exclues le 26 janvier 2023 en raison de ce message.
 
 ## Processus de mise à jour{#outage-update}
 

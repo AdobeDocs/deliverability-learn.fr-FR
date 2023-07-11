@@ -6,9 +6,11 @@ jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
+role: Admin,User
+level: Beginner
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 2%
@@ -21,7 +23,7 @@ Le volume de courrier que vous envoyez est essentiel pour établir une réputati
 
 Les seuils de volume varient selon les FAI et peuvent également varier en fonction des mesures d’engagement moyennes. Certains expéditeurs nécessitent une augmentation très faible et lente du volume, tandis que d’autres peuvent permettre une augmentation plus rapide du volume. Nous vous recommandons de travailler avec un expert, comme un consultant en délivrabilité d’Adobe, pour développer un plan de volume personnalisé.
 
-Voici une liste d’astuces et de conseils pour la transition en douceur :
+Voici une liste d’astuces et de conseils pour une transition fluide :
 
 * **Autorisation** est la base de tout programme de messagerie réussi.
 * **Faible et lent** — commencez par de faibles volumes d&#39;envoi, puis augmentez au fur et à mesure que vous établissez votre réputation d&#39;expéditeur.
@@ -34,7 +36,7 @@ Voici une liste d’astuces et de conseils pour la transition en douceur :
    * Par exemple, si le domaine de votre société est xyz.com, email.xyz.com offre plus de crédibilité aux FAI que xyzemail.com
 * **Transparence** — les détails d’enregistrement de votre domaine de courriel doivent être disponibles publiquement et ne doivent pas être privés.
 
-Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l’approche traditionnelle de préparation promotionnelle. Il est évidemment difficile de contrôler le volume des emails transactionnels en raison de leur nature, puisqu’il nécessite généralement une interaction de l’utilisateur pour déclencher la touche email. Dans certains cas, les messages transactionnels peuvent simplement être transférés sans plan formel. Dans d’autres cas, il peut être préférable de faire la transition de chaque type de message au fil du temps pour augmenter lentement le volume. Par exemple, vous pouvez souhaiter effectuer la transition comme suit :
+Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l&#39;approche traditionnelle de préparation promotionnelle. Il est évidemment difficile de contrôler le volume des emails transactionnels en raison de leur nature, puisqu’il nécessite généralement une interaction de l’utilisateur pour déclencher la touche email. Dans certains cas, les messages transactionnels peuvent simplement être transférés sans plan formel. Dans d’autres cas, il peut être préférable de faire la transition de chaque type de message au fil du temps pour augmenter lentement le volume. Par exemple, vous pouvez souhaiter effectuer la transition comme suit :
 
 1. Confirmation d’achat - engagement élevé en général
 2. Abandon de panier - moyen - engagement élevé en général
