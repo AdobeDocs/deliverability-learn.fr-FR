@@ -11,15 +11,15 @@ level: Beginner
 team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Délivrabilité stratégie et définition
+# Stratégie et définition de la  délivrabilité
 
-La conception de campagnes de marketing par e-mail réussies dépend d’une compréhension claire des objectifs marketing, qu’ils soient liés à la prospection ou aux initiatives de gestion de la relation client (CRM). Cela permet de déterminer qui cibler, quoi promouvoir et quand communiquer.
+Le succès des campagnes marketing par e-mail dépend de la compréhension des objectifs marketing, qu’il s’agisse de prospection ou d’initiatives de gestion de la relation client (GRC) Cela permet de déterminer qui cibler, quoi promouvoir et quand communiquer.
 
 Voici quelques exemples d’objectifs de stratégie de marketing par email :
 
@@ -32,17 +32,17 @@ Voici quelques exemples d’objectifs de stratégie de marketing par email :
 
 ## Définition de la délivrabilité
 
-Deux mesures clés jouent un rôle dans la définition de la délivrabilité. Le *taux de diffusion* est le pourcentage d’emails qui ne rebondissent pas et sont acceptés par le FAI. Le *placement dans la boîte de réception* s&#39;applique aux messages qui sont acceptés par le FAI et détermine si l&#39;email arrive dans la boîte de réception ou dans le dossier de courriers indésirables.
+Deux mesures clés jouent un rôle dans la définition de la délivrabilité. Le *taux de délivrabilité* correspond au pourcentage d&#39;emails qui ne sont pas retournés et qui sont acceptés par le FAI. Le *placement dans la boîte de réception* s&#39;applique aux messages qui sont acceptés par le FAI et détermine si l&#39;email arrive dans la boîte de réception ou dans le dossier de courriers indésirables.
 
-Il est important de comprendre à la fois le taux de délivrabilité et le taux de placement dans la boîte de réception lors de la mesure des performances des emails. Un taux de délivrabilité élevé n&#39;est pas la seule facette de la délivrabilité. Ce n&#39;est pas parce qu&#39;un message est reçu par le biais du point de contrôle initial d&#39;un FAI que votre abonné a réellement vu et interagi avec votre communication.
+Il est important de comprendre à la fois le taux de délivrabilité et le taux de placement dans la boîte de réception lors de la mesure des performances des emails. Un taux de délivrabilité élevé n&#39;est pas la seule facette de la délivrabilité. Ce n’est pas parce qu’un message est reçu par l’intermédiaire du point de contrôle initial d’un FAI que votre abonné a réellement consulté votre communication et interagi avec celle-ci.
 
 ## Importance de la délivrabilité
 
-Si vous ne savez pas si vos emails sont diffusés ou s’ils arrivent dans la boîte de réception par rapport au dossier spam, vous devez le faire. Voici pourquoi.
+Vous devriez savoir si vos emails sont diffusés ou s’ils arrivent dans la boîte de réception ou le dossier des courriers indésirables. Voici pourquoi.
 
-De nombreuses heures sont consacrées à la planification et à la production des campagnes par e-mail. Si les emails rebondissent ou finissent par atterrir dans le dossier de spam de vos abonnés, vos clients ne les liront probablement pas, votre appel à l’action (CTA) ne sera pas acquitté et vous ne serez pas à la hauteur de vos objectifs de recettes en raison de conversions perdues. En d&#39;autres termes, vous ne pouvez pas vous permettre d&#39;ignorer la délivrabilité. Celle-ci est essentielle au succès de vos efforts de marketing par e-mail et à vos bénéfices.
+De nombreuses heures sont consacrées à la planification et à la production des campagnes par e-mail. Si les email sont retournés ou s’ils finissent dans le dossier des courriers indésirables de vos abonnés, vos clients ne les liront probablement pas, votre appel à l&#39;action ne sera pas entendu et vous ne serez pas en mesure de réaliser vos objectifs en matière de chiffre d’affaires en raison de conversions perdues. En d’autres termes, vous ne pouvez pas vous permettre d’ignorer la délivrabilité. Celle-ci est essentielle au succès de vos efforts de marketing par e-mail et à vos bénéfices.
 
-Suivez les bonnes pratiques en matière de délivrabilité pour vous assurer que votre email aura les meilleures chances d&#39;être ouvert, de faire l&#39;objet d&#39;un clic et d&#39;atteindre l&#39;objectif de conversion. Vous pouvez trouver un objet accrocheur, présenter de belles images et un contenu attrayant, Mais si cet email n&#39;est pas diffusé, le client n&#39;a aucune opportunité de se convertir. Dans le cadre de la délivrabilité des emails, chaque étape du processus d&#39;acceptation des emails dépend de la précédente pour le succès du programme.
+Suivez les bonnes pratiques en matière de délivrabilité pour vous assurer que votre email aura les meilleures chances d&#39;être ouvert, de faire l&#39;objet d&#39;un clic et d&#39;atteindre l&#39;objectif de conversion. Vous pouvez trouver un objet accrocheur, présenter de belles images et un contenu attrayant, mais si l’email n’est pas diffusé, le client n’aura aucune opportunité de conversion. Dans le cadre de la délivrabilité des emails, chaque étape du processus d&#39;acceptation des emails dépend de la précédente pour le succès du programme.
 
 ### Étape 1 : diffusion de l’email
 
@@ -85,7 +85,7 @@ Voici quelques facteurs importants concernant le taux de clic :
 
 * Email diffusé, arrivé dans la boîte de réception et ouvert
 * Fort appel à l’action
-   * Il s&#39;agit de l&#39;action principale que vous voulez obtenir de votre audience. Normalement, il s’agit d’un clic sur une URL. Assurez-vous qu’il est clair et facile à trouver pour l’utilisateur.
+   * Il s&#39;agit de l&#39;action principale que vous voulez obtenir de votre audience. Normalement, il s’agit d’un clic sur une URL. Vérifiez que celle-ci est claire et facile à trouver pour l’utilisateur.
 * Pertinence ou valeur du contenu
 
 ### Étape 5 : conversion
@@ -99,7 +99,7 @@ Voici quelques facteurs importants concernant la conversion :
 
 ### Impact potentiel sur le chiffre d’affaires
 
-La conversion est essentielle, mais quelle est l&#39;alternative ? Votre stratégie de délivrabilité peut renforcer ou affaiblir votre programme de marketing par email. Le graphique ci-après montre la perte potentielle de chiffre d’affaires qu&#39;une politique de délivrabilité inadaptée peut entraîner sur votre programme marketing. Comme nous l&#39;avons montré, pour une entreprise qui a un taux de conversion de 2 % et un achat moyen de 100 $, chaque réduction de 10 % du placement dans la boîte de réception équivaut à une perte de chiffre d’affaires de près de 20 000 $. Souvenez-vous que ces chiffres sont uniques pour chaque expéditeur.
+La conversion est essentielle, mais quelle est l&#39;alternative ? Votre stratégie de délivrabilité peut renforcer ou affaiblir votre programme de marketing par email. Le graphique ci-après montre la perte potentielle de chiffre d’affaires qu&#39;une politique de délivrabilité inadaptée peut entraîner sur votre programme marketing. Comme nous l&#39;avons montré, pour une entreprise qui a un taux de conversion de 2 % et un achat moyen de 100 $, chaque réduction de 10 % du placement dans la boîte de réception équivaut à une perte de chiffre d’affaires de près de 20 000 $. Souvenez-vous que ces chiffres sont uniques pour chaque expéditeur.
 
 | Envoyés | Pourcentage | Délivrés | Pourcentage | Boîte de réception | Nombre non présent dans la boîte de réception | Taux de conversion | Nombre de pertes | moyen | Perte de |
 |------|-----------|-----------|----------|-------|---------------------|-----------------|-----------------|----------|-----------|
