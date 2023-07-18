@@ -9,7 +9,7 @@ exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
 source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
 source-wordcount: '2252'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -76,7 +76,7 @@ Vous devez identifier les noms de domaine et les fonctions (tracking, pages miro
 
 Pour obtenir un fichier CSR (Certificate Signing Request), procédez comme suit.
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) pour générer et télécharger un fichier CSR à partir du Panneau de Contrôle.
+* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#subdomains-and-certificates) pour générer et télécharger un fichier CSR à partir du Panneau de Contrôle.
 
 * Sinon, créez un ticket d’assistance via https://adminconsole.adobe.com/ pour obtenir un fichier CSR auprès de l’Assistance clientèle d’Adobe pour le ou les sous-domaines requis.
 

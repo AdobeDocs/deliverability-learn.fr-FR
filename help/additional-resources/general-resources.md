@@ -33,7 +33,7 @@ Cette section répertorie des ressources supplémentaires sur la délivrabilité
 * [Listes Blackhole en temps réel](../../help/additional-resources/blocklist-databases.md)
 * [Dépannage](../../help/additional-resources/troubleshooting.md)
 
-   <!--
+  <!--
     [IP Certification](../../help/additional-resources/ip-certification.md)
     [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
 

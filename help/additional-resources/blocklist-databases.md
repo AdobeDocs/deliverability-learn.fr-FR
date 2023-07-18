@@ -27,31 +27,31 @@ La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir u
 
 * **Spamhaus**
 
-   Consultez la page [https://www.spamhaus.org/](https://www.spamhaus.org/)
+  Consultez la page [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   La base de données est plus importante. Être classé dans cette liste est généralement une situation grave. Si cela se produit, vous devez agir IMMÉDIATEMENT et avertir les services commerciaux, les services chargés de la délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  La base de données est plus importante. Être classé dans cette liste est généralement une situation grave. Si cela se produit, vous devez agir IMMÉDIATEMENT et avertir les services commerciaux, les services chargés de la délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
-   Consultez la page [https://www.spamcop.net/](https://www.spamcop.net/)
+  Consultez la page [https://www.spamcop.net/](https://www.spamcop.net/)
 
-   Une des bases les plus connues. Si l&#39;une de vos adresses IP est répertoriée sur cette liste, cela signifie généralement que les utilisateurs de SpamCom ont déclaré vos messages comme étant des spams ou que vous avez envoyé des messages dans les pièges à spam de SpamCop.
+  Une des bases les plus connues. Si l&#39;une de vos adresses IP est répertoriée sur cette liste, cela signifie généralement que les utilisateurs de SpamCom ont déclaré vos messages comme étant des spams ou que vous avez envoyé des messages dans les pièges à spam de SpamCop.
 
 * **URIBL**
 
-   Consultez la page [https://www.uribl.com/](https://www.uribl.com/)
+  Consultez la page [https://www.uribl.com/](https://www.uribl.com/)
 
-   Cette liste identifie les domaines qui apparaissent régulièrement dans les messages déclarés comme étant des spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de la délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  Cette liste identifie les domaines qui apparaissent régulièrement dans les messages déclarés comme étant des spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de la délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SURBL**
 
-   Voir [https://surbl.org/](https://surbl.org/)
+  Voir [https://surbl.org/](https://surbl.org/)
 
-   SURBL identifie les sites web qui apparaissent régulièrement dans les spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  SURBL identifie les sites web qui apparaissent régulièrement dans les spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **iX Manitu**
 
-   Cette liste recense des IP et est très utilisée en Allemagne, voir la page [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  Cette liste recense des IP et est très utilisée en Allemagne, voir la page [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

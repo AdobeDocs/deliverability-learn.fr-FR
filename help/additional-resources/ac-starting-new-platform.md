@@ -9,7 +9,7 @@ exl-id: 6c9ade01-3052-4311-af80-888294820024
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 61%
+ht-degree: 64%
 
 ---
 
@@ -34,7 +34,7 @@ Vous trouverez ci-dessous la liste des principes essentiels à respecter lors du
 * Si vous disposez de ces informations, **importez des adresses non valides dans la table des quarantaines**.
 Le démarrage d’une plateforme s’accompagne souvent de l’utilisation d’une liste d’adresses inconnues jusqu’ici, qui n’est pas entièrement qualifiée. L’envoi de messages à des adresses non valides ou à des adresses servant de leurres contribuera à affaiblir la réputation de la plateforme.
 
-   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est disponible via le **[!UICONTROL Administration > Gestion de campagne > Gestion des échecs > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** menus (Campaign Standard).
+   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est disponible via le **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** menus (Campaign Standard).
 
    * Si on souhaite malgré tout requalifier les adresses invalides, il est nettement préférable de le faire une fois la réputation de la plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l&#39;usage des mauvaises adresses.
 
@@ -55,12 +55,12 @@ Pour plus d’informations sur les principes répertoriés ci-dessus et leur mis
 **Adobe Campaign Classic**
 
 * [Optimiser votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [Identifier les adresses en quarantaine pour l’ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
-* [Envoyer en plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
-* [Surveillance des diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages)
+* [Identification des adresses en quarantaine pour lʼensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [Envoyer en plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves)
+* [Surveillance des diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages)
 
 **Adobe Campaign Standard**
 
 * [Optimiser votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [Identifier les adresses en quarantaine pour l’ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
-* [Surveillance d’une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)
+* [Identification des adresses en quarantaine pour lʼensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr)
+* [Surveillance d’une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=fr-FR)

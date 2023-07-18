@@ -128,11 +128,11 @@ Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour p
 * faire relever chaque boîte par une seule instance,
 * Configurez les instances pour qu’elles ne traitent que les messages qui les concernent : les informations d’instance se trouvent dans l’en-tête Message-ID des messages envoyés par Adobe Campaign et figurent donc également dans les messages de feedback loop. Il vous suffit de spécifier le paramètre **checkInstanceName** dans le fichier de configuration de l’instance (par défaut, l’instance n’est pas vérifiée, ce qui peut entraîner une mise en quarantaine abusive de certaines adresses) :
 
-   ```
-   <serverConf>
-     <inMail checkInstanceName="true"/>
-   </serverConf>
-   ```
+  ```
+  <serverConf>
+    <inMail checkInstanceName="true"/>
+  </serverConf>
+  ```
 
 Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux services de feedback loop pour les FAI suivants : AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
@@ -205,9 +205,9 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 SMTP (Simple mail transfer protocol) est une norme Internet pour la transmission des emails.
 
-Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]** dossier. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
+Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]** dossier. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
 
-Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez qualifier correctement les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
+Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez qualifier correctement les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
 
 ### Adresses IP dédiées {#dedicated-ips}
 

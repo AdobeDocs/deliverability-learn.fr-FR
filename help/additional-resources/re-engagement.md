@@ -65,11 +65,11 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 * La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur faire réactiver leur abonnement en envoyant une campagne de reconfirmation unique.
 * Les campagnes de confirmation sont un bon moyen de demander aux abonnés inactifs depuis longtemps s&#39;ils souhaitent rester sur la liste d&#39;abonnements. Lors de la création de l&#39;opération, il est préférable d&#39;ajouter un lien &quot;cliquez ici&quot; afin qu&#39;il puisse confirmer l&#39;action et vérifier son adresse. Ainsi, l’action peut être enregistrée dans la base de données. Voici un exemple d&#39;email de reconfirmation :
 
-   ![](../../help/assets/deliverability_implementation_3.png)
+  ![](../../help/assets/deliverability_implementation_3.png)
 
-   Une fois que l&#39;abonné a effectué une action, une landing page avec la confirmation de sa réinscription peut être proposée. Voici un exemple de landing page :
+  Une fois que l&#39;abonné a effectué une action, une landing page avec la confirmation de sa réinscription peut être proposée. Voici un exemple de landing page :
 
-   ![](../../help/assets/deliverability_implementation_4.png)
+  ![](../../help/assets/deliverability_implementation_4.png)
 
 ## Ressources spécifiques au produit
 

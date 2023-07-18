@@ -48,7 +48,7 @@ Posez-vous les questions suivantes pour identifier les causes possibles de votre
 
 Si votre problème de diffusion est dû à des plaintes :
 * Vous devez essayer de déterminer pourquoi les destinataires se plaignent.
-* Vous pouvez également envisager de déplacer votre lien de désabonnement en haut de votre email. Ainsi, les abonnés pourront se désabonner au lieu de se plaindre en utilisant le bouton spam.
+* Vous pouvez également envisager de déplacer votre lien de désabonnement en haut de votre e-mail. Ainsi, les abonnés pourront se désabonner au lieu de se plaindre en utilisant le bouton spam.
 
 Les expéditeurs peuvent recueillir une mine d’informations à partir des plaintes issues d’une [feedback loop](/help/transition-process/infrastructure.md#feedback-loops) :
 * Il est important de regrouper les données et de rechercher des schémas dans des éléments comme la source d’opt-in, la durée d’abonnement à l’adresse, ou même certains comportements liés aux données démographiques.
@@ -57,12 +57,12 @@ Les expéditeurs peuvent recueillir une mine d’informations à partir des plai
 Les plaintes proviennent aussi des abonnés qui ne veulent tout simplement plus recevoir d’emails :
 * Souvent, cette situation découle d’un nombre excessif de messages, de leur perception par les abonnés, du caractère inattendu des messages ou de l’oubli par les abonnés de leur accord préalable.
 * Par ailleurs, il est important de vérifier que tous les points de collecte sont clairs et qu’il n’y a pas de cases précochées dans vos points d’acquisition.
-* Vous devez également envoyer un email de bienvenue aux abonnés qui donnent leur accord préalable pour leur expliquer à quelle fréquence ils peuvent s’attendre à recevoir des emails de votre part.
+* Vous devez également envoyer un e-mail de bienvenue aux abonnés qui donnent leur accord préalable pour leur expliquer à quelle fréquence ils peuvent s’attendre à recevoir des e-mails de votre part.
 
 ### Validité des données
 
 **Les erreurs hard se produisent lorsque vous effectuez un envoi vers une adresse en échec d&#39;un FAI.****** Une adresse peut être en échec pour de nombreuses raisons, notamment :
-* Adresse mal orthographiée. Il est possible de résoudre ce problème grâce à un service de validation des données en temps réel ou à l’obligation de confirmer l’accord préalable avant d’envoyer des emails marketing à cette adresse.
+* Adresse mal orthographiée. Il est possible de résoudre ce problème grâce à un service de validation des données en temps réel ou à l’obligation de confirmer l’accord préalable avant d’envoyer des e-mails marketing à cette adresse.
 * Liste ou source de données incorrecte. Si les adresses proviennent d’une nouvelle source, vérifiez comment elles ont été collectées et assurez-vous que leur utilisation a été autorisée.
 * Envoi à une adresse active à un moment donné, mais fermée ou supprimée suite à une période d’inactivité.
 
