@@ -27,7 +27,7 @@ Les temps ont changé, et certains FAI (comme Gmail et Yahoo) intègrent désorm
 
 Une partie du processus d’intégration des nouveaux expéditeurs sur les plateformes d’Adobe inclut la configuration de vos domaines d’envoi et la vérification de la bonne configuration de votre infrastructure. Vous devez travailler avec un expert sur les domaines que vous prévoyez d’utiliser à long terme. Voici quelques conseils pour définir une bonne stratégie de domaine :
 
-* Soyez aussi clair et réfléchissant que possible à la marque avec le domaine que vous choisissez afin que les utilisateurs n&#39;identifient pas incorrectement l&#39;email comme spam. Voici quelques exemples : newsletter.foo.com, tickets.foo.com, etc.
+* Soyez aussi clair et réfléchissant que possible à la marque avec le domaine que vous choisissez afin que les utilisateurs n&#39;identifient pas incorrectement l&#39;email comme spam. Voici quelques exemples : newsletter.foo.com, receipts.foo.com, etc.
 * Vous ne devez pas utiliser votre domaine parent ou d’entreprise, car cela pourrait avoir un impact sur la diffusion du courrier de votre entreprise aux FAI.
 * Envisagez d’utiliser un sous-domaine de votre domaine parent pour légitimer votre domaine d’envoi.
 * Séparez vos sous-domaines pour les catégories de messages transactionnels et marketing. Cela permettra à votre flux de trafic email d’être plus fiable, car les FAI recherchent cette méthode d’envoi, qui est une bonne pratique connue et vivement recommandée.
@@ -47,7 +47,7 @@ En arrière-plan, les plateformes d’Adobe traitent des données concernant les
 
 ## Authentification {#authentication}
 
-L’authentification est le processus que les FAI utilisent pour valider l’identité d’un expéditeur. Les deux protocoles d’authentification les plus courants sont les suivants : [!DNL Sender Policy Framework] (SPF) et [!DNL DomainKeys Identified Mail] (DKIM). Ils ne sont pas visibles par l’utilisateur final mais aident les FAI à filtrer les emails des expéditeurs vérifiés. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) gagne en popularité, bien que ses politiques ne soient pas encore intégrées par tous les FAI dans leurs systèmes de réputation.
+L’authentification est le processus que les FAI utilisent pour valider l’identité d’un expéditeur. Les deux protocoles d’authentification les plus courants sont : [!DNL Sender Policy Framework] (SPF) et [!DNL DomainKeys Identified Mail] (DKIM). Ils ne sont pas visibles par l’utilisateur final mais aident les FAI à filtrer les emails des expéditeurs vérifiés. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) gagne en popularité, bien que ses politiques ne soient pas encore intégrées par tous les FAI dans leurs systèmes de réputation.
 
 ### SPF
 
@@ -59,15 +59,15 @@ L’authentification est le processus que les FAI utilisent pour valider l’ide
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) est une méthode d’authentification qui permet aux propriétaires de domaine de protéger leur domaine d’une utilisation non autorisée. DMARC utilise SPF ou DKIM ou les deux pour permettre au propriétaire d’un domaine de contrôler ce qui arrive aux courriers qui ne parviennent pas à s’authentifier : remis, mis en quarantaine ou rejeté.
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) est une méthode d’authentification qui permet aux propriétaires de domaine de protéger leur domaine d’une utilisation non autorisée. DMARC utilise SPF ou DKIM ou les deux pour permettre au propriétaire d’un domaine de contrôler ce qui arrive aux emails qui ne parviennent pas à s’authentifier : délivrés, mis en quarantaine ou rejetés.
 
 ## Ressources spécifiques au produit
 
 **Campaign**
 
 * Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
-* [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
-* [Panneau de Contrôle : Délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
+* [Panneau de Contrôle : délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
+* [Panneau de Contrôle : délégation complète de sous-domaines (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
 * En savoir plus sur l’implémentation d’une feedback loop pour une instance de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ressources supplémentaires

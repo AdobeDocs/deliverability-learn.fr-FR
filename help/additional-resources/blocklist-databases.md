@@ -21,7 +21,7 @@ Ces bases sont appelées RBL (Real-time Blackhole List) et leur consultation rep
 
 * Par adresse IP : recense les adresses IP émettrices de spam ou susceptibles de relayer du spam.
 * Par domaine d&#39;envoi : recense les domaines d&#39;envoi (domaine complet de l&#39;adresse de mails rebonds) émetteurs de spam ou présentant un défaut de configuration.
-* Par domaine web : répertorie les domaines (domaines de haut niveau tels qu’enregistrés auprès des registrars) trouvés dans les URL des liens et des images contenus dans les spams. Dans les solutions Adobe, le domaine à prendre en compte est généralement l’adresse utilisée pour le suivi.
+* Par domaine web : répertorie les domaines (domaines de haut niveau tels qu&#39;enregistrés auprès des registrars) trouvés dans les URL des liens et des images contenus dans les spams. Dans les solutions Adobe, le domaine à prendre en compte est généralement l’adresse utilisée pour le suivi.
 
 La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir une liste plus complète, consultez la page [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 

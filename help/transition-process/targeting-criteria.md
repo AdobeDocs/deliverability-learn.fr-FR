@@ -33,4 +33,4 @@ En règle générale, un taux d’engagement est basé sur une période spécifi
 
 **Campaign Standard**
 
-* [Emails optimisés par l’IA : Score prédictif de l’engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [Emails optimisés par l’IA : score prédictif de l’engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)

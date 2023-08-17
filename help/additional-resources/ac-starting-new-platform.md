@@ -29,12 +29,12 @@ On ne peut donc pas espérer atteindre le régime de croisière en termes de dé
 
 Vous trouverez ci-dessous la liste des principes essentiels à respecter lors du démarrage d’une nouvelle plateforme.
 
-* Configurez un sous-domaine dédié spécifique aux campagnes par e-mail envoyées depuis Adobe.
+* Configurez un sous-domaine dédié qui est spécifique aux campagnes par e-mail envoyées depuis Adobe.
 
 * Si vous disposez de ces informations, **importez des adresses non valides dans la table des quarantaines**.
 Le démarrage d’une plateforme s’accompagne souvent de l’utilisation d’une liste d’adresses inconnues jusqu’ici, qui n’est pas entièrement qualifiée. L’envoi de messages à des adresses non valides ou à des adresses servant de leurres contribuera à affaiblir la réputation de la plateforme.
 
-   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est disponible via le **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** menus (Campaign Standard).
+   * Si vous disposez d&#39;une liste d&#39;adresses non valides, il est dans votre intérêt de l&#39;importer dans la table des quarantaines avant de réaliser les premiers envois. La table des quarantaines est disponible via le **[!UICONTROL Administration > Campaign Management > Gestion des échecs > Echecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaine > Adresses]** menus (Campaign Standard).
 
    * Si on souhaite malgré tout requalifier les adresses invalides, il est nettement préférable de le faire une fois la réputation de la plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l&#39;usage des mauvaises adresses.
 

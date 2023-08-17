@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Grâce à cette norme, une marque peut déterminer un logo qui doit être affiché dans les boîtes de réception des fournisseurs de messagerie. Une fois publié dans un enregistrement appelé BIMI DNS (Domain Name System), un fournisseur de messagerie peut sélectionner ce logo et l’afficher dans la boîte de réception si certains critères sont satisfaits.
 
-Les différents fournisseurs effectuent des mises en oeuvre différentes, mais les avantages sont clairs : se démarquer dans la boîte de réception, établir la confiance et contrôler ce qui est affiché.
+Différents fournisseurs effectuent des mises en oeuvre différentes, mais les avantages sont évidents : se démarquer dans la boîte de réception, établir la confiance et contrôler ce qui est affiché.
 
 BIMI n&#39;améliore pas directement la délivrabilité ni votre réputation. Cela peut contribuer à renforcer la confiance avec vos destinataires et donc à augmenter l’engagement.
 
@@ -30,7 +30,7 @@ Vous trouverez quelques exemples de mise en oeuvre de différents fournisseurs e
 
 Le groupe BIMI est un groupe de travail qui développe le BIMI, car il couvre non seulement le logo mais aussi les exigences techniques, juridiques et de conformité.
 
-Le groupe BIMI se compose de plusieurs parties prenantes de différents secteurs de l’industrie : Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail et Validity.
+Le groupe BIMI est constitué de plusieurs parties prenantes de différents secteurs de l&#39;industrie : Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail et Validity.
 
 ## Qui soutient BIMI ?
 
@@ -76,7 +76,7 @@ Veuillez noter que la non-conformité peut entraîner l’affichage du logo.
 
 Un certificat de marque vérifié (VMC) n’est nécessaire que pour certains fournisseurs de messagerie tels que Gmail et Apple. Il est donc facultatif. Nous vous recommandons cependant d’obtenir un VMC pour vraiment tirer parti de BIMI.
 
-Un certificat de marque vérifié est une validation légale que la marque peut utiliser le logo. Une autorité de certification vérifie cette information par l’intermédiaire du bureau des marques où le logo de la marque est enregistré. Ce processus implique plusieurs validations et contrôles juridiques, et peut prendre du temps. Actuellement, deux autorités de certification (autorités de certification) émettent des MC : Digicert et Entrust. Les premiers bureaux de marques sont les États-Unis, le Canada, l’UE, le Royaume-Uni, l’Allemagne, le Japon, l’Australie et l’Espagne.
+Un certificat de marque vérifié est une validation légale que la marque peut utiliser le logo. Une autorité de certification vérifie cette information par l’intermédiaire du bureau des marques où le logo de la marque est enregistré. Ce processus implique plusieurs validations et contrôles juridiques, et peut prendre du temps. Actuellement, deux autorités de certification (autorités de certification) émettent des CVM : Digicert et Entrust. Les premiers bureaux de marques sont les États-Unis, le Canada, l’UE, le Royaume-Uni, l’Allemagne, le Japon, l’Australie et l’Espagne.
 
 En règle générale, vous aurez besoin d’un VMC par logo. Disposer d’un VMC pour votre domaine d’organisation couvrira les sous-domaines et avec une fonctionnalité ajoutée, même différents domaines. Si vous disposez de logos différents, plusieurs composants VMC sont nécessaires. L’autorité de certification ou le partenaire avec lequel vous choisissez de travailler vous aidera à configurer cette fonctionnalité.
 

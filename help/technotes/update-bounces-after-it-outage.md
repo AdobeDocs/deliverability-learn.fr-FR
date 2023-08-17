@@ -45,7 +45,7 @@ Selon la logique standard de gestion des bounces, Adobe Campaign a automatiquem
 
 Pour trouver les destinataires qui ont été affectés par ce problème , ou au cas où cela se reproduirait avec un autre FAI, référez-vous aux instructions ci-dessous:
 
-* Pour Campaign Classic v7 et Campaign v8, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Pour Campaign Classic v7 et Campaign v8, voir [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 * Pour le Campaign Standard, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}

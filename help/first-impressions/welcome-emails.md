@@ -28,9 +28,9 @@ Quelle que soit votre stratégie, il est peu probable que les abonnés qui ne re
 Voici quelques éléments clés à prendre en compte lors de la création de votre ou de vos emails de bienvenue :
 
 **Envoyez votre message le plus rapidement possible**
-Si vous proposez une promotion, votre nouvel abonné attendra probablement sur le site web d’obtenir l’e-mail avant d’effectuer son achat. Un retard de 5 à 10 minutes peut signifier une perte de vente. Même si vous n’avez pas de promotion, ils expriment actuellement de l’intérêt pour votre marque. Vous devez donc vous engager avec eux pendant que leur intérêt est au plus haut au lieu de prendre une chance ultérieurement.
+Si vous proposez une promotion, votre nouvel abonné attendra probablement sur le site web d’obtenir l’e-mail avant d’effectuer son achat. Un retard de 5 à 10 minutes peut signifier une perte de vente. Même si vous n’avez pas de promotion, ils expriment actuellement de l’intérêt pour votre marque. Vous devez donc vous engager avec eux pendant que leur intérêt est au plus haut au lieu d&#39;avoir une chance plus tard.
 
-**Créer des objets et des pré-en-têtes performants**
+**Créer des objets et des pré-en-têtes solides**
 Vous devez non seulement les remercier de vous être inscrits, mais aussi attirer leur attention et leur donner une raison de vouloir ouvrir l&#39;email. N’oubliez pas de capitaliser sur la pièce supplémentaire dans le pré-titre pour défendre votre point de vue.
 
 **Définition des attentes**

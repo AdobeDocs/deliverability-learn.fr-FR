@@ -21,7 +21,7 @@ ht-degree: 11%
 
 Lors du déplacement des fournisseurs de services de messagerie électronique (ESP), il n’est pas possible de faire également la transition entre vos adresses IP existantes et établies. Il est important que vous suiviez les bonnes pratiques pour développer une réputation positive lors d’un nouveau départ. Comme les nouvelles adresses IP que vous allez utiliser n’ont pas encore de réputation, les FAI ne peuvent pas entièrement faire confiance au courrier qui leur vient et doivent être prudents dans ce qu’ils permettent d’envoyer à leurs clients.
 
-Établir une réputation positive est un processus. Mais une fois établi, de petits indicateurs négatifs auront moins d&#39;impact sur vous et votre diffusion par courrier.
+L&#39;établissement d&#39;une réputation positive est un processus. Mais une fois établi, de petits indicateurs négatifs auront moins d&#39;impact sur vous et votre diffusion par courrier.
 
 ![Processus de transition](../assets/transition-process.png)
 

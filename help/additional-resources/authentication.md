@@ -25,7 +25,7 @@ SPF (Sender Policy Framework) est une norme d’authentification d’email qui p
 
 La technique SPF permet, dans une certaine mesure, de vous assurer que le nom de domaine utilisé dans un email n’est pas usurpé. Lorsqu’un message provient d’un domaine, le serveur DNS du domaine est interrogé. Il répond par un enregistrement court (enregistrement SPF) détaillant les serveurs autorisés à envoyer des emails depuis ce domaine. Si nous supposons que seul le propriétaire du domaine a les moyens de modifier cet enregistrement, nous pouvons considérer que cette technique ne permet pas de falsifier l’adresse de l’expéditeur, du moins pas la partie située à droite du « @ ».
 
-Dans la finale [Spécification RFC 4408](https://www.rfc-editor.org/info/rfc4408), deux éléments du message sont utilisés pour déterminer le domaine considéré comme l’expéditeur : le domaine spécifié par la commande SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) et le domaine spécifié par l’adresse de l’en-tête &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), qui est également l’adresse de rebond. Différentes considérations permettent de ne prendre en compte que l’une de ces valeurs ; nous vous recommandons de vous assurer que les deux sources spécifient le même domaine.
+Dans la finale [Spécification RFC 4408](https://www.rfc-editor.org/info/rfc4408), deux éléments du message sont utilisés pour déterminer le domaine considéré comme l’expéditeur : le domaine spécifié par la commande SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) et le domaine spécifié par l’adresse de l’en-tête &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), qui est également l’adresse bounce. Différentes considérations permettent de ne prendre en compte que l’une de ces valeurs ; nous vous recommandons de vous assurer que les deux sources spécifient le même domaine.
 
 La vérification SPF produit une évaluation de la validité du domaine expéditeur :
 
@@ -33,7 +33,7 @@ La vérification SPF produit une évaluation de la validité du domaine expédit
 * **Neutral** : le domaine interrogé ne permet pas l’évaluation.
 * **Pass** : le domaine est considéré comme authentique.
 * **Fail** : le domaine est certainement usurpé, le message devrait être rejeté.
-* **SoftFail**: Le domaine est probablement usurpé, mais le message ne doit pas être rejeté uniquement sur la base de ce résultat.
+* **SoftFail**: le domaine est probablement usurpé mais le message ne doit pas être rejeté uniquement sur la base de ce résultat.
 * **TempError** : une erreur temporaire a interrompu l’évaluation. Le message peut être rejeté.
 * **PermError** : les enregistrements SPF du domaine sont incorrects.
 
@@ -49,8 +49,8 @@ DKIM a remplacé l&#39;authentification **DomainKeys**.
 
 L&#39;utilisation de DKIM nécessite quelques prérequis :
 
-* **Sécurité**: Le cryptage est un élément clé du DKIM. Pour garantir le niveau de sécurité du DKIM, la taille de cryptage recommandée est 1024b. Les clés DKIM inférieures ne sont pas considérées comme valides par la majorité des fournisseurs d’accès.
-* **Réputation**: La réputation est basée sur l&#39;IP et/ou le domaine, mais le sélecteur DKIM, moins transparent, est également un élément clé à prendre en compte. Le choix du sélecteur est important : évitez de conserver la valeur par défaut qui peut être utilisée par n’importe qui et qui a donc une mauvaise réputation. Vous devez mettre en oeuvre un sélecteur différent pour **communications rétention/acquisition** et pour l’authentification.
+* **Sécurité**: le cryptage est un élément clé du DKIM. Pour garantir le niveau de sécurité du DKIM, la taille de cryptage recommandée est 1024b. Les clés DKIM inférieures ne sont pas considérées comme valides par la majorité des fournisseurs d’accès.
+* **Réputation**: la réputation est basée sur l’IP et/ou le domaine, mais le sélecteur DKIM, moins transparent, est également un élément clé à prendre en compte. Le choix du sélecteur est important : évitez de conserver celui &quot;par défaut&quot; qui peut être utilisé par n’importe qui et qui a donc une mauvaise réputation. Vous devez mettre en oeuvre un sélecteur différent pour **communications sur la rétention ou l&#39;acquisition** et pour l’authentification.
 
 En savoir plus sur les prérequis DKIM lors de l’utilisation de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
@@ -58,7 +58,7 @@ En savoir plus sur les prérequis DKIM lors de l’utilisation de Campaign Class
 
 DMARC (Domain-based Message Authentication, Reporting and Conformance) est la forme la plus récente d’authentification des emails. Le processus s’appuie simultanément sur l’authentification SPF et DKIM pour déterminer si un email sera diffusé avec succès ou non. DMARC est unique et puissant sur deux plans importants :
 
-* Conformité : il permet à l’expéditeur d’indiquer aux FAI ce qu’il doit faire de tout message qui ne s’authentifie pas (par exemple : ne l&#39;acceptez pas).
+* Conformité : il permet à l&#39;expéditeur de donner aux FAI des instructions sur ce qu&#39;il doit faire de tout message qui ne parvient pas à s&#39;authentifier (par exemple : ne pas l&#39;accepter).
 * Reporting : il fournit à l’expéditeur un rapport détaillé indiquant tous les messages qui ont échoué à l’authentification DMARC, ainsi que le domaine &quot;De&quot; et l’adresse IP utilisée pour chacun d’eux. Cela permet à une entreprise d’identifier les emails légitimes qui ne s’authentifient pas et qui nécessitent un type de &quot;correctif&quot; (par exemple, l’ajout d’adresses IP à leur enregistrement SPF), ainsi que les sources et la prévalence des tentatives de phishing sur leurs domaines de messagerie.
 
 >[!NOTE]

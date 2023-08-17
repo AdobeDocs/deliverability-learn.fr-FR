@@ -28,7 +28,7 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 
 >[!CAUTION]
 >
->Avant d’installer un certificat SSL, assurez-vous de connaître les conditions préalables répertoriées dans la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate).
+>Avant d’installer un certificat SSL, assurez-vous de connaître les conditions préalables répertoriées dans [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate).
 >
 >Adobe ne prend en charge que les certificats 2 048 bits maximum. Les certificats 4 096 bits ne sont pas encore pris en charge.
 
@@ -41,7 +41,7 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 | CSR (demande de signature de certificat) | Bloc de texte codé remis à une autorité de certification lors de la demande d’un certificat SSL. Il est généralement généré sur le serveur sur lequel le certificat est installé. |
 | DER (Distinguished Encoding Rules) | Un type d’extension de certificat. L’extension .der est utilisée pour les certificats codés DER binaires. Ces fichiers peuvent également prendre en charge l’extension .cer ou .crt. |
 | Certificat EV (validation étendue) | Un certificat EV est un nouveau type de certificat conçu pour empêcher les attaques de phishing. Cela nécessite une validation étendue de votre entreprise et de la personne qui commande le certificat. |
-| Certificat de haute assurance | Les certificats à haute assurance sont émis par l’autorité de certification après vérification de la propriété du nom de domaine et d’un enregistrement commercial valide. |
+| Certificat de haute assurance | Les certificats à haute assurance sont émis par l’autorité de certification après vérification de la propriété du nom de domaine et d’un enregistrement d’entreprise valide. |
 | Autorité de certification intermédiaire | Une autorité de certification de certificats intermédiaires inclus dans un certificat de chaîne. |
 | Certificat intermédiaire | Une autorité de certification émet des certificats sous la forme d’une arborescence. Le certificat racine est le certificat le plus élevé de l’arborescence. Tout certificat entre votre certificat et le certificat racine est appelé certificat de chaîne ou intermédiaire. |
 | Certificat de faible assurance | Un certificat à faible assurance, également appelé certificat validé par domaine, inclut uniquement le nom de domaine dans le certificat (et non le nom de l’entreprise/de l’organisation). |
@@ -54,10 +54,10 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 
 ## Principales étapes
 
-1. Demandez un fichier de demande de signature de certificat (CSR) et fournissez les informations requises (pays, état, ville, nom de l’organisation, nom de l’entité organisationnelle, etc.) à l’Adobe.
+1. Demandez un fichier CSR (Certificate Signing Request) et fournissez les informations requises (pays, état, ville, nom de l’organisation, nom de l’entité organisationnelle, etc.) à Adobe.
 1. Validez le fichier CSR généré par Adobe et vérifiez que toutes les informations que vous avez fournies sont correctes.
 1. Utiliser les détails de la demande de signature de certificat pour générer un certificat signé par une autorité de certification approuvée<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->.
-1. Validez le certificat SSL et vérifiez qu’il correspond à la demande de signature de certificat (CSR).
+1. Validez le certificat SSL et vérifiez qu’il correspond à la CSR.
 1. Fournissez le certificat SSL à Adobe, qui l’installera.
 1. Vérifiez que le certificat SSL est bien installé pour chaque sous-domaine sécurisé.
 1. Surveillez la période de validité du certificat SSL.
@@ -76,14 +76,14 @@ Vous devez identifier les noms de domaine et les fonctions (tracking, pages miro
 
 Pour obtenir un fichier CSR (Certificate Signing Request), procédez comme suit.
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#subdomains-and-certificates) pour générer et télécharger un fichier CSR à partir du Panneau de Contrôle.
+* Si vous avez accès à la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#subdomains-and-certificates) pour générer et télécharger un fichier CSR à partir du Panneau de Contrôle.
 
 * Sinon, créez un ticket d’assistance via https://adminconsole.adobe.com/ pour obtenir un fichier CSR auprès de l’Assistance clientèle d’Adobe pour le ou les sous-domaines requis.
 
 Voici quelques bonnes pratiques à suivre :
 
 * Envoyez une requête par sous-domaine délégué.
-* Il est possible de combiner plusieurs sous-domaines en une seule requête CSR, mais uniquement au sein du même environnement. Par exemple, en Campaign Classic, le serveur marketing, la variable [serveur de mid-sourcing](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html), et la variable [instance d&#39;exécution](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) sont trois environnements distincts.
+* Il est possible de combiner plusieurs sous-domaines en une seule requête CSR, mais uniquement au sein du même environnement. Par exemple, en Campaign Classic, le serveur marketing, [serveur de mid-sourcing](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html), et la variable [instance d&#39;exécution](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) sont trois environnements distincts.
 * Vous devez obtenir une nouvelle demande de signature de certificat avant tout renouvellement de certificat SSL. N’utilisez pas un ancien fichier CSR d’il y a un an ou plus.
 
 Vous devrez fournir les informations suivantes.
@@ -128,7 +128,7 @@ Une fois que vous avez reçu le fichier CSR d’Adobe, procédez comme suit :
 1. Copiez et collez le texte du fichier CSR dans un décodeur en ligne tel que https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> ou https://www.entrust.net/ssl-technical/csr-viewer.cfm.
 Vous pouvez également utiliser la variable *OpenSSL* sur une machine Linux.
 1. Vérifiez que toutes les vérifications sont réussies.
-1. Vérifiez que les paramètres et noms de domaine corrects sont inclus.
+1. Vérifiez que les paramètres et les noms de domaine corrects sont inclus.
 1. Vérifiez que toutes les autres données correspondent aux détails que vous avez fournis lors de l’envoi de votre demande.
 
 ### Étape 3 - Génération du certificat SSL
@@ -160,7 +160,7 @@ Vous pouvez également utiliser la variable *OpenSSL* sur une machine Linux. Voi
 
 ### Étape 5 - Demander l’installation du certificat SSL
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate) pour télécharger le certificat vers Panneau de Contrôle.
+* Si vous avez accès à la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr), suivez les instructions de la section [cette page](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=fr#installing-ssl-certificate) pour télécharger le certificat vers Panneau de Contrôle.
 
 * Sinon, créez un autre ticket d’assistance via https://adminconsole.adobe.com/ pour demander à l’Adobe d’installer le certificat sur le ou les serveurs d’Adobe.
 
@@ -199,7 +199,7 @@ Il vous appartient de vérifier la période de validité. Adobe vous recommande 
 
 * Créez un ticket d’assistance pour demander un certificat mis à jour au moins deux semaines avant la date d’expiration du certificat. Vous n’avez pas besoin de demander une demande de signature de certificat supplémentaire, sauf si les détails de la demande de signature de certificat ont changé.
 
-* Si vous avez accès au [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)et si votre environnement est hébergé par Adobe dans un environnement AWS, vous pouvez utiliser le Panneau de Contrôle pour renouveler le certificat avant son expiration. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* Si vous avez accès à la variable [Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=fr)et si votre environnement est hébergé par Adobe dans un environnement AWS, vous pouvez utiliser le Panneau de Contrôle pour renouveler le certificat avant son expiration. En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
 
 ### Etape 8 - Mettre à jour toute configuration spécifique {#update-configuration}
 
@@ -207,7 +207,7 @@ Une fois que vous êtes certain que les certificats SSL demandés sont correctem
 
 >[!NOTE]
 >
->Pour Campaign Classic, les URL à mettre à jour se trouvent principalement dans la variable [Assistant de déploiement](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) et dans le [Comptes externes](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=fr) (suivi, page miroir et domaines de ressources publiques). Pour le Campaign Standard, reportez-vous à la section [Paramétrage de l&#39;identité graphique](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>Pour Campaign Classic, les URL à mettre à jour se trouvent principalement dans la variable [Assistant de déploiement](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) et dans le [Comptes externes](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=fr) (suivi, page miroir et domaines de ressources publiques). Pour le Campaign Standard, reportez-vous à la section [Paramétrage de la marque](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 Une fois les configurations mises à jour, de nouveaux emails sont envoyés avec des URL HTTPS plutôt qu’avec le protocole HTTP. Pour vérifier que les URL sont désormais sécurisées, vous pouvez rapidement effectuer les tests suivants :
 

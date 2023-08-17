@@ -18,7 +18,7 @@ ht-degree: 26%
 Lors de la mise en oeuvre de la délivrabilité, certaines des bonnes pratiques consistent à essayer de maintenir une base d’abonnés saine et d’améliorer la délivrabilité par le biais de stratégies de réengagement (ou de retour).
 
 * Le maintien d’une base d&#39;abonnés solide est l’un des aspects essentiels pour assurer une diffusion satisfaisante et cohérente. Nombre de problèmes de délivrabilité résultent de pratiques et d’opérations de maintenance des données inefficaces.
-* Parmi les difficultés les plus courantes, les marketeurs sont confrontés aujourd’hui à l’inactivité des abonnés (aussi appelée engagement faible ou non-engagement). Ce problème peut avoir une incidence négative sur la diffusion des emails et le ROI (retour sur investissement).
+* Parmi les difficultés les plus courantes, les spécialistes marketing sont confrontés aujourd’hui à l’inactivité des abonnés (aussi appelée engagement faible ou non-engagement).Ce problème peut avoir une incidence négative sur la diffusion des emails et le ROI (retour sur investissement).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Selon une étude Return Path, les campagnes de réengagement ont un taux d&#39;o
 
 ### Phase 2 {#phase-2}
 
-* Une fois qu’un segment est défini, l’étape suivante consiste à créer une campagne de réengagement qui s’adresse à l’abonné en fonction des mesures qui ont été identifiées. La création d’un objet permet d’augmenter l’intérêt de l’abonné. Selon une étude Return Path, les objets et le contenu qui indiquent &quot;Vous manquez&quot; génèrent des taux de réponse plus élevés que &quot;Nous voulons vous ramener&quot;.
+* Une fois qu’un segment est défini, l’étape suivante consiste à créer une campagne de réengagement qui s’adresse à l’abonné en fonction des mesures qui ont été identifiées. La création d’un objet permet d’augmenter l’intérêt de l’abonné. Selon une étude Return Path, les objets et le contenu qui indiquent &quot;We miss you&quot; génèrent des taux de réponse plus élevés que &quot;We want you back&quot; (Nous voulons que vous soyez revenu).
 * Une incitation peut également être proposée pour réengager l&#39;email. Lorsque vous envisagez des offres avec des remises, il est préférable d’utiliser des montants en euros plutôt que des pourcentages. Return Path suggère également de le faire, car cela entraîne des taux de réponse plus élevés. Enfin, l’exécution de tests de partage A/B pour examiner les taux de réponse et de réussite est également une option utile.
 
 ### Phase 3 {#phase-3}
@@ -62,7 +62,7 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 ### Phase 4 {#phase-4}
 
-* La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur faire réactiver leur abonnement en envoyant une campagne de reconfirmation unique.
+* La phase suivante consiste à identifier les abonnés qui ne montrent aucune activité et à réduire progressivement l’envoi d’emails à ces derniers sur une période donnée. S’il n’y a pas d’activité au cours de l’année écoulée, il est recommandé de suspendre l’abonnement aux emails des abonnés. Bien qu’ils n’aient manifesté aucun intérêt pour le contenu de l’email, il est toujours possible de leur demander de réactiver leur abonnement en envoyant une campagne de reconfirmation unique.
 * Les campagnes de confirmation sont un bon moyen de demander aux abonnés inactifs depuis longtemps s&#39;ils souhaitent rester sur la liste d&#39;abonnements. Lors de la création de l&#39;opération, il est préférable d&#39;ajouter un lien &quot;cliquez ici&quot; afin qu&#39;il puisse confirmer l&#39;action et vérifier son adresse. Ainsi, l’action peut être enregistrée dans la base de données. Voici un exemple d&#39;email de reconfirmation :
 
   ![](../../help/assets/deliverability_implementation_3.png)

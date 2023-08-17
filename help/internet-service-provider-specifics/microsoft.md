@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Voici quelques points forts :
 
-## Quelles données sont importantes ?
+## Données importantes
 
 [!DNL Microsoft] se concentre sur la réputation de l’expéditeur, les plaintes, l’engagement des utilisateurs et leur propre groupe d’utilisateurs de confiance (également appelés données de réputation de l’expéditeur ou SRD) qu’ils interrogent pour obtenir des commentaires.
 

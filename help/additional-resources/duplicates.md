@@ -33,7 +33,7 @@ Il existe tout de même des cas où la présence de doublons entre différentes 
 
 ## Ressources spécifiques au produit
 
-Pour garantir votre réputation et assurer une bonne gestion des quarantaines, dédupliquez les adresses. Pour en savoir plus, consultez les sections suivantes de la documentation du produit :
+Pour garantir votre réputation et assurer une bonne gestion des quarantaines, dédupliquez les adresses. En savoir plus dans les sections de documentation du produit suivantes :
 
 **Adobe Campaign Classic**
 
