@@ -4,10 +4,11 @@ description: Découvrez comment implémenter BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
+jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -68,6 +69,8 @@ Outre DMARC sur le domaine d’envoi, DMARC doit également être employé au ni
 ### Création du logo de votre marque {#create-brand-logo}
 
 La création du logo doit respecter les exigences à 100 %. Veuillez toujours vous reporter à la section [Directives du groupe BIMI](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+
+Le logo doit être stocké dans un emplacement sécurisé (HTTPS), au cas où un réseau de diffusion de contenu (CDN) serait utilisé pour toute protection qui empêcherait les fournisseurs de messagerie d’obtenir le logo (par exemple, la protection des robots), doit être désactivé.
 
 Outre les exigences techniques, il existe des recommandations pratiques telles que le logo carré, la couleur unie de l’arrière-plan et d’autres. Ces recommandations concernent la meilleure visualisation.
 Veuillez noter que la non-conformité peut entraîner l’affichage du logo.
