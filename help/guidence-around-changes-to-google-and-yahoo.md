@@ -7,10 +7,10 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 00b4b4c3396fc4a71484cd12e8c89cd8371ad1ce
+source-git-commit: f6eaeb2a992cccb4afcd8fb61f2f71685b3a35e8
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 0%
+source-wordcount: '1315'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +48,7 @@ Ne paniquez pas. [!DNL Google] et [!DNL Yahoo] Il ne s’agit pas des liens de d
 Il est important de noter que [!DNL Google] et [!DNL Yahoo] font toutes deux référence à l’option &quot;http/URL&quot; du nom &quot;1-Click&quot;, et cela est intentionnel. Techniquement, l&#39;option &quot;http/URL&quot; d&#39;origine permet de rediriger les destinataires vers un site web. Ce n&#39;est pas l&#39;objectif principal de [!DNL Yahoo] et [!DNL Google], qui font toutes deux référence au RFC8058 mis à jour et qui se concentre sur le traitement du désabonnement via une demande de POST HTTPS au lieu d’un site web, ce qui le rend &quot;1-click&quot;.
 Pour Marketo Engage, Adobe a déjà activé l’option &quot;mailto&quot; et ne prend actuellement pas en charge l’option &quot;http/URL&quot;. D&#39;autres mises à jour à venir.
 Pour Adobe Campaign et Adobe Journey Optimizer Adobe, il est recommandé d’utiliser les options &quot;mailto&quot; et &quot;1-click&quot;.
-Si vous avez besoin d’informations supplémentaires sur la mise en oeuvre du désabonnement à la liste, veuillez consulter Adobe Campaign Classic ici pour Adobe Campaign Standard, ici pour et ici pour Adobe Journey Optimizer, ou contacter l’équipe d’assistance clientèle d’Adobe à tout moment.
+Si vous avez besoin d’informations supplémentaires sur la mise en oeuvre de list-unsubscribe, veuillez vérifier [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=fr){target="_blank"} for Adobe Campaign Standard, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} pour Adobe Journey Optimizer ou contactez l’équipe d’assistance clientèle d’Adobe à tout moment.
 La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux emails transactionnels. Notez que les messages déclenchés tels que Panier abandonné et les communications similaires non générées par l’abonné sont considérés comme du marketing par les fournisseurs de messagerie, tels que [!DNL Google] et [!DNL Yahoo] et ceux-ci auraient besoin de list-unsubscribe.
 
 ## Traitement Se désabonne dans les 2 jours :
