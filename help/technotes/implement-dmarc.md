@@ -4,10 +4,11 @@ description: Découvrez comment implémenter BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
-source-git-commit: 5ac5bc90b5a9bf3ce9b390821476c7222983b818
+exl-id: f1c14b10-6191-4202-9825-23f948714f1e
+source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -43,11 +44,11 @@ DMARC est facultatif. Bien qu’il ne soit pas obligatoire, il est gratuit et pe
 
 ## Bonnes pratiques relatives à la mise en oeuvre de DMARC {#best-practice}
 
-Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. Il est recommandé de déployer lentement la mise en oeuvre DMARC en réaffectant votre stratégie DMARC de p=none à p=quarantine, puis de p=reject lorsque vous acquérez une compréhension DMARC de l’impact potentiel de DMARC.
+Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. Il est recommandé de déployer lentement la mise en œuvre de DMARC en faisant passer votre politique DMARC de p=none à p=quarantine, puis à p=reject à mesure que vous comprenez l’impact potentiel de DMARC.
 
-1. Analysez les commentaires que vous recevez et utilisez (p=none), qui indique au destinataire d’effectuer aucune action contre les messages qui ne parviennent pas à s’authentifier, tout en envoyant des rapports par e-mail à l’expéditeur. En outre, passez en revue et corrigez les problèmes liés à SPF/DKIM si les messages légitimes échouent à l’authentification.
+1. Analysez les commentaires que vous recevez et utilisez (p=none), qui indique au destinataire d’effectuer aucune action contre les messages qui ne parviennent pas à s’authentifier, tout en envoyant des rapports par e-mail à l’expéditeur. En outre, examinez les problèmes liés à SPF/DKIM et corrigez-les si des messages légitimes échouent à l’authentification.
 1. Déterminez si SPF et DKIM sont harmonisés et passent une authentification pour tous les emails légitimes, puis déplacez la stratégie vers (p=quarantine), ce qui indique au serveur de messagerie de réception de mettre en quarantaine les emails qui ne parviennent pas à s’authentifier (cela signifie généralement placer ces messages dans le dossier spam).
-1. Ajustez la stratégie à (p=rejets). La stratégie p= rejet indique au destinataire de refuser complètement (rebond) tout courrier électronique pour le domaine qui échoue à l’authentification. Lorsque cette stratégie est activée, seul le courrier électronique vérifié comme authentifié à 100 % par votre domaine aura une chance d’être envoyé en boîte de réception.
+1. Ajustez la stratégie à (p=rejets). La politique p=reject indique à la personne destinataire de refuser complètement (rebond) tout e-mail pour le domaine qui ne réussit pas l’authentification. Lorsque cette politique est activée, seul un e-mail qui est vérifié comme étant authentifié à 100 % par votre domaine aura une chance d’être placé en boîte de réception.
 
    >[!NOTE]
    >
@@ -90,6 +91,10 @@ Les enregistrements DMARC comportent plusieurs composants appelés balises DMARC
 | aspf | Facultatif | Peut être Strict (s) ou Relaxé (r). Un alignement relâché signifie que le domaine ReturnPath peut être un sous-domaine de l’adresse de l’expéditeur. Un alignement strict signifie que le domaine Return-Path doit correspondre exactement à l’adresse From. | aspf=r | r |
 
 ## DMARC et Adobe Campaign {#campaign}
+
+>[!NOTE]
+>
+>Si votre instance Campaign est hébergée sur AWS, vous pouvez implémenter DMARC pour vos sous-domaines avec le Panneau de Contrôle . [Découvrez comment implémenter des enregistrements DMARC à l’aide de Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 Une raison courante des échecs DMARC est le décalage entre l’adresse &quot;De&quot; et &quot;Erreurs à&quot; ou &quot;Chemin de retour&quot;. Pour éviter cela, lors de la configuration de DMARC, il est recommandé de vérifier deux fois les paramètres de vos adresses &quot;De&quot; et &quot;Erreurs-A&quot; dans vos modèles de diffusion.
 
