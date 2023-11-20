@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 7d8c1229b421471f7908c1e13bb80af5b14e42ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 96%
    + [Critères de ciblage](/help/transition-process/targeting-criteria.md)
    + [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
    + [Volume](/help/transition-process/volume.md)
-+ Premières impressions — Collecte de listes et emails de bienvenue {#first-impressions}
-   + [Premières impressions — Collecte de listes et emails de bienvenue](/help/first-impressions/introduction.md)
++ Premières impressions — Collecte de listes et e-mails de bienvenue {#first-impressions}
+   + [Premières impressions — Collecte de listes et e-mails de bienvenue](/help/first-impressions/introduction.md)
    + [Collecte d&#39;adresses et croissance des listes](/help/first-impressions/address-collection-and-list-growth.md)
    + [Emails de bienvenue](/help/first-impressions/welcome-emails.md)
 + [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
@@ -61,7 +61,7 @@ ht-degree: 96%
       + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
    + Notes techniques {#technotes}
-      + [Mise en oeuvre de DMARC](/help/technotes/implement-dmarc.md)
+      + [Implémenter DMARC](/help/technotes/implement-dmarc.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)
       + [Mettre à jour les bounces après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
 
