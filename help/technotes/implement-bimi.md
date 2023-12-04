@@ -6,7 +6,7 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: ad0646da88f2b1474e74b6c741d0dd5701e88978
+source-git-commit: b96539608acd51ce76ef5bdaf5afd07b5a4208b7
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -72,7 +72,7 @@ La création du logo doit respecter les exigences à 100 %. Veuillez toujours vo
 
 Le logo doit être stocké dans un emplacement sécurisé (HTTPS), au cas où un réseau de diffusion de contenu (CDN) serait utilisé pour toute protection qui empêcherait les fournisseurs de messagerie d’obtenir le logo (par exemple, la protection des robots), doit être désactivé.
 
-Outre les exigences techniques, il existe des recommandations pratiques telles que le logo carré, la couleur unie de l’arrière-plan et d’autres. Ces recommandations concernent la meilleure visualisation. Certains fournisseurs ont leurs propres exigences qui s&#39;ajoutent à celles du groupe de travail de l&#39;IMI. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"}. par exemple, nécessite que le logo fasse au moins 96 x 96 pixels.
+Outre les exigences techniques, il existe des recommandations pratiques telles que le logo carré, la couleur unie de l’arrière-plan et d’autres. Ces recommandations concernent la meilleure visualisation. Certains fournisseurs ont leurs propres exigences qui s&#39;ajoutent à celles du groupe de travail de l&#39;IMI. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"} par exemple, nécessite que le logo fasse au moins 96 x 96 pixels.
 Veuillez noter que la non-conformité peut entraîner l’affichage du logo.
 
 ### Certificat de marque vérifié (VMC) {#vmc}
