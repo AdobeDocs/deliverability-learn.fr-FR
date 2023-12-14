@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
-workflow-type: ht
-source-wordcount: '1561'
-ht-degree: 100%
+source-git-commit: 2bfff0bc63dc1a19f02f40d631e503298937ec8b
+workflow-type: tm+mt
+source-wordcount: '1595'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,9 @@ Les personnes spécialisées en délivrabilité des e-mails d’Adobe ont lu ces
 
 ## Alors, que font exactement [!DNL Google] et [!DNL Yahoo] ?
 
-Dans le domaine des e-mails, il existe des exigences légales, des exigences pratiques et des bonnes pratiques générales. Les exigences légales varient considérablement d’un endroit à l’autre et ne font pas partie de ce sujet. Au lieu de cela, [!DNL Google] et [!DNL Yahoo] s’inspirent des bonnes pratiques pour les transformer en exigences pratiques. Aucun des éléments que [!DNL Google] et [!DNL Yahoo] vont commencer à exiger en février n’est nouveau. Ils ont souvent été recommandés pendant des années, mais leur adoption a été lente et inégale dans le secteur. C’est la manière dont [!DNL Google] et [!DNL Yahoo] aident à faire progresser ce processus d’adoption en disant : « si vous souhaitez déployer des e-mails vers vos utilisateurs et utilisatrices (cela peut représenter une partie importante de votre liste d’e-mails, dans certains cas jusqu’à 70 %, selon la région et le secteur), vous devez effectuer ces tâches ».
+Dans le domaine des e-mails, il existe des exigences légales, des exigences pratiques et des bonnes pratiques générales. Les exigences légales varient considérablement d’un endroit à l’autre et ne font pas partie de ce sujet. Au lieu de cela, [!DNL Google] et [!DNL Yahoo] prennent les bonnes pratiques et les transforment en exigences pratiques.
+
+Aucun des éléments que [!DNL Google] et [!DNL Yahoo] vont commencer à exiger en février n’est nouveau. Ils ont souvent été recommandés pendant des années, mais leur adoption a été lente et inégale dans le secteur. C’est la manière dont [!DNL Google] et [!DNL Yahoo] aident à faire progresser ce processus d’adoption en disant : « si vous souhaitez déployer des e-mails vers vos utilisateurs et utilisatrices (cela peut représenter une partie importante de votre liste d’e-mails, dans certains cas jusqu’à 70 %, selon la région et le secteur), vous devez effectuer ces tâches ».
 
 ## Quels sont les détails ?
 
@@ -49,10 +51,11 @@ Vous trouverez également plus d’informations sur DMARC et sur son implémenta
 
 ## Sé désabonner en un clic (liste) :
 
-Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs et utilisatrices qui cliquent sur « Signaler un spam » à vérifier s’ils souhaitent plutôt se désabonner, ce qui peut réduire le nombre de réclamations reçues (réclamations qui nuisent à votre réputation) en les transformant plutôt en désabonnements (ce qui ne nuit pas à votre réputation).
-Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URL » sous le nom « En un clic », et cela est intentionnel. Techniquement, l’option « http/URL » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au RFC 8058 mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site web, rendant ainsi la procédure « En un clic ».
+Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs qui cliquent sur &quot;Signaler du spam&quot; à vérifier s&#39;ils ont eu l&#39;intention de se désabonner, ce qui peut réduire le nombre de plaintes reçues (plaintes qui nuisent à votre réputation) en les transformant plutôt en désabonnements (ce qui ne nuit pas à votre réputation).
 
-Aujourd’hui, [!DNL Gmail] accepte l’option list-unsubscribe « mailto ». [!DNL Gmail] a déclaré que « mailto » ne répond plus à ses attentes et que l’option list-unsubscribe « post » doit être activée à partir du mois de février pour les expéditeurs et expéditrices.
+Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URL » sous le nom « En un clic », et cela est intentionnel. Techniquement, l’option « http/URL » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n&#39;est pas l&#39;objectif principal de [!DNL Yahoo] et [!DNL Google], qui font toutes deux référence à la mise à jour [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} qui se concentre sur le traitement du désabonnement via une demande de POST HTTPS au lieu d’un site web, ce qui le rend &quot;1-click&quot;.
+
+Aujourd&#39;hui, Gmail accepte l&#39;option &quot;mailto&quot; list-unsubscribe. Gmail a déclaré que &quot;mailto&quot; ne répond plus à ses attentes et que l’option &quot;post&quot; list-unsubscribe doit être activée pour les expéditeurs. Les expéditeurs qui ont déjà mis en place list-unsubscribe d’un type quelconque auront jusqu’au 1er juin 2024 pour avoir &quot;1-click&quot; list-unsubscribe mis en place.
 
 [!DNL Yahoo] a déclaré continuer à utiliser l’option « mailto » pour l’instant. L’option « post » sera toutefois requise à l’avenir.
 
@@ -95,8 +98,10 @@ Si vous avez besoin d’aide pour surveiller vos taux de réclamations ou si vou
 
 ## Quel impact cela aura-t-il sur moi en tant que spécialiste du marketing ?
 
-Ne pas respecter ces nouvelles exigences de Gmail et [!DNL Yahoo] est susceptible d’entraîner l’arrivée des e-mails dans le dossier spam ou leur blocage (c’est-à-dire, un rebond de la part du fournisseur de service de messagerie indiquant que l’e-mail n’a pas été diffusé).
-Par conséquent, Adobe vous recommande vivement de passer en revue les modifications décrites ci-dessus et de vous assurer que vous commencez à les respecter dès que possible. C’est également le moment idéal pour commencer à évaluer vos performances sur [!DNL Yahoo] et [!DNL Google] pour vous permettre de voir s’il y a des changements significatifs dans vos mesures en février.
+ne pas respecter ces nouvelles exigences de Gmail et [!DNL Yahoo] est susceptible d’entraîner l’entrée ou le blocage des emails dans le dossier spam (c’est-à-dire, un rebond de la part du MBP indiquant que l’email n’a pas été diffusé).
+
+Par conséquent, Adobe vous recommande vivement de passer en revue les modifications décrites ci-dessus et de vous assurer que vous commencez à les respecter dès que possible. C’est également le moment idéal pour commencer à évaluer vos performances à [!DNL Yahoo] et [!DNL Google] pour vous permettre de voir si des changements significatifs ont été apportés à vos mesures au mois de février.
+
 Nous sommes là pour vous aider. Si vous avez des questions ou que vous avez besoin d’aide, contactez votre conseiller ou conseillère en délivrabilité Adobe ou l’équipe chargée de votre compte pour bénéficier d’un conseiller ou d’une conseillère en délivrabilité.
 
 ## Y a-t-il des moyens pour contourner ces changements ?
@@ -107,3 +112,9 @@ Bien que cette question soit toujours soulevée, la réalité est que ces change
 
 Sachez que cela ne s’applique pas actuellement aux e-mails envoyés aux comptes [!DNL Yahoo].JP ou [!DNL Gmail] Workspace, mais aux e-mails provenant de ces emplacements.
 
+## Ressources supplémentaires (non spécifiques à ces modifications) :
+
+[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126)
+[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC)
+[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/)
+[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/)
