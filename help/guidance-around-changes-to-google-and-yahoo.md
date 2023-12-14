@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 2bda5d5369d239fac849e57286450a853dd94953
+source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 85%
+source-wordcount: '1565'
+ht-degree: 82%
 
 ---
 
@@ -61,9 +61,6 @@ Aujourd&#39;hui, Gmail accepte l&#39;option &quot;mailto&quot; list-unsubscribe.
 
 Adobe recommande d’utiliser les options list-unsubscribe « mailto » et « post/1-Click ». Adobe s’efforce d’activer la prise en charge « post » sur toutes ses plateformes d’envoi d’e-mails, afin d’aider ses utilisateurs et utilisatrices à répondre à ces exigences. D’autres mises à jour sont à venir.
 
-Pour Marketo Engage, Adobe a déjà activé l’option « mailto » et ne prend actuellement pas en charge l’option « http/URL ». D’autres mises à jour à venir.
-Pour Adobe Campaign et Adobe Journey Optimizer, Adobe recommande d’utiliser les options « mailto » et « En un clic ».
-
 La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails transactionnels. Notez que les messages déclenchés tels que Panier abandonné et les communications similaires non générées par les personnes abonnées sont considérés comme du marketing par les fournisseurs de messagerie, tels que [!DNL Google] et [!DNL Yahoo], et ceux-ci auraient besoin de list-unsubscribe.
 
 [!DNL Google] et [!DNL Yahoo] savent que, dans certains cas, les destinataires se désabonnent et se réabonnent ultérieurement. Bien qu’ils ne soient pas prêts à partager la recette secrète leur permettant d’identifier ces situations, ils travaillent sur des méthodes afin d’éviter de pénaliser à tort les expéditeurs et expéditrices dans de tels cas de figure.
@@ -79,7 +76,8 @@ La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails tr
 
 ## Traitement des désabonnements dans les 2 jours :
 
-Il s’agit d’une bonne pratique recommandée depuis un certain temps, car chaque e-mail que vous déployez à une personne qui se désabonne entraîne généralement une réclamation pour spam. Plus tôt vous arrêterez de lui envoyer des e-mails, mieux c’est. Encore une fois, les exigences légales peuvent être beaucoup plus longues dans certains cas, mais [!DNL Google] et [!DNL Yahoo] sauront que leur utilisateur ou utilisatrice a choisi de se désabonner via List-Unsubscribe et que vous continuez à envoyer à cette personne un e-mail le troisième jour. Ils ont déclaré qu’ils n’autoriseraient pas les expéditeurs et expéditrices qui le font à continuer à envoyer des e-mails à L’ENSEMBLE de leurs utilisateurs et utilisatrices.
+Il s’agit d’une bonne pratique recommandée depuis un certain temps, car chaque e-mail que vous déployez à une personne qui se désabonne entraîne généralement une réclamation pour spam. Plus tôt vous arrêterez de lui envoyer des e-mails, mieux c’est. Encore une fois, les exigences légales peuvent être beaucoup plus longues dans certains cas, mais [!DNL Google] et [!DNL Yahoo] sauront que l&#39;utilisateur s&#39;est désabonné via List-Unsubscribe et que vous lui envoyez toujours un email le jour 3, et qu&#39;ils ont déclaré qu&#39;ils n&#39;autoriseront pas les expéditeurs qui le font à continuer à envoyer des emails à N&#39;IMPORTE QUEL de leurs utilisateurs.
+
 Cette exigence de deux jours est valable pour tout désabonnement par le biais des différentes méthodes list-unsubscribe. Dans certains cas (comme « mailto »), cela signifie qu’Adobe les traitera. Adobe traite toutes les demandes de désabonnement dès leur réception, bien avant le délai de 2 jours. Dans d’autres cas, vous pouvez les traiter. Si vous traitez ces demandes, vous devrez peut-être apporter des modifications de votre côté pour respecter ce délai de 2 jours.
 
 ## Taux de réclamations :
@@ -90,7 +88,8 @@ Le maintien d’un taux de réclamations inférieur à 0,2 % constitue depuis l
 * Évitez un taux de spam de 0,30 % ou plus, en particulier sur une période prolongée.
 * Le maintien d’un faible taux de spam permet aux expéditeurs et expéditrices de mieux faire face aux pics occasionnels de commentaires des utilisateurs et utilisatrices.
 * De même, le maintien d’un taux de spam élevé entraîne une meilleure classification des spams. Il peut s’écouler un certain temps avant que les améliorations du taux de spam ne reflètent positivement la classification des spams.
-  [!DNL Yahoo] a déclaré que son seuil de réclamation serait également de l’ordre de 0,30 %.
+
+[!DNL Yahoo] a déclaré que son seuil de réclamation serait également de l’ordre de 0,30 %.
 
 L’objectif de [!DNL Google] et [!DNL Yahoo] n’est pas de punir les expéditeurs et expéditrices pour un écart isolé ou une erreur qui provoque un pic temporaire des plaintes. Au lieu de cela, ils se concentrent sur les expéditeurs et expéditrices rattachés à un taux de plaintes élevé sur une longue période ou à un modèle de mauvais comportement d’envoi.
 
