@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
+source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 82%
+source-wordcount: '1564'
+ht-degree: 81%
 
 ---
 
@@ -89,7 +89,7 @@ Le maintien d’un taux de réclamations inférieur à 0,2 % constitue depuis l
 * Le maintien d’un faible taux de spam permet aux expéditeurs et expéditrices de mieux faire face aux pics occasionnels de commentaires des utilisateurs et utilisatrices.
 * De même, le maintien d’un taux de spam élevé entraîne une meilleure classification des spams. Il peut s’écouler un certain temps avant que les améliorations du taux de spam ne reflètent positivement la classification des spams.
 
-[!DNL Yahoo] a déclaré que son seuil de réclamation serait également de l’ordre de 0,30 %.
+[!DNL Yahoo] a déclaré que leur seuil de plainte sera également de 0,30 %.
 
 L’objectif de [!DNL Google] et [!DNL Yahoo] n’est pas de punir les expéditeurs et expéditrices pour un écart isolé ou une erreur qui provoque un pic temporaire des plaintes. Au lieu de cela, ils se concentrent sur les expéditeurs et expéditrices rattachés à un taux de plaintes élevé sur une longue période ou à un modèle de mauvais comportement d’envoi.
 
