@@ -9,9 +9,9 @@ jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
 source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1564'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Les personnes spécialisées en délivrabilité des e-mails d’Adobe ont lu ces
 
 ## Alors, que font exactement [!DNL Google] et [!DNL Yahoo] ?
 
-Dans le domaine des e-mails, il existe des exigences légales, des exigences pratiques et des bonnes pratiques générales. Les exigences légales varient considérablement d’un endroit à l’autre et ne font pas partie de ce sujet. Au lieu de cela, [!DNL Google] et [!DNL Yahoo] prennent les bonnes pratiques et les transforment en exigences pratiques.
+Dans le domaine des e-mails, il existe des exigences légales, des exigences pratiques et des bonnes pratiques générales. Les exigences légales varient considérablement d’un endroit à l’autre et ne font pas partie de ce sujet. Au lieu de cela, [!DNL Google] et [!DNL Yahoo] s’inspirent des bonnes pratiques pour les transformer en exigences pratiques.
 
 Aucun des éléments que [!DNL Google] et [!DNL Yahoo] vont commencer à exiger en février n’est nouveau. Ils ont souvent été recommandés pendant des années, mais leur adoption a été lente et inégale dans le secteur. C’est la manière dont [!DNL Google] et [!DNL Yahoo] aident à faire progresser ce processus d’adoption en disant : « si vous souhaitez déployer des e-mails vers vos utilisateurs et utilisatrices (cela peut représenter une partie importante de votre liste d’e-mails, dans certains cas jusqu’à 70 %, selon la région et le secteur), vous devez effectuer ces tâches ».
 
@@ -51,11 +51,11 @@ Vous trouverez également plus d’informations sur DMARC et sur son implémenta
 
 ## Sé désabonner en un clic (liste) :
 
-Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs qui cliquent sur &quot;Signaler du spam&quot; à vérifier s&#39;ils ont eu l&#39;intention de se désabonner, ce qui peut réduire le nombre de plaintes reçues (plaintes qui nuisent à votre réputation) en les transformant plutôt en désabonnements (ce qui ne nuit pas à votre réputation).
+Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs et utilisatrices qui cliquent sur « Signaler un spam » à vérifier s’ils souhaitent plutôt se désabonner, ce qui peut réduire le nombre de réclamations reçues (réclamations qui nuisent à votre réputation) en les transformant en désabonnements (ce qui ne nuit pas à votre réputation).
 
-Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URL » sous le nom « En un clic », et cela est intentionnel. Techniquement, l’option « http/URL » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n&#39;est pas l&#39;objectif principal de [!DNL Yahoo] et [!DNL Google], qui font toutes deux référence à la mise à jour [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} qui se concentre sur le traitement du désabonnement via une demande de POST HTTPS au lieu d’un site web, ce qui le rend &quot;1-click&quot;.
+Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URL » sous le nom « En un clic », et cela est intentionnel. Techniquement, l’option « http/URL » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site Web, faisant ainsi de cette procédure une procédure « En un clic ».
 
-Aujourd&#39;hui, Gmail accepte l&#39;option &quot;mailto&quot; list-unsubscribe. Gmail a déclaré que &quot;mailto&quot; ne répond plus à ses attentes et que l’option &quot;post&quot; list-unsubscribe doit être activée pour les expéditeurs. Les expéditeurs qui ont déjà mis en place list-unsubscribe d’un type quelconque auront jusqu’au 1er juin 2024 pour avoir &quot;1-click&quot; list-unsubscribe mis en place.
+Aujourd’hui, Gmail accepte l’option list-unsubscribe « mailto ». Gmail a déclaré que « mailto » ne répond plus à ses attentes et que l’option list-unsubscribe « post » doit être activée pour les expéditeurs et expéditrices. Les expéditeurs et expéditrices qui disposent déjà de l’option list-unsubscribe auront jusqu’au 1er juin 2024 pour mettre en place l’option list-unsubscribe « En un clic ».
 
 [!DNL Yahoo] a déclaré continuer à utiliser l’option « mailto » pour l’instant. L’option « post » sera toutefois requise à l’avenir.
 
@@ -76,7 +76,7 @@ La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails tr
 
 ## Traitement des désabonnements dans les 2 jours :
 
-Il s’agit d’une bonne pratique recommandée depuis un certain temps, car chaque e-mail que vous déployez à une personne qui se désabonne entraîne généralement une réclamation pour spam. Plus tôt vous arrêterez de lui envoyer des e-mails, mieux c’est. Encore une fois, les exigences légales peuvent être beaucoup plus longues dans certains cas, mais [!DNL Google] et [!DNL Yahoo] sauront que l&#39;utilisateur s&#39;est désabonné via List-Unsubscribe et que vous lui envoyez toujours un email le jour 3, et qu&#39;ils ont déclaré qu&#39;ils n&#39;autoriseront pas les expéditeurs qui le font à continuer à envoyer des emails à N&#39;IMPORTE QUEL de leurs utilisateurs.
+Il s’agit d’une bonne pratique recommandée depuis un certain temps, car chaque e-mail que vous déployez à une personne qui se désabonne entraîne généralement une réclamation pour spam. Plus tôt vous arrêterez de lui envoyer des e-mails, mieux c’est. Encore une fois, les exigences légales peuvent être beaucoup plus longues dans certains cas, mais [!DNL Google] et [!DNL Yahoo] sauront que leur utilisateur ou utilisatrice a choisi de se désabonner via List-Unsubscribe et que vous continuez à envoyer à cette personne un e-mail le troisième jour. Ils ont déclaré qu’ils n’autoriseraient pas les expéditeurs et expéditrices qui le font à continuer à envoyer des e-mails à L’ENSEMBLE de leurs utilisateurs et utilisatrices.
 
 Cette exigence de deux jours est valable pour tout désabonnement par le biais des différentes méthodes list-unsubscribe. Dans certains cas (comme « mailto »), cela signifie qu’Adobe les traitera. Adobe traite toutes les demandes de désabonnement dès leur réception, bien avant le délai de 2 jours. Dans d’autres cas, vous pouvez les traiter. Si vous traitez ces demandes, vous devrez peut-être apporter des modifications de votre côté pour respecter ce délai de 2 jours.
 
@@ -89,7 +89,7 @@ Le maintien d’un taux de réclamations inférieur à 0,2 % constitue depuis l
 * Le maintien d’un faible taux de spam permet aux expéditeurs et expéditrices de mieux faire face aux pics occasionnels de commentaires des utilisateurs et utilisatrices.
 * De même, le maintien d’un taux de spam élevé entraîne une meilleure classification des spams. Il peut s’écouler un certain temps avant que les améliorations du taux de spam ne reflètent positivement la classification des spams.
 
-[!DNL Yahoo] a déclaré que leur seuil de plainte sera également de 0,30 %.
+[!DNL Yahoo] a déclaré que son seuil de réclamation serait également de l’ordre de 0,30 %.
 
 L’objectif de [!DNL Google] et [!DNL Yahoo] n’est pas de punir les expéditeurs et expéditrices pour un écart isolé ou une erreur qui provoque un pic temporaire des plaintes. Au lieu de cela, ils se concentrent sur les expéditeurs et expéditrices rattachés à un taux de plaintes élevé sur une longue période ou à un modèle de mauvais comportement d’envoi.
 
@@ -97,9 +97,9 @@ Si vous avez besoin d’aide pour surveiller vos taux de réclamations ou si vou
 
 ## Quel impact cela aura-t-il sur moi en tant que spécialiste du marketing ?
 
-ne pas respecter ces nouvelles exigences de Gmail et [!DNL Yahoo] est susceptible d’entraîner l’entrée ou le blocage des emails dans le dossier spam (c’est-à-dire, un rebond de la part du MBP indiquant que l’email n’a pas été diffusé).
+Ne pas respecter ces nouvelles exigences de Gmail et [!DNL Yahoo] est susceptible d’entraîner l’arrivée des e-mails dans le dossier spam ou leur blocage (c’est-à-dire, un rebond de la part du fournisseur de service de messagerie indiquant que l’e-mail n’a pas été diffusé).
 
-Par conséquent, Adobe vous recommande vivement de passer en revue les modifications décrites ci-dessus et de vous assurer que vous commencez à les respecter dès que possible. C’est également le moment idéal pour commencer à évaluer vos performances à [!DNL Yahoo] et [!DNL Google] pour vous permettre de voir si des changements significatifs ont été apportés à vos mesures au mois de février.
+Par conséquent, Adobe vous recommande vivement de passer en revue les modifications décrites ci-dessus et de vous assurer que vous commencez à les respecter dès que possible. C’est également le moment idéal pour commencer à évaluer vos performances sur [!DNL Yahoo] et [!DNL Google] pour vous permettre de voir s’il y a des changements significatifs dans vos mesures en février.
 
 Nous sommes là pour vous aider. Si vous avez des questions ou que vous avez besoin d’aide, contactez votre conseiller ou conseillère en délivrabilité Adobe ou l’équipe chargée de votre compte pour bénéficier d’un conseiller ou d’une conseillère en délivrabilité.
 
@@ -111,12 +111,12 @@ Bien que cette question soit toujours soulevée, la réalité est que ces change
 
 Sachez que cela ne s’applique pas actuellement aux e-mails envoyés aux comptes [!DNL Yahoo].JP ou [!DNL Gmail] Workspace, mais aux e-mails provenant de ces emplacements.
 
-## Ressources supplémentaires (non spécifiques à ces modifications) :
+## Ressources supplémentaires (non spécifiques à ces modifications) :
 
-[Instructions relatives à l’expéditeur Google](https://support.google.com/mail/answer/81126){target="_blank"}
+[Instructions relatives à l’expéditeur ou à l’expéditrice Google](https://support.google.com/mail/answer/81126){target="_blank"}
 
-[FAQ sur Google](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC){target="_blank"}
+[Questions fréquentes sur Google](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC){target="_blank"}
 
-[Instructions relatives à l’expéditeur Yahoo](https://senders.yahooinc.com/best-practices/){target="_blank"}
+[Instructions relatives à l’expéditeur ou à l’expéditrice Yahoo](https://senders.yahooinc.com/best-practices/){target="_blank"}
 
-[FAQ sur Yahoo](https://senders.yahooinc.com/faqs/){target="_blank"}
+[Questions fréquentes sur Yahoo](https://senders.yahooinc.com/faqs/){target="_blank"}
