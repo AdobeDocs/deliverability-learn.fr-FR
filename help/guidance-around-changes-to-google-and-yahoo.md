@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 69c95855786408f32de2f72e7f1deb122fb369ea
+source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 85%
@@ -68,9 +68,10 @@ La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails tr
 >[!INFO]
 > Adobe s’efforce d’activer la prise en charge &quot;post&quot; sur toutes nos plateformes d’envoi d’emails afin d’aider nos utilisateurs à répondre aux exigences suivantes :
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: prend entièrement en charge le clic 1 du POST aujourd’hui. Les mises à jour de la configuration étape par étape seront publiées. [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} mi-janvier
->* [!DNL Adobe Campaign Standard]: est mis à jour pour prendre en charge le clic 1 du POST. Revenez-y rapidement pour connaître les mises à jour. Les instructions de configuration seront fournies. [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=fr){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: prend entièrement en charge le clic 1 du POST aujourd’hui. Les mises à jour de la configuration étape par étape seront publiées. [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=fr){target="_blank"} mi-janvier
+> 
+> * [!DNL Adobe Campaign Classic V7/V8]: prend entièrement en charge le clic 1 du POST aujourd’hui. Les mises à jour de la configuration étape par étape seront publiées. [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"} à la mi-janvier.
+>* [!DNL Adobe Campaign Standard]: est mis à jour pour prendre en charge le clic 1 du POST. Revenez-y rapidement pour connaître les mises à jour. Les instructions de configuration seront fournies. [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=fr){target="_blank"}.
+>* [!DNL Adobe Journey Optimizer]: prend entièrement en charge le clic 1 du POST aujourd’hui. Les mises à jour de la configuration étape par étape seront publiées. [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=fr){target="_blank"} à la mi-janvier.
 > * [!DNL Marketo]: est mis à jour pour prendre en charge le clic 1 du POST. Une fois prêt, il sera automatiquement appliqué si nécessaire.
 
 
@@ -99,7 +100,7 @@ Si vous avez besoin d’aide pour surveiller vos taux de réclamations ou si vou
 
 Des mises à jour des calendriers ont été publiées depuis l&#39;annonce initiale en octobre. Les chronologies les plus récentes se présentent comme suit :
 
-## [!DNL Gmail] :
+[!DNL Gmail] :
 
 Février 2024 - Les rebonds temporaires conçus pour avertir la non-conformité commenceront. Les emails seront toujours remis normalement après un court délai si vous n’êtes pas encore en conformité. Si vous êtes entièrement en conformité, il n’y aura pas de rebonds temporaires et vous ne remarquerez rien.
 
@@ -107,7 +108,7 @@ Avril 2024 - Les blocs commenceront pour les expéditeurs qui ne sont pas en con
 
 1er juin 2024 - Tout expéditeur non conforme, y compris List-Unsubscribe 1-Click, fera l’objet d’un blocage.
 
-## [!DNL Yahoo] :
+[!DNL Yahoo] :
 
 N’a pas fourni de dates exactes, mais a déclaré que &quot;le déploiement de l’application commencera en février 2024. L’application sera progressivement déployée&quot;.
 
