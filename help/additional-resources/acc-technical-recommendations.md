@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
+source-git-commit: 6653260e6bb3fc379529ea4081eeae0a8f7f4eb9
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1757'
 ht-degree: 51%
 
 ---
@@ -221,7 +221,12 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le désabonnement de liste d’URL peuvent toujours demander un désabonnement par courrier électronique.
 
-Cliquez ici pour découvrir comment configurer le désabonnement à la liste en un clic via la règle de typologie.
+
+### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
+
+1 * Créer la nouvelle règle de typologie à partir de l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
+![image](https://git.corp.adobe.com/storage/user/38257/files/b8d48b7f-0f33-4118-b61d-e60351c68260)
+
 
 ## Optimisation des emails {#email-optimization}
 
