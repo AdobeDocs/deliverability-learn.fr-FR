@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 81f7f1b98a1393e265d6881b889fe2aa2ea35e02
+source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 50%
@@ -204,8 +204,9 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 Pour configurer le désabonnement à la liste en un clic directement :
 
-・ Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; 1 ; Accédez à Ressources -> Online -> Applications web 2 ; Téléchargez le fichier XML &quot;Désabonner les destinataires sans clic&quot; ・ Configurez List-Unsubscribe et List-Unsubscribe-Post 1 ; accédez à la section SMTP des propriétés de la diffusion.
-2 ; sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
+* Ajoutez dans l&#39;application web &quot;Désabonner les destinataires no click&quot; suivante 1* Accédez à Ressources -> Online -> Applications web 2* Téléchargez le fichier XML &quot;Désabonner les destinataires no-click&quot;
+* Configurez List-Unsubscribe et List-Unsubscribe-Post 1* Accédez à la section SMTP des Propriétés de la diffusion.
+2* Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
 
 List-Unsubscribe-Post : List-Unsubscribe=One-Click List-Unsubscribe : &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
