@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: 4796bfb222f6d4418a67763be767d982aef08a94
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 63%
+source-wordcount: '1753'
+ht-degree: 51%
 
 ---
 
@@ -101,7 +101,7 @@ Utilisation [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe
 
 ## Feedback loop {#feedback-loop-acc}
 
-Une feedback loop fonctionne en déclarant au niveau du FAI une adresse email donnée pour une plage d’adresses IP utilisées pour l’envoi de messages. Le FAI enverra à cette boîte de réception, de la même manière que pour les messages bounce, ces messages qui sont signalés par les destinataires comme spam. La plateforme doit être configurée pour bloquer les futures diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s’ils n’ont pas utilisé le lien d’opt-out approprié. C’est sur la base de ces plaintes qu’un FAI ajoutera une adresse IP à sa liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
+Une boucle de rétroaction fonctionne en déclarant au niveau du FAI une adresse e-mail donnée pour une plage d’adresses IP utilisées pour l’envoi de messages. Le FAI enverra à cette boîte de réception, de la même manière que pour les messages de rebond, ces messages qui sont signalés par les destinataires comme spam. La plateforme doit être configurée pour bloquer les futures diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s’ils n’ont pas utilisé le lien d’opt-out approprié. C’est sur la base de ces plaintes qu’un FAI ajoutera une adresse IP à sa liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
 
 Un standard est en cours d’établissement pour définir le format des messages de feedback loop : l’[ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -140,16 +140,17 @@ Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux ser
 
 ### À propos de List-Unsubscribe {#about-list-unsubscribe}
 
-L&#39;ajout d&#39;un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour une gestion optimale de la délivrabilité.
+Ajouter un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour garantir une gestion optimale de la délivrabilité. À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment aux règles du Unsubscribe de liste en un clic. Pour comprendre comment configurer le désabonnement à la liste en un clic, voir ci-dessous.
 
-Cet en-tête pourra être utilisé comme une alternative à l&#39;icône &quot;Signaler comme SPAM&quot;. Il s&#39;affichera comme un lien de désinscription dans l&#39;interface mail.
 
-L&#39;utilisation de cette fonctionnalité protège votre réputation et le feedback sera exécuté comme une désinscription.
+Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affichera sous forme de lien de désabonnement dans l’interface de messagerie.
+
+L’utilisation de cette fonctionnalité vous aide à protéger votre réputation et les commentaires seront exécutés comme un désabonnement.
 
 Pour utiliser List-Unsubscribe, vous devez entrer une ligne de commande similaire à celle-ci :
 
 ```
-List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe
+List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
 ```
 
 >[!CAUTION]
@@ -159,7 +160,7 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 La ligne de commande suivante peut-être utilisée pour créer un **List-Unsubscribe** dynamique :
 
 ```
-List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
+List-Unsubscribe: <mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
 Gmail, Outlook.com et Microsoft Outlook prennent en charge cette méthode et un bouton de désabonnement est disponible directement dans leur interface. Cette technique réduit le taux de plaintes.
@@ -169,11 +170,19 @@ Vous pouvez mettre en oeuvre le **List-Unsubscribe** par :
 * Directement [l&#39;ajout de la ligne de commande dans le modèle de diffusion](#adding-a-command-line-in-a-delivery-template)
 * [Créer une règle de typologie](#creating-a-typology-rule)
 
-### Ajouter la ligne de commande dans le modèle de diffusion {#adding-a-command-line-in-a-delivery-template}
+### Ajouter une ligne de commande dans un modèle de diffusion {#adding-a-command-line-in-a-delivery-template}
 
 La ligne de commande doit être ajoutée dans la section additionnelle de l&#39;en-tête SMTP de l&#39;email.
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
+
+1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
+Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
+
+2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
+   ![Image.](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
 
@@ -183,21 +192,31 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 >
 >La création d&#39;une règle de typologie est recommandée : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque email.
 
-1. List-Unsubscribe: &lt;mailto:unsubscribe@domain.com>
-
-   Un clic sur le lien **unsubscribe** ouvre le client messagerie par défaut de l&#39;utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour la création d&#39;email.
-
-1. List-Unsubscribe: `<https://domain.com/unsubscribe.jsp>`
-
-   Un clic sur le lien **unsubscribe** redirige l&#39;utilisateur vers votre formulaire de désinscription.
-
-   Exemple :
-
-   ![](../assets/s_tn_del_unsubscribe_param.png)
-
 >[!NOTE]
 >
 >Découvrez comment créer des règles de typologie dans Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+
+### Désabonnement à la liste en un clic
+
+À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à l’exigence du Unsubscribe de liste en un clic, les expéditeurs doivent :
+
+1. Ajoutez dans un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot;.
+2. Inclure un lien de désabonnement d’URI
+3. Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
+
+Pour configurer le désabonnement à la liste en un clic directement :
+
+・ Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
+1. Accédez à Ressources -> On-line -> Applications Web .
+2. Télécharger le fichier XML &quot;No-click&quot; &quot;Désabonner les destinataires&quot; ・ Configurer List-Unsubscribe et List-Unsubscribe-Post
+1. Accédez à la section SMTP des Propriétés de la diffusion.
+2. Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
+
+List-Unsubscribe-Post : List-Unsubscribe=One-Click List-Unsubscribe : &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
+
+L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le désabonnement de liste d’URL peuvent toujours demander un désabonnement par courrier électronique.
+
+Cliquez ici pour découvrir comment configurer le désabonnement à la liste en un clic via la règle de typologie.
 
 ## Optimisation des emails {#email-optimization}
 
