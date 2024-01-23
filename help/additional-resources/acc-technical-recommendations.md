@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
+source-git-commit: 1f3391430fa5a86973b8a1bd811b856dea23402e
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 51%
@@ -213,7 +213,8 @@ Pour configurer le désabonnement à la liste en un clic directement :
 * Accédez à la section SMTP des Propriétés de la diffusion.
 * Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
 
-List-Unsubscribe-Post : List-Unsubscribe=One-Click List-Unsubscribe : &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
+,, List-Unsubscribe-Post : List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
+,,
 
 L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le désabonnement de liste d’URL peuvent toujours demander un désabonnement par courrier électronique.
 
