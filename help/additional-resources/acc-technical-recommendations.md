@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
+source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 50%
+source-wordcount: '1753'
+ht-degree: 51%
 
 ---
 
@@ -176,12 +176,12 @@ La ligne de commande doit être ajoutée dans la section additionnelle de l&#39;
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
 
-1 ; List-Unsubscribe: <mailto:unsubscribe@domain.com>
+* List-Unsubscribe: <mailto:unsubscribe@domain.com>
 Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
 
-2 ; List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+* List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
-![Image.](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![Image.](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
 
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
@@ -200,13 +200,18 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à l’exigence du Unsubscribe de liste en un clic, les expéditeurs doivent :
 
-1 ; Ajoutez un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot; 2 ; incluez un lien de désabonnement URI 3 ; prenez en charge la réception de la réponse du POST HTTP du récepteur, prise en charge par Adobe Campaign.
+* Ajoutez dans un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot;.
+* Inclure un lien de désabonnement d’URI
+* Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
 
 Pour configurer le désabonnement à la liste en un clic directement :
 
-* Ajoutez dans l&#39;application web &quot;Désabonner les destinataires no click&quot; suivante 1* Accédez à Ressources -> Online -> Applications web 2* Téléchargez le fichier XML &quot;Désabonner les destinataires no-click&quot;
-* Configurez List-Unsubscribe et List-Unsubscribe-Post 1* Accédez à la section SMTP des Propriétés de la diffusion.
-2* Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
+* Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
+* Accédez à Ressources -> On-line -> Applications Web .
+* Télécharger le fichier XML &quot;no click&quot; de désinscription des destinataires
+* Configurer List-Unsubscribe et List-Unsubscribe-Post
+* Accédez à la section SMTP des Propriétés de la diffusion.
+* Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
 
 List-Unsubscribe-Post : List-Unsubscribe=One-Click List-Unsubscribe : &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
