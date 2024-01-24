@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 8cd825d24a77570ed54e3d4988100b25cd0a2eda
+source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 47%
@@ -225,10 +225,12 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 ### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
 
 Création d’une règle de typologie
+
 * Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
   ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
 
 Passez à la configuration de la règle de typologie.
+
 * Type de règle : contrôle
 * Canal : email
 * Phase : au début de la personnalisation
@@ -350,19 +352,20 @@ return true;
 ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
 Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte).
+
 ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
 Préparez une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides).
+
 ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
 Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.
+
 ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
-Validez la présence de List-Unsubscribe
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+Vérifiez que le List-Unsubscribe est présent.
 
-
-
+![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 ## Optimisation des emails {#email-optimization}
 
