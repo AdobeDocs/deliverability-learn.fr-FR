@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
+source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 47%
@@ -208,7 +208,7 @@ Pour configurer le désabonnement à la liste en un clic directement :
 
 * Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
 * Accédez à Ressources -> On-line -> Applications Web .
-* Télécharger le message &quot;Désabonner les destinataires sans clic&quot; [XML](/help/assets/WebAppUnsubNoClick.xml)
+* Télécharger le message &quot;Désabonner les destinataires sans clic&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 
 * Configurer List-Unsubscribe et List-Unsubscribe-Post
 * Accédez à la section SMTP des Propriétés de la diffusion.
@@ -225,13 +225,13 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
 ### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
 
-Création d’une règle de typologie
+Créez la nouvelle règle de typologie :
 
-Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
+* Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
 
 ![Image.](/help/assets/CreatingTypologyRules1.png)
 
-Passez à la configuration de la règle de typologie.
+Procédez à la configuration de la règle de typologie :
 
 * Type de règle : contrôle
 * Canal : email
@@ -241,7 +241,7 @@ Passez à la configuration de la règle de typologie.
 
 ![Image.](/help/assets/CreatingTypologyRules2.png)
 
-Code le javascript de la règle de typologie.
+Code le javascript de la règle de typologie :
 
 >[!NOTE]
 >
@@ -357,7 +357,7 @@ Ajoutez votre nouvelle règle à une typologie à un email (la typologie par dé
 
 ![Image.](/help/assets/CreatingTypologyRules4.png)
 
-Préparez une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides).
+Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)
 
 ![Image.](/help/assets/CreatingTypologyRules5.png)
 
