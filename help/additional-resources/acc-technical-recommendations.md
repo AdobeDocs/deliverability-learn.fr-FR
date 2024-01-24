@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d8cc8e3ee8b1a0fc6beaec1a7bc357f3a9f52e0f
+source-git-commit: acb2f0c5c983445b538381833f3596251938480a
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 47%
@@ -242,7 +242,7 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 >
 
 Cet exemple illustre comment :
-* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>, <http:…>
+* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>, <http://…>
 * Ajouter dans l’en-tête List-Unsubscribe-Post
 
 L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;
