@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5315c15149deb007460dc848426e1f727937041c
+source-git-commit: d8cc8e3ee8b1a0fc6beaec1a7bc357f3a9f52e0f
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1888'
 ht-degree: 47%
 
 ---
@@ -245,7 +245,9 @@ Cet exemple illustre comment :
 * Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>, <http:…>
 * Ajouter dans l’en-tête List-Unsubscribe-Post
 
-L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot; ; Vous pouvez ajouter d’autres paramètres ( &amp;service = ...)
+L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;;
+
+Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...)
 
 ```
 // Function to add or replace a header in the provided headers 
