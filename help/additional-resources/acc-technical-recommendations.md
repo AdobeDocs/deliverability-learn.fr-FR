@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: acb2f0c5c983445b538381833f3596251938480a
+source-git-commit: f7c2dcbf1bb86d7018c31b1ae2ef29903fb758aa
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1902'
 ht-degree: 47%
 
 ---
@@ -226,13 +226,14 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
 * Création d’une règle de typologie
 * Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
-
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
 * Passez à la configuration de la règle de typologie.
 * Type de règle : contrôle
 * Canal : email
 * Phase : au début de la personnalisation
 * Niveau : votre choix
 * Actif
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
 
 * Code le javascript de la règle de typologie.
 
@@ -343,14 +344,19 @@ if ( headerUnsubPost === "" ) {
 // Return true to indicate success 
 return true; 
 ```
+![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
 * Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte).
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
 * Préparez une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides).
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
 * Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 * Validez la présence de List-Unsubscribe
+  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 
 
