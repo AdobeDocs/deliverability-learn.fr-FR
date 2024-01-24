@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
+source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 47%
@@ -208,7 +208,8 @@ Pour configurer le désabonnement à la liste en un clic directement :
 
 * Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
 * Accédez à Ressources -> On-line -> Applications Web .
-* Télécharger le fichier XML &quot;no click&quot; de désinscription des destinataires
+* Télécharger le message &quot;Désabonner les destinataires sans clic&quot; [XML](/help/assets/WebAppUnsubNoClick.xml)
+
 * Configurer List-Unsubscribe et List-Unsubscribe-Post
 * Accédez à la section SMTP des Propriétés de la diffusion.
 * Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
