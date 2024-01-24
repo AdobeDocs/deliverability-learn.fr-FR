@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
+source-git-commit: 9175a3ded10ce4ea06712855ae3d2119f945c389
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 47%
@@ -226,8 +226,9 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
 Création d’une règle de typologie
 
-* Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
-  ![typologyrules1](/help/assets/CreatingTypologyRules1.png)
+Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
+
+![typologyrules1](/help/assets/CreatingTypologyRules1.png)
 
 Passez à la configuration de la règle de typologie.
 
