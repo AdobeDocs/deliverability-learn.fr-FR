@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
+source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1901'
 ht-degree: 47%
 
 ---
@@ -227,7 +227,7 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 Création d’une règle de typologie
 
 * Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
-  ![Image.](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
+  ![typologyrules1](/help/assets/CreatingTypologyRules1.png)
 
 Passez à la configuration de la règle de typologie.
 
