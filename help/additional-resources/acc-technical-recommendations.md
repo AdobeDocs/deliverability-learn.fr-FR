@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5f00c22382aff61c9aa218f60ecfeabc743a2742
+source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 47%
@@ -225,20 +225,20 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
 ### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
 
-1. **Créez la nouvelle règle de typologie :**
+* **Créez la nouvelle règle de typologie :**
 
-* Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
+   * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
 
 ![Image.](/help/assets/CreatingTypologyRules1.png)
 
 
-2. **Procédez à la configuration de la règle de typologie :**
+* **Procédez à la configuration de la règle de typologie :**
 
-* Type de règle : contrôle
-* Canal : email
-* Phase : au début de la personnalisation
-* Niveau : votre choix
-* Actif
+   * Type de règle : contrôle
+   * Canal : email
+   * Phase : au début de la personnalisation
+   * Niveau : votre choix
+   * Actif
 
 ![Image.](/help/assets/CreatingTypologyRules2.png)
 
@@ -354,22 +354,22 @@ return true;
 ![Image.](/help/assets/CreatingTypologyRules3.png)
 
 
-3. **Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
+* **Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
 
 ![Image.](/help/assets/CreatingTypologyRules4.png)
 
 
-4. **Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
+* **Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
 
 ![Image.](/help/assets/CreatingTypologyRules5.png)
 
 
-5. **Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
+* **Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
 ![Image.](/help/assets/CreatingTypologyRules6.png)
 
 
-6. **Vérifiez que le List-Unsubscribe est présent.**
+* **Vérifiez que le List-Unsubscribe est présent.**
 
 ![Image.](/help/assets/CreatingTypologyRules7.png)
 
