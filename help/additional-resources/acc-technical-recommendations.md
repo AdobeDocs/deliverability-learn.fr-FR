@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
+source-git-commit: 8fe2a9de16a7856c66a643ce7aaf22bae016246e
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1892'
 ht-degree: 47%
 
 ---
@@ -176,11 +176,9 @@ La ligne de commande doit être ajoutée dans la section additionnelle de l&#39;
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
 
-    1. List-Unsubscribe: mailto:unsubscribe@domain.com
-Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
+1.List-Unsubscribe : mailto:unsubscribe@domain.com Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
 
-    2. List-Unsubscribe: https://domain.com/unsubscribe.jsp
-Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
+2.List-Unsubscribe : https://domain.com/unsubscribe.jsp Cliquer sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
 
 ![Image.](/help/assets/UTF-8-1.png)
 
