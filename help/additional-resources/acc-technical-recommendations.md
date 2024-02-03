@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 66526ebad0914ef9afa995f7d826e644c0350182
+source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1889'
 ht-degree: 47%
 
 ---
@@ -147,7 +147,7 @@ Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler 
 
 L’utilisation de cette fonctionnalité vous aide à protéger votre réputation et les commentaires seront exécutés comme un désabonnement.
 
-Pour utiliser List-Unsubscribe, vous devez entrer une ligne de commande similaire à celle-ci :
+Pour utiliser List-Unsubscribe, vous devez saisir une ligne de commande similaire à :
 
 ```
 List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
@@ -181,7 +181,7 @@ Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par d�
 
 * List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
-  ![Image.](/help/assets/ListUnsubscribe1.png)
+  ![Image.](/help/assets/UTF-8-1.png)
 
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
@@ -207,12 +207,11 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 Pour configurer le désabonnement à la liste en un clic directement :
 
 * Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
-* Accédez à Ressources -> On-line -> Applications Web .
-* Télécharger le message &quot;Désabonner les destinataires sans clic&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
-
+   1. Accédez à Ressources -> On-line -> Applications Web .
+   2. Télécharger le message &quot;Désabonner les destinataires sans clic&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 * Configurer List-Unsubscribe et List-Unsubscribe-Post
-* Accédez à la section SMTP des Propriétés de la diffusion.
-* Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
+   1. Accédez à la section SMTP des Propriétés de la diffusion.
+   2. Sous En-têtes SMTP supplémentaires, saisissez les lignes de commande (chaque en-tête doit se trouver sur une ligne distincte) :
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
