@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
+source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Vous trouverez également plus d’informations sur DMARC et sur son implémenta
 
 ## Sé désabonner en un clic (liste) :
 
-Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs et utilisatrices qui cliquent sur « Signaler un spam » à vérifier s’ils souhaitent plutôt se désabonner, ce qui peut réduire le nombre de réclamations reçues (réclamations qui nuisent à votre réputation) en les transformant en désabonnements (ce qui ne nuit pas à votre réputation).
+Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Ce qu’elles signifient, c’est la fonctionnalité d’en-tête List-Unsubscribe pour les versions &quot;mailto&quot; ou &quot;http/URI&quot;. Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs et utilisatrices qui cliquent sur « Signaler un spam » à vérifier s’ils souhaitent plutôt se désabonner, ce qui peut réduire le nombre de réclamations reçues (réclamations qui nuisent à votre réputation) en les transformant en désabonnements (ce qui ne nuit pas à votre réputation).
 
 Il est important de noter que [!DNL Google] et [!DNL Yahoo] font toutes deux référence à l’option &quot;http/URI&quot; du nom &quot;1-Click&quot;, et cela est intentionnel. Techniquement, l&#39;option &quot;http/URI&quot; d&#39;origine permet de rediriger les destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site Web, faisant ainsi de cette procédure une procédure « En un clic ».
 
