@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
+source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1894'
 ht-degree: 47%
 
 ---
@@ -176,10 +176,10 @@ La ligne de commande doit être ajoutée dans la section additionnelle de l&#39;
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
 
-1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
+    1. List-Unsubscribe: mailto:unsubscribe@domain.com
 Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
 
-2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+    2. List-Unsubscribe: https://domain.com/unsubscribe.jsp
 Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
 
 ![Image.](/help/assets/UTF-8-1.png)
@@ -247,7 +247,7 @@ Code le javascript de la règle de typologie :
 >
 >Le code décrit ci-dessous doit être référencé à titre d’exemple uniquement.
 >Cet exemple illustre comment :
->* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>, <http://…>
+>* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>>, http://...
 >* Ajouter dans l’en-tête List-Unsubscribe-Post
 >L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot; :
 >* Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...)
