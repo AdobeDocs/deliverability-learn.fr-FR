@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
+source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 47%
@@ -150,7 +150,7 @@ L’utilisation de cette fonctionnalité vous aide à protéger votre réputatio
 Pour utiliser List-Unsubscribe, vous devez saisir une ligne de commande similaire à :
 
 ```
-List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
+List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
 ```
 
 >[!CAUTION]
@@ -160,7 +160,7 @@ List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?bod
 La ligne de commande suivante peut-être utilisée pour créer un **List-Unsubscribe** dynamique :
 
 ```
-List-Unsubscribe: <mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: <mailto:%=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
 Gmail, Outlook.com et Microsoft Outlook prennent en charge cette méthode et un bouton de désabonnement est disponible directement dans leur interface. Cette technique réduit le taux de plaintes.
@@ -176,12 +176,13 @@ La ligne de commande doit être ajoutée dans la section additionnelle de l&#39;
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
 
-* List-Unsubscribe: <mailto:unsubscribe@domain.com>
+1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
 Cliquez sur le lien de désabonnement pour ouvrir le client de messagerie par défaut de l’utilisateur. Cette règle de typologie doit être ajoutée dans une typologie utilisée pour créer un email.
 
-* List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Un clic sur le lien unsubscribe redirige l’utilisateur vers votre formulaire de désabonnement.
-  ![Image.](/help/assets/UTF-8-1.png)
+
+![Image.](/help/assets/UTF-8-1.png)
 
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
@@ -200,9 +201,9 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 
 À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à l’exigence du Unsubscribe de liste en un clic, les expéditeurs doivent :
 
-* Ajoutez dans un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot;.
-* Inclure un lien de désabonnement d’URI
-* Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
+1. Ajoutez dans un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot;.
+2. Inclure un lien de désabonnement d’URI
+3. Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
 
 Pour configurer le désabonnement à la liste en un clic directement :
 
