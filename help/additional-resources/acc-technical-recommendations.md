@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
+source-git-commit: 238c67562ebbe179b326e4093b90b0ee05a070ae
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1894'
 ht-degree: 47%
 
 ---
@@ -225,20 +225,20 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
 ### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
 
-1. **Créez la nouvelle règle de typologie :**
+**1. Créez la nouvelle règle de typologie :**
 
-   * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
+    * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
 
 ![Image.](/help/assets/CreatingTypologyRules1.png)
 
 
-* **Procédez à la configuration de la règle de typologie :**
+**2. **Procédez à la configuration de la règle de typologie :**
 
-   * Type de règle : contrôle
-   * Canal : email
-   * Phase : au début de la personnalisation
-   * Niveau : votre choix
-   * Actif
+    * Type de règle : control
+    * Canal : email
+    * Phase : au début de la personnalisation
+    * Niveau : votre choix
+    * Actif
 
 ![Image.](/help/assets/CreatingTypologyRules2.png)
 
