@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
+source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 95%
+source-wordcount: '1775'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Si vous êtes une cliente ou un client Adobe, la plupart des eléments exigés f
 
 Les règles pour DMARC ne sont pas modifiées, ce qui signifie qu’à moins d’être configuré pour l’empêcher, un enregistrement DMARC sur le domaine parent (adobe.com par exemple) sera hérité et couvrira tout sous-domaine (email.adobe.com, par exemple). Vous n’avez pas besoin d’enregistrements DMARC différents pour vos sous-domaines, sauf si vous souhaitez ou devez les ajouter pour diverses raisons professionnelles.
 
-DMARC est actuellement entièrement pris en charge par Adobe, mais n’est pas obligatoire. Utilisez n’importe quel vérificateur DMARC gratuit pour voir si vous disposez de la configuration DMARC pour vos sous-domaines. Dans le cas contraire, contactez votre équipe d’assistance Adobe pour voir comment procéder au mieux pour obtenir cette configuration.
+La configuration des enregistrements TXT DMARC est actuellement entièrement prise en charge dans Adobe pour Campaign et AJO, mais elle n’est pas requise. Utilisez n’importe quel vérificateur DMARC gratuit pour voir si vous disposez de la configuration DMARC pour vos sous-domaines. Dans le cas contraire, contactez votre équipe d’assistance Adobe pour voir comment procéder au mieux pour obtenir cette configuration.
 
 Vous trouverez également plus d’informations sur DMARC et sur son implémentation [ici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=fr){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=fr){target="_blank"} pour Marketo Engage.
 
@@ -53,7 +53,7 @@ Vous trouverez également plus d’informations sur DMARC et sur son implémenta
 
 Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de désabonnement dans le corps ou le pied de page de vos e-mails sur lesquels un robot de sécurité peut cliquer en faisant son travail ou par accident. Il s’agit de la fonctionnalité d’en-tête List-Unsubscribe pour les versions « mailto » ou « http/URL ». Il s’agit de la fonction dans les interfaces utilisateur [!DNL Yahoo] et Gmail où les utilisateurs et utilisatrices peuvent cliquer sur Se désabonner. Gmail invite même les utilisateurs et utilisatrices qui cliquent sur « Signaler un spam » à vérifier s’ils souhaitent plutôt se désabonner, ce qui peut réduire le nombre de réclamations reçues (réclamations qui nuisent à votre réputation) en les transformant en désabonnements (ce qui ne nuit pas à votre réputation).
 
-Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URL » sous le nom « En un clic », et cela est intentionnel. Techniquement, l’option « http/URL » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site Web, faisant ainsi de cette procédure une procédure « En un clic ».
+Il est important de noter que [!DNL Google] et [!DNL Yahoo] font toutes deux référence à l’option &quot;http/URI&quot; du nom &quot;1-Click&quot;, et cela est intentionnel. Techniquement, l&#39;option &quot;http/URI&quot; d&#39;origine permet de rediriger les destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site Web, faisant ainsi de cette procédure une procédure « En un clic ».
 
 Aujourd’hui, Gmail accepte l’option list-unsubscribe « mailto ». Gmail a déclaré que « mailto » ne répond plus à ses attentes et que l’option list-unsubscribe « post » doit être activée pour les expéditeurs et expéditrices. Les expéditeurs et expéditrices qui disposent déjà de l’option list-unsubscribe auront jusqu’au 1er juin 2024 pour mettre en place l’option list-unsubscribe « En un clic ».
 
@@ -71,8 +71,8 @@ La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails tr
 > 
 > * [!DNL Adobe Campaign Classic V7/V8]: prise en charge complète du clic 1 du POST aujourd’hui ; des instructions sont disponibles. [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]: est mis à jour pour prendre en charge le clic 1 du POST d’ici la fin février. Les instructions de configuration seront fournies. [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=fr){target="_blank"} une fois prêt.
->* [!DNL Adobe Journey Optimizer]: prend en charge le clic 1 du POST aujourd’hui, mais certaines améliorations clés sont en cours. Les mises à jour de la configuration étape par étape seront publiées. [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=fr){target="_blank"} une fois prêt.
-> * [!DNL Marketo] : en cours de mise à jour pour la prise en charge de POST 1-Click. Le cas échéant, l’application automatique sera effectuée dès qu’elle sera prête.
+>* [!DNL Adobe Journey Optimizer]: prend en charge le clic 1 du POST aujourd’hui, mais certaines améliorations clés sont en cours et devraient avoir lieu en mars 2024. Les mises à jour de la documentation seront publiées. [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=fr){target="_blank"} une fois prêt.
+> * [!DNL Marketo]: à compter du 31 janvier 2024, la fonctionnalité Prise en charge complète de POST 1-Click-List-Unsubscribe. Aucune action n’est requise par l’utilisateur.
 
 
 ## Traitement des désabonnements dans les 2 jours :
