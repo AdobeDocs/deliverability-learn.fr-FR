@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 238c67562ebbe179b326e4093b90b0ee05a070ae
+source-git-commit: 0c735dcf872728be6131b5a185f4b6973b26dcd3
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1898'
 ht-degree: 47%
 
 ---
@@ -229,7 +229,9 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 
     * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
 
+
 ![Image.](/help/assets/CreatingTypologyRules1.png)
+
 
 
 **2. **Procédez à la configuration de la règle de typologie :**
@@ -240,10 +242,12 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
     * Niveau : votre choix
     * Actif
 
+
 ![Image.](/help/assets/CreatingTypologyRules2.png)
 
 
 **Code le javascript de la règle de typologie :**
+
 
 >[!NOTE]
 >
@@ -351,25 +355,30 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
+
 ![Image.](/help/assets/CreatingTypologyRules3.png)
 
 
-* **Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
+
+**3. Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
 
 ![Image.](/help/assets/CreatingTypologyRules4.png)
 
 
-* **Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
+
+**4. Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
 
 ![Image.](/help/assets/CreatingTypologyRules5.png)
 
 
-* **Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
+
+**5. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
 ![Image.](/help/assets/CreatingTypologyRules6.png)
 
 
-* **Vérifiez que le List-Unsubscribe est présent.**
+
+**6. Vérifiez que le List-Unsubscribe est présent.**
 
 ![Image.](/help/assets/CreatingTypologyRules7.png)
 
