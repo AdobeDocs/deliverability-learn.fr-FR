@@ -1,23 +1,19 @@
 ---
-source-git-commit: 5de602d6b75e524dac8688e40db0e96bdbafceba
+source-git-commit: 25a1d799589268ab3108267670a3212bc9c47f7d
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
 
 ---
 ### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
+###
 
 **1. Créez la nouvelle règle de typologie :**
-
 * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
-
 
 ![Image.](/help/assets/CreatingTypologyRules1.png)
 
-
-
 **2. Procédez à la configuration de la règle de typologie :**
-
 * Type de règle : Contrôle
 * Phase : au début du ciblage
 * Canal : Email
@@ -140,19 +136,13 @@ return true;
 
 ![Image.](/help/assets/CreatingTypologyRules3.png)
 
-
-
 **3. Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
 
 ![Image.](/help/assets/CreatingTypologyRules4.png)
 
-
-
 **4. Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
 
 ![Image.](/help/assets/CreatingTypologyRules5.png)
-
-
 
 **5. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
