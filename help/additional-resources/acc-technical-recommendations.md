@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b4be656998890f9c98b8417835ae7c5bda2bc499
+source-git-commit: 2e3cebdad1613c852e950c379ddba689a3d8110e
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 47%
@@ -160,7 +160,7 @@ List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body
 La ligne de commande suivante peut-être utilisée pour créer un **List-Unsubscribe** dynamique :
 
 ```
-List-Unsubscribe: <mailto:%=errorAddress%?subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
 Gmail, Outlook.com et Microsoft Outlook prennent en charge cette méthode et un bouton de désabonnement est disponible directement dans leur interface. Cette technique réduit le taux de plaintes.
@@ -216,7 +216,7 @@ Pour configurer le désabonnement à la liste en un clic directement :
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: <https//domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
 subject=unsubscribe%=message.mimeMessageId%>
 ```
 
