@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2e3cebdad1613c852e950c379ddba689a3d8110e
+source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 47%
@@ -182,7 +182,7 @@ List-Unsubscribe: mailto:unsubscribe@domain.com
 List-Unsubscribe: https://domain.com/unsubscribe.jsp
 * Cliquez sur le bouton **unsubscribe** Le lien redirige l’utilisateur vers votre formulaire de désabonnement.
 
-![Image.](/help/assets/UTF-8-1.png)
+![image](/help/assets/UTF-8-1.png)
 
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
@@ -216,8 +216,7 @@ Pour configurer le désabonnement à la liste en un clic directement :
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
-subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le désabonnement de liste d’URL peuvent toujours demander un désabonnement par courrier électronique.
@@ -230,7 +229,7 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 * Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
 
 
-![Image.](/help/assets/CreatingTypologyRules1.png)
+![image](/help/assets/CreatingTypologyRules1.png)
 
 
 
@@ -243,7 +242,7 @@ L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un cli
 * Actif
 
 
-![Image.](/help/assets/CreatingTypologyRules2.png)
+![image](/help/assets/CreatingTypologyRules2.png)
 
 
 **Code le javascript de la règle de typologie :**
@@ -356,31 +355,31 @@ return true;
 ```
 
 
-![Image.](/help/assets/CreatingTypologyRules3.png)
+![image](/help/assets/CreatingTypologyRules3.png)
 
 
 
 **3. Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
 
-![Image.](/help/assets/CreatingTypologyRules4.png)
+![image](/help/assets/CreatingTypologyRules4.png)
 
 
 
 **4. Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
 
-![Image.](/help/assets/CreatingTypologyRules5.png)
+![image](/help/assets/CreatingTypologyRules5.png)
 
 
 
 **5. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
-![Image.](/help/assets/CreatingTypologyRules6.png)
+![image](/help/assets/CreatingTypologyRules6.png)
 
 
 
 **6. Vérifiez que le List-Unsubscribe est présent.**
 
-![Image.](/help/assets/CreatingTypologyRules7.png)
+![image](/help/assets/CreatingTypologyRules7.png)
 
 
 ## Optimisation des emails {#email-optimization}
