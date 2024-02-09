@@ -1,39 +1,39 @@
 ---
 source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '168'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
-# Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
+# Créez une règle de typologie pour la prise en charge de la désinscription en un clic :
 
-**1. Créez la nouvelle règle de typologie :**
-* Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
+**1. Créez la nouvelle règle de typologie :**
+* Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
 
-![Image.](/help/assets/CreatingTypologyRules1.png)
+![image](/help/assets/CreatingTypologyRules1.png)
 
-**2. Procédez à la configuration de la règle de typologie :**
-* Type de règle : Contrôle
-* Phase : au début du ciblage
-* Canal : Email
-* Niveau : votre choix
+**2. Procédez à la configuration de la règle de typologie :**
+* Type de règle : contrôle
+* Phase : au début du ciblage
+* Canal : e-mail
+* Niveau : votre choix
 * Actif
 
 
-![Image.](/help/assets/CreatingTypologyRules2.png)
+![image](/help/assets/CreatingTypologyRules2.png)
 
 
-**Code le javascript de la règle de typologie :**
+**Codez le javascript de la règle de typologie :**
 
 
 >[!NOTE]
 >
 >Le code décrit ci-dessous doit être référencé à titre d’exemple uniquement.
->Cet exemple illustre comment :
->* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>>, https://...
->* Ajouter dans l’en-tête List-Unsubscribe-Post
->L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷
->* Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...)
+>Cet exemple illustre comment :
+>* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou les paramètres mailto: existants, puis remplacez-les par &lt;mailto...>, https://…
+>* Effectuer un ajout dans l’en-tête List-Unsubscribe-Post
+>L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷.
+>* Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...).
 >
 
 
@@ -133,22 +133,22 @@ return true;
 ```
 
 
-![Image.](/help/assets/CreatingTypologyRules3.png)
+![image](/help/assets/CreatingTypologyRules3.png)
 
-**3. Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
+**3. Ajoutez votre nouvelle règle à une typologie dans un e-mail (la typologie par défaut est correcte) :**
 
-![Image.](/help/assets/CreatingTypologyRules4.png)
+![image](/help/assets/CreatingTypologyRules4.png)
 
-**4. Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
+**4. Préparez une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides).**
 
-![Image.](/help/assets/CreatingTypologyRules5.png)
+![image](/help/assets/CreatingTypologyRules5.png)
 
 **5. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
-![Image.](/help/assets/CreatingTypologyRules6.png)
+![image](/help/assets/CreatingTypologyRules6.png)
 
 
 
-**6. Vérifiez que le List-Unsubscribe est présent.**
+**6. Vérifiez que l’option List-Unsubscribe est présente.**
 
-![Image.](/help/assets/CreatingTypologyRules7.png)
+![image](/help/assets/CreatingTypologyRules7.png)
