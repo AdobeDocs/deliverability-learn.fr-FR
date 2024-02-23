@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
+source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 47%
+source-wordcount: '1899'
+ht-degree: 55%
 
 ---
 
@@ -140,7 +140,7 @@ Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux ser
 
 ### À propos de List-Unsubscribe {#about-list-unsubscribe}
 
-Ajouter un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour garantir une gestion optimale de la délivrabilité. À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment aux règles du Unsubscribe de liste en un clic. Pour comprendre comment configurer le désabonnement à la liste en un clic, voir ci-dessous.
+Ajouter un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour garantir une gestion optimale de la délivrabilité. À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour comprendre comment configurer le désabonnement à la liste en un clic, voir [cette section](#one-click-list-unsubscribe).
 
 
 Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affichera sous forme de lien de désabonnement dans l’interface de messagerie.
@@ -182,7 +182,7 @@ List-Unsubscribe: mailto:unsubscribe@domain.com
 List-Unsubscribe: https://domain.com/unsubscribe.jsp
 * Cliquez sur le bouton **unsubscribe** Le lien redirige l’utilisateur vers votre formulaire de désabonnement.
 
-![image](/help/assets/UTF-8-1.png)
+![image](../assets/UTF-8-1.png)
 
 
 ### Créer une règle de typologie {#creating-a-typology-rule}
@@ -197,7 +197,7 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 >
 >Découvrez comment créer des règles de typologie dans Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
-### Désabonnement à la liste en un clic
+### Désabonnement à la liste en un clic {#one-click-list-unsubscribe}
 
 À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à l’exigence du Unsubscribe de liste en un clic, les expéditeurs doivent :
 
@@ -216,46 +216,44 @@ Pour configurer le désabonnement à la liste en un clic directement :
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le désabonnement de liste d’URL peuvent toujours demander un désabonnement par courrier électronique.
 
 
-### Création d’une règle de typologie pour la prise en charge du désabonnement à la liste en un clic :
+### Créez une règle de typologie pour la prise en charge de la désinscription en un clic :
 
-**1. Créez la nouvelle règle de typologie :**
+**1. Créez la nouvelle règle de typologie :**
 
-* Dans l’arborescence de navigation, cliquez sur &quot;Nouveau&quot; pour créer une typologie.
+* Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
 
-
-![image](/help/assets/CreatingTypologyRules1.png)
-
+![image](../assets/CreatingTypologyRules1.png)
 
 
-**2. Procédez à la configuration de la règle de typologie :**
+**2. Procédez à la configuration de la règle de typologie :**
 
-* Type de règle : Contrôle
-* Phase : au début du ciblage
-* Canal : Email
-* Niveau : votre choix
+* Type de règle : contrôle
+* Phase : au début du ciblage
+* Canal : e-mail
+* Niveau : votre choix
 * Actif
 
 
-![image](/help/assets/CreatingTypologyRules2.png)
+![image](../assets/CreatingTypologyRules2.png)
 
 
-**Code le javascript de la règle de typologie :**
+**Codez le javascript de la règle de typologie :**
 
 
 >[!NOTE]
 >
 >Le code décrit ci-dessous doit être référencé à titre d’exemple uniquement.
->Cet exemple illustre comment :
->* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou ajoutez les paramètres mailto existants : et remplacez-le par : &lt;mailto..>>, https://...
->* Ajouter dans l’en-tête List-Unsubscribe-Post
->L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷
->* Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...)
+>Cet exemple illustre comment :
+>* Configurez une URL List-Unsubscribe et ajoutez les en-têtes ou les paramètres mailto: existants, puis remplacez-les par &lt;mailto...>, https://…
+>* Effectuer un ajout dans l’en-tête List-Unsubscribe-Post
+>L’exemple d’URL de publication utilise var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷.
+>* Vous pouvez ajouter d’autres paramètres (comme &amp;service = ...).
 >
 
 
@@ -355,31 +353,31 @@ return true;
 ```
 
 
-![image](/help/assets/CreatingTypologyRules3.png)
+![image](../assets/CreatingTypologyRules3.png)
 
 
 
-**3. Ajoutez votre nouvelle règle à une typologie à un email (la typologie par défaut est correcte) :**
+**3. Ajoutez votre nouvelle règle à une typologie dans un e-mail (la typologie par défaut est correcte) :**
 
-![image](/help/assets/CreatingTypologyRules4.png)
+![image](../assets/CreatingTypologyRules4.png)
 
 
 
-**4. Préparer une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides)**
+**4. Préparez une nouvelle diffusion (vérifiez que les en-têtes SMTP supplémentaires dans la propriété de diffusion sont vides).**
 
-![image](/help/assets/CreatingTypologyRules5.png)
+![image](../assets/CreatingTypologyRules5.png)
 
 
 
 **5. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.**
 
-![image](/help/assets/CreatingTypologyRules6.png)
+![image](../assets/CreatingTypologyRules6.png)
 
 
 
-**6. Vérifiez que le List-Unsubscribe est présent.**
+**6. Vérifiez que l’option List-Unsubscribe est présente.**
 
-![image](/help/assets/CreatingTypologyRules7.png)
+![image](../assets/CreatingTypologyRules7.png)
 
 
 ## Optimisation des emails {#email-optimization}
