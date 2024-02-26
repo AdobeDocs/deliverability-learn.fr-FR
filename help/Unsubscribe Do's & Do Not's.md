@@ -1,17 +1,16 @@
 ---
-source-git-commit: 73776a83c10a1c871ffaae38371fa2c48b5bf308
+source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
 
 ---
-### Désabonner les tâches et ne pas utiliser
-###
-
+# Désabonner les tâches et ne pas utiliser
 
 Ce document a pour but de passer en revue les bonnes pratiques recommandées en matière de gestion du désabonnement aux emails.
 
 Les désabonnements font naturellement partie du cycle de vie des emails. Mais il est difficile pour les marketeurs de dire au revoir parfois. Vous travaillez si dur pour concevoir les emails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s’attendre à ce que certains abonnés décident de passer à autre chose. Cela peut être dû à un certain nombre de raisons, mais l&#39;important est qu&#39;ils ne sont plus intéressés d&#39;avoir de vos nouvelles.
+
 Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d&#39;emails - lisez la suite pour en savoir plus.
 
 Les tâches
@@ -29,7 +28,7 @@ DO : rendez le processus facile et transparent. Exemple :
 
 + &quot;Cliquez ici pour vous désabonner de tous les emails marketing&quot;. Il doit s’agir de la première option proposée à l’utilisateur.
 
-+ &quot;Cliquez sur ceci pour modifier vos préférences.&quot;
++ &quot;Cliquez sur ceci pour modifier vos préférences&quot;.
 
 DO : incluez l&#39;adresse email sur la landing page de désabonnement.
 
@@ -51,8 +50,7 @@ DO : autorisez vos abonnés à dicter la relation.
 
 + Cliquez ici (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
 
-# Ne pas faire
-#
+Ne pas faire
 
 
 NE PAS : Empruntez le lien de désabonnement dans votre contenu dans l&#39;espoir que les abonnés ‘abandonneront’ par frustration.
@@ -86,4 +84,3 @@ DO NOT : forcez-les à vous donner une raison pour laquelle ils se sont désabon
 + Une meilleure approche serait de les informer qu&#39;ils se sont désabonnés avec succès, puis de leur donner un espace pour leur proposer éventuellement la ou les raisons.
 
 Souvenez-vous que les désabonnements sont meilleurs que les plaintes. Les personnes qui n’interagissent pas positivement avec votre programme de messagerie peuvent avoir un impact négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Il est maintenant temps que vous vous concentrez sur le développement de relations plus étroites avec vos abonnés actuels en les traitant à des messages pertinents et engagés qu’ils ne peuvent pas attendre pour ouvrir, cliquer et faire un achat !
-
