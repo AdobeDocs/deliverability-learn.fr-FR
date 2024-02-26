@@ -1,5 +1,5 @@
 ---
-source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
+source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -48,7 +48,7 @@ DO : autorisez vos abonnés à dicter la relation.
 
 À FAIRE : utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens unsubscribe en haut de l’email puissent facilement trouver où l’utilisateur est habitué à rechercher des désabonnements.
 
-+ Cliquez ici (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
++ Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
 
 Ne pas faire
 
