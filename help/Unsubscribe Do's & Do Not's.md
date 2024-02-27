@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
+source-git-commit: fcf836681561221bdf8b96593813c26b2d8bc399
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -13,7 +13,7 @@ Les désabonnements font naturellement partie du cycle de vie des emails. Mais i
 
 Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d&#39;emails - lisez la suite pour en savoir plus.
 
-Les tâches
+## Les tâches
 
 DO : disposer d’un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
 
@@ -34,51 +34,51 @@ DO : incluez l&#39;adresse email sur la landing page de désabonnement.
 
 + Important : En fonction de l’emplacement/de la juridiction de vos utilisateurs, il peut y avoir des problèmes de confidentialité concernant l’inclusion de l’adresse électronique complète. Vous devrez peut-être préremplir une version hachée de l’adresse électronique. En effet, l’email peut avoir été transféré à partir de l’adresse abonnée d’origine. Consultez votre groupe juridique pour comprendre vos exigences spécifiques.
 
-DO : confirmez que le désabonnement a bien été envoyé et confirmez quand il peut s’attendre à arrêter la réception des emails.
+**DO :** Vérifiez que le désabonnement a bien été envoyé et vérifiez quand il peut s’attendre à ce qu’il cesse de recevoir des emails.
 
 + S’ils se sont déjà désabonnés et qu’ils réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure)
 
-DO : honorez le désabonnement et supprimez l’adresse dans les délais impartis.
+**DO :** Respectez le désabonnement et supprimez l’adresse dans les délais impartis.
 
 + La rapidité dépendra des lois locales et de la juridiction, donc veuillez consulter un conseiller juridique sur ce qui s&#39;applique à votre entreprise.
 
-DO : autorisez vos abonnés à dicter la relation.
+**DO :** Autorisez vos abonnés à dicter la relation.
 
 + Il est possible d’offrir des options à vos abonnés. Cela peut être géré par le biais d’un centre de préférences/d’une initiative de désinscription.
 
-À FAIRE : utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens unsubscribe en haut de l’email puissent facilement trouver où l’utilisateur est habitué à rechercher des désabonnements.
+**DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
 
 + Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
 
-Ne pas faire
+## Ne pas faire
 
 
-NE PAS : Empruntez le lien de désabonnement dans votre contenu dans l&#39;espoir que les abonnés ‘abandonneront’ par frustration.
+**NE PAS :** Enlevez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
 
 + Il s’agit d’une mauvaise expérience de l’utilisateur final qui peut entraîner une augmentation des plaintes, ce qui peut avoir un impact négatif sur votre délivrabilité et votre réputation.
 
-NE PAS : rendez-vous difficile une fois que le client est arrivé au formulaire. Les ratages sont embêtants - et dans certains cas, illégaux.
+**NE PAS :** Rendre difficile le désabonnement une fois que le client est arrivé au formulaire. Les ratages sont embêtants - et dans certains cas, illégaux.
 
 + Soyez direct et évitez de confondre l’utilisateur final.
 
-NE PAS : obliger l’utilisateur à ajouter manuellement une adresse électronique dans le formulaire de désabonnement.
+**NE PAS :** Faites en sorte que l’utilisateur ajoute manuellement une adresse électronique dans le formulaire de désabonnement.
 
 + L’adresse qui s’est inscrite peut être différente de l’adresse à laquelle l’utilisateur s’est connecté pour le courrier (par exemple, transféré).  Il se peut qu’il ne connaisse pas l’adresse électronique utilisée pour l’abonnement d’origine.
 
-NE PAS : obliger l’utilisateur à se connecter à son compte pour se désabonner.
+**NE PAS :** Permet à l’utilisateur de se connecter à son compte pour se désabonner.
 
 + Vous pouvez envoyer l’email à la mauvaise adresse et le propriétaire de cette adresse peut ne pas avoir accès au compte.  S’ils reçoivent l’email, ils doivent être autorisés à se désabonner du lien uniquement dans l’email ; aucune autre action ou information ne doit être requise.
 + Moins un client a besoin d’actions, mieux c’est.
 
-DO NOT : envoyez un email confirmant que la personne s&#39;est désinscrite.
+**NE PAS :** Envoyez un email confirmant que la personne s’est désinscrite.
 
 + Si c&#39;est le cas, vous avez déjà rompu votre promesse de ne plus leur envoyer de courrier.
 
-NE PAS : soyez sarcastique dans votre verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
+**NE PAS :** Sois sarcastique dans ton verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
 
 + Cela peut paraître grossier. Évitez un ton négatif.
 
-DO NOT : forcez-les à vous donner une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
+**NE PAS :** Vous devez les forcer à vous indiquer une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
 
 + Permettre au client d’ajouter ces informations peut s’avérer utile pour vous dans les prochaines statistiques, mais en faire un champ facultatif sur la page d’entrée de désabonnement.
 + Une meilleure approche serait de les informer qu&#39;ils se sont désabonnés avec succès, puis de leur donner un espace pour leur proposer éventuellement la ou les raisons.
