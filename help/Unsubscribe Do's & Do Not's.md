@@ -1,5 +1,5 @@
 ---
-source-git-commit: fcf836681561221bdf8b96593813c26b2d8bc399
+source-git-commit: 34a7b7c8d6a2bda2f5b131bbbd9570c0b577c02c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -15,22 +15,22 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 
 ## Les tâches
 
-DO : disposer d’un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
+**DO :** Posséder un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
 
 + Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrer-le, le souligner, le mettre en gras, le placer tout en haut ou tout en bas de l&#39;email, en faire une couleur de police différente Utilisez le seul mot - ‘DÉSABONNER’ - dans la préférence linguistique de l&#39;utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
 
-DO : faites en sorte que le lecteur de lien de désabonnement se connecte à une page d’entrée sur laquelle l’utilisateur puisse confirmer qu’il souhaite être supprimé de la liste.
+**DO :** Posez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
 
 + Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
 + Si votre désabonnement dirige un utilisateur vers une page d’entrée, assurez-vous que la page d’entrée offre un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
 
-DO : rendez le processus facile et transparent. Exemple :
+**DO :** Rendre le processus facile et transparent. Exemple :
 
 + &quot;Cliquez ici pour vous désabonner de tous les emails marketing&quot;. Il doit s’agir de la première option proposée à l’utilisateur.
 
 + &quot;Cliquez sur ceci pour modifier vos préférences&quot;.
 
-DO : incluez l&#39;adresse email sur la landing page de désabonnement.
+**DO :** Insérez l&#39;adresse email sur la landing page de désabonnement.
 
 + Important : En fonction de l’emplacement/de la juridiction de vos utilisateurs, il peut y avoir des problèmes de confidentialité concernant l’inclusion de l’adresse électronique complète. Vous devrez peut-être préremplir une version hachée de l’adresse électronique. En effet, l’email peut avoir été transféré à partir de l’adresse abonnée d’origine. Consultez votre groupe juridique pour comprendre vos exigences spécifiques.
 
