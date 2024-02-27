@@ -8,7 +8,7 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
+source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -30,7 +30,8 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 
 **DO :** Posez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
 
-+ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
+Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
+
 + Si votre désabonnement dirige un utilisateur vers une page d’entrée, assurez-vous que la page d’entrée offre un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
 
 **DO :** Rendre le processus facile et transparent. Exemple :
@@ -57,7 +58,7 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 
 **DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
 
-+ Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
+Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
 
 ## Ne pas faire
 
@@ -90,6 +91,7 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 **NE PAS :** Vous devez les forcer à vous indiquer une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
 
 + Permettre au client d’ajouter ces informations peut s’avérer utile pour vous dans les prochaines statistiques, mais en faire un champ facultatif sur la page d’entrée de désabonnement.
+
 + Une meilleure approche serait de les informer qu&#39;ils se sont désabonnés avec succès, puis de leur donner un espace pour leur proposer éventuellement la ou les raisons.
 
 Souvenez-vous que les désabonnements sont meilleurs que les plaintes. Les personnes qui n’interagissent pas positivement avec votre programme de messagerie peuvent avoir un impact négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Il est maintenant temps que vous vous concentrez sur le développement de relations plus étroites avec vos abonnés actuels en les traitant à des messages pertinents et engagés qu’ils ne peuvent pas attendre pour ouvrir, cliquer et faire un achat !
