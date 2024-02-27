@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
-workflow-type: ht
-source-wordcount: '178'
-ht-degree: 100%
+source-git-commit: 05997b0a7aa30e98fa425b814f649e3edebf120c
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 + [Stratégie et définition de la délivrabilité](/help/deliverability-strategy-and-definition.md)
 + Mesures de délivrabilité {#metrics-for-deliverability}
    + [Présentation des mesures](/help/metrics/metrics-overview.md)
-   + [Bounces](/help/metrics/bounces.md)
+   + [Rebonds](/help/metrics/bounces.md)
    + [Plaintes](/help/metrics/complaints.md)
    + [Pièges de courriers indésirables](/help/metrics/spam-traps.md)
    + [Envoi vers les courriers indésirables et blocage](/help/metrics/bulking-and-blocking.md)
@@ -47,6 +47,7 @@ ht-degree: 100%
 + Annexe : ressources supplémentaires {#additional-resources}
    + [Présentation](/help/additional-resources/general-resources.md)
    + [Mises à jour de Yahoo et Gmail](/help/guidance-around-changes-to-google-and-yahoo.md)
+   + [Désabonner les tâches et les tâches](/help/Unsubscribe Do&#39;s &amp; Do Not&#39;s.md)
    + Ressources génériques {#generic-resources}
       + [En savoir plus sur les pièges à spam](/help/additional-resources/all-about-spam-traps.md)
       + [Améliorer la réputation de vos emails grâce au réchauffement des adresses IP](/help/additional-resources/increase-reputation-with-ip-warming.md)
@@ -63,5 +64,5 @@ ht-degree: 100%
    + Notes techniques {#technotes}
       + [Implémenter DMARC](/help/technotes/implement-dmarc.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)
-      + [Mettre à jour les bounces après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
+      + [Mettre à jour les rebonds après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
 
