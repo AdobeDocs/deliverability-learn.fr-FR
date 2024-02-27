@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
+source-git-commit: 466b775442964e2d8cad133280e6b9f8af148b25
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1902'
 ht-degree: 55%
 
 ---
@@ -140,10 +140,13 @@ Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux ser
 
 ### À propos de List-Unsubscribe {#about-list-unsubscribe}
 
-Ajouter un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour garantir une gestion optimale de la délivrabilité. À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour comprendre comment configurer le désabonnement à la liste en un clic, voir [cette section](#one-click-list-unsubscribe).
+L&#39;ajout d&#39;un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour une gestion optimale de la délivrabilité.
 
+>[!CAUTION]
+>
+>À partir du 1er juin 2024, Yahoo! et Gmail exigera que les expéditeurs se conforment aux **Liste-Unsubscribe en un clic**. Pour comprendre comment configurer le désabonnement à la liste en un clic, voir [cette section](#one-click-list-unsubscribe).
 
-Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affichera sous forme de lien de désabonnement dans l’interface de messagerie.
+Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affiche sous la forme d’un lien de désabonnement dans l’interface de messagerie.
 
 L’utilisation de cette fonctionnalité vous aide à protéger votre réputation et les commentaires seront exécutés comme un désabonnement.
 
@@ -192,20 +195,18 @@ La règle de typologie doit contenir le script qui génère la ligne de commande
 >[!NOTE]
 >
 >La création d&#39;une règle de typologie est recommandée : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque email.
-
->[!NOTE]
 >
->Découvrez comment créer des règles de typologie dans Adobe Campaign Classic dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+>Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 ### Désabonnement à la liste en un clic {#one-click-list-unsubscribe}
 
-À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à l’exigence du Unsubscribe de liste en un clic, les expéditeurs doivent :
+À compter du 1er juin 2024, Yahoo et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. Pour se conformer à cette exigence, les expéditeurs doivent :
 
-1. Ajoutez dans un &quot;List-Unsubscribe-Post : List-Unsubscribe=One-Click&quot;.
-2. Inclure un lien de désabonnement d’URI
-3. Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
+1. Ajoutez la ligne de commande suivante :`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+1. Incluez un lien de désabonnement d’URI.
+1. Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign.
 
-Pour configurer le désabonnement à la liste en un clic directement :
+Pour configurer le désabonnement à la liste en un clic directement dans Adobe Campaign v7/v8 :
 
 * Ajoutez dans l&#39;application web &quot;Désabonner les destinataires sans clic&quot; suivante : 
    1. Accédez à Ressources -> On-line -> Applications Web .

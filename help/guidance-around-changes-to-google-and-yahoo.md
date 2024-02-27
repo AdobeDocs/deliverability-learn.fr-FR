@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
-workflow-type: ht
-source-wordcount: '1775'
-ht-degree: 100%
+source-git-commit: e2c2fbfee5e404e1eef25dd0068a6bdd560ed977
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 88%
 
 ---
 
@@ -55,25 +55,23 @@ Pas de panique. [!DNL Google] et [!DNL Yahoo] ne font pas allusion aux liens de 
 
 Il est important de noter que [!DNL Google] et [!DNL Yahoo] font référence à l’option « http/URI » sous le nom « En un clic », ce qui est intentionnel. Techniquement, l’option « http/URI » d’origine permet de rediriger les personnes destinataires vers un site web. Ce n’est pas l’objectif de [!DNL Yahoo] et [!DNL Google], qui font référence au [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} mis à jour à propos du traitement du désabonnement via une requête POST HTTPS au lieu d’un site Web, faisant ainsi de cette procédure une procédure « En un clic ».
 
-Aujourd’hui, Gmail accepte l’option list-unsubscribe « mailto ». Gmail a déclaré que « mailto » ne répond plus à ses attentes et que l’option list-unsubscribe « post » doit être activée pour les expéditeurs et expéditrices. Les expéditeurs et expéditrices qui disposent déjà de l’option list-unsubscribe auront jusqu’au 1er juin 2024 pour mettre en place l’option list-unsubscribe « En un clic ».
+Aujourd&#39;hui, Gmail accepte l&#39;option &quot;mailto&quot; list-unsubscribe. Gmail a déclaré que &quot;mailto&quot; ne répond plus à ses attentes et que l’option &quot;post&quot; list-unsubscribe doit être activée pour les expéditeurs. Les expéditeurs qui ont déjà mis en place list-unsubscribe d’un type quelconque auront jusqu’au 1er juin 2024 pour avoir &quot;1-click&quot; list-unsubscribe mis en place.
 
-[!DNL Yahoo] a déclaré continuer à utiliser l’option « mailto » pour l’instant. L’option « post » sera toutefois requise à l’avenir.
+[!DNL Yahoo] a dit qu&#39;ils continueront à honorer l&#39;option &quot;mailto&quot;, pour l&#39;instant, mais qu&#39;eux aussi devront à l&#39;avenir &quot;poster&quot;.
 
-Adobe recommande d’utiliser les options list-unsubscribe « mailto » et « post/1-Click ». Adobe s’efforce d’activer la prise en charge « post » sur toutes ses plateformes d’envoi d’e-mails, afin d’aider ses utilisateurs et utilisatrices à répondre à ces exigences. Voir ci-dessous pour plus de détails.
+Adobe recommande d’utiliser les options de désabonnement à la liste &quot;mailto&quot; et &quot;post/1-click&quot;. Adobe s’efforce d’activer la prise en charge &quot;post&quot; sur toutes nos plateformes d’envoi d’emails afin de prendre en charge les utilisateurs qui répondent à ces exigences. Voir les détails ci-dessous.
 
 La nécessité d’en-têtes list-unsubscribe ne s’applique pas aux e-mails transactionnels. Notez que les messages déclenchés tels que Panier abandonné et les communications similaires non générées par les personnes abonnées sont considérés comme du marketing par les fournisseurs de messagerie, tels que [!DNL Google] et [!DNL Yahoo], et ceux-ci auraient besoin de list-unsubscribe.
 
 [!DNL Google] et [!DNL Yahoo] savent que, dans certains cas, les destinataires se désabonnent et se réabonnent ultérieurement. Bien qu’ils ne soient pas prêts à partager la recette secrète leur permettant d’identifier ces situations, ils travaillent sur des méthodes afin d’éviter de pénaliser à tort les expéditeurs et expéditrices dans de tels cas de figure.
 
 >[!INFO]
-> Adobe s’efforce d’activer la prise en charge « post » sur toutes ses plateformes d’envoi d’e-mails, afin d’aider ses utilisateurs et utilisatrices à répondre à ces exigences :
-> 
-> 
-> * [!DNL Adobe Campaign Classic V7/V8] : actuellement, prise en charge complète de POST en un clic. Des instructions sont disponibles [ici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
->* [!DNL Adobe Campaign Standard] : en cours de mise à jour pour la prise en charge de POST en un clic pour la fin du mois de février. Des instructions de configuration seront disponibles [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=fr){target="_blank"} en temps utile.
+> Adobe s’efforce d’activer la prise en charge &quot;post&quot; sur toutes nos plateformes d’envoi d’emails afin d’aider nos utilisateurs à répondre aux exigences suivantes :
+>
+> * [!DNL Adobe Campaign v7/v8] : actuellement, prise en charge complète de POST en un clic. Des instructions sont disponibles [ici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=fr#list-unsubscribe){target="_blank"}.
+>* [!DNL Adobe Campaign Standard]: à compter du 19 février, prendra entièrement en charge le clic 1 du POST. Plus d’informations sont disponibles [here](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel.html#email-channel-parameters){target="_blank"}.
 >* [!DNL Adobe Journey Optimizer] : prend actuellement en charge POST en un clic, mais certaines améliorations clés sont en cours et devraient être proposées en mars 2024. Les mises à jour de la documentation seront publiées [ici](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=fr){target="_blank"} en temps utile.
-> * [!DNL Marketo] : depuis le 31 janvier 2024, prise en charge complète de POST 1-Click-List-Unsubscribe. Aucune action n’est requise.
-
+> * [!DNL Marketo]: à compter du 31 janvier 2024, prendra en charge le POST 1-Click List-Unsubscribe. Aucune action n’est requise.
 
 ## Traitement des désabonnements dans les 2 jours :
 
@@ -92,7 +90,7 @@ Le maintien d’un taux de réclamations inférieur à 0,2 % constitue depuis l
 
 [!DNL Yahoo] a déclaré que son seuil de réclamation serait également de l’ordre de 0,30 %.
 
-L’objectif de [!DNL Google] et [!DNL Yahoo] n’est pas de punir les expéditeurs et expéditrices pour un écart isolé ou une erreur qui provoque un pic temporaire des plaintes. Au lieu de cela, ils se concentrent sur les expéditeurs et expéditrices rattachés à un taux de plaintes élevé sur une longue période ou à un modèle de mauvais comportement d’envoi.
+[!DNL Google] et [!DNL Yahoo]L&#39;objectif de n&#39;est pas de punir les expéditeurs pour une seule mauvaise journée ou une erreur qui provoque un pic temporaire des plaintes. Au lieu de cela, ils se concentrent sur les expéditeurs et expéditrices rattachés à un taux de plaintes élevé sur une longue période ou à un modèle de mauvais comportement d’envoi.
 
 Si vous avez besoin d’aide pour surveiller vos taux de réclamations ou si vous souhaitez utiliser des stratégies pour réduire les réclamations, contactez votre conseiller ou conseillère en délivrabilité d’Adobe ou l’équipe chargée de votre compte pour bénéficier d’un conseiller ou d’une conseillère en délivrabilité.
 
@@ -102,7 +100,7 @@ Les échéances ont été revues depuis l’annonce initiale en octobre. Les der
 
 [!DNL Gmail] :
 
-Février 2024 : les rebonds temporaires destinés à avertir de la non-conformité seront mis en place. Si vous n’êtes pas encore en conformité, les e-mails seront toujours livrés normalement après un court délai. Si vous êtes en totale conformité, il n’y aura pas de rebond temporaire, ni aucune incidence pour vous.
+Février 2024 : les rebonds temporaires destinés à avertir de la non-conformité seront mis en place. Si vous n’êtes pas encore en conformité, les e-mails seront toujours livrés normalement après un court délai. Si vous êtes entièrement en conformité, il n’y aura pas de rebonds temporaires et vous ne remarquerez rien.
 
 Avril 2024 : les blocages commenceront pour les expéditeurs et expéditrices qui ne sont pas en conformité avec toutes les règles, à l’exception de List-Unsubscribe 1-Click. Seule une partie des e-mails non conformes sera bloquée dans un premier temps, le pourcentage de blocage augmentant au fil du temps.
 
