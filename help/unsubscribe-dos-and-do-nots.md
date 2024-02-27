@@ -1,10 +1,21 @@
 ---
-source-git-commit: 68580661062e1e323ff728c09ebf3a5103544fff
+title: Désabonner les tâches et ne pas utiliser
+description: Utilisez une liste des actions à effectuer et des actions à éviter lors de la gestion des désabonnements.
+feature: Deliverability
+role: Admin
+level: Beginner
+doc-type: Feature Video
+duration: 0
+last-substantial-update: 2024-02-27T00:00:00Z
+jira: KT-15029
+source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
+
+
 # Désabonner les tâches et ne pas utiliser
 
 Les désabonnements font naturellement partie du cycle de vie des emails. Mais il est difficile pour les marketeurs de dire au revoir parfois. Vous travaillez si dur pour concevoir les emails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s’attendre à ce que certains abonnés décident de passer à autre chose. Cela peut être dû à un certain nombre de raisons, mais l&#39;important est qu&#39;ils ne sont plus intéressés d&#39;avoir de vos nouvelles.
