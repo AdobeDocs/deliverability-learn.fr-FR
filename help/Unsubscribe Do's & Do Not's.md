@@ -1,13 +1,11 @@
 ---
-source-git-commit: 34a7b7c8d6a2bda2f5b131bbbd9570c0b577c02c
+source-git-commit: 214036c89a3c0b3ebcdfc66bc8a4e4bd2ede5766
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 # Désabonner les tâches et ne pas utiliser
-
-Ce document a pour but de passer en revue les bonnes pratiques recommandées en matière de gestion du désabonnement aux emails.
 
 Les désabonnements font naturellement partie du cycle de vie des emails. Mais il est difficile pour les marketeurs de dire au revoir parfois. Vous travaillez si dur pour concevoir les emails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s’attendre à ce que certains abonnés décident de passer à autre chose. Cela peut être dû à un certain nombre de raisons, mais l&#39;important est qu&#39;ils ne sont plus intéressés d&#39;avoir de vos nouvelles.
 
