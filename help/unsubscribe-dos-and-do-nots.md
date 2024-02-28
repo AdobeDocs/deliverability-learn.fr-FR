@@ -8,9 +8,9 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
+source-git-commit: 7f1e756683bfc5c8587101fcbf86db010a5b6a7e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,6 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 
 **DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
 
-Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
 
 ## Ne pas faire
 
