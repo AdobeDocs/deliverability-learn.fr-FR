@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 56a8bb69be854ede21385ef35179b90f95cb1f6e
+source-git-commit: dd2de465850181cf72085328352c38bcefd59458
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 42%
@@ -167,7 +167,7 @@ and
 
 >[!CAUTION]
 >
->À partir du 1er juin 2024, Yahoo! et Gmail exigera que les expéditeurs se conforment aux **Liste-Unsubscribe en un clic**. [En savoir plus sur cette modification](guidance-around-changes-to-google-and-yahoo.md)
+>À partir du 1er juin 2024, Yahoo! et Gmail exigera que les expéditeurs se conforment aux **Liste-Unsubscribe en un clic**. [En savoir plus sur cette modification](../guidance-around-changes-to-google-and-yahoo.md)
 >
 >Découvrez comment configurer List-Unsubscribe en un clic [cette section](#one-click-list-unsubscribe).
 
@@ -232,7 +232,7 @@ Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dan
 
 ### Désabonnement à la liste en un clic {#one-click-list-unsubscribe}
 
-À partir du 1er juin 2024, Yahoo! et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. [En savoir plus sur cette modification](guidance-around-changes-to-google-and-yahoo.md)
+À partir du 1er juin 2024, Yahoo! et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. [En savoir plus sur cette modification](../guidance-around-changes-to-google-and-yahoo.md)
 
 Pour se conformer à cette exigence, les expéditeurs doivent :
 
@@ -263,6 +263,7 @@ Par exemple :
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
+
 ![image](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
 L’exemple ci-dessus permettra l’activation du Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge le List-Unsubscribe &quot;mailto&quot; peuvent toujours demander le désabonnement par courrier électronique.
