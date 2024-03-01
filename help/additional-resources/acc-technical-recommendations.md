@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
+source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2150'
 ht-degree: 41%
 
 ---
@@ -142,6 +142,8 @@ L&#39;ajout d&#39;un en-tête SMTP appelé **List-Unsubscribe** est obligatoire 
 
 Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affiche sous la forme d’un lien &quot;Se désabonner&quot; dans les interfaces de messagerie des FAI.
 
+L’utilisation de cette fonctionnalité réduit les taux de plaintes et contribue à protéger votre réputation. Les commentaires seront exécutés comme un désabonnement.
+
 Gmail, Outlook.com, Yahoo! et Microsoft Outlook prennent en charge cette méthode. Un lien &quot;Se désabonner&quot; est disponible directement dans leur interface. Par exemple :
 
 ![image](../assets/List-Unsubscribe-example-Gmail.png)
@@ -154,8 +156,6 @@ Gmail, Outlook.com, Yahoo! et Microsoft Outlook prennent en charge cette méthod
 >* Sous le seuil de plainte pour spam des FAI
 >* Entièrement authentifié
 
-L’utilisation de cette fonctionnalité réduit les taux de plaintes et contribue à protéger votre réputation. Les commentaires seront exécutés comme un désabonnement.
-
 Il existe deux versions de la fonctionnalité d’en-tête List-Unsubscribe :
 
 * **&quot;mailto&quot; List-Unsubscribe** - Avec cette méthode, cliquez sur le bouton **Désabonner** Le lien envoie un email prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’email. [En savoir plus](#mailto-list-unsubscribe)
@@ -164,7 +164,7 @@ Il existe deux versions de la fonctionnalité d’en-tête List-Unsubscribe :
 
 * **Liste-Unsubscribe &quot;Un clic&quot;** - Avec cette méthode, cliquez sur le bouton **Désabonner** se désabonne directement de l’utilisateur. [En savoir plus](#one-click-list-unsubscribe)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >À partir du 1er juin 2024, Yahoo! et Gmail exigera que les expéditeurs se conforment aux **Liste-Unsubscribe en un clic**. [En savoir plus sur cette modification](../guidance-around-changes-to-google-and-yahoo.md)
 >
@@ -194,9 +194,7 @@ La ligne de commande doit être ajoutée dans la fonction **[!UICONTROL En-tête
 
 Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
 
-Par exemple, saisissez le script suivant dans la variable **[!UICONTROL En-têtes SMTP supplémentaires]** field : `List-Unsubscribe: mailto:unsubscribe@domain.com`
-
-Cliquez sur le bouton **unsubscribe** envoie un email à l’adresse unsubscribe@domain.com.
+Par exemple, saisissez le script suivant dans la variable **[!UICONTROL En-têtes SMTP supplémentaires]** field : `List-Unsubscribe: mailto:unsubscribe@domain.com`. Cliquez sur le bouton **unsubscribe** envoie un email à l’adresse unsubscribe@domain.com.
 
 Vous pouvez également utiliser une adresse dynamique. Par exemple, pour envoyer un email à l&#39;adresse d&#39;erreur définie pour la plateforme, vous pouvez utiliser le script suivant : `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -248,6 +246,8 @@ Pour configurer **Liste-Unsubscribe en un clic** dans Campaign, vous pouvez effe
 
 #### Configuration de la liste en un clic - Désabonner dans la diffusion ou le modèle {#one-click-delivery-template}
 
+Pour paramétrer le Unsubscribe de type Liste en un clic dans la diffusion ou le modèle de diffusion, procédez comme suit.
+
 1. Accédez au **[!UICONTROL SMTP]** de la section des propriétés de la diffusion.
 
 1. Sous **[!UICONTROL En-têtes SMTP supplémentaires]**, saisissez les lignes de commande, comme dans l&#39;exemple ci-dessous. Chaque en-tête doit se trouver sur une ligne distincte.
@@ -264,6 +264,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 L’exemple ci-dessus permettra l’option Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge &quot;mailto&quot; peuvent toujours demander le désabonnement par courrier électronique.
 
 #### Création d&#39;une règle de typologie pour la prise en charge du Unsubscribe comme liste en un clic {#one-click-typology-rule}
+
+Pour configurer le désabonnement à la liste en un clic à l’aide d’une règle de typologie, procédez comme suit.
 
 1. Dans l’arborescence de navigation, accédez à **[!UICONTROL Règles de typologie]** et cliquez sur **[!UICONTROL Nouveau]**.
 
