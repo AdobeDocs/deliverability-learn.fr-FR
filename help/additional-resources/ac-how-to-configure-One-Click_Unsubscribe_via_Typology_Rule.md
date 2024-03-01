@@ -1,6 +1,6 @@
 ---
-source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
-workflow-type: ht
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
+workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%
 
@@ -8,11 +8,13 @@ ht-degree: 100%
 # Créez une règle de typologie pour la prise en charge de la désinscription en un clic :
 
 **1. Créez la nouvelle règle de typologie :**
+
 * Dans l’arborescence de navigation, cliquez sur Nouveau pour créer une typologie.
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
 **2. Procédez à la configuration de la règle de typologie :**
+
 * Type de règle : contrôle
 * Phase : au début du ciblage
 * Canal : e-mail
