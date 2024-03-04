@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
+source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 41%
@@ -233,7 +233,7 @@ Pour se conformer à cette exigence, les expéditeurs doivent :
 * Incluez un lien de désabonnement d’URI.
 * Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign. Vous pouvez également utiliser un service externe.
 
-Pour prendre en charge la réponse PSOT Unsubscribe List-Click directement dans Adobe Campaign v7/v8, vous devez ajouter dans l&#39;application web &quot;No-click&quot; (Désabonner les destinataires sans clic). Pour ce faire :
+Pour prendre en charge la réponse du POST Unsubscribe-List en un clic directement dans Adobe Campaign v7/v8, vous devez ajouter dans l&#39;application web &quot;No-click&quot; (Désabonner les destinataires sans clic). Pour ce faire :
 
 1. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL En ligne]** > **[!UICONTROL Applications web]**.
 
