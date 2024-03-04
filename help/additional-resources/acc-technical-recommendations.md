@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
+source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 41%
+source-wordcount: '2109'
+ht-degree: 42%
 
 ---
 
@@ -166,9 +166,7 @@ Il existe deux versions de la fonctionnalité d’en-tête List-Unsubscribe :
 
 >[!IMPORTANT]
 >
->À partir du 1er juin 2024, Yahoo! et Gmail exigera que les expéditeurs se conforment aux **Liste-Unsubscribe en un clic**. [En savoir plus sur cette modification](../guidance-around-changes-to-google-and-yahoo.md)
->
->Découvrez comment configurer List-Unsubscribe en un clic [cette section](#one-click-list-unsubscribe).
+>>Découvrez comment configurer List-Unsubscribe en un clic [cette section](#one-click-list-unsubscribe).
 
 ### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
 
@@ -224,8 +222,6 @@ Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dan
 ### Liste-Unsubscribe en un clic {#one-click-list-unsubscribe}
 
 Avec cette méthode, cliquez sur le **Désabonner** link désabonne directement l’utilisateur, ne demandant qu’une seule action pour le désabonner.
-
-À partir du 1er juin 2024, Yahoo! et Gmail exigeront que les expéditeurs se conforment au List-Unsubscribe en un clic. [En savoir plus sur cette modification](../guidance-around-changes-to-google-and-yahoo.md)
 
 Pour se conformer à cette exigence, les expéditeurs doivent :
 
