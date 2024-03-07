@@ -1,6 +1,6 @@
 ---
-title: Désabonner les tâches et ne pas utiliser
-description: Utilisez une liste des actions à effectuer et des actions à éviter lors de la gestion des désabonnements.
+title: Désabonnez-vous de et ne faites pas
+description: Découvrez les avantages et les inconvénients de la gestion des désabonnements.
 feature: Deliverability
 role: Admin
 level: Beginner
@@ -8,31 +8,31 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 7f1e756683bfc5c8587101fcbf86db010a5b6a7e
+exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
+source-git-commit: 964230b60e345ffc624860e978beb6b08ad4c0b2
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
 
-
-# Désabonner les tâches et ne pas utiliser
+# Désabonnez-vous de et ne faites pas
 
 Les désabonnements font naturellement partie du cycle de vie des emails. Mais il est difficile pour les marketeurs de dire au revoir parfois. Vous travaillez si dur pour concevoir les emails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s’attendre à ce que certains abonnés décident de passer à autre chose. Cela peut être dû à un certain nombre de raisons, mais l&#39;important est qu&#39;ils ne sont plus intéressés d&#39;avoir de vos nouvelles.
 
 Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d&#39;emails - lisez la suite pour en savoir plus.
 
-## Les tâches
+## Les dos
 
 **DO :** Posséder un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
 
-+ Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrer-le, le souligner, le mettre en gras, le placer tout en haut ou tout en bas de l&#39;email, en faire une couleur de police différente Utilisez le seul mot - ‘DÉSABONNER’ - dans la préférence linguistique de l&#39;utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
++ Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrez-le, soulignez-le et mettez-le en gras. Placez-le en haut ou en bas de l&#39;email. Donnez à la police une autre couleur. Utilisez le mot &quot;UNSUBSCRIBE&quot; dans la préférence linguistique de l’utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
 
-**DO :** Posez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
+**DO :** Faites en sorte que votre lecteur de lien de désabonnement s’affiche sur une page d’entrée dans laquelle l’utilisateur puisse confirmer qu’il souhaite être supprimé de la liste.
 
 Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
 
-+ Si votre désabonnement dirige un utilisateur vers une page d’entrée, assurez-vous que la page d’entrée offre un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
++ Si votre désabonnement dirige un utilisateur vers une landing page, assurez-vous que la landing page propose un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
 
 **DO :** Rendre le processus facile et transparent. Exemple :
 
@@ -46,11 +46,11 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 
 **DO :** Vérifiez que le désabonnement a bien été envoyé et vérifiez quand il peut s’attendre à ce qu’il cesse de recevoir des emails.
 
-+ S’ils se sont déjà désabonnés et qu’ils réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure)
++ S’ils se sont déjà désabonnés et qu’ils réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure).
 
 **DO :** Respectez le désabonnement et supprimez l’adresse dans les délais impartis.
 
-+ La rapidité dépendra des lois locales et de la juridiction, donc veuillez consulter un conseiller juridique sur ce qui s&#39;applique à votre entreprise.
++ La rapidité dépend des lois locales et de la juridiction, donc veuillez consulter un avocat sur ce qui s&#39;applique à votre entreprise.
 
 **DO :** Autorisez vos abonnés à dicter la relation.
 
@@ -59,7 +59,7 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 **DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
 
 
-## Ne pas faire
+## Les choses à ne pas faire
 
 
 **NE PAS :** Enlevez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
@@ -72,16 +72,16 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 
 **NE PAS :** Faites en sorte que l’utilisateur ajoute manuellement une adresse électronique dans le formulaire de désabonnement.
 
-+ L’adresse qui s’est inscrite peut être différente de l’adresse à laquelle l’utilisateur s’est connecté pour le courrier (par exemple, transféré).  Il se peut qu’il ne connaisse pas l’adresse électronique utilisée pour l’abonnement d’origine.
++ L’adresse qui s’est inscrite peut être différente de l’adresse à laquelle l’utilisateur s’est connecté pour le courrier (par exemple, transféré). Il se peut qu’il ne connaisse pas l’adresse électronique utilisée pour l’abonnement d’origine.
 
 **NE PAS :** Permet à l’utilisateur de se connecter à son compte pour se désabonner.
 
-+ Vous pouvez envoyer l’email à la mauvaise adresse et le propriétaire de cette adresse peut ne pas avoir accès au compte.  S’ils reçoivent l’email, ils doivent être autorisés à se désabonner du lien uniquement dans l’email ; aucune autre action ou information ne doit être requise.
++ Vous pouvez envoyer l’email à la mauvaise adresse et le propriétaire de cette adresse peut ne pas avoir accès au compte. S’ils reçoivent l’email, ils doivent être autorisés à se désabonner du lien uniquement dans l’email ; aucune autre action ou information ne doit être requise.
 + Moins un client a besoin d’actions, mieux c’est.
 
 **NE PAS :** Envoyez un email confirmant que la personne s’est désinscrite.
 
-+ Si c&#39;est le cas, vous avez déjà rompu votre promesse de ne plus leur envoyer de courrier.
++ Si c&#39;est le cas, vous avez déjà rompu votre promesse de ne pas leur envoyer plus de courrier.
 
 **NE PAS :** Sois sarcastique dans ton verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
 
