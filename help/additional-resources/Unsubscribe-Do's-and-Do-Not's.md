@@ -1,7 +1,7 @@
 ---
-source-git-commit: 758bc4144e09c53883d682a480f5f52a25c98111
+source-git-commit: e5b40a9f0a58f70066c5210053cfd88fc938bb65
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -11,11 +11,11 @@ Les désabonnements font naturellement partie du cycle de vie des emails. Mais i
 
 Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d&#39;emails - lisez la suite pour en savoir plus.
 
-## Les tâches
+## Les choses à faire
 
 **DO :** Posséder un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
 
-+ Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrer-le, le souligner, le mettre en gras, le placer tout en haut ou tout en bas de l&#39;email, en faire une couleur de police différente Utilisez le seul mot - ‘DÉSABONNER’ - dans la préférence linguistique de l&#39;utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
++ Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrer-le, le souligner, le mettre en gras, le placer tout en haut ou tout en bas de l&#39;email, en faire une couleur de police différente Utilisez le seul mot - &#39;UNSUBSCRIBE&#39; - dans la préférence linguistique de l&#39;utilisateur. N&#39;utilisez pas de fleurs ou de verbiage excessif.
 
 **DO :** Posez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
 
@@ -46,12 +46,10 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 
 **DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
 
-+ Cliquez sur [here](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=fr) pour en savoir plus sur les initiatives du secteur concernant le désabonnement d’un clic.
-
-## Ne pas faire
+## Les choses à ne pas faire
 
 
-**NE PAS :** Enlevez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
+**NE PAS :** Enlevez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés &#39;abandonneront&#39; par frustration.
 
 + Il s’agit d’une mauvaise expérience de l’utilisateur final qui peut entraîner une augmentation des plaintes, ce qui peut avoir un impact négatif sur votre délivrabilité et votre réputation.
 
@@ -81,4 +79,4 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 + Permettre au client d’ajouter ces informations peut s’avérer utile pour vous dans les prochaines statistiques, mais en faire un champ facultatif sur la page d’entrée de désabonnement.
 + Une meilleure approche serait de les informer qu&#39;ils se sont désabonnés avec succès, puis de leur donner un espace pour leur proposer éventuellement la ou les raisons.
 
-Souvenez-vous que les désabonnements sont meilleurs que les plaintes. Les personnes qui n’interagissent pas positivement avec votre programme de messagerie peuvent avoir un impact négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Il est maintenant temps que vous vous concentrez sur le développement de relations plus étroites avec vos abonnés actuels en les traitant à des messages pertinents et engagés qu’ils ne peuvent pas attendre pour ouvrir, cliquer et faire un achat !
+Souvenez-vous que les désabonnements sont meilleurs que les plaintes. Les personnes qui n’interagissent pas positivement avec votre programme de messagerie peuvent avoir un impact négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Maintenant, il est temps pour vous de vous concentrer sur le développement de relations plus étroites avec vos abonnés actuels en les traitant à des messages pertinents et engagés qu&#39;ils ne peuvent pas attendre pour ouvrir, cliquer et faire un achat !
