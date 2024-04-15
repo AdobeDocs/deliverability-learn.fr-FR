@@ -5,10 +5,10 @@ topics: Deliverability
 role: Admin
 level: Beginner
 exl-id: f1c14b10-6191-4202-9825-23f948714f1e
-source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
+source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 8%
+source-wordcount: '1284'
+ht-degree: 13%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 8%
 
 Ce document a pour but de fournir au lecteur des informations supplémentaires sur la méthode d’authentification par email, DMARC. En expliquant le fonctionnement de DMARC et ses différentes options politiques, les lecteurs comprendront mieux l’impact de DMARC sur la délivrabilité des emails.
 
-## Qu’est-ce que DMARC ? {#about}
+## Qu’est-ce que DMARC ? {#about}
 
-Authentification, création de rapports et conformité des messages basés sur un domaine, est une méthode d’authentification par email qui permet aux propriétaires de domaine de protéger leur domaine d’une utilisation non autorisée. DMARC fournit également des commentaires sur l’état d’authentification des emails et permet aux expéditeurs de contrôler ce qui arrive aux emails qui ne parviennent pas à s’authentifier. Cela inclut des options de surveillance, de mise en quarantaine ou de rejet du courrier, selon la politique DMARC mise en oeuvre.
+Authentification, création de rapports et conformité des messages basés sur un domaine, est une méthode d’authentification par email qui permet aux propriétaires de domaine de protéger leur domaine d’une utilisation non autorisée. DMARC fournit également des commentaires sur le statut d’authentification des e-mails et permet aux expéditeurs et expéditrices de contrôler ce qui arrive aux e-mails qui ne parviennent pas à s’authentifier. Cela inclut des options de surveillance, de mise en quarantaine ou de rejet du courrier, selon la politique DMARC mise en œuvre.
 
-DMARC propose trois options de stratégie :
+DMARC propose trois options de politique :
 
 * **Monitor (p=none) :** Indique au fournisseur de messagerie/FAI de faire tout ce qu’il ferait normalement pour le message.
 * **Quarantaine (p=quarantaine) :** Indique au fournisseur de messagerie ou au FAI de diffuser du courrier électronique qui ne transmet pas DMARC au dossier spam ou courrier indésirable du destinataire.
 * **Rejeter (p=rejeter) :** Indique au fournisseur de messagerie/FAI de bloquer les messages qui ne transmettent pas DMARC, ce qui entraîne un rebond.
 
-## Comment fonctionne DMARC ? {#how}
+## Comment DMARC fonctionne-t-il ? {#how}
 
-SPF et DKIM sont tous deux utilisés pour associer un email à un domaine et travailler ensemble pour authentifier un email. DMARC va plus loin et contribue à empêcher les usurpations en faisant correspondre le domaine vérifié par DKIM et SPF. Pour transmettre DMARC, un message doit transmettre SPF ou DKIM. Si l’authentification de ces deux erreurs échoue, DMARC échoue et l’email est envoyé conformément à la stratégie DMARC que vous avez sélectionnée.
+SPF et DKIM sont tous deux utilisés pour associer un e-mail à un domaine et permettent d’authentifier les e-mails. DMARC va plus loin et contribue à empêcher les usurpations en faisant correspondre le domaine vérifié par DKIM et SPF. Pour passer DMARC, un message doit passer SPF ou DKIM. Si l’authentification des deux échoue, DMARC échoue et l’e-mail est envoyé conformément à la politique DMARC que vous avez sélectionnée.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ DMARC est facultatif. Bien qu’il ne soit pas obligatoire, il est gratuit et pe
 
 ## Bonnes pratiques relatives à la mise en oeuvre de DMARC {#best-practice}
 
-Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. Il est recommandé de déployer lentement la mise en œuvre de DMARC en faisant passer votre politique DMARC de p=none à p=quarantine, puis à p=reject à mesure que vous comprenez l’impact potentiel de DMARC.
+Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. Il est recommandé de déployer lentement la mise en oeuvre DMARC en réaffectant votre stratégie DMARC de p=none à p=quarantine, puis de p=reject lorsque vous acquérez une compréhension DMARC de l’impact potentiel de DMARC.
 
 1. Analysez les commentaires que vous recevez et utilisez (p=none), qui indique au destinataire d’effectuer aucune action contre les messages qui ne parviennent pas à s’authentifier, tout en envoyant des rapports par e-mail à l’expéditeur. En outre, examinez les problèmes liés à SPF/DKIM et corrigez-les si des messages légitimes échouent à l’authentification.
 1. Déterminez si SPF et DKIM sont harmonisés et passent une authentification pour tous les emails légitimes, puis déplacez la stratégie vers (p=quarantine), ce qui indique au serveur de messagerie de réception de mettre en quarantaine les emails qui ne parviennent pas à s’authentifier (cela signifie généralement placer ces messages dans le dossier spam).
@@ -67,6 +67,10 @@ L’utilisation principale de ces rapports consiste à recevoir un aperçu des e
 * [Agari](https://www.agari.com/)
 * [Dmarcian](https://dmarcian.com/)
 * [Proofpoint](https://www.proofpoint.com/us)
+
+>[!CAUTION]
+>
+>Si les adresses électroniques que vous ajoutez pour recevoir des rapports se trouvent en dehors du domaine pour lequel l’enregistrement DMARC est créé, vous devez autoriser leur domaine externe à spécifier au DNS que vous possédez ce domaine. Pour ce faire, procédez comme décrit dans la section [dmarc.org documentation](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
 
 ### Exemple d’enregistrement DMARC {#example}
 
