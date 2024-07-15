@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: eba8162150b5662ca18687b873114858f8eb00cc
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 100%
+source-wordcount: '1582'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Proto
 
 ## Préchauffage d’une adresse IP : pour quoi faire ?  {#why-ip-warming}
 
-Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur. Les FAI/MBP surveillent de près l&#39;IP et le domaine d&#39;envoi pour déterminer si les emails envoyés depuis cette IP et ce domaine sont des spams ou non.  Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
+Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Les FAI/MBP contrôlent de près l’adresse IP et le domaine d’envoi pour déterminer si les emails envoyés depuis cette adresse IP et ce domaine sont des spams ou non. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
 
 Les FAI examinent attentivement le volume d&#39;envoi, la fréquence d&#39;envoi, les plaintes et les taux de rebond générés par ces messages. Tous ces éléments sont étroitement contrôlés parce que, bons ou mauvais, ils représentent des indicateurs de la réputation de l&#39;expéditeur.
 
@@ -60,7 +60,7 @@ Voici quelques-uns des points de données examinés :
 
 * Accès aux pièges à spam
 * Accès aux listes bloquées
-* Bounces d&#39;emails
+* E-mails rejetés
 * Engagement des abonnés
 
 Les FAI exigent des configurations techniques spécifiques alignées sur leurs politiques et leurs bonnes pratiques. Adobe configure vos adresses IP et sous-domaines délégués afin de vous identifier en tant qu&#39;expéditeur responsable et fiable. Il s&#39;agit de l&#39;[authentification par email](/help/transition-process/infrastructure.md#authentication). L&#39;authentification permet aux destinataires de vérifier si un expéditeur dispose des droits d&#39;envoi à partir de cette adresse IP ou de ce domaine.
@@ -91,9 +91,9 @@ Les abonnés se plaignent pour diverses raisons. Parfois, ils ne veulent plus re
 
 ### Validité des données
 
-Les erreurs hard se produisent lorsque vous effectuez un envoi vers une adresse en échec d&#39;un FAI. Une adresse peut être en échec pour différentes raisons, par exemple une erreur de saisie de l&#39;adresse ou d&#39;envoi à une adresse qui était auparavant principale mais qui a été fermée ou résiliée suite à une période d&#39;inactivité.
+Les rebonds définitifs se produisent lorsque vous effectuez un envoi vers une adresse en échec d’un FAI. Une adresse peut être en échec pour différentes raisons, par exemple une erreur de saisie de l&#39;adresse ou d&#39;envoi à une adresse qui était auparavant principale mais qui a été fermée ou résiliée suite à une période d&#39;inactivité.
 
-Si vous rencontrez un nombre important de hard bounces, il est important de comprendre pourquoi. Vérifiez comment les adresses ont été collectées et confirmez que l&#39;autorisation a été accordée. Parfois, les utilisateurs ferment leur compte de messagerie et n&#39;en informent pas ceux qui ont placé cette adresse dans leur liste marketing.
+Si vous rencontrez un nombre important de rebonds définitifs, il est important de comprendre pourquoi. Vérifiez comment les adresses ont été collectées et confirmez que l&#39;autorisation a été accordée. Parfois, les utilisateurs ferment leur compte de messagerie et n&#39;en informent pas ceux qui ont placé cette adresse dans leur liste marketing.
 
 ### Engagement
 
