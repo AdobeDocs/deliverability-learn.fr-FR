@@ -23,7 +23,7 @@ L&#39;envoi vers les courriers indésirables est la diffusion de l&#39;email dan
 
 ## Blocage
 
-Un blocage survient lorsque les indicateurs de courriers indésirables atteignent les seuils de fournisseurs de FAI propriétaires et que le FAI commence à bloquer les emails (visible par des tentatives de publipostage retournées) d&#39;un expéditeur. Il existe différents types de blocages. En règle générale, des blocages se produisent spécifiquement à une adresse IP, mais ils peuvent également se produire au niveau du domaine ou de l’entité d’envoi. La résolution d&#39;un blocage nécessite une expertise spécifique. Veuillez donc contacter votre consultant Adobe en délivrabilité pour obtenir de l&#39;aide.
+Un blocage survient lorsque les indicateurs de courriers indésirables atteignent les seuils de fournisseurs de FAI propriétaires et que le FAI commence à bloquer les e-mails (visible par des tentatives de publipostage rejetées) d’un expéditeur. Il existe différents types de blocages. En règle générale, des blocages se produisent spécifiquement à une adresse IP, mais ils peuvent également se produire au niveau du domaine ou de l’entité d’envoi. La résolution d&#39;un blocage nécessite une expertise spécifique. Veuillez donc contacter votre consultant Adobe en délivrabilité pour obtenir de l&#39;aide.
 
 ## Liste bloquée
 

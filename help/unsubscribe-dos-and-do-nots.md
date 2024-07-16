@@ -24,35 +24,35 @@ Nous avons créé une liste de choses à faire et à éviter lors de la gestion 
 
 ## Les dos
 
-**DO :** Posséder un lien de désabonnement placé de manière visible. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
+**DO :** Posséder un lien de désabonnement bien placé. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
 
 + Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrez-le, soulignez-le et mettez-le en gras. Placez-le en haut ou en bas de l&#39;email. Donnez à la police une autre couleur. Utilisez le mot &quot;UNSUBSCRIBE&quot; dans la préférence linguistique de l’utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
 
-**DO :** Faites en sorte que votre lecteur de lien de désabonnement s’affiche sur une page d’entrée dans laquelle l’utilisateur puisse confirmer qu’il souhaite être supprimé de la liste.
+**DO:** Ayez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
 
 Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
 
 + Si votre désabonnement dirige un utilisateur vers une landing page, assurez-vous que la landing page propose un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
 
-**DO :** Rendre le processus facile et transparent. Exemple :
+**DO :** rendez le processus simple et transparent. Exemple :
 
 + &quot;Cliquez ici pour vous désabonner de tous les emails marketing&quot;. Il doit s’agir de la première option proposée à l’utilisateur.
 
 + &quot;Cliquez sur ceci pour modifier vos préférences&quot;.
 
-**DO :** Insérez l&#39;adresse email sur la landing page de désabonnement.
+**DO :** Inclure l’adresse électronique sur la page d’entrée de désabonnement.
 
 + Important : En fonction de l’emplacement/de la juridiction de vos utilisateurs, il peut y avoir des problèmes de confidentialité concernant l’inclusion de l’adresse électronique complète. Vous devrez peut-être préremplir une version hachée de l’adresse électronique. En effet, l’email peut avoir été transféré à partir de l’adresse abonnée d’origine. Consultez votre groupe juridique pour comprendre vos exigences spécifiques.
 
-**DO :** Vérifiez que le désabonnement a bien été envoyé et vérifiez quand il peut s’attendre à ce qu’il cesse de recevoir des emails.
+**DO :** Vérifiez que le désabonnement a bien été envoyé et vérifiez quand il peut s’attendre à arrêter la réception des emails.
 
 + S’ils se sont déjà désabonnés et qu’ils réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure).
 
-**DO :** Respectez le désabonnement et supprimez l’adresse dans les délais impartis.
+**DO :** honorez le désabonnement et supprimez l’adresse en temps voulu.
 
 + La rapidité dépend des lois locales et de la juridiction, donc veuillez consulter un avocat sur ce qui s&#39;applique à votre entreprise.
 
-**DO :** Autorisez vos abonnés à dicter la relation.
+**DO:** Autorisez vos abonnés à dicter la relation.
 
 + Il est possible d’offrir des options à vos abonnés. Cela peut être géré par le biais d’un centre de préférences/d’une initiative de désinscription.
 
@@ -62,7 +62,7 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 ## Les choses à ne pas faire
 
 
-**NE PAS :** Enlevez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
+**NE PAS :** Empruntez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
 
 + Il s’agit d’une mauvaise expérience de l’utilisateur final qui peut entraîner une augmentation des plaintes, ce qui peut avoir un impact négatif sur votre délivrabilité et votre réputation.
 
@@ -70,11 +70,11 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 
 + Soyez direct et évitez de confondre l’utilisateur final.
 
-**NE PAS :** Faites en sorte que l’utilisateur ajoute manuellement une adresse électronique dans le formulaire de désabonnement.
+**NE PAS :** Demandez à l’utilisateur d’ajouter manuellement une adresse électronique dans le formulaire de désabonnement.
 
 + L’adresse qui s’est inscrite peut être différente de l’adresse à laquelle l’utilisateur s’est connecté pour le courrier (par exemple, transféré). Il se peut qu’il ne connaisse pas l’adresse électronique utilisée pour l’abonnement d’origine.
 
-**NE PAS :** Permet à l’utilisateur de se connecter à son compte pour se désabonner.
+**NE PAS :** obliger l’utilisateur à se connecter à son compte pour se désabonner.
 
 + Vous pouvez envoyer l’email à la mauvaise adresse et le propriétaire de cette adresse peut ne pas avoir accès au compte. S’ils reçoivent l’email, ils doivent être autorisés à se désabonner du lien uniquement dans l’email ; aucune autre action ou information ne doit être requise.
 + Moins un client a besoin d’actions, mieux c’est.
@@ -83,11 +83,11 @@ Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer
 
 + Si c&#39;est le cas, vous avez déjà rompu votre promesse de ne pas leur envoyer plus de courrier.
 
-**NE PAS :** Sois sarcastique dans ton verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
+**NE PAS :** Soyez sarcastique dans votre verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
 
 + Cela peut paraître grossier. Évitez un ton négatif.
 
-**NE PAS :** Vous devez les forcer à vous indiquer une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
+**DO NOT:** Formez-les à vous donner une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
 
 + Permettre au client d’ajouter ces informations peut s’avérer utile pour vous dans les prochaines statistiques, mais en faire un champ facultatif sur la page d’entrée de désabonnement.
 

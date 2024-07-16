@@ -12,8 +12,8 @@ level: Beginner
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 22%
+source-wordcount: '188'
+ht-degree: 16%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 
 Lors de l’envoi d’un nouveau trafic, ne ciblez que les utilisateurs les plus actifs au cours des premières phases du réchauffement des adresses IP. Cela vous permet d’établir une réputation positive à partir de vos débuts, afin de créer efficacement la confiance avant de rejoindre vos audiences les moins engagées. Voici une formule de base pour l’engagement :
 
-![Formule d’engagement](../assets/formula-for-enagement.png)
+![Formule d&#39;engagement](../assets/formula-for-enagement.png)
 
 En règle générale, un taux d’engagement est basé sur une période spécifique. Cette mesure peut varier considérablement selon que la formule est appliquée à un niveau global ou à des types de publipostage ou des campagnes spécifiques. Les critères de ciblage spécifiques doivent être fournis en collaborant avec votre consultant en délivrabilité des Adobes, car chaque expéditeur et chaque FAI varie et nécessitent généralement un plan personnalisé.
 
@@ -29,7 +29,7 @@ En règle générale, un taux d’engagement est basé sur une période spécifi
 
 **Analytics**
 
-* [Comment augmenter les taux d’engagement et de rétention (tutoriel)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Identifiez les audiences engagées à l’aide de Cohorts et connaissez les causes sous-jacentes qui motivent l’attractivité de vos applications mobiles. Utilisez des algorithmes de science de données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
+* [Comment augmenter les taux d&#39;engagement et de rétention (tutoriel)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics) : *identifiez les audiences engagées par leur comportement à l&#39;aide de Cohorts et connaissez les causes sous-jacentes à l&#39;origine de l&#39;attractivité dans vos applications mobiles. Utilisez les algorithmes de science des données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
 
 **Campaign Standard**
 

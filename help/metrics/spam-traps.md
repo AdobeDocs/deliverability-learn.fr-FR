@@ -10,7 +10,7 @@ team: ACS
 exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Il existe des pièges de courriers indésirables qui permettent d’identifier l
 
 ## Recyclé
 
-Les pièges de courriers indésirables recyclés sont des adresses qui étaient autrefois valides mais qui ne sont plus utilisées. L&#39;un des principaux moyens pour garder les listes aussi propres que possible est d&#39;envoyer régulièrement des emails à votre liste entière et de supprimer de manière appropriée les emails bounces. Cela permet de mettre en quarantaine les adresses email abandonnées et de les empêcher d&#39;être utilisées.
+Les pièges de courriers indésirables recyclés sont des adresses qui étaient autrefois valides mais qui ne sont plus utilisées. L’un des principaux moyens pour garder les listes aussi propres que possible est d’envoyer régulièrement des e-mails à votre liste entière et de supprimer de manière appropriée les e-mails rejetés. Cela permet de mettre en quarantaine les adresses email abandonnées et de les empêcher d&#39;être utilisées.
 
 Dans certains cas, une adresse peut être recyclée sous 30 jours. L&#39;envoi régulier est un aspect essentiel d&#39;une bonne hygiène des listes, avec la suppression régulière des utilisateurs inactifs. Les **campagnes de réengagement** font généralement partie de programmes sophistiqués de marketing par email. Ce style de campagne permet à l’expéditeur de tenter de récupérer des utilisateurs qui autrement ne feraient plus l&#39;objet d&#39;envois d&#39;emails.
 

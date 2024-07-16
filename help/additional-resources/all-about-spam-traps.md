@@ -8,7 +8,7 @@ team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '441'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Le deuxième type de piège à spam se base sur d&#39;anciennes adresses de FAI 
 
 **Adresse email sans utilisateur final** : ces adresses n&#39;ont pas et n&#39;auront jamais d&#39;utilisateur final qui puisse s&#39;inscrire aux newsletters ou à tout autre type de communication.
 
-**Adresse email abandonnée par un utilisateur** : suite à une période d&#39;inactivité, les adresses sont désactivées par les FAI. Les messages bounces sont envoyés aux expéditeurs pour les informer de ce nouveau statut. Les expéditeurs doivent envoyer ces adresses en quarantaine ou les supprimer des futures communications. Les FAI utilisent ces adresses transformées en &quot;piège à spam&quot; pour surveiller les expéditeurs qui appliquent de mauvaises pratiques.
+**Adresse email abandonnée par un utilisateur** : suite à une période d&#39;inactivité, les adresses sont désactivées par les FAI. Les messages de rebond sont envoyés aux expéditeurs pour les informer de ce nouveau statut. Les expéditeurs doivent envoyer ces adresses en quarantaine ou les supprimer des futures communications. Les FAI utilisent ces adresses transformées en &quot;piège à spam&quot; pour surveiller les expéditeurs qui appliquent de mauvaises pratiques.
 
 ## Comment reconnaître ou identifier un piège à spam ?
 
@@ -45,7 +45,7 @@ Ces quelques points peuvent vous aider à vérifier vos processus :
    * Avez-vous vérifié les domaines et l&#39;alias de vos adresses ? Faites-le avec le tableau ci-dessous !
 * Processus d&#39;hygiène des bases de données :
    * Quel est votre processus concernant une adresse inactive au cours des 12 derniers mois ?
-   * Traitez-vous une quarantaine sur les soft bounces comme &quot;utilisateur inactif&quot; ?
+   * Traitez-vous une quarantaine sur les rebonds temporaires comme « utilisateur inactif » ?
    * Quand avez-vous pris soin de votre base de données pour la dernière fois et essayé de la nettoyer ? Faites-le régulièrement.
 
 ## Alias et domaines à éviter

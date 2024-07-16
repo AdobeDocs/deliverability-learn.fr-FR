@@ -8,8 +8,8 @@ team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
 source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 84%
+source-wordcount: '373'
+ht-degree: 79%
 
 ---
 
@@ -45,13 +45,13 @@ La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir u
 
 * **SURBL**
 
-  Voir [https://surbl.org/](https://surbl.org/)
+  Reportez-vous à [https://surbl.org/](https://surbl.org/)
 
   SURBL identifie les sites web qui apparaissent régulièrement dans les spams. Si votre domaine s’affiche dans cette liste, cela peut avoir une incidence significative sur votre délivrabilité. Vous devez informer immédiatement les services chargés de délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **iX Manitu**
 
-  Cette liste recense des IP et est très utilisée en Allemagne, voir la page [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  Il s’agit d’une liste d’adresses IP qui est largement utilisée en Allemagne. Reportez-vous à [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

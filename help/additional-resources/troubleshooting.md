@@ -8,8 +8,8 @@ team: ACS
 exl-id: 4cc85124-e7e4-4cd5-99a9-23d2d8cf08fe
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 91%
+source-wordcount: '677'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques pour mieux identifier et ré
 
 ## Identifier un problème de délivrabilité {#identify-deliverability-issue}
 
-Pour identifier un problème possible, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peut attirer votre attention.
+Pour identifier un problème possible, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peuvent attirer votre attention.
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.
@@ -44,7 +44,7 @@ Posez-vous les questions suivantes pour identifier les causes possibles de votre
 
 ### Plaintes
 
-[](/help/metrics/complaints.md)Les plaintes sont définies par les abonnés qui signalent un email comme indésirable en appuyant sur le bouton correspondant de leur boîte de réception.
+[Les plaintes](/help/metrics/complaints.md) sont définies par les abonnés qui signalent un courrier électronique comme indésirable en appuyant sur le bouton correspondant de leur boîte de réception.
 
 Si votre problème de diffusion est dû à des plaintes :
 * Vous devez essayer de déterminer pourquoi les destinataires se plaignent.
@@ -61,7 +61,7 @@ Les plaintes proviennent aussi des abonnés qui ne veulent tout simplement plus 
 
 ### Validité des données
 
-**Les erreurs hard se produisent lorsque vous effectuez un envoi vers une adresse en échec d&#39;un FAI.****** Une adresse peut être en échec pour de nombreuses raisons, notamment :
+Les **rebonds définitifs** se produisent lorsque vous effectuez un envoi à une **adresse en échec** d’un FAI. Une adresse peut être en échec pour de nombreuses raisons, notamment :
 * Adresse mal orthographiée. Il est possible de résoudre ce problème grâce à un service de validation des données en temps réel ou à l’obligation de confirmer l’accord préalable avant d’envoyer des e-mails marketing à cette adresse.
 * Liste ou source de données incorrecte. Si les adresses proviennent d’une nouvelle source, vérifiez comment elles ont été collectées et assurez-vous que leur utilisation a été autorisée.
 * Envoi à une adresse active à un moment donné, mais fermée ou supprimée suite à une période d’inactivité.

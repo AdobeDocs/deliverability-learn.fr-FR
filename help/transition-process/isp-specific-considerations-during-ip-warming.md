@@ -21,7 +21,7 @@ ht-degree: 16%
 
 Les FAI ont différentes règles et différentes manières d&#39;analyser leur trafic. Par exemple, Gmail est l&#39;un des FAI les plus sophistiqués, car il examine l&#39;engagement très strictement (ouvertures et clics) en plus de toutes les autres mesures de réputation. Cela nécessite un plan personnalisé qui cible uniquement les utilisateurs les plus actifs au début. D’autres FAI peuvent également en avoir besoin. Contactez votre conseiller en délivrabilité d’Adobe pour un plan spécifique.
 
-Voir [Particularités des fournisseurs de services Internet](/help/internet-service-provider-specifics/overview.md) pour plus d’informations sur les différences importantes entre les groupes de fournisseurs sélectionnés suivants :
+Pour plus d’informations sur les différences importantes entre les groupes de fournisseurs sélectionnés suivants, reportez-vous à la section [Spécificités des fournisseurs de services Internet](/help/internet-service-provider-specifics/overview.md) :
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft (Hotmail, Outlook, Windows Live, etc.)](/help/internet-service-provider-specifics/microsoft.md)
@@ -29,4 +29,4 @@ Voir [Particularités des fournisseurs de services Internet](/help/internet-serv
 
 ## Ressources supplémentaires
 
-* En savoir plus sur l’amélioration de la réputation de vos emails grâce au réchauffement des adresses IP dans [cette section](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* Pour en savoir plus sur l&#39;augmentation de la réputation de vos emails avec le réchauffement des adresses IP, consultez [cette section](/help/additional-resources/increase-reputation-with-ip-warming.md).

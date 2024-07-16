@@ -11,7 +11,7 @@ exl-id: f57de522-1361-43a3-8f8b-f9a191986529
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -23,10 +23,10 @@ L’envoi permanent est le processus d’établissement d’un volume d’envoi 
 * La cohérence est essentielle pour prouver aux FAI que l&#39;expéditeur est fiable et ne tente pas de contourner les problèmes de réputation dus à de mauvaises pratiques d&#39;envoi.
 * Le maintien de ces stratégies cohérentes sur une longue période de temps est nécessaire avant que certains FAI ne considèrent même l&#39;expéditeur comme tout simplement fiable.
 
-**Voici quelques exemples :**
+**Voici quelques exemples :**
 
-![Bonne permanence des envois](assets/Sender_Permanence_1.png)
+![Bonne permanence de l’envoi](assets/Sender_Permanence_1.png)
 
 ![Mauvaise permanence de l’envoi](assets/Sender_Permanence_2.png)
 
-![Persistance d’envoi acceptable](assets/Sender_Permanence_3.png)
+![ Stabilité d’envoi acceptable](assets/Sender_Permanence_3.png)

@@ -8,8 +8,8 @@ team: ACS
 exl-id: 03609139-b39b-4051-bcde-9ac7c5358b87
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 51%
+source-wordcount: '757'
+ht-degree: 42%
 
 ---
 
@@ -17,23 +17,23 @@ ht-degree: 51%
 
 ## SPF {#spf}
 
-SPF (Sender Policy Framework) est une norme d’authentification d’email qui permet au propriétaire d’un domaine de spécifier les serveurs de messagerie autorisés à envoyer des emails pour le compte de ce domaine. Cette norme utilise le domaine indiqué dans l’en-tête « Return-Path » de l’email (également appelé adresse « Envelope From »).
+SPF (Sender Policy Framework) est une norme d’authentification d’email qui permet au propriétaire d’un domaine de spécifier les serveurs de messagerie autorisés à envoyer des emails pour le compte de ce domaine. Cette norme utilise le domaine indiqué dans l’en-tête « Return-Path » de l’e-mail (également appelé adresse « Envelope From »).
 
 >[!NOTE]
 >
 >Vous pouvez utiliser [cet outil externe](https://www.kitterman.com/spf/validate.html) pour vérifier un enregistrement SPF.
 
-La technique SPF permet, dans une certaine mesure, de vous assurer que le nom de domaine utilisé dans un email n’est pas usurpé. Lorsqu’un message provient d’un domaine, le serveur DNS du domaine est interrogé. Il répond par un enregistrement court (enregistrement SPF) détaillant les serveurs autorisés à envoyer des emails depuis ce domaine. Si nous supposons que seul le propriétaire du domaine a les moyens de modifier cet enregistrement, nous pouvons considérer que cette technique ne permet pas de falsifier l’adresse de l’expéditeur, du moins pas la partie située à droite du « @ ».
+La technique SPF permet, dans une certaine mesure, de s&#39;assurer que le nom de domaine utilisé dans un email n&#39;est pas usurpé. Lorsqu’un message provient d’un domaine, le serveur DNS du domaine est interrogé. Il répond par un enregistrement court (enregistrement SPF) détaillant les serveurs autorisés à envoyer des emails depuis ce domaine. Si nous supposons que seul le propriétaire du domaine a les moyens de modifier cet enregistrement, nous pouvons considérer que cette technique ne permet pas de falsifier l’adresse de l’expéditeur, du moins pas la partie située à droite du « @ ».
 
-Dans la finale [Spécification RFC 4408](https://www.rfc-editor.org/info/rfc4408), deux éléments du message sont utilisés pour déterminer le domaine considéré comme l’expéditeur : le domaine spécifié par la commande SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) et le domaine spécifié par l’adresse de l’en-tête &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), qui est également l’adresse bounce. Différentes considérations permettent de ne prendre en compte que l’une de ces valeurs ; nous vous recommandons de vous assurer que les deux sources spécifient le même domaine.
+Dans la dernière [spécification RFC 4408](https://www.rfc-editor.org/info/rfc4408), deux éléments du message sont utilisés pour déterminer le domaine considéré comme l’expéditeur : le domaine spécifié par la commande SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) et le domaine spécifié par l’adresse de l’en-tête &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), qui est également l’adresse de rebond. Différentes considérations permettent de ne prendre en compte que l’une de ces valeurs ; nous vous recommandons de vous assurer que les deux sources spécifient le même domaine.
 
 La vérification SPF produit une évaluation de la validité du domaine expéditeur :
 
-* **None** : aucune évaluation n’a pu être faite.
-* **Neutral** : le domaine interrogé ne permet pas l’évaluation.
-* **Pass** : le domaine est considéré comme authentique.
-* **Fail** : le domaine est certainement usurpé, le message devrait être rejeté.
-* **SoftFail**: le domaine est probablement usurpé mais le message ne doit pas être rejeté uniquement sur la base de ce résultat.
+* **None** : aucune évaluation n’a pu être effectuée.
+* **Neutral** : le domaine interrogé ne permet pas l’évaluation.
+* **Pass** : le domaine est considéré comme authentique.
+* **Fail** : le domaine est usurpé et le message doit être rejeté.
+* **SoftFail** : le domaine est probablement usurpé, mais le message ne doit pas être rejeté en fonction de ce résultat.
 * **TempError** : une erreur temporaire a interrompu l’évaluation. Le message peut être rejeté.
 * **PermError** : les enregistrements SPF du domaine sont incorrects.
 
@@ -49,10 +49,10 @@ DKIM a remplacé l&#39;authentification **DomainKeys**.
 
 L&#39;utilisation de DKIM nécessite quelques prérequis :
 
-* **Sécurité**: le cryptage est un élément clé du DKIM. Pour garantir le niveau de sécurité du DKIM, la taille de cryptage recommandée est 1024b. Les clés DKIM inférieures ne sont pas considérées comme valides par la majorité des fournisseurs d’accès.
-* **Réputation**: la réputation est basée sur l’IP et/ou le domaine, mais le sélecteur DKIM, moins transparent, est également un élément clé à prendre en compte. Le choix du sélecteur est important : évitez de conserver celui &quot;par défaut&quot; qui peut être utilisé par n’importe qui et qui a donc une mauvaise réputation. Vous devez mettre en oeuvre un sélecteur différent pour **communications sur la rétention ou l&#39;acquisition** et pour l’authentification.
+* **Sécurité** : le chiffrement est un élément clé du DKIM. Pour garantir le niveau de sécurité du DKIM, la taille de cryptage recommandée est 1024b. Les clés DKIM inférieures ne sont pas considérées comme valides par la majorité des fournisseurs d’accès.
+* **Réputation** : la réputation est basée sur l’IP et/ou le domaine, mais le sélecteur DKIM moins transparent est également un élément clé à prendre en compte. Le choix du sélecteur est important : évitez de conserver celui &quot;par défaut&quot; qui peut être utilisé par n’importe qui et qui a donc une mauvaise réputation. Vous devez mettre en oeuvre un sélecteur différent pour les **communications de rétention/acquisition** et pour l’authentification.
 
-En savoir plus sur les prérequis DKIM lors de l’utilisation de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
+En savoir plus sur les conditions préalables DKIM lors de l&#39;utilisation de Campaign Classic dans [cette section](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
 ## DMARC {#dmarc}
 

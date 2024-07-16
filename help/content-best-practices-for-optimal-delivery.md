@@ -12,8 +12,8 @@ team: TM
 exl-id: f0172fa5-1c7e-4ccc-8ac5-4357611d13ec
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 13%
+source-wordcount: '182'
+ht-degree: 12%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 13%
 
 Le contenu est la clé. Vous avez déjà lu notre perspective sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en matière de contenu :
 
-* **Évitez un fichier de HTML trop volumineux**. Restez en dessous de 100 Ko, mais essayez de rester entre 60 et 80 Ko pour éviter une livraison lente.
-* **Utilisez des balises de remplacement à votre avantage.**. Les balises Alt résident dans le code de l’image du HTML et affichent le texte si l’image n’est ni visible ni en cours de chargement. Plutôt que d&#39;avoir une simple description comme &quot;plan de produit&quot;, vous pourriez vouloir dire quelque chose de plus convaincant comme, &quot;Achetez maintenant et profitez de 30 % de réduction.&quot;
+* **Évitez de placer un fichier d’HTML trop volumineux**. Restez en dessous de 100 Ko, mais essayez de rester entre 60 et 80 Ko pour éviter une livraison lente.
+* **Utilisez des balises de remplacement à votre avantage**. Les balises Alt résident dans le code image de l’HTML et affichent le texte si l’image n’est pas visible ou en cours de chargement. Plutôt que d&#39;avoir une simple description comme &quot;plan de produit&quot;, vous pourriez vouloir dire quelque chose de plus convaincant comme, &quot;Achetez maintenant et profitez de 30 % de réduction.&quot;
 * **Évitez de trop d’images.** La plupart des FAI bloquent désormais les images par défaut. Vous souhaitez avoir un moyen de capturer votre audience sans que les images soient activées afin qu’elles soient activées.
 
 ## Ressources spécifiques au produit

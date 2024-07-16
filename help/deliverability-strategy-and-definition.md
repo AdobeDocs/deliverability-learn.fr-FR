@@ -12,12 +12,12 @@ team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '854'
 ht-degree: 100%
 
 ---
 
-# Stratégie et définition de la  délivrabilité
+# Stratégie et définition de la délivrabilité
 
 Le succès des campagnes marketing par e-mail dépend de la compréhension des objectifs marketing, qu’il s’agisse de prospection ou d’initiatives de gestion de la relation client (GRC) Cela permet de déterminer qui cibler, quoi promouvoir et quand communiquer.
 
@@ -32,7 +32,7 @@ Voici quelques exemples d’objectifs de stratégie de marketing par email :
 
 ## Définition de la délivrabilité
 
-Deux mesures clés jouent un rôle dans la définition de la délivrabilité. Le *taux de délivrabilité* correspond au pourcentage d&#39;emails qui ne sont pas retournés et qui sont acceptés par le FAI. Le *placement dans la boîte de réception* s&#39;applique aux messages qui sont acceptés par le FAI et détermine si l&#39;email arrive dans la boîte de réception ou dans le dossier de courriers indésirables.
+Deux mesures clés jouent un rôle dans la définition de la délivrabilité. Le *taux de délivrabilité* correspond au pourcentage d’e-mails qui ne sont pas rejetés et qui sont acceptés par le FAI. Le *placement dans la boîte de réception* s&#39;applique aux messages qui sont acceptés par le FAI et détermine si l&#39;email arrive dans la boîte de réception ou dans le dossier de courriers indésirables.
 
 Il est important de comprendre à la fois le taux de délivrabilité et le taux de placement dans la boîte de réception lors de la mesure des performances des emails. Un taux de délivrabilité élevé n&#39;est pas la seule facette de la délivrabilité. Ce n’est pas parce qu’un message est reçu par l’intermédiaire du point de contrôle initial d’un FAI que votre abonné a réellement consulté votre communication et interagi avec celle-ci.
 
@@ -40,7 +40,7 @@ Il est important de comprendre à la fois le taux de délivrabilité et le taux 
 
 Vous devriez savoir si vos emails sont diffusés ou s’ils arrivent dans la boîte de réception ou le dossier des courriers indésirables. Voici pourquoi.
 
-De nombreuses heures sont consacrées à la planification et à la production des campagnes par e-mail. Si les email sont retournés ou s’ils finissent dans le dossier des courriers indésirables de vos abonnés, vos clients ne les liront probablement pas, votre appel à l&#39;action ne sera pas entendu et vous ne serez pas en mesure de réaliser vos objectifs en matière de chiffre d’affaires en raison de conversions perdues. En d’autres termes, vous ne pouvez pas vous permettre d’ignorer la délivrabilité. Celle-ci est essentielle au succès de vos efforts de marketing par e-mail et à vos bénéfices.
+De nombreuses heures sont consacrées à la planification et à la production des campagnes par e-mail. Si les e-mails sont rejetés ou s’ils finissent dans le dossier des courriers indésirables de vos abonnés, vos clients ne les liront probablement pas, votre appel à l’action ne sera pas entendu et vous ne serez pas en mesure de réaliser vos objectifs en matière de chiffre d’affaires en raison de conversions perdues. En d’autres termes, vous ne pouvez pas vous permettre d’ignorer la délivrabilité. Celle-ci est essentielle au succès de vos efforts de marketing par e-mail et à vos bénéfices.
 
 Suivez les bonnes pratiques en matière de délivrabilité pour vous assurer que votre email aura les meilleures chances d&#39;être ouvert, de faire l&#39;objet d&#39;un clic et d&#39;atteindre l&#39;objectif de conversion. Vous pouvez trouver un objet accrocheur, présenter de belles images et un contenu attrayant, mais si l’email n’est pas diffusé, le client n’aura aucune opportunité de conversion. Dans le cadre de la délivrabilité des emails, chaque étape du processus d&#39;acceptation des emails dépend de la précédente pour le succès du programme.
 
@@ -48,7 +48,7 @@ Suivez les bonnes pratiques en matière de délivrabilité pour vous assurer que
 
 Facteurs importants pour la diffusion :
 
-* **Infrastructure solide** : configuration des adresses IP et du domaine, configuration de la feedback loop (y compris le suivi et le traitement des plaintes) et traitement régulier des bounces. Pour ses clients, Adobe est chargé de cette configuration pour le compte de nos clients.
+* **Infrastructure solide** : configuration des adresses IP et du domaine, configuration de la boucle de rétroaction (y compris le suivi et le traitement des plaintes) et traitement régulier des rebonds. Pour ses clients, Adobe est chargé de cette configuration pour le compte de nos clients.
 * **Authentification renforcée** : [!DNL Sender Policy Framework] (SPF), [!DNL DomainKeys Identified Mail] (DKIM),[!DNL Domain-based Message Authentication], reporting et conformité (DMARC).
 * **Liste de qualité supérieure** : opt-in explicite, méthodes d’acquisition des emails valides et politiques d’engagement.
 * **Cadence d&#39;envoi constante et minimisation des fluctuations de volume**.
@@ -65,7 +65,7 @@ Voici quelques facteurs importants pour le placement dans les boîtes de récept
 * Faibles plaintes (moins de 0,1 % dans l&#39;ensemble)
 * Volume cohérent
 * Pièges de messages indésirables faibles
-* Taux de hard bounces faible
+* Taux de rebonds définitifs faible
 * Problèmes liés à un manque de liste bloquée
 
 ### Étape 3 : engagement emailing — ouvertures

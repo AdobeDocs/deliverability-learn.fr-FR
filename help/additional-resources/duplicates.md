@@ -8,8 +8,8 @@ team: ACS
 exl-id: f89dbb38-a8d4-4294-b017-6fed72591593
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 59%
+source-wordcount: '363'
+ht-degree: 58%
 
 ---
 
@@ -33,12 +33,12 @@ Il existe tout de même des cas où la présence de doublons entre différentes 
 
 ## Ressources spécifiques au produit
 
-Pour garantir votre réputation et assurer une bonne gestion des quarantaines, dédupliquez les adresses. En savoir plus dans les sections de documentation du produit suivantes :
+La déduplication des adresses protège votre réputation d’envoi et assure une bonne gestion des quarantaines. En savoir plus dans les sections de documentation du produit suivantes :
 
 **Adobe Campaign Classic**
 
 * [Activité Déduplication](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
-* [Utilisation de la fonctionnalité Déduplication de fusion des activités](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=fr)
+* [Utilisation de la fonctionnalité de fusion de l’activité Déduplication](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=fr)
 
 **Adobe Campaign Standard**
 

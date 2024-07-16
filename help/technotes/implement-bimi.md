@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Mise en oeuvre [!DNL Brand Indicators for Message Identification] (BIMI)
+# Mise en oeuvre de [!DNL Brand Indicators for Message Identification] (BIMI)
 
 [!DNL Brand Indicators for Message Identification] (BIMI) est une norme du secteur qui permet l’affichage d’un logo approuvé en regard de l’adresse électronique d’un expéditeur sur les plateformes participantes.
 
@@ -25,7 +25,7 @@ BIMI n&#39;améliore pas directement la délivrabilité ni votre réputation. Ce
 
 ## À quoi ça ressemble ?
 
-Vous trouverez quelques exemples de mise en oeuvre de différents fournisseurs et des informations supplémentaires sur les fournisseurs qui affichent le logo sur la page [Page du groupe BIMI](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
+Vous trouverez quelques exemples d’implémentations de différents fournisseurs et des détails supplémentaires sur les fournisseurs qui n’affichent pas le logo sur la [page du groupe BIMI](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
 
 ## Qui est le groupe BIMI ?
 
@@ -35,7 +35,7 @@ Le groupe BIMI est constitué de plusieurs parties prenantes de différents sect
 
 ## Qui soutient BIMI ?
 
-La liste des fournisseurs de messagerie prenant en charge BIMI ne cesse de s&#39;allonger. Une liste à jour est disponible [here](https://bimigroup.org/bimi-infographic/){target="_blank"} tant pour les prestataires d&#39;assistance que pour les prestataires ayant recours à l&#39;IMI.
+La liste des fournisseurs de messagerie prenant en charge BIMI ne cesse de s&#39;allonger. Une liste à jour est disponible [ici](https://bimigroup.org/bimi-infographic/){target="_blank"} pour les fournisseurs d’assistance et les fournisseurs prenant en charge BIMI.
 
 Depuis avril 2023, la liste inclut Gmail, Yahoo, La Poste, Fastmail, Onet.pl et Zone, Proofpoint en tant qu&#39;outil anti-spam et Apple Mail (à partir d&#39;iOS 16 et plus).
 
@@ -45,15 +45,15 @@ Les noms les plus en vue sur cette liste sont évidemment Yahoo, Gmail et un der
 
 La mise en oeuvre de BIMI se fait en plusieurs étapes :
 
-1. Implémentation DMARC (Domain-based Message Authentication, Reporting and Conformance) au niveau de l’application, tant pour le domaine d’envoi que pour son domaine d’organisation - [En savoir plus](#dmarc)
+1. Implémentation DMARC (Domain-based Message Authentication, Reporting and Conformance) au niveau de l&#39;application à la fois pour le domaine d&#39;envoi et son domaine d&#39;organisation - [En savoir plus](#dmarc)
 
 1. Création du logo de votre marque au format SVG TinyPS - [En savoir plus](#create-brand-logo)
 
 1. S’inscrire à un certificat de marque vérifié (nécessaire uniquement pour certains fournisseurs) - [En savoir plus](#vmc)
 
-1. Publier un enregistrement DNS BIMI avec le logo et le certificat - [En savoir plus](#publish-bimi-record)
+1. Publish un enregistrement DNS BIMI avec le logo et le certificat - [En savoir plus](#publish-bimi-record)
 
-1. Avoir une bonne réputation - [En savoir plus](#good-reputation)
+1. Bonne réputation - [En savoir plus](#good-reputation)
 
 >[!NOTE]
 >
@@ -62,13 +62,13 @@ La mise en oeuvre de BIMI se fait en plusieurs étapes :
 
 ### DMARC {#dmarc}
 
-DMARC est une norme qui permet à la marque de décider ce qu’un fournisseur de messagerie doit faire avec un email qui échoue. [authentication](../additional-resources/authentication.md). Les soi-disant politiques vont de &quot;aucun&quot; à &quot;quarantaine&quot; (placement du dossier Spam) en &quot;rejet&quot; (blocage pur et simple du courrier). Seules les deux dernières politiques sont appelées &quot;application&quot; et répondent aux critères du BIMI. Le courrier envoyé par Adobe transmet l’authentification, car SPF (Sender Policy Framework) et DKIM (Domain Keys Identified Mail) sont configurés par défaut. Adobe configure DMARC sur votre domaine d’envoi sur demande.
+DMARC est une norme qui permet à la marque de décider ce qu&#39;un fournisseur de boîte aux lettres doit faire avec un email qui échoue [authentication](../additional-resources/authentication.md). Les soi-disant politiques vont de &quot;aucun&quot; à &quot;quarantaine&quot; (placement du dossier Spam) en &quot;rejet&quot; (blocage pur et simple du courrier). Seules les deux dernières politiques sont appelées &quot;application&quot; et répondent aux critères du BIMI. Le courrier envoyé par Adobe transmet l’authentification, car SPF (Sender Policy Framework) et DKIM (Domain Keys Identified Mail) sont configurés par défaut. Adobe configure DMARC sur votre domaine d’envoi sur demande.
 
 Outre DMARC sur le domaine d’envoi, DMARC doit également être employé au niveau de l’application pour le domaine d’organisation (si le domaine d’envoi est news.example.com, example.com est le domaine d’organisation).
 
 ### Création du logo de votre marque {#create-brand-logo}
 
-La création du logo doit respecter les exigences à 100 %. Veuillez toujours vous reporter à la section [Directives du groupe BIMI](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+La création du logo doit respecter les exigences à 100 %. Veuillez toujours vous référer aux [directives du groupe BIMI](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
 Le logo doit être stocké dans un emplacement sécurisé (HTTPS), au cas où un réseau de diffusion de contenu (CDN) serait utilisé pour toute protection qui empêcherait les fournisseurs de messagerie d’obtenir le logo (par exemple, la protection des robots), doit être désactivé.
 
@@ -113,4 +113,4 @@ Même passer par les efforts et les dépenses d&#39;un VMC n&#39;enlève pas cet
 
 * La mise en oeuvre de DMARC au niveau organisationnel est une entreprise de grande envergure. Certaines entreprises sont spécialisées pour aider les marques à réaliser une adoption DMARC complète.
 
-* Une liste complète de questions fréquentes est publiée [here](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.
+* Une liste complète de questions fréquentes est publiée [ici](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.

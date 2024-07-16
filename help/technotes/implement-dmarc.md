@@ -8,11 +8,11 @@ exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
-# Mise en oeuvre [!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
+# Mise en oeuvre de [!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
 
 Ce document a pour but de fournir au lecteur des informations supplémentaires sur la méthode d’authentification par email, DMARC. En expliquant le fonctionnement de DMARC et ses différentes options politiques, les lecteurs comprendront mieux l’impact de DMARC sur la délivrabilité des emails.
 
@@ -22,9 +22,9 @@ Authentification, création de rapports et conformité des messages basés sur u
 
 DMARC propose trois options de politique :
 
-* **Monitor (p=none) :** Indique au fournisseur de messagerie/FAI de faire tout ce qu’il ferait normalement pour le message.
-* **Quarantaine (p=quarantaine) :** Indique au fournisseur de messagerie ou au FAI de diffuser du courrier électronique qui ne transmet pas DMARC au dossier spam ou courrier indésirable du destinataire.
-* **Rejeter (p=rejeter) :** Indique au fournisseur de messagerie/FAI de bloquer les messages qui ne transmettent pas DMARC, ce qui entraîne un rebond.
+* **Monitor (p=none):** Indique au fournisseur de messagerie/FAI de faire tout ce qu’il ferait normalement au message.
+* **Quarantaine (p=quarantaine) :** Indique au fournisseur de messagerie/FAI de diffuser du courrier électronique qui ne transmet pas DMARC au dossier spam ou courrier indésirable du destinataire.
+* **Rejeter (p=Rejeter) :** Indique au fournisseur de messagerie/FAI de bloquer les courriers qui ne transmettent pas DMARC, ce qui entraîne un rebond.
 
 ## Comment DMARC fonctionne-t-il ? {#how}
 
@@ -44,7 +44,8 @@ DMARC est facultatif. Bien qu’il ne soit pas obligatoire, il est gratuit et pe
 
 ## Bonnes pratiques relatives à la mise en oeuvre de DMARC {#best-practice}
 
-Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. Il est recommandé de déployer lentement la mise en oeuvre DMARC en réaffectant votre stratégie DMARC de p=none à p=quarantine, puis de p=reject lorsque vous acquérez une compréhension DMARC de l’impact potentiel de DMARC.
+Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune plateforme ESP. Un enregistrement DMARC doit être créé dans DNS pour votre domaine pour qu’il fonctionne. De plus, une adresse électronique de votre choix est requise pour indiquer où les rapports DMARC doivent se rendre au sein de votre organisation. La bonne pratique consiste à
+Il est recommandé de déployer lentement l’implémentation DMARC en réaffectant votre stratégie DMARC de p=none à p=quarantine, puis de p=reject lorsque vous acquérez une compréhension DMARC de l’impact potentiel de DMARC.
 
 1. Analysez les commentaires que vous recevez et utilisez (p=none), qui indique au destinataire d’effectuer aucune action contre les messages qui ne parviennent pas à s’authentifier, tout en envoyant des rapports par e-mail à l’expéditeur. En outre, examinez les problèmes liés à SPF/DKIM et corrigez-les si des messages légitimes échouent à l’authentification.
 1. Déterminez si SPF et DKIM sont harmonisés et passent une authentification pour tous les emails légitimes, puis déplacez la stratégie vers (p=quarantine), ce qui indique au serveur de messagerie de réception de mettre en quarantaine les emails qui ne parviennent pas à s’authentifier (cela signifie généralement placer ces messages dans le dossier spam).
@@ -59,7 +60,7 @@ Comme DMARC est facultatif, il ne sera configuré par défaut sur aucune platefo
 DMARC permet de recevoir des rapports sur les emails qui échouent SPF/DKIM. Il existe deux rapports différents générés par les services de FAI dans le cadre du processus d’authentification que les expéditeurs peuvent recevoir par le biais des balises RUA/RUF dans leur stratégie DMARC :
 
 * **Rapports agrégés (RUA) :** Ne contient aucune information d’identification personnelle qui serait sensible au RGPD.
-* **Rapports médico-légaux :** Contient des adresses électroniques sensibles au RGPD. Avant d’utiliser , il est préférable de vérifier en interne comment traiter les informations qui doivent être conformes au RGPD.
+* **Rapports médico-légaux (RUF) :** contient des adresses électroniques sensibles au RGPD. Avant d’utiliser , il est préférable de vérifier en interne comment traiter les informations qui doivent être conformes au RGPD.
 
 L’utilisation principale de ces rapports consiste à recevoir un aperçu des emails qui ont fait l’objet d’une tentative d’usurpation. Il s’agit de rapports hautement techniques qui sont le mieux digérés au moyen d’un outil tiers. Voici quelques entreprises spécialisées dans la surveillance DMARC :
 
@@ -70,7 +71,7 @@ L’utilisation principale de ces rapports consiste à recevoir un aperçu des e
 
 >[!CAUTION]
 >
->Si les adresses électroniques que vous ajoutez pour recevoir des rapports se trouvent en dehors du domaine pour lequel l’enregistrement DMARC est créé, vous devez autoriser leur domaine externe à spécifier au DNS que vous possédez ce domaine. Pour ce faire, procédez comme décrit dans la section [dmarc.org documentation](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+>Si les adresses e-mail que vous ajoutez pour recevoir des rapports se trouvent en dehors du domaine pour lequel l’enregistrement DMARC est créé, vous devez autoriser leur domaine externe à indiquer au DNS que vous possédez ce domaine. Pour ce faire, procédez comme décrit dans la section [Documentation dmarc.org](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain).
 
 ### Exemple d’enregistrement DMARC {#example}
 
@@ -86,7 +87,7 @@ Les enregistrements DMARC comportent plusieurs composants appelés balises DMARC
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | Obligatoire | Cette balise DMARC spécifie la version. Il n’existe qu’une seule version à ce jour. Par conséquent, cette valeur sera fixe pour v=DMARC1 | V=DMARC1 DMARC1 | DMARC1 |
 | p | Obligatoire | Affiche la stratégie DMARC sélectionnée et demande au destinataire de signaler, mettre en quarantaine ou rejeter le courrier qui ne réussit pas les vérifications d’authentification. | p=aucun, mise en quarantaine ou rejet | - |
-| fo | Facultatif | Permet au propriétaire du domaine de spécifier des options de création de rapports. | 0 : générer un rapport si tout échoue<br/>1 : générer le rapport en cas d’échec<br/>d : générer un rapport en cas d’échec de DKIM<br/>s : générer un rapport en cas d’échec du SPF | 1 (recommandé pour les rapports DMARC) |
+| fo | Facultatif | Permet au propriétaire du domaine de spécifier des options de création de rapports. | 0 : Générer un rapport en cas d&#39;échec<br/>1 : générer un rapport en cas d&#39;échec<br/>d : générer un rapport en cas d&#39;échec de DKIM<br/>s : générer un rapport en cas d&#39;échec du SPF | 1 (recommandé pour les rapports DMARC) |
 | pct | Facultatif | Indique le pourcentage de messages soumis au filtrage. | pct=20 | 100 |
 | rua | Facultatif (recommandé) | Identifie l’emplacement où les rapports agrégés seront distribués. | `rua=mailto:aggrep@example.com` | - |
 | ruf | Facultatif (recommandé) | Identifie l’endroit où les rapports médico-légaux seront remis. | `ruf=mailto:authfail@example.com` | - |
@@ -119,4 +120,4 @@ Une fois ces modifications enregistrées, vous pourrez passer à l’implémenta
 ## Liens utiles {#links}
 
 * [DMARC.org](https://dmarc.org/){target="_blank"}
-* [M3AAWG Email Authentication](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
+* [Authentification par courrier électronique M3AAWG](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}

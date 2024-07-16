@@ -1,6 +1,6 @@
 ---
-title: Mettre à jour la qualification des bounces après une panne d’Italia Online
-description: Découvrez comment mettre à jour la qualification des bounces après une panne d’Italia Online.
+title: Mettre à jour la qualification des rebonds après une panne d’Italia Online
+description: Découvrez comment mettre à jour la qualification des rebonds après une panne d’Italia Online.
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
@@ -9,12 +9,12 @@ role: Admin
 level: Beginner
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 53%
+source-wordcount: '403'
+ht-degree: 51%
 
 ---
 
-# Mettre à jour les hard bounces incorrects après une panne d’Italia Online {#update-bounce-italia}
+# Mettre à jour les rebonds définitifs incorrects après une panne d’Italia Online {#update-bounce-italia}
 
 ## Contexte{#outage-context}
 
@@ -33,26 +33,26 @@ Comme dans la plupart des cas, lorsqu’un fournisseur d’accès Internet (FAI)
 
 Les symptômes étaient les suivants :
 
-* **Soft bounces** avec le message `452 requested action aborted: try again later` - ont été automatiquement relancés et aucune action n’est nécessaire.
+* **Soft bounces** avec le message `452 requested action aborted: try again later` : ils ont été automatiquement repris et aucune action n’est nécessaire.
 
-* Des **Hard bounces** avec le message `550 <email address> recipient rejected` ont été retournés par le FAI le 26 janvier, entre 8 h et 14 h, heure locale, pour éviter que les expéditeurs et les expéditrices ne continuent à surcharger leurs serveurs. Comme l’a confirmé le Postmaster d’Italia Online, il ne s&#39;agit pas de véritables hard bounces. Nous recommandons donc de retirer de la quarantaine toutes les adresses e-mail qui ont été exclues le 26 janvier 2023 en raison de ce message.
+* Des **rebonds définitifs** avec le message `550 <email address> recipient rejected` ont été retournés par le FAI le 26 janvier, entre 8 h et 14 h, heure locale, pour éviter que les expéditeurs et les expéditrices ne continuent à surcharger leurs serveurs. Comme l’a confirmé le Postmaster d’Italia Online, il ne s’agit pas de véritables rebonds définitifs. Nous recommandons donc de retirer de la quarantaine toutes les adresses e-mail qui ont été exclues le 26 janvier 2023 en raison de ce message.
 
 ## Processus de mise à jour{#outage-update}
 
 ### Adobe Campaign{#ac-update}
 
-Selon la logique standard de gestion des bounces, Adobe Campaign a automatiquement ajouté ces destinataires à la liste de quarantaine avec un **[!UICONTROL Statut]** de **[!UICONTROL Quarantaine]**. Pour corriger ce problème, vous devez mettre à jour votre table de quarantaines dans Campaign en recherchant et en supprimant ces destinataires ou en basculant leur **[!UICONTROL Statut]** sur **[!UICONTROL Valide]** afin que le processus de nettoyage de nuit les supprime.
+Selon la logique standard de gestion des rebonds, Adobe Campaign a automatiquement ajouté ces destinataires à la liste de quarantaine avec un paramètre **[!UICONTROL Statut]** de **[!UICONTROL Quarantaine]**. Pour corriger ce problème, vous devez mettre à jour votre table de quarantaines dans Campaign en recherchant et en supprimant ces destinataires ou en basculant leur **[!UICONTROL Statut]** sur **[!UICONTROL Valide]** afin que le processus de nettoyage de nuit les supprime.
 
-Pour trouver les destinataires qui ont été affectés par ce problème , ou au cas où cela se reproduirait avec un autre FAI, référez-vous aux instructions ci-dessous:
+Pour trouver les destinataires qui ont été affectés par ce problème, ou au cas où cela se reproduirait avec un autre FAI, veuillez consulter les instructions ci-dessous :
 
-* Pour Campaign Classic v7 et Campaign v8, voir [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Pour le Campaign Standard, reportez-vous à la section [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Pour Campaign Classic v7 et Campaign v8, reportez-vous à [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Pour le Campaign Standard, reportez-vous à [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
-Selon une logique standard de gestion des rebonds, Adobe Journey Optimizer a automatiquement ajouté ces adresses électroniques à la liste de suppression avec une **[!UICONTROL Motif]** paramètre de **[!UICONTROL Destinataire non valide]**. Pour corriger ce problème, vous devez mettre à jour la liste de suppression en recherchant et en supprimant ces adresses électroniques.
+Selon la logique standard de gestion des bounces, Adobe Journey Optimizer a automatiquement ajouté ces adresses électroniques à la liste de suppression avec un paramètre **[!UICONTROL Reason]** de **[!UICONTROL Destinataire non valide]**. Pour corriger ce problème, vous devez mettre à jour la liste de suppression en recherchant et en supprimant ces adresses électroniques.
 
-Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du **[!UICONTROL Supprimer]** bouton . Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
+Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du bouton **[!UICONTROL Supprimer]** . Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
 
 En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 

@@ -12,7 +12,7 @@ team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -29,19 +29,19 @@ En tant qu’expéditeur, vous ne pouvez pas suivre toutes les mêmes mesures d�
 
 ## Qualité sur quantité
 
-**Croissance organique des listes** est la pierre angulaire d&#39;une liste saine. De nombreux spécialistes du marketing mettent énormément l’accent sur l’augmentation des listes, mais du point de vue de la délivrabilité, il est important de créer une liste de qualité d’abonnés très engagés. L’envoi continu d’emails à une audience largement non engagée peut diminuer votre réputation d’envoi et augmenter considérablement la probabilité que votre email arrive dans le dossier spam ou courrier indésirable.
+**Croissance de liste organique** est la pierre angulaire d’une liste saine. De nombreux spécialistes du marketing mettent énormément l’accent sur l’augmentation des listes, mais du point de vue de la délivrabilité, il est important de créer une liste de qualité d’abonnés très engagés. L’envoi continu d’emails à une audience largement non engagée peut diminuer votre réputation d’envoi et augmenter considérablement la probabilité que votre email arrive dans le dossier spam ou courrier indésirable.
 
-**Fréquence des envois** est important à prendre en compte lors de la création et de la maintenance d’un programme de marketing par e-mail. Définir les attentes des destinataires lors de votre message de bienvenue est une stratégie très utile que les personnes aiment savoir à quoi s’attendre. Pourtant, ces attentes doivent être respectées : envoyer trop souvent des emails peut entraîner la fatigue des clients et dans certains cas peut entraîner une augmentation des plaintes et des désabonnements.
+**Fréquence d’envoi** est important pour la création et la maintenance d’un programme de marketing par e-mail. Définir les attentes des destinataires lors de votre message de bienvenue est une stratégie très utile que les personnes aiment savoir à quoi s’attendre. Pourtant, ces attentes doivent être respectées : envoyer trop souvent des emails peut entraîner la fatigue des clients et dans certains cas peut entraîner une augmentation des plaintes et des désabonnements.
 
 Chaque marketeur doit déterminer la fréquence appropriée pour son programme marketing spécifique. Nous proposons de tester différentes fréquences afin de trouver le bon équilibre pour un programme marketing spécifique. Le maintien de l’engagement et de l’activité des destinataires est l’une des actions les plus importantes qu’un marketeur peut entreprendre pour garantir le succès d’un programme de marketing par e-mail.
 
 ## Changement d&#39;intérêts
 
-Les intérêts des abonnés évoluent constamment et les marketeurs doivent comprendre que l’engagement envers une marque peut être temporaire. Certains abonnés se désabonneront, mais beaucoup vont simplement supprimer ou ignorer les emails indésirables. Du point de vue du consommateur, tout message non sollicité ou indésirable est perçu comme un spam. Par conséquent, les marketeurs doivent s’appuyer sur **marketing basé sur les autorisations** et **suivi de l&#39;engagement** pour perte d’intérêt. Afin d’obtenir un placement optimal en boîte de réception, nous recommandons aux marketeurs de réengager stratégiquement les abonnés à l’aide de campagnes de réactivation et d’une stratégie de retour arrière, qui peut s’avérer des outils très utiles pour un spécialiste du marketing par e-mail.
+Les intérêts des abonnés évoluent constamment et les marketeurs doivent comprendre que l’engagement envers une marque peut être temporaire. Certains abonnés se désabonneront, mais beaucoup vont simplement supprimer ou ignorer les emails indésirables. Du point de vue du consommateur, tout message non sollicité ou indésirable est perçu comme un spam. Par conséquent, les spécialistes du marketing doivent s’appuyer sur **un marketing basé sur les autorisations** et **surveiller l’engagement** pour la perte d’intérêt. Afin d’obtenir un placement optimal en boîte de réception, nous recommandons aux marketeurs de réengager stratégiquement les abonnés à l’aide de campagnes de réactivation et d’une stratégie de retour arrière, qui peut s’avérer des outils très utiles pour un spécialiste du marketing par e-mail.
 
-A **stratégie de retour arrière** est lorsqu’une incitation spéciale est régulièrement envoyée à une partie spécifique d’une base de données marketing pour tenter de réengager une liste ayant une activité faible d’ouverture et de clics. Les réponses positives sont conservées et la partie de la liste qui ne répond pas est déplacée vers un état inactif et ne sera plus envoyée par courrier électronique.
+Une **stratégie de retour arrière** est lorsqu’une incitation spéciale est régulièrement envoyée à une partie spécifique d’une base de données marketing pour tenter de réengager une liste ayant une activité faible d’ouverture et de clic. Les réponses positives sont conservées et la partie de la liste qui ne répond pas est déplacée vers un état inactif et ne sera plus envoyée par courrier électronique.
 
-A **campagne de réactivation** est similaire, mais est utilisé pour reconfirmer une liste une fois, ce qui est utile lorsque vous traitez d’anciennes listes obsolètes — celles qui n’ont pas été envoyées depuis plus de 12 mois, voire des années. Ce type de campagne est également généralement appliqué par des listes bloquées afin de résoudre un bloc. Les abonnés qui ne sont pas réengagés avec succès par ce processus doivent être exclus des futures promotions par e-mail.
+Une **campagne de réactivation** est similaire, mais elle est utilisée pour reconfirmer une liste une fois, ce qui est utile lorsque vous traitez d’anciennes listes obsolètes — celles qui n’ont pas été envoyées par la poste depuis plus de 12 mois, voire des années. Ce type de campagne est également généralement appliqué par des listes bloquées afin de résoudre un bloc. Les abonnés qui ne sont pas réengagés avec succès par ce processus doivent être exclus des futures promotions par e-mail.
 
 La meilleure façon de mettre en oeuvre une campagne de reprise ou de réactivation est propre à votre programme de messagerie électronique. Elle doit être entièrement personnalisée en fonction des besoins et de la situation de votre entreprise.
 
@@ -49,7 +49,7 @@ La meilleure façon de mettre en oeuvre une campagne de reprise ou de réactivat
 
 Il est facile de simplement définir votre email de réponse comme une adresse de &quot;non-réponse&quot;, mais ce serait une erreur qui ne tient pas compte de l&#39;ensemble du tableau.
 
-Lorsque les destinataires répondent aux emails marketing, une réponse est attendue. En activant une **système de réponse et de réponse**, vous contribuerez à améliorer la réputation de votre expéditeur. Cela augmentera la probabilité de délivrabilité positive et de taux de placement en boîte de réception.
+Lorsque les destinataires répondent aux emails marketing, une réponse est attendue. En activant un **système de réponse**, vous contribuerez à améliorer la réputation de votre expéditeur. Cela augmentera la probabilité de délivrabilité positive et de taux de placement en boîte de réception.
 
 Il s’agit également d’une bien meilleure expérience client qui contribuera à accroître la perception positive des consommateurs de votre marque. Après tout, rien ne dit &quot;faites affaire avec nous s&#39;il vous plaît&quot; comme &quot;nous voulons avoir de vos nouvelles.&quot;
 
@@ -69,4 +69,4 @@ Un dernier élément clé de la stratégie de réponse est que si vous avez une 
 
 ## Ressources supplémentaires
 
-* En savoir plus sur les stratégies de réengagement (ou de retour) dans [cette section](/help/additional-resources/re-engagement.md).
+* Pour en savoir plus sur les stratégies de réengagement (ou de reprise), consultez [cette section](/help/additional-resources/re-engagement.md).
