@@ -7,9 +7,9 @@ activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
 source-git-commit: eba8162150b5662ca18687b873114858f8eb00cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Dès le départ, vous recevrez vos propres adresses IP dédiées (Internet Proto
 
 ## Préchauffage d’une adresse IP : pour quoi faire ?  {#why-ip-warming}
 
-Les fournisseurs d&#39;accès à internet (FAI) ou les fournisseurs de messagerie électronique (MBP) prennent des précautions lorsqu&#39;ils détectent une adresse IP et un domaine d&#39;envoi inconnus. Les FAI/MBP contrôlent de près l’adresse IP et le domaine d’envoi pour déterminer si les emails envoyés depuis cette adresse IP et ce domaine sont des spams ou non. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
+Les fournisseurs d’accès à Internet (FAI) ou les fournisseurs de service de messagerie (MBP) prennent des précautions lorsqu’ils détectent une adresse IP et un domaine d’envoi inconnus. Les fournisseurs d’accès à Internet et les fournisseurs de services de messagerie surveillent de près l’adresse IP et le domaine d’envoi pour déterminer si les e-mails envoyés depuis cette adresse IP et ce domaine sont des spams ou non. Il s&#39;agit de la procédure standard associée à toute nouvelle adresse IP d&#39;envoi, quel que soit le type d&#39;expéditeur.
 
 Les FAI examinent attentivement le volume d&#39;envoi, la fréquence d&#39;envoi, les plaintes et les taux de rebond générés par ces messages. Tous ces éléments sont étroitement contrôlés parce que, bons ou mauvais, ils représentent des indicateurs de la réputation de l&#39;expéditeur.
 
@@ -107,7 +107,7 @@ En savoir plus sur l&#39;[engagement](/help/engagement.md).
 
 Vous pouvez être tenté d&#39;accélérer le processus de réchauffement des adresses IP en diffusant un volume supérieur à celui recommandé, en négligeant de passer du temps à identifier vos abonnés les plus engagés et en n&#39;envoyant pas d&#39;email à ces abonnés lors de la phase initiale pour bâtir une réputation positive. Résistez à cette envie ! Cela ne vous aidera pas à long terme.
 
-Il est très important de commencer à contacter vos abonnés les plus engagés (par email !) uniquement, lors des étapes initiales du réchauffement des adresses IP. Ces clients sont les plus précieux et leur propension à ouvrir vos emails vous aidera à montrer aux FAI que vous êtes un spécialiste marketing qui envoie des emails intéressants et recherchés. La démarche indique également aux FAI que vous suivez les règles et les bonnes pratiques.
+Il est très important de commencer à contacter les personnes abonnées les plus engagées (par e-mail !) uniquement, lors des premières étapes du réchauffement des adresses IP. Ces clients sont les plus précieux et leur propension à ouvrir vos emails vous aidera à montrer aux FAI que vous êtes un spécialiste marketing qui envoie des emails intéressants et recherchés. La démarche indique également aux FAI que vous suivez les règles et les bonnes pratiques.
 
 ## Conclusion
 
