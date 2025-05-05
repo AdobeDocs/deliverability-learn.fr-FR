@@ -75,8 +75,8 @@ Les abonnés qui interagissent pendant la campagne en suivant l&#39;activité d&
 
 **Adobe Campaign**
 
-* [Logs de tracking en Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Logs de tracking en Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Logs de tracking en Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=fr#tracking-logs)
+* [Logs de tracking en Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=fr#tracking-logs)
 
 **Adobe de la gestion des Parcours clients**
 

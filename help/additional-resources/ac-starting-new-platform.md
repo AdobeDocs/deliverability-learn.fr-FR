@@ -54,13 +54,13 @@ Pour plus d’informations sur les principes répertoriés ci-dessus et leur mis
 
 **Adobe Campaign Classic**
 
-* [Optimisez votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [Identifier les adresses en quarantaine pour l&#39;ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [Optimisez votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#optimizing-your-delivery-through-quarantines)
+* [Identifier les adresses en quarantaine pour l&#39;ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#identifying-quarantined-addresses-for-the-entire-platform)
 * [Envoi en plusieurs vagues](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=fr#sending-using-multiple-waves)
 * [Surveillance des diffusions](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=fr#sending-messages)
 
 **Adobe Campaign Standard**
 
-* [Optimisez votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [Optimisez votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr#optimizing-your-delivery-through-quarantines)
 * [Identifier les adresses en quarantaine pour l&#39;ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr)
 * [Surveillance d’une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=fr-FR)

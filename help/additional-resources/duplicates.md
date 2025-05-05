@@ -37,9 +37,9 @@ La déduplication des adresses protège votre réputation d’envoi et assure un
 
 **Adobe Campaign Classic**
 
-* [Activité Déduplication](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
+* [Activité Déduplication](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=fr)
 * [Utilisation de la fonctionnalité de fusion de l’activité Déduplication](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=fr)
 
 **Adobe Campaign Standard**
 
-* [Dédupliquer les données d’un fichier importé](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html)
+* [Dédupliquer les données d’un fichier importé](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html?lang=fr)

@@ -39,7 +39,7 @@ Plus précisément, elles servent à contrôler la vitesse à laquelle le MTA (M
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#mx-configuration).
 
 ### TLS {#tls}
 
@@ -89,13 +89,13 @@ Recommendations pour définir un enregistrement SPF :
 
 >[!NOTE]
 >
->Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), la signature de l’authentification des emails DKIM est effectuée par celui-ci pour tous les messages et domaines.
+>Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=fr#sending-messages), la signature de l’authentification des emails DKIM est effectuée par celui-ci pour tous les messages et domaines.
 
 L’utilisation de [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert les conditions préalables suivantes :
 
 **Déclaration d’option Adobe Campaign** : dans Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plateforme, ni dans l&#39;email. La plateforme sélectionnera également l’une des clés privées, ce qui signifie que l’authentification a de grandes chances d’échouer.
 
-* Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/clé publique) que pour DomainKeys (qui a remplacé DKIM).
+* Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/clé publique) que pour DomainKeys (qui a remplacé DKIM).
 * Il est inutile d&#39;activer DomainKeys et DKIM pour un même domaine, DKIM étant une version améliorée de DomainKeys.
 * Les domaines validant actuellement DKIM sont les suivants : AOL, Gmail.
 
@@ -200,7 +200,7 @@ Vous pouvez également utiliser une adresse dynamique. Par exemple, pour envoyer
 
 La règle de typologie doit contenir le script qui génère la ligne de commande et être inclue dans l&#39;en-tête de l&#39;email.
 
-Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=fr#typology-rules).
 
 >[!NOTE]
 >
