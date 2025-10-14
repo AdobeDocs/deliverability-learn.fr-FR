@@ -29,4 +29,4 @@ L’envoi permanent est le processus d’établissement d’un volume d’envoi 
 
 ![Mauvaise permanence de l’envoi](assets/Sender_Permanence_2.png)
 
-![ Stabilité d’envoi acceptable](assets/Sender_Permanence_3.png)
+![&#x200B; Stabilité d’envoi acceptable](assets/Sender_Permanence_3.png)

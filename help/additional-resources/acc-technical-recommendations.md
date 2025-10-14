@@ -182,7 +182,7 @@ Pour implémenter **&quot;mailto&quot; List-Unsubscribe** dans Campaign, vous po
 
 * Ajoutez directement la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#adding-a-command-line-in-a-delivery-template)
 
-* Créer une règle de typologie - [Découvrez comment ](#creating-a-typology-rule)
+* Créer une règle de typologie - [Découvrez comment &#x200B;](#creating-a-typology-rule)
 
 #### Ajouter une ligne de commande dans une diffusion ou un modèle {#adding-a-command-line-in-a-delivery-template}
 
@@ -227,7 +227,7 @@ Pour prendre en charge la réponse du POST Unsubscribe-List en un clic directeme
 Pour configurer **Unsubscribe-List-One-Click** dans Campaign, vous pouvez effectuer l’une des opérations suivantes :
 
 * Ajoutez la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#one-click-delivery-template)
-* Créer une règle de typologie - [Découvrez comment ](#one-click-typology-rule)
+* Créer une règle de typologie - [Découvrez comment &#x200B;](#one-click-typology-rule)
 
 #### Configuration de la liste en un clic - Désabonner dans la diffusion ou le modèle {#one-click-delivery-template}
 
