@@ -9,7 +9,7 @@ auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 100%
    + [Critères de ciblage](/help/transition-process/targeting-criteria.md)
    + [Considérations spécifiques aux fournisseurs d&#39;accès lors du réchauffement des adresses IP](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
    + [Volume](/help/transition-process/volume.md)
-+ Premières impressions — Collecte de listes et e-mails de bienvenue {#first-impressions}
-   + [Premières impressions — Collecte de listes et e-mails de bienvenue](/help/first-impressions/introduction.md)
++ Premières impressions : collecte de listes et e-mails de bienvenue {#first-impressions}
+   + [Premières impressions : collecte de listes et e-mails de bienvenue](/help/first-impressions/introduction.md)
    + [Collecte d&#39;adresses et croissance des listes](/help/first-impressions/address-collection-and-list-growth.md)
-   + [Emails de bienvenue](/help/first-impressions/welcome-emails.md)
+   + [E-mails de bienvenue](/help/first-impressions/welcome-emails.md)
 + [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
 + [Permanence de l&#39;expéditeur](/help/sender-permanence.md)
-+ Éléments spécifiques au FAI {#internet-service-provider-specifics}
++ Éléments spécifiques aux FAI {#internet-service-provider-specifics}
    + [Présentation](/help/internet-service-provider-specifics/overview.md)
    + [Gmail](/help/internet-service-provider-specifics/gmail.md)
    + [Microsoft (Hotmail, Outlook, Windows Live, etc.)](/help/internet-service-provider-specifics/microsoft.md)
@@ -45,7 +45,7 @@ ht-degree: 100%
 + [Surveillance continue](/help/ongoing-monitoring.md)
 + [Mise en pratique](/help/putting-it-in-practice.md)
 + Annexe : ressources supplémentaires {#additional-resources}
-   + [Présentation](/help/additional-resources/general-resources.md)
+   + [Vue d’ensemble](/help/additional-resources/general-resources.md)
    + [Bonnes et mauvaises pratiques de désabonnement](/help/unsubscribe-dos-and-do-nots.md)
    + Ressources génériques {#generic-resources}
       + [En savoir plus sur les pièges à spam](/help/additional-resources/all-about-spam-traps.md)
@@ -60,7 +60,7 @@ ht-degree: 100%
       + [Processus de demande de certificat SSL](/help/additional-resources/ac-ssl-certificate-request.md)
       + [Démarrage d’une nouvelle plateforme](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic : recommandations techniques](/help/additional-resources/acc-technical-recommendations.md)
-   + Notes techniques {#technotes}
+   + Notes techniques{#technotes}
       + [Implémenter DMARC](/help/technotes/implement-dmarc.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)
       + [Mettre à jour les rebonds après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
