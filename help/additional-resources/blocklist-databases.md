@@ -45,13 +45,13 @@ La liste qui suit répertorie les listes RBL les plus utilisées. Pour obtenir u
 
 * **SURBL**
 
-  Pour plus d&#39;informations, consultez la section [](https://surbl.org/)
+  Pour plus d&#39;informations, consultez la section [&#128279;](https://surbl.org/)
 
   SURBL identifie les sites web qui apparaissent régulièrement dans le spam. Si votre domaine apparaît dans cette liste, cela peut affecter considérablement votre délivrabilité. Vous devez informer immédiatement les services chargés de délivrabilité et l&#39;[Assistance clientèle d&#39;Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **iX Manitu**
 
-  Il s&#39;agit d&#39;une liste d&#39;adresses IP largement utilisée en Allemagne. Pour plus d&#39;informations, consultez la section [](https://www.heise.de/ix/nixspam/)
+  Il s&#39;agit d&#39;une liste d&#39;adresses IP largement utilisée en Allemagne. Pour plus d&#39;informations, consultez la section [&#128279;](https://www.heise.de/ix/nixspam/)
 
 <!--
 * SORBS
