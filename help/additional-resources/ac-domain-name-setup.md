@@ -7,19 +7,19 @@ activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
-workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '2107'
+ht-degree: 100%
 
 ---
 
 # Configuration du nom de domaine
 
-Ce document décrit les exigences commerciales et techniques de la configuration et de la délégation des noms de domaine. Vous devez sélectionner un sous-domaine d&#39;envoi d&#39;e-mail et, éventuellement, un sous-domaine associé à l&#39;extérieur pour héberger les composants web (pages de destination, page d&#39;opt-out) pour la plateforme Adobe que vous utilisez.
+Ce document décrit les exigences commerciales et techniques de la configuration et de la délégation des noms de domaine. Vous devez sélectionner un sous-domaine d’envoi d’e-mail et, éventuellement, un sous-domaine associé à l’extérieur pour héberger les composants web (pages de destination, page d’opt-out) pour la plateforme Adobe que vous utilisez.
 
 >[!NOTE]
 >
->Vous pouvez également configurer de nouveaux sous-domaines à l&#39;aide du Panneau de contrôle (disponible en version bêta). En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr#must-read).
+>Vous pouvez également configurer de nouveaux sous-domaines à l’aide du Panneau de contrôle (disponible en version Beta). En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=fr#must-read).
 
 ## Sous-domaines
 
@@ -53,10 +53,10 @@ Pour fournir un service géré en mode cloud, Adobe encourage fortement les clie
 |--- |--- |--- |
 | MX | Spécification des serveurs de messagerie pour les messages entrants | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF (TXT) | Cadre de la politique de l&#39;expéditeur | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
-| DKIM (TXT) | Message identifié DomainKeys | <i>client._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY ICI&quot; |
-| Enregistrements hôtes (A) | Pages miroir, hébergement d&#39;images et liens de suivi, tous les domaines d&#39;envoi | m.email.example.com DANS A 123.111.100.99</br>t.email.example.com DANS A 123.111.100.98</br>email.example.com DANS A 123.111.100.97 |
+| DKIM (TXT) | Message identifié DomainKeys | <i>client._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
+| Enregistrements hôtes (A) | Pages miroir, hébergement d&#39;images et liens de suivi, tous les domaines d&#39;envoi | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | DNS inversé (PTR) | Mappe les adresses IP du client avec un nom d&#39;hôte de marque client. | 18.101.100.192.in-addr.arpa pointeur de nom de domaine r18.email.example.com |
-| CNAME | Fournit un alias à un autre nom de domaine | t1.email.example.com est un alias pour t1.email.example.campaign.adobe.com |
+| CNAME | Fournit un alias à un autre nom de domaine | t1.email.example.com est un alias de t1.email.example.campaign.adobe.com |
 
 
 DMARC (Domain-based Message Authentication, Reporting, and Conformance) est recommandé pour authentifier les expéditeurs d’emails et faire en sorte que les systèmes de messagerie de destination acceptent les messages envoyés depuis votre domaine comme fiables.
@@ -94,9 +94,9 @@ Si le client choisit d&#39;utiliser des CNAME plutôt que de déléguer un sous-
 
 ## Exigences générales relatives au déploiement
 
-Lors de la mise en œuvre d&#39;une nouvelle solution de marketing d&#39;entreprise, des composants externes sont requis.  Il s&#39;agit notamment de l&#39;hébergement de pages de destination et de formulaires Web, de la configuration de liens et de pages web à suivre, de l&#39;affichage des pages miroir et de la configuration d&#39;une page d&#39;opt-out.
+Lors de la mise en œuvre d&#39;une nouvelle solution de marketing d&#39;entreprise, des composants externes sont requis. Il s’agit notamment de l’hébergement de pages de destination et de formulaires web, de la configuration de liens et de pages web à suivre, de l’affichage des pages miroir et de la configuration d’une page d’opt-out.
 
-Bien que ces exigences soient gérées au moyen de composants hébergés à la fois par Adobe et le client, elles incluent des URL visibles par les destinataires des emails.  Afin d&#39;éviter que des URL indiquant la solution technique sous-jacente ou le fournisseur d&#39;hébergement ne soient installées, il est possible de configurer des sous-domaines pour rendre cette opération transparente pour les destinataires des emails.  Par exemple, lorsque vous consultez une URL telle que http://www.customer.com/, le domaine est &quot;www.customer.com&quot;.  Le sous-domaine de ce site serait &quot;www&quot;.
+Bien que ces exigences soient gérées au moyen de composants hébergés à la fois par Adobe et le client, elles incluent des URL visibles par les destinataires des e-mails. Afin d&#39;éviter que des URL indiquant la solution technique sous-jacente ou le fournisseur d&#39;hébergement ne soient installées, il est possible de configurer des sous-domaines pour rendre cette opération transparente pour les destinataires des emails. Par exemple, lorsque vous consultez une URL telle que http://www.customer.com/, le domaine est &quot;www.customer.com&quot;. Le sous-domaine de ce site serait &quot;www&quot;.
 
 ### Exigences relatives aux sous-domaines
 
@@ -111,7 +111,7 @@ Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exem
 
 >[!NOTE]
 >
->* Le champ &quot;Adresse de réponse&quot; a pour objet de demander au destinataire de répondre à une adresse différente de celle de l&#39;adresse d&#39;origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
+>* Le champ « Adresse de réponse » a pour objet de demander au ou à la destinataire de répondre à une adresse différente de celle de l’adresse d’origine.Bien qu’il ne s’agisse pas d’un champ obligatoire, Adobe recommande vivement que l’« adresse de réponse » soit valide et liée à une boîte de réception surveillée.Cette boîte de réception doit être hébergée par le client. Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
 >* Si aucune &quot;adresse de réponse&quot; n&#39;est choisie par le client, l&#39;adresse par défaut est toujours `<tenant>-<type>-<env>@<subdomain>`.
 >* Lorsque l&#39;adresse de réponse est configurée de cette façon, les réponses sont envoyées à une boîte de réception non contrôlée.
 >* Lors de l&#39;envoi d&#39;emails à partir d&#39;Adobe Campaign, la boîte de réception &quot;Adresse d&#39;origine&quot; n&#39;est pas surveillée et les utilisateurs marketing ne peuvent pas accéder à cette boîte de réception. Adobe Campaign n&#39;offre pas non plus la possibilité de répondre automatiquement ou de transférer automatiquement les messages reçus dans cette boîte de réception.
@@ -119,7 +119,7 @@ Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exem
 
 ## Délégation de sous-domaines
 
-Le ou les sous-domaine(s) choisi(s) pour la plateforme Adobe Campaign doivent être délégués à travers la création de quatre enregistrements de serveur de noms.  Cela permet de déléguer correctement le sous-domaine à Adobe.  Vous trouverez ci-dessous un exemple de délégation de sous-domaines et les instructions DNS correspondantes.  Veuillez remplacer &quot;emails.customer.com&quot; par le sous-domaine que vous souhaitez déléguer.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être déjà utilisé par une autre partie (par exemple, un fournisseur de services internet - FAI ou un fournisseur de services gérés - MSP).
+Le ou les sous-domaine(s) choisi(s) pour la plateforme Adobe Campaign doivent être délégués à travers la création de quatre enregistrements de serveur de noms. Cela permet de déléguer correctement le sous-domaine à Adobe.Vous trouverez ci-dessous un exemple de délégation de sous-domaines et les instructions DNS correspondantes.Veuillez remplacer « emails.customer.com » par le sous-domaine que vous souhaitez déléguer. Veuillez noter que le sous-domaine doit être unique et ne peut pas être déjà utilisé par une autre partie (par exemple, un fournisseur de services internet - FAI ou un fournisseur de services gérés - MSP).
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -137,13 +137,13 @@ Une fois que le ou les sous-domaine(s) d&#39;envoi d&#39;email sont correctement
 
 ## Déploiement dans le cloud (facultatif)
 
-Cela ne s&#39;applique que si Adobe Campaign Classic est entièrement hébergé dans le cloud par Adobe.  Il s&#39;agit d&#39;une configuration facultative.
+Cela ne s&#39;applique que si Adobe Campaign Classic est entièrement hébergé dans le cloud par Adobe.  Il s’agit d’une configuration facultative.
 
-Tous les questionnaires, formulaires web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud.  Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l&#39;utiliser pour tous les composants Web de l&#39;outil.  Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
+Tous les questionnaires, formulaires web et pages de destination à développer sont gérés via Adobe Campaign entièrement hébergé dans le cloud. Si nécessaire, un sous-domaine supplémentaire peut être délégué à Adobe (par exemple, web.customer.com) afin de l’utiliser pour tous les composants Web de l’outil. Veuillez noter que le sous-domaine doit être unique et ne peut pas être utilisé par une autre partie (par exemple, un fournisseur de services internet -FAI ou un fournisseur de services gérés - MSP).
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.cacampaign.adobe.com.</br>`<subdomain>` NS b.ns.cacampaign.adobe.com.</br>`<subdomain>` NS c.ns.cacampaign.adobe.com.</br>`<subdomain>` NS d.ns.cacampaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
 
 >[!NOTE]
 >
@@ -157,11 +157,11 @@ Tous les questionnaires, formulaires web et pages de destination à développer 
 
 Une configuration DNS CNAME supplémentaire est requise pour déployer des composants Web externes hébergés par l&#39;instance de marketing Adobe Campaign.  Cela permet aux composants Web (par exemple, web.customer.com) d&#39;être accessibles au public sur Internet et d&#39;être marqués avec le domaine du client.
 
-Les pare-feu devront également être configurés pour autoriser l&#39;accès à l&#39;instance de marketing Adobe Campaign qui héberge ces composants Web (sur le port 80 ou 443).
+Les pare-feu devront également être configurés pour autoriser l’accès à l’instance de marketing Adobe Campaign qui héberge ces composants Web (sur le port 80 ou 443).
 
-**Recommendations concernant les bonnes pratiques :**
+**Recommandations concernant les bonnes pratiques :**
 
-Le sous-domaine qui héberge les composants Web sera visible pour les clients.Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.
+Le sous-domaine qui héberge les composants web sera visible pour les clients. Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.
 S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécurisées (HTTPS), une configuration technique supplémentaire est requise, comme décrit ci-dessous.
 
 | Sous-domaine délégué | Instructions DNS |

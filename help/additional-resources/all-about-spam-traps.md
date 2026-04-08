@@ -7,8 +7,8 @@ activity: understand
 team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
-workflow-type: tm+mt
-source-wordcount: '441'
+workflow-type: ht
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Un [piège à spam](/help/metrics/spam-traps.md) est une adresse valide, qui n&#
 
 Le premier type d&#39;adresse de piège à spam est celui des entreprises de listes bloquées d&#39;adresses IP et de domaines, comme SpamHaus, Sorbs, SpamCop. Ces sociétés ont un immense réseau d&#39;adresses réparties sur diverses pages Internet comme des sites web, des blogs et des forums, ce qui permet à des spammeurs de les collecter.
 
-Le deuxième type de piège à spam se base sur d&#39;anciennes adresses de FAI actives. Ces FAI disposent de leur propre réseau de pièges à spam fondé sur des adresses inactives reconverties en pièges, chaque accès influant sur la réputation de l&#39;adresse IP et du domaine de l&#39;expéditeur.
+Le deuxième type de piège à spam se base sur d’anciennes adresses de FAI actives. Ces FAI disposent de leur propre réseau de pièges à spam fondé sur des adresses inactives reconverties en pièges, chaque accès influant sur la réputation de l’adresse IP et du domaine d’expédition.
 
 ## Comment cela fonctionne-t-il ?
 

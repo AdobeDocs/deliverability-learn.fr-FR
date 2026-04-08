@@ -10,8 +10,8 @@ level: Beginner
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 7e1bd4d4d691e2598770416b002b8eff344cef74
-workflow-type: tm+mt
-source-wordcount: '429'
+workflow-type: ht
+source-wordcount: '461'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Ce guide des bonnes pratiques en matière de délivrabilité aborde les sujets s
 2. [Mesures de délivrabilité](/help/metrics/metrics-overview.md)
 3. [Engagement](/help/engagement.md)
 4. [Processus de transition : changement de plateformes de messagerie](/help/transition-process/switching-email-platforms.md)
-5. [Premières impressions : collecte de listes et emails de bienvenue](/help/first-impressions/address-collection-and-list-growth.md)
+5. [Premières impressions : collecte de listes et e-mails de bienvenue](/help/first-impressions/address-collection-and-list-growth.md)
 6. [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
 7. [Permanence de l&#39;expéditeur](/help/sender-permanence.md)
 8. [Éléments spécifiques aux FAI](/help/internet-service-provider-specifics/overview.md)
@@ -47,7 +47,7 @@ Ce guide des bonnes pratiques en matière de délivrabilité aborde les sujets s
 
 ## Sources
 
-[!DNL Heinz Tschabitscher], [&quot;How Many People Use Email Worldwide?&quot;](https://www.lifewire.com/how-many-email-users-are-there-1171213), Lifewire, 24 juin 2019.
+[!DNL Heinz Tschabitscher], [&quot;How Many People Use Email Worldwide?&quot;](https://www.lifewire.com/how-many-email-users-are-there-1171213), Lifewire, June 24, 2019.
 
 [!DNL Lori Lewis], [« 2019: This Is What Happens in an Internet Minute »](https://www.allaccess.com/merge/archive/29580/2019-this-is-what-happens-in-an-internet-minute), Merge, 5 mars 2019.
 

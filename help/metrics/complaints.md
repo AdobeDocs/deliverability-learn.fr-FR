@@ -9,8 +9,8 @@ activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '276'
+workflow-type: ht
+source-wordcount: '307'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méth
 
 ## Plaintes de tiers
 
-Il existe plusieurs groupes contre les courriers indésirables qui permettent un signalement à un niveau plus large. Les mesures de plainte utilisées par ces tiers servent à marquer le contenu des emails afin d’identifier les emails indésirables. Ce processus est également appelé fingerprinting. Les utilisateurs de ces méthodes de traitement des plaintes de tiers sont généralement plus avisés en ce qui concerne les emails, de sorte qu&#39;ils peuvent avoir un impact plus important que les autres plaintes si elles n&#39;ont pas reçu de réponse.
+Il existe plusieurs groupes contre les courriers indésirables qui permettent un signalement à un niveau plus large. Les mesures de plainte utilisées par ces tiers servent à marquer le contenu des emails afin d’identifier les emails indésirables. Ce processus est également appelé pistage par empreinte numérique ou « fingerprinting ». Les utilisateurs de ces méthodes de traitement des plaintes de tiers sont généralement plus avisés en ce qui concerne les emails, de sorte qu&#39;ils peuvent avoir un impact plus important que les autres plaintes si elles n&#39;ont pas reçu de réponse.
 
 >[!NOTE]
 >

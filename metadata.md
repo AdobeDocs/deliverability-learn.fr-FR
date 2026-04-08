@@ -5,18 +5,18 @@ feature-set: Campaign, Journey Optimizer, Marketo Engage
 solution: Experience Cloud, Campaign, Marketo Engage
 type: Tutorial
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/deliverability-learn.fr-FR
+git-repo: https://github.com/AdobeDocs/deliverability-learn.en
 index: true
 source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '71'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Métadonnées à usage interne
 
-Le fichier metadata.md comprend des métadonnées au niveau du référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier du contenu metadata.md pour n’importe quel guide de l’utilisateur, effectuez vos modifications dans n’importe quel fichier TOC.md.
+Le fichier metadata.md inclut des métadonnées au niveau du référentiel qui sont transmises aux fichiers TOC.md du guide utilisateur dans le référentiel.Si vous souhaitez modifier le contenu de metadata.md pour un guide utilisateur, faites-le dans n’importe quel fichier TOC.md.
 
-Consultez [Métadonnées](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=en) pour obtenir une liste de valeurs valides pour **solution**, **produit** et **type**.
+Consultez [ Métadonnées ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=fr) pour une liste des valeurs valides pour **solution**, **produit** et **type**

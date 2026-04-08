@@ -9,8 +9,8 @@ activity: understand
 team: ACS
 exl-id: ffacc1b1-bf3f-466e-9a1d-63aad4d2ec45
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '416'
+workflow-type: ht
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Il existe des pièges de courriers indésirables qui permettent d’identifier l
 
 Les pièges de courriers indésirables recyclés sont des adresses qui étaient autrefois valides mais qui ne sont plus utilisées. L’un des principaux moyens pour garder les listes aussi propres que possible est d’envoyer régulièrement des e-mails à votre liste entière et de supprimer de manière appropriée les e-mails rejetés. Cela permet de mettre en quarantaine les adresses email abandonnées et de les empêcher d&#39;être utilisées.
 
-Dans certains cas, une adresse peut être recyclée sous 30 jours. L&#39;envoi régulier est un aspect essentiel d&#39;une bonne hygiène des listes, avec la suppression régulière des utilisateurs inactifs. Les **campagnes de réengagement** font généralement partie de programmes sophistiqués de marketing par email. Ce style de campagne permet à l’expéditeur de tenter de récupérer des utilisateurs qui autrement ne feraient plus l&#39;objet d&#39;envois d&#39;emails.
+Dans certains cas, une adresse peut être recyclée sous 30 jours. L’envoi régulier est un aspect essentiel d’une bonne hygiène de liste, tout comme la suppression régulière des utilisateurs ou utilisatrices inactifs. **Les campagnes de réengagement** font généralement partie des programmes d’e-mail marketing sophistiqués.Ce style de campagne permet à l’expéditeur de tenter de récupérer des utilisateurs qui autrement ne feraient plus l&#39;objet d&#39;envois d&#39;emails.
 
 ## Coquille
 
@@ -42,10 +42,10 @@ Un piège de courriers indésirables intact est une adresse qui n&#39;a pas d&#3
 
 **Adobe Campaign Classic**
 
-* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=fr-FR#using-spamassassin)
-* [Création d’un formulaire d’abonnement avec double opt-in](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=fr-FR#create-a-subscription--form-with-double-opt-in)
+* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=fr#using-spamassassin)
+* [Créer un formulaire d’abonnement avec double opt-in](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=fr-FR#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [Prévisualisation de votre analyse email et anti-spam](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=fr#designing-content)
+* [Aperçu de votre analyse e-mail et anti-spam](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=fr#designing-content)
 * [Processus de double opt-in](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=fr#communication-channels)
