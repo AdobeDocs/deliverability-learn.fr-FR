@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: Admin
 level: Beginner
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: e1a2c58e92da00186d91c7acfd8fd7300133a51c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 51%
+source-wordcount: '467'
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 51%
 
 ## Contexte{#outage-context}
 
-Depuis le 22 janvier (heure locale), Italia Online a subi une panne qui a entraîné plusieurs retards et refusé les emails. Le service a commencé à reprendre avec une capacité limitée le 26 janvier.
+Depuis le 22 janvier (heure locale), une panne d’Italia Online a entraîné plusieurs retards et le rejet d’e-mails. Le service a commencé à reprendre avec une capacité limitée le 26 janvier.
 
 Les domaines concernés étaient les suivants : **libero.it**, **virgilio.it**, **inwind.it**, **iol.it** et **blu.it**.
 
@@ -29,11 +29,11 @@ En savoir plus dans la communication officielle [ici](https://tecnologia.libero.
 
 ## Impact{#outage-impact}
 
-Comme dans la plupart des cas, lorsqu’un fournisseur d’accès Internet (FAI) est en panne, certains emails envoyés via Campaign ou Journey Optimizer sont marqués à tort comme des bounces. Cette panne n’a pas seulement eu un impact sur Adobe, mais aussi sur tous ceux qui essayaient d’envoyer des e-mails sur Italia Online pendant la durée de la panne.
+Comme dans la plupart des cas lorsqu’un fournisseur d’accès à Internet (FAI) est en panne, certains e-mails envoyés via Campaign ou Journey Optimizer ont été incorrectement marqués comme des bounces. Cette panne n’a pas seulement eu un impact sur Adobe, mais aussi sur tous ceux qui essayaient d’envoyer des e-mails sur Italia Online pendant la durée de la panne.
 
 Les symptômes étaient les suivants :
 
-* **Soft bounces** avec le message `452 requested action aborted: try again later` : ils ont été automatiquement repris et aucune action n’est nécessaire.
+* **Soft bounces** avec le message `452 requested action aborted: try again later` : ils ont fait automatiquement l’objet de reprises et aucune action n’était nécessaire.
 
 * Des **rebonds définitifs** avec le message `550 <email address> recipient rejected` ont été retournés par le FAI le 26 janvier, entre 8 h et 14 h, heure locale, pour éviter que les expéditeurs et les expéditrices ne continuent à surcharger leurs serveurs. Comme l’a confirmé le Postmaster d’Italia Online, il ne s’agit pas de véritables rebonds définitifs. Nous recommandons donc de retirer de la quarantaine toutes les adresses e-mail qui ont été exclues le 26 janvier 2023 en raison de ce message.
 
@@ -43,16 +43,16 @@ Les symptômes étaient les suivants :
 
 Selon la logique standard de gestion des rebonds, Adobe Campaign a automatiquement ajouté ces destinataires à la liste de quarantaine avec un paramètre **[!UICONTROL Statut]** de **[!UICONTROL Quarantaine]**. Pour corriger ce problème, vous devez mettre à jour votre table de quarantaines dans Campaign en recherchant et en supprimant ces destinataires ou en basculant leur **[!UICONTROL Statut]** sur **[!UICONTROL Valide]** afin que le processus de nettoyage de nuit les supprime.
 
-Pour trouver les destinataires qui ont été affectés par ce problème, ou au cas où cela se reproduirait avec un autre FAI, veuillez consulter les instructions ci-dessous :
+Pour trouver les destinataires qui ont été affectés par ce problème, ou au cas où cela se reproduirait avec un autre FAI, consultez les instructions ci-dessous :
 
-* Pour Campaign Classic v7 et Campaign v8, reportez-vous à [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=fr#unquarantine-bulk){_blank}.
-* Pour le Campaign Standard, reportez-vous à [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr#unquarantine-bulk){_blank}.
+* Pour Campaign Classic v7 et Campaign v8, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Pour Campaign Standard, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
-Selon la logique standard de gestion des bounces, Adobe Journey Optimizer a automatiquement ajouté ces adresses électroniques à la liste de suppression avec un paramètre **[!UICONTROL Reason]** de **[!UICONTROL Destinataire non valide]**. Pour corriger ce problème, vous devez mettre à jour la liste de suppression en recherchant et en supprimant ces adresses électroniques.
+Selon la logique standard de gestion des bounces, Adobe Journey Optimizer a automatiquement ajouté ces adresses e-mail à la liste de suppression avec un paramètre **[!UICONTROL Raison]** de **[!UICONTROL Destinataire non valide]**. Pour corriger ce problème, vous devez mettre à jour la liste de suppression en recherchant et en supprimant ces adresses e-mail.
 
-Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du bouton **[!UICONTROL Supprimer]** . Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
+Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du bouton **[!UICONTROL Supprimer]**. Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
 
-En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=fr#remove-from-suppression-list){_blank}.
+En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
