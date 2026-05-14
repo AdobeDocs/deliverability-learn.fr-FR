@@ -1,6 +1,6 @@
 ---
-title: 'Premières impressions : collecte de listes et e-mails de bienvenue'
-description: Découvrez comment vous configurer pour exécuter un programme de messagerie performant en donnant une bonne première impression.
+title: 'Premières impressions : collecte de listes et emails de bienvenue.'
+description: Découvrez comment vous préparer à l’exécution d’un programme d’e-mail réussi en faisant bonne impression.
 topics: Deliverability
 jira: KT-5258
 thumbnail: kt5258.jpg
@@ -8,19 +8,31 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: 3dc3528b-13c8-4d18-afe1-b647bc5f8082
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+TQID: https://experienceleague.adobe.com/W3-BNKyDVwl8aSlzrkmX-lwyxVeql6Y00cpzdLpbsuY
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: 168
 ht-degree: 4%
 
 ---
 
-# Premières impressions : collecte de listes et emails de bienvenue
+# Premières impressions : collecte de listes et e-mails de bienvenue
 
-Quand on cherche à construire une nouvelle relation, il est essentiel de faire une bonne première impression. Sans cela, rien d&#39;autre que vous dites ou faites ne pourrait avoir une chance. La relation entre une marque et ceux qui choisissent d&#39;interagir avec elle n&#39;est pas différente. Tout commence quelque part. Et lorsqu&#39;il s&#39;agit d&#39;exécuter un programme de messagerie, il commence par collecter des adresses électroniques et accueillir ces abonnés à votre programme. Découvrez comment vous configurer pour exécuter un programme de messagerie performant en donnant une bonne première impression dans ces zones.
+Lorsque vous cherchez à construire une nouvelle relation, faire une bonne première impression est crucial. Sans cela, rien de ce que vous direz ou ferez ne se verra accorder une chance. La relation entre une marque et ceux qui choisissent d&#39;interagir avec elle n&#39;est pas différente. Tout commence quelque part. Et lorsqu’il s’agit d’exécuter un programme de messagerie, il commence par collecter des adresses e-mail et par souhaiter la bienvenue aux abonnés de votre programme. Découvrez comment vous préparer à l’exécution d’un programme d’e-mail réussi en faisant bonne impression dans ces domaines.
 
-Étape 1 : [Collecte d’adresses et croissance de listes](/help/first-impressions/address-collection-and-list-growth.md) :
-*Découvrez les meilleures sources pour les nouvelles adresses électroniques, comment garantir une qualité de données élevée et s’aligner sur les directives légales.*
+Étape 1 : [collecte d&#39;adresses et croissance de la liste](/help/first-impressions/address-collection-and-list-growth.md) :
+*Découvrez les meilleures sources d’adresses e-mail, comment garantir une qualité élevée des données et l’alignement sur les directives juridiques.*
 
-Étape 2 : [Bienvenue dans les emails](/help/first-impressions/welcome-emails.md) :
-*Identifiez les éléments clés à prendre en compte lors de la création de vos emails de bienvenue.*
+Etape 2 : [Emails de bienvenue](/help/first-impressions/welcome-emails.md) :
+*Identifiez les éléments clés à prendre en compte lors de la création de vos e-mails de bienvenue.*

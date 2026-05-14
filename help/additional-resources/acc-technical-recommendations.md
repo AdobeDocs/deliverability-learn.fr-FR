@@ -6,10 +6,42 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
+TQID: https://experienceleague.adobe.com/Y58eIzSpKUV-B-MiQ-6KNkk31tg1M6Bg27ZqGv-DESc
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: d1d0a9cd-295d-4976-8c39-ddae266f240e
+  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+  - id: f82558ea-6af5-44eb-a424-5b3389abb0a3
+  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+subfeature_v2:
+  - id: b75843fa-0a67-4a44-a6b1-cc627b0481dc
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 41%
+source-wordcount: 2232
+ht-degree: 29%
 
 ---
 
@@ -23,7 +55,7 @@ Vous trouverez ci-dessous plusieurs techniques, configurations et outils que vou
 
 Adobe Campaign vérifie qu’un reverse DNS est bien renseigné pour une adresse IP et que celui-ci reboucle bien sur l’IP.
 
-Un point indispensable de la configuration réseau est d&#39;avoir établi un reverse DNS correct pour chacune des adresses IP d&#39;envoi. Cela signifie que pour une adresse IP donnée, il existe un enregistrement reverse DNS (enregistrement PTR) dont la correspondance DNS (enregistrement A) reboucle sur l&#39;adresse IP initiale.
+Un point important de la configuration réseau est de s’assurer qu’un reverse DNS correct est défini pour chacune des adresses IP des messages sortants. Cela signifie que pour une adresse IP donnée, il existe un enregistrement DNS inversé (enregistrement PTR) avec un DNS correspondant (enregistrement A) qui reboucle sur l’adresse IP initiale.
 
 Le choix du domaine pour un reverse DNS a une incidence lorsque vous traitez avec certains FAI. AOL, en particulier, n’accepte que les feedback loops dont l’adresse appartient au même domaine que le reverse DNS (voir la section [Feedback loop](#feedback-loop)).
 
@@ -35,20 +67,19 @@ Le choix du domaine pour un reverse DNS a une incidence lorsque vous traitez ave
 
 Les règles MX (Mail eXchanger) correspondent aux règles de gestion de communication entre un serveur expéditeur et un serveur destinataire.
 
-Plus précisément, elles servent à contrôler la vitesse à laquelle le MTA (Message Transfer Agent) Adobe Campaign envoie les emails à chaque domaine d’email ou FAI (par exemple, hotmail.com, comcast.net). Ces règles sont généralement basées sur les limites publiées par les FAI (par exemple, ne pas inclure plus de 20 messages par connexion SMTP).
+Plus précisément, ils sont utilisés pour contrôler la vitesse à laquelle le MTA (Message Transfer Agent) d&#39;Adobe Campaign envoie des e-mails à chaque domaine de messagerie ou FAI individuel (par exemple, hotmail.com, comcast.net). Ces règles sont généralement basées sur les limites publiées par les FAI (par exemple, n’incluez pas plus de 20 messages par connexion SMTP).
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#mx-configuration).
+>Pour plus d’informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#mx-configuration).
 
 ### TLS {#tls}
 
-
 (Transport Layer Security) est un protocole de cryptage qui peut être utilisé pour sécuriser la connexion entre deux serveurs de messagerie et empêcher la lecture du contenu d’un email par une autre personne que le destinataire prévu.
 
-### Domaine de l’expéditeur {#sender-domain}
+### Domaine de l&#39;expéditeur {#sender-domain}
 
-Pour définir le domaine utilisé pour la commande HELO, éditez le fichier de configuration de l&#39;instance (conf/config-instance.xml) et définissez un attribut &quot;localDomain&quot; comme suit :
+Pour définir le domaine utilisé pour la commande HELO, modifiez le fichier de configuration de l’instance (conf/config-instance.xml) et définissez un attribut « localDomain » comme suit :
 
 ```
 <serverConf>
@@ -58,22 +89,22 @@ Pour définir le domaine utilisé pour la commande HELO, éditez le fichier de c
 </serverConf>
 ```
 
-Le domaine MAIL FROM est le domaine utilisé dans les messages techniques rebonds. Cette adresse est définie dans l&#39;assistant de déploiement ou via l&#39;option NmsEmail_DefaultErrorAddr .
+Le domaine MAIL FROM est le domaine utilisé dans les messages de rebond techniques. Cette adresse est définie dans l&#39;assistant de déploiement ou via l&#39;option NmsEmail_DefaultErrorAddr .
 
 ### Enregistrement SPF {#dns-configuration}
 
-Un enregistrement SPF peut actuellement être défini sur un serveur DNS comme un enregistrement de type TXT (code 16) ou un enregistrement de type SPF (code 99). Un enregistrement SPF prend la forme d’une chaîne de caractères. Par exemple :
+Un enregistrement SPF peut actuellement être défini sur un serveur DNS comme un enregistrement de type TXT (code 16) ou un enregistrement de type SPF (code 99). Un enregistrement SPF se présente sous la forme d&#39;une chaîne de caractères. Par exemple :
 
 ```
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des emails pour le domaine. **~all** signifie que toute autre adresse doit être interprétée comme un SoftFail.
+définit les deux adresses IP, 12.34.56.78 et 12.34.56.79, comme autorisées à envoyer des e-mails pour le domaine. **~all** signifie que toute autre adresse doit être interprétée comme un SoftFail.
 
-Recommendations pour définir un enregistrement SPF :
+Recommandations pour définir un enregistrement SPF :
 
-* Ajoutez **~all** (SoftFail) ou **-all** (Échec) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs seront en mesure de forger ce domaine (avec une évaluation Neutre).
-* N’ajoutez pas **ptr** (openspf.org recommande de ne pas le définir comme coûteux et peu fiable).
+* Ajoutez **~all** (SoftFail) ou **-all** (Fail) à la fin pour rejeter tous les serveurs autres que ceux définis. Sans cela, les serveurs pourront forger ce domaine (avec une évaluation neutre).
+* N’ajoutez pas le **ptr** (openspf.org recommande de ne pas l’ajouter car cela serait coûteux et peu fiable).
 
 >[!NOTE]
 >
@@ -83,25 +114,25 @@ Recommendations pour définir un enregistrement SPF :
 
 >[!NOTE]
 >
->Pour en savoir plus sur les différentes formes d&#39;authentification des emails, consultez [cette section](/help/additional-resources/authentication.md).
+>Pour en savoir plus sur les différentes formes d’authentification des e-mails, consultez [cette section](/help/additional-resources/authentication.md).
 
 ### DKIM {#dkim-acc}
 
 >[!NOTE]
 >
->Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=fr#sending-messages), la signature de l’authentification des emails DKIM est effectuée par celui-ci pour tous les messages et domaines.
+>Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), la signature de l’authentification des e-mails DKIM est effectuée par celui-ci pour tous les messages et domaines.
 
-L’utilisation de [DKIM](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert les conditions préalables suivantes :
+L&#39;utilisation de [&#128279;](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert la condition préalable suivante :
 
-**Déclaration d’option Adobe Campaign** : dans Adobe Campaign, la clé privée DKIM est basée sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec des sélecteurs différents. Il n&#39;est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l&#39;authentification, ni dans la plateforme, ni dans l&#39;email. La plateforme sélectionnera également l’une des clés privées, ce qui signifie que l’authentification a de grandes chances d’échouer.
+**déclaration d&#39;option Adobe Campaign** : dans Adobe Campaign, la clé privée DKIM repose sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec différents sélecteurs. Il n’est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l’authentification dans la plateforme ou l’e-mail. La plateforme choisira également l’une des clés privées, ce qui signifie que l’authentification a un risque élevé d’échec.
 
-* Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=fr#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/clé publique) que pour DomainKeys (qui a remplacé DKIM).
+* Si vous avez configuré DomainKeys pour votre instance Adobe Campaign, vous devez simplement sélectionner **dkim** dans les [règles de gestion des domaines](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Dans le cas contraire, suivez les mêmes étapes de configuration (clé privée/publique) que pour DomainKeys (qui a remplacé DKIM).
 * Il est inutile d&#39;activer DomainKeys et DKIM pour un même domaine, DKIM étant une version améliorée de DomainKeys.
 * Les domaines validant actuellement DKIM sont les suivants : AOL, Gmail.
 
 ## Feedback loop {#feedback-loop-acc}
 
-Une boucle de rétroaction fonctionne en déclarant au niveau du FAI une adresse e-mail donnée pour une plage d’adresses IP utilisées pour l’envoi de messages. Le FAI enverra à cette boîte de réception, de la même manière que pour les messages de rebond, ces messages qui sont signalés par les destinataires comme spam. La plateforme doit être configurée pour bloquer les futures diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s’ils n’ont pas utilisé le lien d’opt-out approprié. C’est sur la base de ces plaintes qu’un FAI ajoutera une adresse IP à sa liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
+Une boucle de rétroaction fonctionne en déclarant au niveau du FAI une adresse e-mail donnée pour une plage d’adresses IP utilisées pour l’envoi des messages. Le FAI enverra à cette boîte aux lettres, de la même manière que pour les messages de rebond, les messages signalés par les destinataires comme spam. La plateforme doit être configurée de manière à bloquer les prochaines diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s&#39;ils n&#39;ont pas utilisé le lien d&#39;opt-out approprié. C&#39;est en fonction de ces plaintes qu&#39;un FAI ajoutera une adresse IP à sa place sur la liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
 
 Un standard est en cours d’établissement pour définir le format des messages de feedback loop : l’[ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -115,7 +146,7 @@ La mise en œuvre d’une feedback loop simple dans Adobe Campaign fait appel �
 * Créez ou adaptez une règle de mails rebonds **Feedback_loop** dans **[!UICONTROL Administration>Gestion de campagne>Gestion des NP@I>Jeux de règles mail]** avec la raison **Refusé** et le type **Hard**.
 * Si une boîte a été définie spécialement pour la feedback loop, définissez les paramètres pour relever son contenu en créant un nouveau compte externe de type Mails rebonds dans **[!UICONTROL Administration>Plateforme>Comptes externes]**.
 
-Le mécanisme est immédiatement opérationnel pour traiter les notifications de plaintes. Pour vérifier le bon fonctionnement de la règle, vous pouvez temporairement désactiver les comptes afin qu&#39;ils ne relèvent pas ces messages, puis vérifier le contenu de la boîte de feedback loop manuellement. Sur le serveur, exécutez les commandes suivantes :
+Le mécanisme est immédiatement opérationnel pour traiter les notifications de plaintes. Pour vous assurer que cette règle fonctionne correctement, vous pouvez temporairement désactiver les comptes afin qu&#39;ils ne collectent pas ces messages, puis vérifier manuellement le contenu de la boîte de feedback loop. Sur le serveur, exécutez les commandes suivantes :
 
 ```
 nlserver stop inMail@instance,
@@ -140,61 +171,61 @@ Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux ser
 
 L&#39;ajout d&#39;un en-tête SMTP appelé **List-Unsubscribe** est obligatoire pour une gestion optimale de la délivrabilité.
 
-Cet en-tête peut être utilisé comme alternative à l’icône &quot;Signaler comme SPAM&quot;. Il s’affiche sous la forme d’un lien &quot;Se désabonner&quot; dans les interfaces de messagerie des FAI.
+Cet en-tête peut être utilisé comme alternative à l&#39;icône « Signaler comme SPAM ». Il s’affiche sous la forme d’un lien « Se désabonner » dans les interfaces de messagerie des FAI.
 
-L’utilisation de cette fonctionnalité réduit les taux de plaintes et contribue à protéger votre réputation. Les commentaires seront exécutés comme un désabonnement.
+L’utilisation de cette fonctionnalité réduit les taux de plainte et contribue à protéger votre réputation. Les commentaires seront exécutés sous forme de désabonnement.
 
-Gmail, Outlook.com, Yahoo! et Microsoft Outlook prennent en charge cette méthode. Un lien &quot;Se désabonner&quot; est disponible directement dans leur interface. Par exemple :
+Gmail, Outlook.com, Yahoo ! et Microsoft Outlook prennent en charge cette méthode. Un lien « Se désabonner » est disponible directement dans leur interface. Par exemple :
 
-![image](../assets/List-Unsubscribe-example-Gmail.png)
+![Image](../assets/List-Unsubscribe-example-Gmail.png)
 
 >[!NOTE]
 >
->Le lien &quot;Se désabonner&quot; peut ne pas toujours être affiché. En effet, elle peut dépendre de critères et de politiques spécifiques de chaque FAI. Par conséquent, assurez-vous que vos messages sont envoyés par un expéditeur :
+>Le lien « Se désabonner » ne s’affiche pas toujours. En effet, cela peut dépendre des critères et de la politique spécifiques de chaque FAI. Par conséquent, assurez-vous que vos messages sont envoyés par un expéditeur :
 >
->* Bonne réputation
->* Sous le seuil de plainte pour spam des FAI
+>* Avec une bonne réputation
+>* Sous le seuil de plainte contre le spam des FAI
 >* Entièrement authentifié
 
-Il existe deux versions de la fonctionnalité d’en-tête List-Unsubscribe :
+Il existe deux versions de la fonctionnalité d&#39;en-tête List-Unsubscribe :
 
-* **&quot;mailto&quot; List-Unsubscribe** - Avec cette méthode, cliquer sur le lien **Se désabonner** envoie un courrier électronique prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de courrier électronique. [En savoir plus](#mailto-list-unsubscribe)
+* **« mailto » List-Unsubscribe** - Avec cette méthode, le fait de cliquer sur le lien **Unsubscribe** envoie un e-mail prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’e-mail. [En savoir plus](#mailto-list-unsubscribe)
 
-* **&quot;One-Click&quot; List-Unsubscribe** - Avec cette méthode, cliquer sur le lien **Unsubscribe** désabonne directement l’utilisateur. [En savoir plus](#one-click-list-unsubscribe)
+* **List-Unsubscribe « en un clic »** : cette méthode permet de désabonner directement l’utilisateur en cliquant sur le lien **Unsubscribe**. [En savoir plus](#one-click-list-unsubscribe)
 
 >[!NOTE]
 >
->À compter du 1er juin 2024, les principaux fournisseurs de services Internet exigeront que les expéditeurs se conforment à la **List-Unsubscribe en un clic**.
+>À compter du 1er juin 2024, les principaux FAI exigeront des expéditeurs qu&#39;ils se conforment à la **List-Unsubscribe en un clic**.
 
-### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
+### List-Unsubscribe « mailto » {#mailto-list-unsubscribe}
 
-Avec cette méthode, cliquez sur le lien **Se désabonner** pour envoyer un email prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’email.
+Avec cette méthode, cliquer sur le lien **Se désabonner** envoie un e-mail prérempli à l’adresse de désabonnement spécifiée dans l’en-tête de l’e-mail.
 
-Pour utiliser &quot;mailto&quot; List-Unsubscribe, vous devez saisir une ligne de commande où vous spécifiez une adresse email, par exemple : `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
+Pour utiliser List-Unsubscribe « mailto », vous devez saisir une ligne de commande dans laquelle vous spécifiez une adresse e-mail, telle que : `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
->L&#39;exemple ci-dessus est basé sur la table des destinataires. Si l&#39;implémentation de la base de données est faite à partir d&#39;une autre table, pensez à reformuler la ligne de commande avec l&#39;information correcte.
+>L’exemple ci-dessus est basé sur la table des destinataires. Si l’implémentation de la base de données est effectuée à partir d’une autre table, veillez à reformuler la ligne de commande avec les informations correctes.
 
-Vous pouvez également créer un List-Unsubscribe &quot;mailto&quot; dynamique en utilisant une ligne de commande telle que : `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+Vous pouvez également créer un List-Unsubscribe dynamique « mailto » à l’aide d’une ligne de commande telle que : `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-Pour implémenter **&quot;mailto&quot; List-Unsubscribe** dans Campaign, vous pouvez :
+Pour implémenter **List-Unsubscribe « mailto »** dans Campaign, vous pouvez effectuer l’une des opérations suivantes :
 
-* Ajoutez directement la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#adding-a-command-line-in-a-delivery-template)
+* Ajouter directement la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#adding-a-command-line-in-a-delivery-template)
 
-* Créer une règle de typologie - [Découvrez comment &#x200B;](#creating-a-typology-rule)
+* Créer une règle de typologie - [Découvrez comment](#creating-a-typology-rule)
 
 #### Ajouter une ligne de commande dans une diffusion ou un modèle {#adding-a-command-line-in-a-delivery-template}
 
-La ligne de commande doit être ajoutée dans la section **[!UICONTROL En-têtes SMTP supplémentaires]** de l&#39;en-tête SMTP de l&#39;email.
+La ligne de commande doit être ajoutée dans la section **[!UICONTROL En-têtes SMTP supplémentaires]** de l’en-tête SMTP de l’e-mail.
 
-Cet ajout peut se faire dans chaque email, ou dans les modèles de diffusion existants. Vous pouvez aussi créer un nouveau modèle de diffusion qui inclue cette fonctionnalité.
+Cet ajout peut être effectué dans chaque e-mail ou dans les modèles de diffusion existants. Vous pouvez également créer un modèle de diffusion intégrant cette fonctionnalité.
 
-Par exemple, saisissez le script suivant dans le champ **[!UICONTROL En-têtes SMTP supplémentaires]** : `List-Unsubscribe: mailto:unsubscribe@domain.com`. Cliquer sur le lien **unsubscribe** envoie un courrier électronique à l’adresse unsubscribe@domain.com.
+Par exemple, saisissez le script suivant dans le champ **[!UICONTROL En-têtes SMTP supplémentaires]** : `List-Unsubscribe: mailto:unsubscribe@domain.com`. Cliquez sur le lien **se désabonner** pour envoyer un e-mail à l’adresse unsubscribe@domain.com.
 
 Vous pouvez également utiliser une adresse dynamique. Par exemple, pour envoyer un email à l&#39;adresse d&#39;erreur définie pour la plateforme, vous pouvez utiliser le script suivant : `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-![image](../assets/List-Unsubscribe-template-SMTP.png)
+![Image](../assets/List-Unsubscribe-template-SMTP.png)
 
 #### Créer une règle de typologie {#creating-a-typology-rule}
 
@@ -204,34 +235,34 @@ Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dan
 
 >[!NOTE]
 >
->Nous vous recommandons de créer une règle de typologie : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque email à l&#39;aide de cette règle de typologie.
+>Nous vous recommandons de créer une règle de typologie : la fonctionnalité List-Unsubscribe sera automatiquement ajoutée à chaque e-mail à l&#39;aide de cette règle de typologie.
 
-### Liste-Unsubscribe en un clic {#one-click-list-unsubscribe}
+### List-Unsubscribe En Un Clic {#one-click-list-unsubscribe}
 
-Avec cette méthode, cliquer sur le lien **Se désabonner** désabonne directement l’utilisateur, ne demandant qu’une seule action pour se désabonner.
+Avec cette méthode, cliquer sur le lien **Se désabonner** désabonne directement l’utilisateur ou l’utilisatrice, ne nécessitant qu’une seule action pour se désabonner.
 
-À compter du 1er juin 2024, les principaux fournisseurs de services Internet exigeront que les expéditeurs se conforment à la **List-Unsubscribe en un clic**.
+À compter du 1er juin 2024, les principaux FAI exigeront des expéditeurs qu&#39;ils se conforment à la **List-Unsubscribe en un clic**.
 
 Pour se conformer à cette exigence, les expéditeurs doivent :
 
 * Ajoutez la ligne de commande suivante : `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
-* Incluez un lien de désabonnement d’URI.
-* Prise en charge de la réception de la réponse du POST HTTP par le récepteur, prise en charge par Adobe Campaign. Vous pouvez également utiliser un service externe.
+* Incluez un lien de désabonnement URI.
+* Prise en charge de la réception de la réponse HTTP POST du destinataire, prise en charge par Adobe Campaign. Vous pouvez également utiliser un service externe.
 
-Pour prendre en charge la réponse du POST Unsubscribe-List en un clic directement dans Adobe Campaign v7/v8, vous devez ajouter dans l&#39;application web &quot;No-click&quot; (Désabonner les destinataires sans clic). Pour ce faire, procédez comme suit :
+Pour prendre en charge la réponse POST de désabonnement en un clic List-Unsubscribe directement dans Adobe Campaign v7/v8, vous devez ajouter dans l’application web « Pas de clic pour les destinataires du désabonnement ». Pour ce faire, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Applications Web]**.
+1. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL En ligne]** > **[!UICONTROL Applications Web]**.
 
-1. Téléchargez le fichier [XML](/help/assets/WebAppUnsubNoClick.xml.zip) de &quot;Désabonner les destinataires sans clic&quot;.
+1. Chargez le fichier [XML](/help/assets/WebAppUnsubNoClick.xml.zip) « Ne cliquez pas sur les destinataires désabonnés ».
 
-Pour configurer **Unsubscribe-List-One-Click** dans Campaign, vous pouvez effectuer l’une des opérations suivantes :
+Pour configurer **List-Unsubscribe en un clic** dans Campaign, vous pouvez effectuer l’une des opérations suivantes :
 
-* Ajoutez la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#one-click-delivery-template)
-* Créer une règle de typologie - [Découvrez comment &#x200B;](#one-click-typology-rule)
+* Ajouter la ligne de commande dans la diffusion ou le modèle de diffusion - [Découvrez comment](#one-click-delivery-template)
+* Créer une règle de typologie - [Découvrez comment](#one-click-typology-rule)
 
-#### Configuration de la liste en un clic - Désabonner dans la diffusion ou le modèle {#one-click-delivery-template}
+#### Configuration du désabonnement de la liste en un clic dans la diffusion ou le modèle {#one-click-delivery-template}
 
-Pour paramétrer le Unsubscribe de type Liste en un clic dans la diffusion ou le modèle de diffusion, procédez comme suit.
+Pour configurer List-Unsubscribe en un clic dans la diffusion ou le modèle de diffusion, procédez comme suit.
 
 1. Accédez à la section **[!UICONTROL SMTP]** des propriétés de la diffusion.
 
@@ -244,29 +275,29 @@ List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
-![image](../assets/List-Unsubscribe-1-click-template-SMTP.png)
+![Image](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
-L’exemple ci-dessus permettra l’option Unsubscribe de liste en un clic pour les FAI qui prennent en charge l’option Un clic, tout en s’assurant que les destinataires qui ne prennent pas en charge &quot;mailto&quot; peuvent toujours demander le désabonnement par courrier électronique.
+L’exemple ci-dessus active le désabonnement de liste en un clic pour les FAI qui prennent en charge le clic en un seul clic, tout en s’assurant que les destinataires qui ne prennent pas en charge « mailto » peuvent toujours demander un désabonnement par e-mail.
 
-#### Création d&#39;une règle de typologie pour la prise en charge du Unsubscribe comme liste en un clic {#one-click-typology-rule}
+#### Création d’une règle de typologie pour la prise en charge du désabonnement de listes en un clic {#one-click-typology-rule}
 
-Pour configurer le désabonnement à la liste en un clic à l’aide d’une règle de typologie, procédez comme suit.
+Pour configurer List-Unsubscribe en un clic à l’aide d’une règle de typologie, procédez comme suit.
 
 1. Dans l’arborescence de navigation, accédez à **[!UICONTROL Règles de typologie]** et cliquez sur **[!UICONTROL Nouveau]**.
 
-   ![image](../assets/CreatingTypologyRules1.png)
+   ![Image](../assets/CreatingTypologyRules1.png)
 
 
-1. Configurez la nouvelle règle de typologie, par exemple :
+1. Configurez la nouvelle règle de typologie, telle que :
 
    * **[!UICONTROL Type de règle]** : **[!UICONTROL Contrôle]**
    * **[!UICONTROL Phase]** : **[!UICONTROL Au début du ciblage]**
-   * **[!UICONTROL Canal]** : **[!UICONTROL Email]**
+   * **[!UICONTROL Canal]** : **[!UICONTROL E-mail]**
    * **[!UICONTROL Level]** : votre choix
    * **[!UICONTROL Actif]**
 
 
-   ![image](../assets/CreatingTypologyRules2.png)
+   ![Image](../assets/CreatingTypologyRules2.png)
 
 1. Codez le javascript de la règle de typologie comme dans l’exemple ci-dessous.
 
@@ -275,8 +306,8 @@ Pour configurer le désabonnement à la liste en un clic à l’aide d’une rè
    >Le code décrit ci-dessous doit être référencé à titre d’exemple uniquement.
 
    Cet exemple illustre comment :
-   * Configurez un List-Unsubscribe &quot;mailto&quot;. Il ajoute les en-têtes ou ajoute les paramètres &quot;mailto:&quot; existants et les remplace par : &lt;mailto..>, https://....
-   * Ajoutez dans l’en-tête List-Unsubscribe en un clic. Il utilise `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+   * Configurez un List-Unsubscribe « mailto ». Elle ajoute les en-têtes ou ajoute les paramètres « mailto: » existants et les remplace par : &lt;mailto..>, https://...
+   * Ajoutez dans l’en-tête List-Unsubscribe en un clic . Il utilise `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
 
    >[!NOTE]
    >
@@ -378,41 +409,41 @@ Pour configurer le désabonnement à la liste en un clic à l’aide d’une rè
    ```
 
 
-   ![image](../assets/CreatingTypologyRules3.png)
+   ![Image](../assets/CreatingTypologyRules3.png)
 
-1. Ajoutez la nouvelle règle à une typologie s&#39;appliquant aux emails.
+1. Ajoutez votre nouvelle règle à une typologie s’appliquant aux e-mails.
 
    >[!NOTE]
    >
    >Vous pouvez l’ajouter à la typologie par défaut.
 
-   ![image](../assets/CreatingTypologyRules4.png)
+   ![Image](../assets/CreatingTypologyRules4.png)
 
 1. Préparez une nouvelle diffusion.
 
    >[!CAUTION]
    >
-   >Vérifiez que le champ **[!UICONTROL En-têtes SMTP supplémentaires]** des propriétés de la diffusion est vide.
+   >Vérifiez que le champ **[!UICONTROL En-têtes SMTP supplémentaires]** dans les propriétés de la diffusion est vide.
 
-   ![image](../assets/CreatingTypologyRules5.png)
+   ![Image](../assets/CreatingTypologyRules5.png)
 
-1. Vérifiez, lors de la préparation de la diffusion, que votre nouvelle règle de typologie est appliquée.
+1. Vérifiez lors de la préparation de la diffusion que votre nouvelle règle de typologie est appliquée.
 
-   ![image](../assets/CreatingTypologyRules6.png)
+   ![Image](../assets/CreatingTypologyRules6.png)
 
-1. Vérifiez que le lien Se désabonner est présent.
+1. Vérifiez que le lien de désabonnement est présent.
 
-   ![image](../assets/CreatingTypologyRules7.png)
+   ![Image](../assets/CreatingTypologyRules7.png)
 
-## Optimisation des emails {#email-optimization}
+## Optimisation des e-mails {#email-optimization}
 
 ### SMTP {#smtp}
 
 SMTP (Simple mail transfer protocol) est une norme Internet pour la transmission des emails.
 
-Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]**. Ces messages d’erreur sont interprétés par défaut comme des erreurs soft inatteignables.
+Les erreurs SMTP qui ne sont pas vérifiées par une règle sont répertoriées dans le dossier **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Qualification des logs de diffusion]**. Ces messages d’erreur sont par défaut interprétés comme des erreurs soft inatteignables.
 
-Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles de messagerie]** si vous souhaitez correctement qualifier les commentaires des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (en cas d&#39;utilisateurs inconnus) ou mettra incorrectement certains destinataires en quarantaine après un nombre donné de tests.
+Les erreurs les plus courantes doivent être identifiées et une règle correspondante doit être ajoutée dans **[!UICONTROL Administration]** > **[!UICONTROL Gestion de campagne]** > **[!UICONTROL Gestion des échecs]** > **[!UICONTROL Jeux de règles Mail]** si vous souhaitez qualifier correctement les retours des serveurs SMTP. Sans cela, la plateforme effectuera des reprises inutiles (cas d&#39;utilisateurs inconnus) ou placera par erreur certains destinataires en quarantaine après un nombre donné de tests.
 
 ### Adresses IP dédiées {#dedicated-ips}
 

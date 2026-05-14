@@ -6,10 +6,27 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 0be68f5674904aa105985a6e5fc4771c41f7fe48
+TQID: https://experienceleague.adobe.com/zM1boPuxPGJbjlSk1ncR7vTvrhe529sv-OCZwNTCHRE
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 1%
+source-wordcount: 2374
+ht-degree: 5%
 
 ---
 
@@ -47,7 +64,7 @@ Pour installer des certificats SSL sur ces sous-domaines, le processus implique 
 | Certificat de faible assurance | Un certificat de faible assurance, également appelé certificat validé par le domaine, inclut uniquement le nom de domaine dans le certificat (et non le nom de l’entreprise ou de l’organisation). |
 | PEM (Privacy Enhanced Mail) | Un certificat avec une extension .pem contenant des données ASCII (Base64). Ces certificats commencent par une ligne « - - - - - COMMENCER LE CERTIFICAT - - - - ». |
 | Certificat racine | Une autorité de certification émet des certificats sous la forme d’une arborescence. Le certificat racine est le certificat le plus élevé de l’arborescence. |
-| SAN (autre nom du sujet) | Les autres noms de sujet sont des noms d’hôte supplémentaires (sites, adresses IP, noms communs, etc.) qui doivent être signés dans le cadre d’un certificat SSL unique. |
+| SAN (autre nom du sujet) | Les autres noms d’objet sont des noms d’hôte supplémentaires (sites, adresses IP, noms communs, etc.) qui doit être signé dans le cadre d’un certificat SSL unique. |
 | Certificat auto-signé | Certificat signé par la personne qui le crée plutôt que par une autorité de certification approuvée. Les certificats auto-signés peuvent permettre le même niveau de chiffrement qu’un certificat signé par une autorité de certification, mais il existe deux inconvénients majeurs :<ul><li>La connexion d’un visiteur peut être piratée, ce qui permet à un attaquant de visualiser toutes les données envoyées (ce qui va à l’encontre de l’objectif de chiffrement de la connexion)</li><li> Le certificat ne peut pas être révoqué comme un certificat approuvé le peut.</li></ul> |
 | SSL (couche de socket sécurisée) | Technologie de sécurité standard permettant d’établir un lien chiffré entre un serveur web et un navigateur. |
 | Certificat de caractère générique | Un certificat avec caractère générique peut sécuriser un nombre illimité de sous-domaines de premier niveau sur un seul nom de domaine, tel que *.adobe.com. |
@@ -152,7 +169,7 @@ Une fois le fichier CSR fourni, vous devez acheter et générer un certificat SS
 Une fois le certificat SSL généré, vous devez le valider avant de l’envoyer à Adobe. Procédez comme suit :
 
 1. Assurez-vous que le certificat possède l’extension .pem. Si ce n’est pas le cas, convertissez-le au format PEM. Vous pouvez effectuer la conversion à l’aide de *OpenSSL*.
-1. Vérifiez que le certificat commence par **»-----BEGIN CERTIFICATE----- »**.
+1. Vérifiez que le certificat commence par **« -----BEGIN CERTIFICATE-----«**.
 1. Copiez le texte du certificat dans un décodeur en ligne, tel que https://www.sslshopper.com/certificate-decoder.html ou https://www.entrust.net/ssl-technical/csr-viewer.cfm.
 Vous pouvez également utiliser la commande *OpenSSL* localement sur une machine Linux. Pour plus d&#39;informations, consultez [cette page externe](https://www.shellhacks.com/decode-ssl-certificate/).
 1. Assurez-vous que le certificat est résolu correctement, y compris le nom commun, le SAN, l’émetteur et la période de validité.
