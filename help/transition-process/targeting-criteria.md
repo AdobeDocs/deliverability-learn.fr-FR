@@ -10,27 +10,32 @@ team: ACS
 role: Leader, User
 level: Beginner
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/TPAHWvztP0NQNBYnixqOpIoWXdhb6ak1ypeTZJvSSHs
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 16%
+source-wordcount: 229
+ht-degree: 13%
 
 ---
 
 # Critères de ciblage
 
-Lors de l’envoi d’un nouveau trafic, ne ciblez que les utilisateurs les plus actifs au cours des premières phases du réchauffement des adresses IP. Cela vous permet d’établir une réputation positive à partir de vos débuts, afin de créer efficacement la confiance avant de rejoindre vos audiences les moins engagées. Voici une formule de base pour l’engagement :
+Lors de l’envoi d’un nouveau trafic, ciblez uniquement vos utilisateurs les plus engagés au cours des premières phases du réchauffement des adresses IP. Cela permet d’établir une réputation positive dès le départ pour établir efficacement la confiance avant de toucher vos audiences moins engagées. Voici une formule de base pour l’engagement :
 
-![Formule d&#39;engagement](../assets/formula-for-enagement.png)
+![Formule d’engagement](../assets/formula-for-enagement.png)
 
-En règle générale, un taux d’engagement est basé sur une période spécifique. Cette mesure peut varier considérablement selon que la formule est appliquée à un niveau global ou à des types de publipostage ou des campagnes spécifiques. Les critères de ciblage spécifiques doivent être fournis en collaborant avec votre consultant en délivrabilité des Adobes, car chaque expéditeur et chaque FAI varie et nécessitent généralement un plan personnalisé.
+En règle générale, un taux d’engagement est basé sur une période spécifique. Cette mesure peut varier considérablement selon que la formule est appliquée à un niveau global ou pour des types de publipostage ou des campagnes spécifiques. Les critères de ciblage spécifiques doivent être fournis en travaillant avec votre consultant en délivrabilité Adobe, car chaque expéditeur et FAI varie et nécessite généralement un plan personnalisé.
 
 ## Ressources spécifiques au produit
 
 **Analytics**
 
-* [Comment augmenter les taux d&#39;engagement et de rétention (tutoriel)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=fr#mobile-app-analytics) : *identifiez les audiences engagées par leur comportement à l&#39;aide de Cohorts et connaissez les causes sous-jacentes à l&#39;origine de l&#39;attractivité dans vos applications mobiles. Utilisez les algorithmes de science des données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
+* [Tutoriel sur comment augmenter les taux d’engagement et de rétention)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics) : *Identifiez les audiences engagées à travers leur comportement à l’aide de cohortes et découvrez les causes sous-jacentes qui favorisent l’affinité de vos applications mobiles. Utilisez les algorithmes de science des données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
 
 **Campaign Standard**
 
-* [Emails optimisés par l’IA : score prédictif de l’engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=fr#predictive-scoring)
+* [E-mails optimisés par l&#39;IA : score prédictif de l&#39;engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)

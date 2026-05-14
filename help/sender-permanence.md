@@ -1,6 +1,6 @@
 ---
 title: Permanence de l'expéditeur
-description: L’envoi permanent est le processus d’établissement d’un volume d’envoi et d’une stratégie cohérents afin de maintenir la réputation du FAI.
+description: La permanence de l'envoi est le processus d'établissement d'un volume d'envoi et d'une stratégie cohérents afin de maintenir la réputation du FAI.
 topics: Deliverability
 jira: KT-5261
 thumbnail: kt5261.jpg
@@ -8,25 +8,29 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: f57de522-1361-43a3-8f8b-f9a191986529
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+TQID: https://experienceleague.adobe.com/B7D61pnJfeHwTHi5I-HueVylsFgqz5LNENiggBKvjdA
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: 136
 ht-degree: 2%
 
 ---
 
 # Permanence de l&#39;expéditeur
 
-L’envoi permanent est le processus d’établissement d’un volume d’envoi et d’une stratégie cohérents afin de maintenir la réputation du FAI. Voici quelques raisons pour lesquelles la permanence de l’expéditeur est importante :
+La permanence de l&#39;envoi est le processus d&#39;établissement d&#39;un volume d&#39;envoi et d&#39;une stratégie cohérents afin de maintenir la réputation du FAI. Voici quelques raisons pour lesquelles la permanence de l&#39;expéditeur est importante :
 
-* En règle générale, les spammeurs &quot;saut d’adresse IP&quot;, ce qui signifie qu’ils déplacent constamment le trafic entre plusieurs adresses IP pour éviter des problèmes de réputation.
-* La cohérence est essentielle pour prouver aux FAI que l&#39;expéditeur est fiable et ne tente pas de contourner les problèmes de réputation dus à de mauvaises pratiques d&#39;envoi.
-* Le maintien de ces stratégies cohérentes sur une longue période de temps est nécessaire avant que certains FAI ne considèrent même l&#39;expéditeur comme tout simplement fiable.
+* Les spammeurs optent généralement pour le terme « saut d&#39;adresse IP », ce qui signifie qu&#39;ils déplacent constamment le trafic sur de nombreuses adresses IP afin d&#39;éviter des problèmes de réputation.
+* La cohérence est essentielle pour prouver aux FAI que l’expéditeur jouit d’une bonne réputation et qu’il ne tente pas de contourner les problèmes de réputation résultant de mauvaises pratiques d’envoi.
+* Le maintien de ces stratégies cohérentes sur une longue période est nécessaire avant que certains FAI ne considèrent même l&#39;expéditeur comme digne de confiance.
 
 **Voici quelques exemples :**
 
 ![Bonne permanence de l’envoi](assets/Sender_Permanence_1.png)
 
-![Mauvaise permanence de l’envoi](assets/Sender_Permanence_2.png)
+![Permanence d’envoi incorrecte](assets/Sender_Permanence_2.png)
 
-![&#x200B; Stabilité d’envoi acceptable](assets/Sender_Permanence_3.png)
+![Permanence acceptable pour l’envoi](assets/Sender_Permanence_3.png)

@@ -6,9 +6,15 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4cc85124-e7e4-4cd5-99a9-23d2d8cf08fe
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/EDzTRrQeFbp-5GFRMxRDqwoMx37ykI2auNz6ZH9EmF8
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5f60233-d5ea-4453-a799-0ad258b4d399id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: 688
 ht-degree: 87%
 
 ---
@@ -19,7 +25,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques pour mieux identifier et ré
 
 ## Identifier un problème de délivrabilité {#identify-deliverability-issue}
 
-Pour identifier un problème possible, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peuvent attirer votre attention.
+Pour identifier un problème éventuel, les éléments répertoriés sur [cette page](/help/ongoing-monitoring.md) peuvent attirer votre attention.
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.
@@ -27,7 +33,7 @@ Subscriber activity: opens, clicks and/or transactions are lower than usual.
 Seed accounts show filtered or non-delivered mailings.
 -->
 
-## Formuler des hypothèses sur les causes potentielles {#potential-causes}
+## Émettre des hypothèses sur les causes potentielles {#potential-causes}
 
 Posez-vous les questions suivantes pour identifier les causes possibles de votre problème de délivrabilité :
 
@@ -44,7 +50,7 @@ Posez-vous les questions suivantes pour identifier les causes possibles de votre
 
 ### Plaintes
 
-[Les plaintes](/help/metrics/complaints.md) sont définies par les abonnés qui signalent un courrier électronique comme indésirable en appuyant sur le bouton correspondant de leur boîte de réception.
+Les [plaintes](/help/metrics/complaints.md) sont définies par les abonnés qui signalent un e-mail comme indésirable en appuyant sur le bouton correspondant dans leur boîte de réception.
 
 Si votre problème de diffusion est dû à des plaintes :
 * Vous devez essayer de déterminer pourquoi les destinataires se plaignent.
@@ -68,12 +74,12 @@ Les **rebonds définitifs** se produisent lorsque vous effectuez un envoi à une
 
 ### Engagement
 
-Outre les plaintes et la validité des données, les FAI privilégient plus que jamais l’**engagement positif** pour prendre des décisions de diffusion. Ils cherchent à savoir si vos abonnés ouvrent vos emails ou les effacent sans les lire. Comme ils ne partagent pas ces données avec les expéditeurs, nous devons utiliser les informations disponibles et traduire les ouvertures/clics/transactions en engagements.
+Outre les plaintes et la validité des données, les FAI privilégient plus que jamais l’**engagement positif** pour prendre des décisions de diffusion. Ils cherchent à savoir si vos abonnés ouvrent vos emails ou les effacent sans les lire. Dans la mesure où ils ne partagent pas ces données avec les expéditeurs, nous devons utiliser les informations dont nous disposons et traduire les ouvertures/clics/transactions comme engagement.
 
 Dans le cadre de la gestion permanente de la réputation, il est important de comprendre le niveau d’engagement des abonnés de votre liste et d’établir une **hiérarchie des risques liés à la récence** pour les abonnés de chaque fichier. La récence est définie comme la date d’ouverture/de clic/de transaction ou d’abonnement la plus récente. Cette période peut différer selon la verticale. Pour ce faire :
 
 1. Déterminez les segments actifs (« sûrs ») pour chaque verticale. Il s’agit généralement d’abonnés qui ont été actifs au cours des 3 à 6 derniers mois.
 1. Réduisez la fréquence au niveau des inactifs.
-1. Créez une série de [réengagements](/help/additional-resources/re-engagement.md) pour les inactifs à risque modéré. Il s’agit généralement d’abonnés qui ne se sont pas engagés depuis 6 à 9 mois.
+1. Créez une série de [réengagements](/help/additional-resources/re-engagement.md) pour les inactifs à risque modéré. Cela correspond généralement à une période de 6 à 9 mois sans engagement.
 1. Développez une campagne de reconfirmation pour les inactifs à risque élevé. Il s’agit généralement d’abonnés qui ne se sont pas engagés par email depuis 9 à 12 mois.
 1. Enfin, définissez une règle d’abandon et supprimez les abonnés qui n’ont pas ouvert vos emails depuis « x » mois. Nous recommandons généralement une durée de 12 mois, mais cela peut varier en fonction des ventes et du cycle d’achat.

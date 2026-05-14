@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques en matière de contenu pour une délivrabilité optimale
-description: Le contenu est la clé. Vous avez déjà lu notre perspective sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en ce qui concerne le contenu.
+description: Le contenu est essentiel. Vous avez déjà lu notre point de vue sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en ce qui concerne le contenu.
 topics: Deliverability
 jira: KT-5260
 thumbnail: kt5260.jpg
@@ -10,27 +10,32 @@ role: Leader, User
 level: Beginner
 team: TM
 exl-id: f0172fa5-1c7e-4ccc-8ac5-4357611d13ec
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/6RrdVnQp69iMHQ6tcdB7peoGqC6FqHH8v4dQDXrAPqY
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 12%
+source-wordcount: 210
+ht-degree: 10%
 
 ---
 
 # Bonnes pratiques en matière de contenu pour une délivrabilité optimale
 
-Le contenu est la clé. Vous avez déjà lu notre perspective sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en matière de contenu :
+Le contenu est essentiel. Vous avez déjà lu notre point de vue sur la pertinence, mais voici quelques conseils supplémentaires pour optimiser votre délivrabilité en ce qui concerne le contenu :
 
-* **Évitez de placer un fichier d’HTML trop volumineux**. Restez en dessous de 100 Ko, mais essayez de rester entre 60 et 80 Ko pour éviter une livraison lente.
-* **Utilisez des balises de remplacement à votre avantage**. Les balises Alt résident dans le code image de l’HTML et affichent le texte si l’image n’est pas visible ou en cours de chargement. Plutôt que d&#39;avoir une simple description comme &quot;plan de produit&quot;, vous pourriez vouloir dire quelque chose de plus convaincant comme, &quot;Achetez maintenant et profitez de 30 % de réduction.&quot;
-* **Évitez de trop d’images.** La plupart des FAI bloquent désormais les images par défaut. Vous souhaitez avoir un moyen de capturer votre audience sans que les images soient activées afin qu’elles soient activées.
+* **Évitez les fichiers HTML trop volumineux**. Restez sous 100KB, mais essayez de rester entre 60 et 80 Ko pour éviter une diffusion lente.
+* **Utiliser les balises de remplacement à votre avantage**. Les balises alt sont intégrées au code d’image d’HTML et affichent le texte si l’image n’est pas visible ou en cours de chargement. Plutôt que d’avoir une description simple comme « photo du produit », vous pouvez dire quelque chose de plus convaincant comme : « Achetez maintenant et obtenez 30 % de réduction ».
+* **Évitez de stocker trop d’images.** La plupart des FAI bloquent désormais les images par défaut. Vous souhaitez pouvoir capturer votre audience sans activer les images afin qu’elles soient ensuite activées.
 
 ## Ressources spécifiques au produit
 
 **Campaign Classic**
 
-* [Contrôler le contenu de votre message](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html?lang=fr)
+* [Contrôle du contenu de votre message](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html)
 
 **Campaign Standard**
 
-* [Contrôle du contenu des emails](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html?lang=fr#testing-and-sending)
+* [Contrôle du contenu des e-mails](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html#testing-and-sending)

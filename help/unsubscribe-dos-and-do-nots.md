@@ -1,96 +1,102 @@
 ---
-title: Désabonnez-vous de et ne faites pas
-description: Découvrez les avantages et les inconvénients de la gestion des désabonnements.
+title: 'Se désabonner : pour et contre'
+description: Découvrez les points de suspension et de remplacement lors de la gestion des désabonnements.
 feature: Deliverability
 role: Admin
 level: Beginner
 doc-type: Feature Video
 duration: 0
-last-substantial-update: 2024-02-27T00:00:00Z
+last-substantial-update: 2024-02-27T00:00:00.000Z
 jira: KT-15029
 exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
-source-git-commit: 964230b60e345ffc624860e978beb6b08ad4c0b2
+TQID: https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: f71e690b-4480-4b67-9ef5-88f42f9cdfdbid: f82558ea-6af5-44eb-a424-5b3389abb0a3
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: 928
 ht-degree: 0%
 
 ---
 
-# Désabonnez-vous de et ne faites pas
+# Se désabonner : pour et contre
 
-Les désabonnements font naturellement partie du cycle de vie des emails. Mais il est difficile pour les marketeurs de dire au revoir parfois. Vous travaillez si dur pour concevoir les emails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s’attendre à ce que certains abonnés décident de passer à autre chose. Cela peut être dû à un certain nombre de raisons, mais l&#39;important est qu&#39;ils ne sont plus intéressés d&#39;avoir de vos nouvelles.
+Les désabonnements font naturellement partie du cycle de vie des e-mails. Mais il est parfois difficile pour les professionnels du marketing de se dire au revoir. Vous travaillez tellement dur pour concevoir les e-mails les plus attrayants et présenter les meilleures offres sur les produits et services de votre marque. Cependant, il est tout à fait normal, et il faut s&#39;y attendre, que certains abonnés décident d&#39;aller de l&#39;avant. Cela pourrait être dû à un certain nombre de raisons, mais le fait est qu&#39;ils ne sont plus intéressés à entendre parler de vous.
 
-Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d&#39;emails - lisez la suite pour en savoir plus.
+Nous avons créé une liste de choses à faire et à éviter lors de la gestion des désabonnements à partir de vos listes d’e-mails. Lisez la suite pour en savoir plus.
 
-## Les dos
+## Le dos
 
-**DO :** Posséder un lien de désabonnement bien placé. Cela peut empêcher les utilisateurs de cliquer sur la plainte &quot;Ceci est du spam&quot; (également appelée feedback loop).
+**À faire :** disposer d’un lien de désabonnement bien en évidence. Cela peut empêcher les utilisateurs et utilisatrices de cliquer sur la plainte « This is spam » (également appelée feedback loop).
 
-+ Quelques idées sur la façon de faire ressortir le lien de désabonnement : centrez-le, soulignez-le et mettez-le en gras. Placez-le en haut ou en bas de l&#39;email. Donnez à la police une autre couleur. Utilisez le mot &quot;UNSUBSCRIBE&quot; dans la préférence linguistique de l’utilisateur. N’utilisez pas de fleurs ou de verbiage excessif.
++ Quelques idées pour faire ressortir le lien de désabonnement : le centrer, le souligner et le mettre en gras. Placez-le en haut ou en bas de l’e-mail. Définissez une autre couleur de police. Utilisez le seul mot « UNSUBSCRIBE » dans la préférence de langue de l’utilisateur. N&#39;utilisez pas de verbiage fleuri ou excessif.
 
-**DO:** Ayez votre lecteur de lien de désabonnement sur une page d’entrée où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
+**À FAIRE :** placez votre lien de désabonnement sur une page de destination où l’utilisateur peut confirmer qu’il souhaite être supprimé de la liste.
 
-Le verbiage de la landing page doit inclure un lien qui indique, &quot;Confirmer mon désabonnement&quot; et peut-être un autre lien qui indique &quot;Laissez-moi me désabonner et moins de fréquence de courrier que je reçois de votre part&quot;. Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, cette méthode permet d’éviter les clics de robots qui se traduisent par un désabonnement en erreur.
+Le verbiage sur la page de destination devrait inclure un lien pour cliquer sur « Confirmer mon désabonnement » et peut-être un autre lien pour « Me laisser refuser et réduire la fréquence du courrier que je reçois de vous ». Bien qu’il ne s’agisse pas d’une méthode de désabonnement en un clic, elle permet d’éviter les clics de robots qui entraînent un désabonnement erroné.
 
-+ Si votre désabonnement dirige un utilisateur vers une landing page, assurez-vous que la landing page propose un désabonnement en un clic une fois que l’utilisateur arrive sur la page.
++ Si votre désabonnement mène un utilisateur à une page de destination, assurez-vous que cette dernière propose un désabonnement en un clic une fois que l’utilisateur accède à la page.
 
-**DO :** rendez le processus simple et transparent. Exemple :
+**DO:** Rendez le processus facile et transparent. Exemple :
 
-+ &quot;Cliquez ici pour vous désabonner de tous les emails marketing&quot;. Il doit s’agir de la première option proposée à l’utilisateur.
++ « Cliquez ici pour vous désabonner de tous les e-mails marketing ». Il doit s’agir de la première option donnée à l’utilisateur ou à l’utilisatrice.
 
-+ &quot;Cliquez sur ceci pour modifier vos préférences&quot;.
++ « Cliquez ici pour modifier vos préférences ».
 
-**DO :** Inclure l’adresse électronique sur la page d’entrée de désabonnement.
+**À faire :** inclure l’adresse e-mail sur la page de destination de désabonnement.
 
-+ Important : En fonction de l’emplacement/de la juridiction de vos utilisateurs, il peut y avoir des problèmes de confidentialité concernant l’inclusion de l’adresse électronique complète. Vous devrez peut-être préremplir une version hachée de l’adresse électronique. En effet, l’email peut avoir été transféré à partir de l’adresse abonnée d’origine. Consultez votre groupe juridique pour comprendre vos exigences spécifiques.
++ Important : selon l’emplacement/la juridiction de vos utilisateurs, l’inclusion de l’adresse e-mail complète peut entraîner des problèmes de confidentialité. Vous devrez peut-être préremplir une version hachée de l’adresse e-mail. En effet, l’e-mail a peut-être été transféré à partir de l’adresse à laquelle vous êtes abonné. Consultez votre service juridique pour comprendre vos besoins spécifiques.
 
-**DO :** Vérifiez que le désabonnement a bien été envoyé et vérifiez quand il peut s’attendre à arrêter la réception des emails.
+**À faire :** confirmer que le désabonnement a bien été envoyé et confirmer à quel moment il peut s’attendre à ne plus recevoir d’e-mails.
 
-+ S’ils se sont déjà désabonnés et qu’ils réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure).
++ S’ils se sont déjà désabonnés et réessaient, dites-leur qu’ils s’étaient déjà désabonnés et quand (Date/Heure).
 
-**DO :** honorez le désabonnement et supprimez l’adresse en temps voulu.
+**À faire :** honorer le désabonnement et supprimer l’adresse dans les délais impartis.
 
-+ La rapidité dépend des lois locales et de la juridiction, donc veuillez consulter un avocat sur ce qui s&#39;applique à votre entreprise.
++ La rapidité d&#39;exécution dépend des lois locales et de la juridiction, alors veuillez consulter un conseiller juridique sur ce qui s&#39;applique à votre entreprise.
 
-**DO:** Autorisez vos abonnés à dicter la relation.
+**À faire :** permet à vos abonnés de dicter la relation.
 
-+ Il est possible d’offrir des options à vos abonnés. Cela peut être géré par le biais d’un centre de préférences/d’une initiative de désinscription.
++ Il est acceptable de donner des options à vos abonnés, qui peuvent être gérées par le biais d’un centre de préférences/d’une initiative de désinscription.
 
-**DO :** Utilisez un en-tête List Unsubscribe dans vos modèles de courrier électronique afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’email soient facilement retrouvés lorsque l’utilisateur est habitué à rechercher des désabonnements.
-
-
-## Les choses à ne pas faire
+**À FAIRE :** utilisez un en-tête Désabonnement de la liste dans vos modèles d’e-mail afin que les clients de messagerie (par exemple : gmail.com) qui affichent des liens de désabonnement en haut de l’e-mail soient facilement trouvés là où l’utilisateur est habitué à rechercher des désabonnements.
 
 
-**NE PAS :** Empruntez le lien de désabonnement dans votre contenu dans l’espoir que les abonnés ‘abandonneront’ par frustration.
+## Ce n’est pas le cas
 
-+ Il s’agit d’une mauvaise expérience de l’utilisateur final qui peut entraîner une augmentation des plaintes, ce qui peut avoir un impact négatif sur votre délivrabilité et votre réputation.
 
-**NE PAS :** Rendre difficile le désabonnement une fois que le client est arrivé au formulaire. Les ratages sont embêtants - et dans certains cas, illégaux.
+**À NE PAS FAIRE :** enterrez le lien de désabonnement dans votre contenu dans l&#39;espoir que les abonnés « abandonnent » par frustration.
 
-+ Soyez direct et évitez de confondre l’utilisateur final.
++ Il s&#39;agit d&#39;une mauvaise expérience pour l&#39;utilisateur final et cela peut entraîner une augmentation des plaintes, ce qui peut avoir un impact négatif sur votre délivrabilité et votre réputation.
 
-**NE PAS :** Demandez à l’utilisateur d’ajouter manuellement une adresse électronique dans le formulaire de désabonnement.
+**À NE PAS FAIRE :** rendre difficile le désabonnement une fois que le client est arrivé au formulaire. La supercherie est ennuyeuse - et dans certains cas - illégale.
 
-+ L’adresse qui s’est inscrite peut être différente de l’adresse à laquelle l’utilisateur s’est connecté pour le courrier (par exemple, transféré). Il se peut qu’il ne connaisse pas l’adresse électronique utilisée pour l’abonnement d’origine.
++ Soyez direct et évitez de dérouter l’utilisateur final.
 
-**NE PAS :** obliger l’utilisateur à se connecter à son compte pour se désabonner.
+**À NE PAS FAIRE :** demandez à l’utilisateur d’ajouter manuellement une adresse e-mail dans le formulaire de désabonnement.
 
-+ Vous pouvez envoyer l’email à la mauvaise adresse et le propriétaire de cette adresse peut ne pas avoir accès au compte. S’ils reçoivent l’email, ils doivent être autorisés à se désabonner du lien uniquement dans l’email ; aucune autre action ou information ne doit être requise.
-+ Moins un client a besoin d’actions, mieux c’est.
++ L’adresse à laquelle vous êtes abonné peut être différente de celle à laquelle l’utilisateur s’est connecté pour l’e-mail (par exemple, transférée). Il est possible qu’ils ne connaissent pas l’adresse e-mail utilisée pour l’abonnement d’origine.
 
-**NE PAS :** Envoyez un email confirmant que la personne s’est désinscrite.
+**À NE PAS FAIRE :** demander à l’utilisateur de se connecter à son compte pour se désabonner.
 
-+ Si c&#39;est le cas, vous avez déjà rompu votre promesse de ne pas leur envoyer plus de courrier.
++ Il se peut que vous envoyiez l’e-mail à la mauvaise adresse et que le propriétaire de cette adresse n’ait pas accès au compte. S’ils reçoivent l’e-mail, ils doivent être autorisés à se désabonner du lien contenu dans le seul e-mail. Aucune autre action ou information ne doit être requise.
++ Moins un client a d&#39;étapes à franchir, mieux c&#39;est.
 
-**NE PAS :** Soyez sarcastique dans votre verbiage. &quot;Je n&#39;aime pas entendre parler de grandes affaires - s&#39;il vous plaît, désabonnez-vous de moi !&quot;
+**À NE PAS FAIRE :** envoyez un e-mail confirmant que la personne s’est désabonnée.
 
-+ Cela peut paraître grossier. Évitez un ton négatif.
++ Si c&#39;est le cas, vous avez déjà manqué à votre promesse de ne plus leur envoyer de courrier.
 
-**DO NOT:** Formez-les à vous donner une raison pour laquelle ils se sont désabonnés avant de traiter la demande.
+**À NE PAS FAIRE :** Soyez sarcastique dans votre verbiage. « Je n’aime pas entendre parler de bonnes affaires - veuillez me désabonner ! »
 
-+ Permettre au client d’ajouter ces informations peut s’avérer utile pour vous dans les prochaines statistiques, mais en faire un champ facultatif sur la page d’entrée de désabonnement.
++ Cela peut sembler grossier. Évitez un ton négatif.
 
-+ Une meilleure approche serait de les informer qu&#39;ils se sont désabonnés avec succès, puis de leur donner un espace pour leur proposer éventuellement la ou les raisons.
+**À NE PAS FAIRE :** forcez-les à vous indiquer la raison de leur désabonnement avant de traiter la demande.
 
-Souvenez-vous que les désabonnements sont meilleurs que les plaintes. Les personnes qui n’interagissent pas positivement avec votre programme de messagerie peuvent avoir un impact négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Il est maintenant temps que vous vous concentrez sur le développement de relations plus étroites avec vos abonnés actuels en les traitant à des messages pertinents et engagés qu’ils ne peuvent pas attendre pour ouvrir, cliquer et faire un achat !
++ Permettre au client ou à la cliente d’ajouter ces informations peut vous être utile pour vos informations futures. Toutefois, il peut s’agir d’un champ facultatif sur la page de destination de désabonnement.
+
++ Une meilleure approche consisterait à les informer qu&#39;ils ont été désabonnés avec succès, puis à leur laisser un espace pour leur offrir éventuellement la ou les raisons.
+
+N’oubliez pas que les désabonnements valent mieux que les plaintes. Les personnes qui n’interagissent pas de manière positive avec votre programme de messagerie peuvent avoir un effet négatif sur votre réputation de délivrabilité ainsi que sur vos mesures. Il est maintenant temps pour vous de vous concentrer sur l’approfondissement des relations avec vos abonnés actuels en les traitant avec des messages engagés et pertinents qu’ils sont impatients d’ouvrir, de cliquer et de faire un achat !
