@@ -78,13 +78,13 @@ Un dernier élément clé de la stratégie « répondre à » est que si vous di
 
 **Adobe Campaign Classic**
 
-* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
-* [Règles de pression](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=fr#communication-channels)
+* [Règles de pression](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=fr)
 
 **Adobe Campaign Standard**
 
-* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
-* [Règles de fatigue](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=fr)
+* [Règles de fatigue](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html?lang=fr)
 
 ## Ressources supplémentaires
 

@@ -71,7 +71,7 @@ Plus précisément, ils sont utilisés pour contrôler la vitesse à laquelle le
 
 >[!NOTE]
 >
->Pour plus d’informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Pour plus d’informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#mx-configuration).
 
 ### TLS {#tls}
 
@@ -231,7 +231,7 @@ Vous pouvez également utiliser une adresse dynamique. Par exemple, pour envoyer
 
 La règle de typologie doit contenir le script qui génère la ligne de commande et être inclue dans l&#39;en-tête de l&#39;email.
 
-Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=fr#typology-rules).
 
 >[!NOTE]
 >

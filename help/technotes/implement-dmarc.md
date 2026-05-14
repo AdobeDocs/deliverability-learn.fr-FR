@@ -116,7 +116,7 @@ Les enregistrements DMARC comportent plusieurs composants appelés balises DMARC
 
 >[!NOTE]
 >
->Si votre instance Campaign est hébergée sur AWS, vous pouvez implémenter DMARC pour vos sous-domaines avec le Panneau de Contrôle . [Découvrez comment implémenter des enregistrements DMARC à l’aide de Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Si votre instance Campaign est hébergée sur AWS, vous pouvez implémenter DMARC pour vos sous-domaines avec le Panneau de Contrôle . [Découvrez comment implémenter des enregistrements DMARC à l’aide de Panneau de Contrôle](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=fr).
 
 Une raison courante des échecs de DMARC est le mauvais alignement entre l’adresse « De » et l’adresse « Erreurs vers » ou « Chemin de retour ». Pour éviter cela, lors de la configuration de DMARC, il est recommandé de vérifier à nouveau les paramètres d’adresse « De » et « Erreurs vers » dans vos modèles de diffusion.
 

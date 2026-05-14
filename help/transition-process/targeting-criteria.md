@@ -42,8 +42,8 @@ En règle générale, un taux d’engagement est basé sur une période spécifi
 
 **Analytics**
 
-* [Tutoriel sur comment augmenter les taux d’engagement et de rétention)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics) : *Identifiez les audiences engagées à travers leur comportement à l’aide de cohortes et découvrez les causes sous-jacentes qui favorisent l’affinité de vos applications mobiles. Utilisez les algorithmes de science des données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
+* [Tutoriel sur comment augmenter les taux d’engagement et de rétention)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=fr#mobile-app-analytics) : *Identifiez les audiences engagées à travers leur comportement à l’aide de cohortes et découvrez les causes sous-jacentes qui favorisent l’affinité de vos applications mobiles. Utilisez les algorithmes de science des données dans Segment IQ pour connaître les différences et les similitudes entre les segments.*
 
 **Campaign Standard**
 
-* [E-mails optimisés par l&#39;IA : score prédictif de l&#39;engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [E-mails optimisés par l&#39;IA : score prédictif de l&#39;engagement](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=fr#predictive-scoring)

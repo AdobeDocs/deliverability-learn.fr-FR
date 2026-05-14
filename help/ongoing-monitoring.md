@@ -54,7 +54,7 @@ Voici quelques moyens de vous aider à identifier un problème éventuel pour le
 **Adobe Campaign Standard**
 
 * [Contrôler une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=fr-FR)
-* [Résumé des diffusions](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
+* [Résumé des diffusions](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html?lang=fr)
 * [Surveillance de la délivrabilité](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/monitor-deliverability.html?lang=fr-FR#testing-and-sending)
 
 ## Ressources supplémentaires
