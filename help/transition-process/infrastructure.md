@@ -85,8 +85,8 @@ L’authentification est le processus utilisé par les FAI pour valider l’iden
 **Campagne**
 
 * Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou à Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
-* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
-* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
+* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=fr) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
+* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=fr) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
 * Pour en savoir plus sur l’implémentation d’une feedback loop pour une instance Campaign Classic, consultez [cette section](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ressources supplémentaires
