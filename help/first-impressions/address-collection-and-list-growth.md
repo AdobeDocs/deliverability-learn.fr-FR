@@ -9,22 +9,11 @@ activity: understand
 team: TM
 exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
 TQID: https://experienceleague.adobe.com/Pq8XpNwqzMbxggauciqILSUqX6BT4OCiDffc7ZgDhWc
-product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
-  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
 source-wordcount: 1670
@@ -46,7 +35,7 @@ La forme la plus courante d’**inscription à un site web** est l’« opt-in u
 
 * L&#39;envoi malveillant de pièges à spam connus (parfois appelés « empoisonnement de liste ») peut causer d&#39;énormes problèmes de diffusion et de réputation si le propriétaire de ce piège agit. Il est impossible de savoir si le destinataire souhaite vraiment être ajouté à une liste marketing sans confirmation. Cela rend également impossible la définition des attentes du destinataire et peut entraîner une augmentation des plaintes pour spam, et parfois une liste bloquée si l&#39;email collecté se trouve être un piège à spam.
 
-Pour obtenir des conseils sur la manière de minimiser les problèmes présentés à la fois dans le magasin physique et l’opt-in unique, accédez à la section [&#x200B; Qualité et hygiène des données &#x200B;](#data-quality-and-hygiene) de ce guide pour les détails et les avantages du double opt-in.
+Pour obtenir des conseils sur la manière de minimiser les problèmes présentés à la fois dans le magasin physique et l’opt-in unique, accédez à la section [ Qualité et hygiène des données ](#data-quality-and-hygiene) de ce guide pour les détails et les avantages du double opt-in.
 
 >[!NOTE]
 >
@@ -95,10 +84,10 @@ Il existe de nombreuses autres façons de collecter les adresses, chacune ayant 
 **Acheter ou louer une liste**
 Il existe de nombreux types d’adresses e-mail. les e-mails de Principal, les e-mails professionnels, les e-mails scolaires, les e-mails secondaires et les e-mails inactifs, pour n’en citer que quelques-uns. Les types d’adresses collectées et partagées par le biais de listes achetées ou louées sont rarement des comptes de messagerie principaux, où se produisent presque toutes les activités d’engagement et d’achat.
 
-Si vous avez de la chance, vous obtenez des comptes secondaires, où les gens recherchent des offres et des offres lorsqu’ils sont prêts à acheter quelque chose. Cela se traduit généralement par de faibles niveaux d’engagement, le cas échéant. Si vous n’avez pas de chance, la liste est pleine d’e-mails inactifs, qui pourraient désormais être des pièges à spam. Souvent, vous recevez un mélange d’e-mails secondaires et inactifs. En général, la qualité de ces types de listes fait plus de mal que de bien à un programme de messagerie. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
+Si vous avez de la chance, vous obtenez des comptes secondaires, où les gens recherchent des offres et des offres lorsqu’ils sont prêts à acheter quelque chose. Cela se traduit généralement par de faibles niveaux d’engagement, le cas échéant. Si vous n’avez pas de chance, la liste est pleine d’e-mails inactifs, qui pourraient désormais être des pièges à spam. Souvent, vous recevez un mélange d’e-mails secondaires et inactifs. En général, la qualité de ces types de listes fait plus de mal que de bien à un programme de messagerie. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Listes ajoutées**
-Il s’agit de clients qui ont choisi de s’engager avec votre marque, ce qui est formidable. Mais ils ont choisi une autre méthode que le courriel (en magasin, sur les médias sociaux, etc.). Ils ne pouvaient pas être réceptifs à l’idée de recevoir un e-mail non demandé de votre part et peuvent également s’inquiéter de la manière dont vous avez obtenu leur adresse e-mail puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s&#39;est engagé auprès de votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers vos concurrents. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
+Il s’agit de clients qui ont choisi de s’engager avec votre marque, ce qui est formidable. Mais ils ont choisi une autre méthode que le courriel (en magasin, sur les médias sociaux, etc.). Ils ne pouvaient pas être réceptifs à l’idée de recevoir un e-mail non demandé de votre part et peuvent également s’inquiéter de la manière dont vous avez obtenu leur adresse e-mail puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s&#39;est engagé auprès de votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers vos concurrents. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Salon professionnel ou autre collection d&#39;événements**
 Collecter des adresses à un kiosque ou par l&#39;intermédiaire d&#39;une autre méthode officielle clairement identifiée peut être utile. Le risque est que de nombreux événements comme celui-ci collectent toutes les adresses et les distribuent par l&#39;intermédiaire du promoteur ou de l&#39;hôte de l&#39;événement. Cela signifie que les propriétaires de ces adresses e-mail n’ont jamais demandé à recevoir d’e-mails de votre marque. Ces abonnés sont susceptibles de se plaindre et de marquer votre e-mail comme indésirable, et ils peuvent ne pas avoir fourni des coordonnées exactes.
