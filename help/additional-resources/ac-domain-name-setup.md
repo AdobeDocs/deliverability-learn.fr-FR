@@ -31,9 +31,9 @@ topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
-workflow-type: tm+mt
-source-wordcount: 2107
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: 2119
+ht-degree: 100%
 
 ---
 
@@ -59,8 +59,8 @@ En d&#39;autres termes, les serveurs DNS d&#39;Adobe Campaign disposent d&#39;u
 
 En déléguant un sous-domaine à utiliser avec Adobe Campaign, les clients peuvent compter sur Adobe pour gérer l&#39;infrastructure DNS requise afin de répondre aux exigences de délivrabilité standard de leurs domaines de marketing par email, tout en continuant à gérer et à contrôler le DNS de leurs domaines de messagerie internes.  La délégation de sous-domaines permet :
 
-Les clients doivent conserver leur image de marque en utilisant un alias DNS avec ses noms de domaine
-Adobe pour mettre en œuvre de manière autonome toutes les bonnes pratiques techniques afin d&#39;optimiser entièrement la délivrabilité pendant l&#39;envoi par email
+aux clientes et clients de conserver leur image de marque en utilisant un alias DNS associés à leurs noms de domaine ;
+à Adobe de mettre en œuvre de manière autonome les bonnes pratiques techniques afin d’optimiser pleinement la délivrabilité lors de l’envoi d’e-mails.
 
 ## Options de configuration DNS
 
@@ -135,7 +135,7 @@ Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exem
 
 >[!NOTE]
 >
->* Le champ « Adresse de réponse » a pour objet de demander au ou à la destinataire de répondre à une adresse différente de celle de l’adresse d’origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
+>* Le champ &quot;Adresse de réponse&quot; a pour objet de demander au destinataire de répondre à une adresse différente de celle de l&#39;adresse d&#39;origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
 >* Si aucune &quot;adresse de réponse&quot; n&#39;est choisie par le client, l&#39;adresse par défaut est toujours `<tenant>-<type>-<env>@<subdomain>`.
 >* Lorsque l&#39;adresse de réponse est configurée de cette façon, les réponses sont envoyées à une boîte de réception non contrôlée.
 >* Lors de l&#39;envoi d&#39;emails à partir d&#39;Adobe Campaign, la boîte de réception &quot;Adresse d&#39;origine&quot; n&#39;est pas surveillée et les utilisateurs marketing ne peuvent pas accéder à cette boîte de réception. Adobe Campaign n&#39;offre pas non plus la possibilité de répondre automatiquement ou de transférer automatiquement les messages reçus dans cette boîte de réception.
@@ -185,8 +185,7 @@ Les pare-feu devront également être configurés pour autoriser l’accès à l
 
 **Recommandations concernant les bonnes pratiques :**
 
-Le sous-domaine qui héberge les composants web sera visible pour les clients. Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.
-S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécurisées (HTTPS), une configuration technique supplémentaire est requise, comme décrit ci-dessous.
+Le sous-domaine qui héberge les composants web sera visible pour les clients. Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécurisées (HTTPS), une configuration technique supplémentaire est requise, comme décrit ci-dessous.
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -198,8 +197,7 @@ S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécuris�
 
 * Création de boîtes de réception &quot;maître de poste&quot; et &quot;abus&quot;
 * Configuration de boucles de commentaires pour le domaine délégué
-* Sur demande, Adobe configure également un enregistrement DMARC tel que spécifié. Votre conseiller en délivrabilité peut vous aider à concevoir une politique DMARC à long terme et à planifier vos domaines d&#39;envoi.
-Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
+* Sur demande, Adobe configure également un enregistrement DMARC tel que spécifié. Votre conseiller en délivrabilité peut vous aider à concevoir une politique DMARC à long terme et à planifier vos domaines d&#39;envoi.Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
 
 ## Conditions de facturation et de mise en œuvre
 
