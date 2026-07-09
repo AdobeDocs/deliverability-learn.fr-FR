@@ -7,33 +7,15 @@ activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 TQID: https://experienceleague.adobe.com/ZSfcx8FGb6eAHVK-PVAjd1354b55o5n3oRfWg4A5vrg
-product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
-  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
-  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
-  - id: e64968b2-4ee5-47f9-8cae-0588f184b9eb
-  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
-  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b0bb9048-d951-48d8-8232-45cf248a7e27id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45id: e2290edd-b061-4880-9d79-dee306cf5aa9id: e64968b2-4ee5-47f9-8cae-0588f184b9ebid: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
-workflow-type: tm+mt
-source-wordcount: 2107
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: 2119
+ht-degree: 100%
 
 ---
 
@@ -59,8 +41,8 @@ En d&#39;autres termes, les serveurs DNS d&#39;Adobe Campaign disposent d&#39;u
 
 En déléguant un sous-domaine à utiliser avec Adobe Campaign, les clients peuvent compter sur Adobe pour gérer l&#39;infrastructure DNS requise afin de répondre aux exigences de délivrabilité standard de leurs domaines de marketing par email, tout en continuant à gérer et à contrôler le DNS de leurs domaines de messagerie internes.  La délégation de sous-domaines permet :
 
-Les clients doivent conserver leur image de marque en utilisant un alias DNS avec ses noms de domaine
-Adobe pour mettre en œuvre de manière autonome toutes les bonnes pratiques techniques afin d&#39;optimiser entièrement la délivrabilité pendant l&#39;envoi par email
+aux clientes et clients de conserver leur image de marque en utilisant un alias DNS associés à leurs noms de domaine ;
+à Adobe de mettre en œuvre de manière autonome les bonnes pratiques techniques afin d’optimiser pleinement la délivrabilité lors de l’envoi d’e-mails.
 
 ## Options de configuration DNS
 
@@ -135,7 +117,7 @@ Complétez le tableau ci-dessous, la première ligne n&#39;étant qu&#39;un exem
 
 >[!NOTE]
 >
->* Le champ « Adresse de réponse » a pour objet de demander au ou à la destinataire de répondre à une adresse différente de celle de l’adresse d’origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
+>* Le champ &quot;Adresse de réponse&quot; a pour objet de demander au destinataire de répondre à une adresse différente de celle de l&#39;adresse d&#39;origine.  Bien qu&#39;il ne s&#39;agisse pas d&#39;un champ obligatoire, Adobe recommande vivement que l&#39;&quot;adresse de réponse&quot; soit valide et liée à une boîte de réception surveillée.  Cette boîte de réception doit être hébergée par le client.  Il peut s&#39;agir d&#39;une boîte de réception d&#39;assistance, par exemple, customercare@customer.com, où les emails sont lus et où on leur répond.
 >* Si aucune &quot;adresse de réponse&quot; n&#39;est choisie par le client, l&#39;adresse par défaut est toujours `<tenant>-<type>-<env>@<subdomain>`.
 >* Lorsque l&#39;adresse de réponse est configurée de cette façon, les réponses sont envoyées à une boîte de réception non contrôlée.
 >* Lors de l&#39;envoi d&#39;emails à partir d&#39;Adobe Campaign, la boîte de réception &quot;Adresse d&#39;origine&quot; n&#39;est pas surveillée et les utilisateurs marketing ne peuvent pas accéder à cette boîte de réception. Adobe Campaign n&#39;offre pas non plus la possibilité de répondre automatiquement ou de transférer automatiquement les messages reçus dans cette boîte de réception.
@@ -185,8 +167,7 @@ Les pare-feu devront également être configurés pour autoriser l’accès à l
 
 **Recommandations concernant les bonnes pratiques :**
 
-Le sous-domaine qui héberge les composants web sera visible pour les clients. Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.
-S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécurisées (HTTPS), une configuration technique supplémentaire est requise, comme décrit ci-dessous.
+Le sous-domaine qui héberge les composants web sera visible pour les clients. Veillez donc à ce que la marque y soit explicite et simple à mémoriser, car il peut être nécessaire de saisir manuellement ce sous-domaine, par exemple : https://web.customer.com.S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécurisées (HTTPS), une configuration technique supplémentaire est requise, comme décrit ci-dessous.
 
 | Sous-domaine délégué | Instructions DNS |
 |--- |--- |
@@ -198,8 +179,7 @@ S&#39;il est nécessaire d&#39;héberger des formulaires sur des pages sécuris�
 
 * Création de boîtes de réception &quot;maître de poste&quot; et &quot;abus&quot;
 * Configuration de boucles de commentaires pour le domaine délégué
-* Sur demande, Adobe configure également un enregistrement DMARC tel que spécifié. Votre conseiller en délivrabilité peut vous aider à concevoir une politique DMARC à long terme et à planifier vos domaines d&#39;envoi.
-Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
+* Sur demande, Adobe configure également un enregistrement DMARC tel que spécifié. Votre conseiller en délivrabilité peut vous aider à concevoir une politique DMARC à long terme et à planifier vos domaines d&#39;envoi.Les paramètres établis par Adobe ne sont valables qu&#39;à partir du moment où la délégation a été effectuée puis vérifiée par Adobe, et restent fonctionnels.  Toutes les offres Adobe Campaign Cloud incluent la délégation de noms de domaine en standard.
 
 ## Conditions de facturation et de mise en œuvre
 

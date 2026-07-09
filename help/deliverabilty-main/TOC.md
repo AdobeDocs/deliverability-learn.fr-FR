@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
 + [Bonnes pratiques en matière de contenu pour une délivrabilité optimale](/help/content-best-practices-for-optimal-delivery.md)
 + [Permanence de l&#39;expéditeur](/help/sender-permanence.md)
 + Éléments spécifiques aux FAI {#internet-service-provider-specifics}
-   + [Présentation](/help/internet-service-provider-specifics/overview.md)
+   + [Vue d’ensemble](/help/internet-service-provider-specifics/overview.md)
    + [Gmail](/help/internet-service-provider-specifics/gmail.md)
    + [Microsoft (Hotmail, Outlook, Windows Live, etc.)](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizon Media Group (Yahoo, AOL, Verizon, etc.)](/help/internet-service-provider-specifics/verizon-media-group.md)
@@ -63,4 +63,4 @@ ht-degree: 96%
    + Notes techniques{#technotes}
       + [Implémenter DMARC](/help/technotes/implement-dmarc.md)
       + [Implémenter BIMI](/help/technotes/implement-bimi.md)
-      + {hide-from-toc}[Mettre à jour les bounces après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
+      + {hide-from-toc}[Mettre à jour les rebonds après une panne d’Italia Online](/help/technotes/update-bounces-after-it-outage.md)
