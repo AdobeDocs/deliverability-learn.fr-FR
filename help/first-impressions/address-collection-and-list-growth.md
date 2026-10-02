@@ -11,27 +11,36 @@ exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
 TQID: https://experienceleague.adobe.com/Pq8XpNwqzMbxggauciqILSUqX6BT4OCiDffc7ZgDhWc
 product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+    internal-label: Forms
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+    internal-label: Resources
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+    internal-label: Security
+source-git-commit: 7fbfe34d5576041c8b595fc4b3f7dc596a4263fb
 workflow-type: tm+mt
-source-wordcount: 1670
+source-wordcount: '1670'
 ht-degree: 6%
-
 ---
-
 # Collecte d&#39;adresses et croissance des listes
 
 Les meilleures sources de nouvelles adresses e-mail sont les sources directes telles que les inscriptions sur votre site web ou dans les magasins physiques. Dans ces situations, vous pouvez contrôler l’expérience pour vous assurer qu’elle est positive et que l’abonné est intéressé à recevoir des e-mails de votre marque.
@@ -50,15 +59,15 @@ Pour obtenir des conseils sur la manière de minimiser les problèmes présenté
 
 >[!NOTE]
 >
->Les abonnés utilisent souvent des adresses jetables, des adresses expirées ou des adresses qui ne leur appartiennent pas pour obtenir ce qu’ils veulent d’un site web, mais évitent également d’être ajoutés aux listes marketing. Lorsque cela se produit, les listes des spécialistes marketing génèrent un grand nombre d’erreurs hard, des taux de plainte pour spam élevés et des abonnés qui ne cliquent pas sur les e-mails, ne les ouvrent pas et n&#39;y participent pas positivement. Cela peut être considéré comme un signal d&#39;alarme pour les fournisseurs de messagerie et les FAI.
+>Les abonnés utilisent souvent des adresses jetables, des adresses expirées ou des adresses qui ne leur appartiennent pas pour obtenir ce qu’ils veulent d’un site web, mais évitent également d’être ajoutés aux listes marketing. Lorsque cela se produit, les listes des spécialistes marketing génèrent un grand nombre d’erreurs hard, des taux de plainte pour spam élevés et des abonnés qui ne cliquent pas sur les e-mails, ne les ouvrent pas et n’y participent pas de manière positive. Cela peut être considéré comme un signal d&#39;alarme pour les fournisseurs de messagerie et les FAI.
 
 ## Formulaires d’inscription
 
 Outre l’ajout de champs pour les données, que vous souhaitez collecter sur vos nouveaux abonnés, vous devez également utiliser votre formulaire d’inscription sur le site web.
 
-* Définissez clairement les attentes de l’abonné : il accepte de recevoir des e-mails, ce qu’il recevra et à quelle fréquence.
-* Ajoutez des options permettant à l’abonné de sélectionner la fréquence ou le type de communications qu’il reçoit. Ces options vous permettent de connaître les préférences de l’abonné dès le départ afin de fournir la meilleure expérience possible à votre nouveau client.
-* Équilibrez le risque de perdre l’intérêt de l’abonné pendant le processus d’inscription en demandant le plus d’informations possible. Des éléments tels que leur anniversaire, leur lieu ou leurs centres d’intérêt vous aident à envoyer davantage de contenu personnalisé. Les abonnés de chaque marque ont des attentes et des seuils de tolérance différents. Les tests sont donc essentiels pour trouver le bon équilibre dans votre situation.
+* Définissez clairement les attentes de l’abonné quant à son acceptation de recevoir des e-mails, ce qu’il recevra et la fréquence à laquelle il les recevra.
+* Ajoutez des options permettant à l’abonné de sélectionner la fréquence ou le type de communications qu’il reçoit. Ces options vous permettent de connaître les préférences de l’abonné dès le début afin de fournir la meilleure expérience possible à votre nouveau client.
+* Équilibrez le risque de perdre l&#39;intérêt de l&#39;abonné pendant le processus d&#39;inscription en demandant le plus d&#39;informations possible. Des éléments tels que leur anniversaire, leur lieu ou leurs centres d’intérêt vous aident à envoyer davantage de contenu personnalisé. Les abonnés de chaque marque ont des attentes et des seuils de tolérance différents. Les tests sont donc essentiels pour trouver le bon équilibre dans votre situation.
 
 >[!NOTE]
 >
@@ -66,7 +75,7 @@ Outre l’ajout de champs pour les données, que vous souhaitez collecter sur vo
 
 ## Qualité et hygiène des données
 
-La collecte de données n’est qu’une partie du défi. Vous devez également vous assurer que les données sont à la fois exactes et utilisables. Vous devez avoir des filtres de format de base en place. Une adresse e-mail n’est pas valide si elle ne comprend pas de caractère « @ » ou « . », par exemple. Veillez à ne pas autoriser les adresses d’alias courantes, également appelées comptes de rôle (comme « info », « admin », « sales », « support »). Les comptes de rôle peuvent présenter un risque car, de par leur nature, le destinataire contient un groupe de personnes plutôt qu’un seul abonné. Les attentes et la tolérance peuvent varier au sein d’un groupe, ce qui entraîne un risque de plaintes, d’engagement variable, de désabonnements et de confusion générale.
+La collecte de données n’est qu’une partie du défi. Vous devez également vous assurer que les données sont à la fois exactes et utilisables. Vous devez avoir des filtres de format de base en place. Une adresse e-mail n’est pas valide si elle n’inclut pas de signe « @ » ou « . » par exemple. Veillez à ne pas autoriser les adresses alias courantes, qui sont également appelées comptes de rôle (comme « info », « admin », « sales », « support »). Les comptes de rôle peuvent présenter un risque car, de par leur nature, le destinataire contient un groupe de personnes plutôt qu’un seul abonné. Les attentes et la tolérance peuvent varier au sein d’un groupe, ce qui entraîne un risque de plaintes, d’engagement variable, de désabonnements et de confusion générale.
 
 Voici quelques solutions aux problèmes courants que vous pouvez rencontrer avec les données de votre adresse e-mail :
 
@@ -84,9 +93,9 @@ L’application d’un champ masqué à votre formulaire d’inscription est un 
 
 Consultez vos avocats pour interpréter les lois locales et nationales concernant les courriels. N’oubliez pas que les lois sur les courriers électroniques varient considérablement d’un pays à l’autre et parfois d’une région à l’autre.
 
-* Veillez à collecter les informations de localisation d’un abonné afin de vous conformer aux lois du pays de l’abonné. Sans ce détail, vous pouvez être limité dans la façon dont vous pouvez faire la promotion auprès de l&#39;abonné.
+* Veillez à collecter les informations de localisation d&#39;un abonné afin de vous conformer aux lois nationales de ce dernier. Sans ce détail, vous pouvez être limité dans la façon dont vous pouvez faire la promotion auprès de l&#39;abonné.
 * Toutes les lois pertinentes sont déterminées par le lieu du destinataire, et non par l&#39;expéditeur. Vous devez donc connaître et respecter les lois de tout pays où vous pourriez avoir un abonné.
-* Il est souvent difficile de connaître avec certitude le pays de résidence de l’abonné. Les données fournies par le client peuvent être obsolètes et les données de localisation des pixels peuvent être inexactes en raison du VPN ou de l&#39;entreposage d&#39;images, comme avec Gmail et Yahoo. En cas de doute, il est plus sûr d’appliquer les lois et directives les plus strictes possibles.
+* Il est souvent difficile de connaître avec certitude le pays de résidence de l&#39;abonné. Les données fournies par le client peuvent être obsolètes et les données de localisation des pixels peuvent être inexactes en raison du VPN ou de l&#39;entreposage d&#39;images, comme avec Gmail et Yahoo. En cas de doute, il est plus sûr d&#39;appliquer les lois et directives les plus strictes possibles.
 
 ## Autres méthodes de collecte de listes non recommandées
 
@@ -95,10 +104,10 @@ Il existe de nombreuses autres façons de collecter les adresses, chacune ayant 
 **Acheter ou louer une liste**
 Il existe de nombreux types d’adresses e-mail. les e-mails de Principal, les e-mails professionnels, les e-mails scolaires, les e-mails secondaires et les e-mails inactifs, pour n’en citer que quelques-uns. Les types d’adresses collectées et partagées par le biais de listes achetées ou louées sont rarement des comptes de messagerie principaux, où se produisent presque toutes les activités d’engagement et d’achat.
 
-Si vous avez de la chance, vous obtenez des comptes secondaires, où les gens recherchent des offres et des offres lorsqu’ils sont prêts à acheter quelque chose. Cela se traduit généralement par de faibles niveaux d’engagement, le cas échéant. Si vous n’avez pas de chance, la liste est pleine d’e-mails inactifs, qui pourraient désormais être des pièges à spam. Souvent, vous recevez un mélange d’e-mails secondaires et inactifs. En général, la qualité de ces types de listes fait plus de mal que de bien à un programme de messagerie. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
+Si vous avez de la chance, vous obtenez des comptes secondaires, où les gens recherchent des offres et des offres lorsqu&#39;ils sont prêts à acheter quelque chose. Cela se traduit généralement par de faibles niveaux d’engagement, le cas échéant. Si vous n’avez pas de chance, la liste est pleine d’e-mails inactifs, qui pourraient désormais être des pièges à spam. Souvent, vous recevez un mélange d’e-mails secondaires et inactifs. En général, la qualité de ces types de listes fait plus de mal que de bien à un programme de messagerie. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Listes ajoutées**
-Il s’agit de clients qui ont choisi de s’engager avec votre marque, ce qui est formidable. Mais ils ont choisi une autre méthode que le courriel (en magasin, sur les médias sociaux, etc.). Ils ne pouvaient pas être réceptifs à l’idée de recevoir un e-mail non demandé de votre part et peuvent également s’inquiéter de la manière dont vous avez obtenu leur adresse e-mail puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s&#39;est engagé auprès de votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers vos concurrents. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
+Il s’agit de clients qui ont choisi de s’engager avec votre marque, ce qui est formidable. Mais ils ont choisi une autre méthode que le courriel (en magasin, sur les médias sociaux, etc.). Ils ne pourraient pas être réceptifs à recevoir un e-mail non demandé de votre part et peuvent également être préoccupés par la manière dont vous avez obtenu leur adresse e-mail puisqu’ils ne l’ont pas fournie. Cette méthode risque de transformer un client ou un client potentiel qui s&#39;est engagé auprès de votre marque en un détracteur qui ne fait plus confiance à votre marque et qui se tourne plutôt vers vos concurrents. Cette pratique est interdite par la politique d’utilisation acceptable d’Adobe Campaign [&#128279;](https://www.adobe.com/fr/legal/terms/aup.html).
 
 **Salon professionnel ou autre collection d&#39;événements**
 Collecter des adresses à un kiosque ou par l&#39;intermédiaire d&#39;une autre méthode officielle clairement identifiée peut être utile. Le risque est que de nombreux événements comme celui-ci collectent toutes les adresses et les distribuent par l&#39;intermédiaire du promoteur ou de l&#39;hôte de l&#39;événement. Cela signifie que les propriétaires de ces adresses e-mail n’ont jamais demandé à recevoir d’e-mails de votre marque. Ces abonnés sont susceptibles de se plaindre et de marquer votre e-mail comme indésirable, et ils peuvent ne pas avoir fourni des coordonnées exactes.
