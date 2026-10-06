@@ -6,26 +6,34 @@ exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 role: Admin
 level: Beginner
-TQID: https://experienceleague.adobe.com/hPHB9s3PH7E9L3omZMTWZA2ZB0d1JS5vEfawQOjnBLw
+TQID: 'https://experienceleague.adobe.com/hPHB9s3PH7E9L3omZMTWZA2ZB0d1JS5vEfawQOjnBLw'
 product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+    internal-label: Configuration
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+    internal-label: Resources
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+    internal-label: Beginner
+source-git-commit: d66463b8c8097e19fd50b9b033e6b21165d7e8c9
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: '467'
 ht-degree: 47%
-
 ---
-
 # Mettre à jour les rebonds définitifs incorrects après une panne d’Italia Online {#update-bounce-italia}
 
 ## Contexte{#outage-context}
@@ -58,7 +66,7 @@ Selon la logique standard de gestion des rebonds, Adobe Campaign a automatiquem
 Pour trouver les destinataires qui ont été affectés par ce problème, ou au cas où cela se reproduirait avec un autre FAI, consultez les instructions ci-dessous :
 
 * Pour Campaign Classic v7 et Campaign v8, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Pour Campaign Standard, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr#unquarantine-bulk){_blank}.
+* Pour Campaign Standard, consultez [cette page](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -66,5 +74,5 @@ Selon la logique standard de gestion des bounces, Adobe Journey Optimizer a auto
 
 Une fois identifiées, ces adresses peuvent être supprimées manuellement de la liste de suppression à l’aide du bouton **[!UICONTROL Supprimer]**. Ces adresses peuvent ensuite être incluses dans les futures campagnes par e-mail.
 
-En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=fr#remove-from-suppression-list){_blank}.
+En savoir plus dans [cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
