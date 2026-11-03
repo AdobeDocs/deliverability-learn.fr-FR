@@ -145,7 +145,7 @@ Recommandations pour définir un enregistrement SPF :
 >
 >Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), la signature de l’authentification des e-mails DKIM est effectuée par celui-ci pour tous les messages et domaines.
 
-L&#39;utilisation de [](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert la condition préalable suivante :
+L&#39;utilisation de [&#128279;](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert la condition préalable suivante :
 
 **déclaration d&#39;option Adobe Campaign** : dans Adobe Campaign, la clé privée DKIM repose sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec différents sélecteurs. Il n’est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l’authentification dans la plateforme ou l’e-mail. La plateforme choisira également l’une des clés privées, ce qui signifie que l’authentification a un risque élevé d’échec.
 
