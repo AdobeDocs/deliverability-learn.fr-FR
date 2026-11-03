@@ -12,12 +12,12 @@ team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 TQID: https://experienceleague.adobe.com/FWlVtNGACEM6dKsnYQJU-z04mP902M5EXZmxxsKDyqU
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: b0bb9048-d951-48d8-8232-45cf248a7e27
     internal-label: Forms
@@ -42,13 +42,11 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 923
+source-wordcount: '923'
 ht-degree: 2%
-
 ---
-
 # Infrastructure
 
 La réussite de la délivrabilité repose sur une base solide. L’infrastructure de messagerie est un élément essentiel. Une infrastructure de messagerie correctement construite comprend plusieurs composants, à savoir un ou plusieurs domaines et une ou plusieurs adresses IP. Ces composants sont comme la machine derrière les e-mails que vous envoyez et ils sont souvent le point d&#39;ancrage de la réputation d&#39;envoi. Les consultants en délivrabilité s’assurent que ces éléments sont correctement configurés lors de la mise en œuvre. Toutefois, en raison de l’élément « réputation », il est important que vous ayez cette compréhension de base.
@@ -98,8 +96,8 @@ L’authentification est le processus utilisé par les FAI pour valider l’iden
 **Campagne**
 
 * Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic ou à Standard dans [cette section](/help/additional-resources/ac-domain-name-setup.md).
-* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=fr) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
-* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=fr) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
+* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Classic.*
+* [Panneau de Contrôle : délégation complète de sous-domaine (tutoriel)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Découvrez comment déléguer entièrement un sous-domaine à Adobe Campaign Standard.*
 * Pour en savoir plus sur l’implémentation d’une feedback loop pour une instance Campaign Classic, consultez [cette section](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ressources supplémentaires

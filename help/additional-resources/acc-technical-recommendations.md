@@ -8,12 +8,12 @@ team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
 TQID: https://experienceleague.adobe.com/Y58eIzSpKUV-B-MiQ-6KNkk31tg1M6Bg27ZqGv-DESc
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -63,13 +63,11 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 2232
+source-wordcount: '2232'
 ht-degree: 29%
-
 ---
-
 # Campaign Classic : recommandations techniques {#technical-recommendations}
 
 Vous trouverez ci-dessous plusieurs techniques, configurations et outils que vous pouvez utiliser pour améliorer votre taux de délivrabilité lors de l’utilisation de Adobe Campaign Classic.
@@ -90,13 +88,13 @@ Le choix du domaine pour un reverse DNS a une incidence lorsque vous traitez ave
 
 ### Règles MX {#mx-rules}
 
-Les règles MX (Mail eXchanger) correspondent aux règles de gestion de communication entre un serveur expéditeur et un serveur destinataire.
+Les règles MX (Mail eXchanger) sont les règles qui gèrent la communication entre un serveur expéditeur et un serveur destinataire.
 
 Plus précisément, ils sont utilisés pour contrôler la vitesse à laquelle le MTA (Message Transfer Agent) d&#39;Adobe Campaign envoie des e-mails à chaque domaine de messagerie ou FAI individuel (par exemple, hotmail.com, comcast.net). Ces règles sont généralement basées sur les limites publiées par les FAI (par exemple, n’incluez pas plus de 20 messages par connexion SMTP).
 
 >[!NOTE]
 >
->Pour plus d’informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=fr#mx-configuration).
+>Pour plus d’informations sur la gestion des MX dans Adobe Campaign Classic, consultez [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
 
 ### TLS {#tls}
 
@@ -147,7 +145,7 @@ Recommandations pour définir un enregistrement SPF :
 >
 >Pour les installations hébergées ou hybrides, si vous avez effectué une mise à niveau vers le [MTA amélioré](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages), la signature de l’authentification des e-mails DKIM est effectuée par celui-ci pour tous les messages et domaines.
 
-L&#39;utilisation de [&#128279;](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert la condition préalable suivante :
+L&#39;utilisation de [](/help/additional-resources/authentication.md#dkim) avec Adobe Campaign Classic requiert la condition préalable suivante :
 
 **déclaration d&#39;option Adobe Campaign** : dans Adobe Campaign, la clé privée DKIM repose sur un sélecteur DKIM et un domaine. Il n’est actuellement pas possible de créer plusieurs clés privées pour le même domaine/sous-domaine avec différents sélecteurs. Il n’est pas possible de définir quel domaine/sous-domaine de sélecteur doit être utilisé pour l’authentification dans la plateforme ou l’e-mail. La plateforme choisira également l’une des clés privées, ce qui signifie que l’authentification a un risque élevé d’échec.
 
@@ -157,11 +155,11 @@ L&#39;utilisation de [&#128279;](/help/additional-resources/authentication.md#dk
 
 ## Feedback loop {#feedback-loop-acc}
 
-Une boucle de rétroaction fonctionne en déclarant au niveau du FAI une adresse e-mail donnée pour une plage d’adresses IP utilisées pour l’envoi des messages. Le FAI enverra à cette boîte aux lettres, de la même manière que pour les messages de rebond, les messages signalés par les destinataires comme spam. La plateforme doit être configurée de manière à bloquer les prochaines diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s&#39;ils n&#39;ont pas utilisé le lien d&#39;opt-out approprié. C&#39;est en fonction de ces plaintes qu&#39;un FAI ajoutera une adresse IP à sa place sur la liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera lle blocage d’une adresse IP.
+Une boucle de rétroaction fonctionne en déclarant au niveau du FAI une adresse e-mail donnée pour une plage d’adresses IP utilisées pour l’envoi des messages. Le FAI enverra à cette boîte aux lettres, de la même manière que pour les messages de rebond, les messages signalés par les destinataires comme spam. La plateforme doit être configurée de manière à bloquer les prochaines diffusions aux utilisateurs qui se sont plaints. Il est important de ne plus les contacter même s&#39;ils n&#39;ont pas utilisé le lien d&#39;opt-out approprié. C&#39;est en fonction de ces plaintes qu&#39;un FAI ajoutera une adresse IP à sa place sur la liste bloquée. Selon le FAI, un taux de plainte d’environ 1 % entraînera le blocage d’une adresse IP.
 
 Un standard est en cours d’établissement pour définir le format des messages de feedback loop : l’[ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
-La mise en place d&#39;une feedback loop pour une instance suppose d&#39;avoir :
+La mise en place d’un système de feedback pour une instance suppose d’avoir :
 
 * une boîte mail dédiée à l&#39;instance, qui peut éventuellement être la boîte de mails rebonds,
 * des adresses IP d&#39;envoi dédiées à l&#39;instance.
@@ -182,7 +180,7 @@ Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour p
 
 * répliquer les messages reçus sur autant de boîtes qu&#39;il existe d&#39;instances,
 * faire relever chaque boîte par une seule instance,
-* Configurez les instances pour qu’elles ne traitent que les messages qui les concernent : les informations d’instance se trouvent dans l’en-tête Message-ID des messages envoyés par Adobe Campaign et figurent donc également dans les messages de feedback loop. Il vous suffit de spécifier le paramètre **checkInstanceName** dans le fichier de configuration de l’instance (par défaut, l’instance n’est pas vérifiée, ce qui peut entraîner une mise en quarantaine abusive de certaines adresses) :
+* Configurez les instances pour qu’elles ne traitent que les messages qui les concernent : les informations d’instance se trouvent dans l’en-tête Message-ID des messages envoyés par Adobe Campaign et figurent donc également dans les messages de système de feedback. Il vous suffit de spécifier le paramètre **checkInstanceName** dans le fichier de configuration de l’instance (par défaut, l’instance n’est pas vérifiée, ce qui peut entraîner une mise en quarantaine abusive de certaines adresses) :
 
   ```
   <serverConf>
@@ -190,7 +188,7 @@ Si vous êtes contraint d&#39;utiliser une seule adresse de feedback loop pour p
   </serverConf>
   ```
 
-Le service Délivrabilité d&#39;Adobe Campaign gère votre inscription aux services de feedback loop pour les FAI suivants : AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+Le service Délivrabilité d’Adobe Campaign gère votre inscription aux services de système de feedback pour les FAI suivants : AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -256,7 +254,7 @@ Vous pouvez également utiliser une adresse dynamique. Par exemple, pour envoyer
 
 La règle de typologie doit contenir le script qui génère la ligne de commande et être inclue dans l&#39;en-tête de l&#39;email.
 
-Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=fr#typology-rules).
+Découvrez comment créer des règles de typologie dans Adobe Campaign v7/v8 dans [cette section](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 >[!NOTE]
 >
@@ -328,7 +326,7 @@ Pour configurer List-Unsubscribe en un clic à l’aide d’une règle de typolo
 
    >[!NOTE]
    >
-   >Le code décrit ci-dessous doit être référencé à titre d’exemple uniquement.
+   >Le code décrit ci-dessous est fourni uniquement à titre d’exemple.
 
    Cet exemple illustre comment :
    * Configurez un List-Unsubscribe « mailto ». Elle ajoute les en-têtes ou ajoute les paramètres « mailto: » existants et les remplace par : &lt;mailto..>, https://...

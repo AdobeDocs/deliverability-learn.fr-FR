@@ -1,5 +1,5 @@
 ---
-title: Démarrage d’une nouvelle plateforme
+title: Démarrer une nouvelle plateforme
 description: En savoir plus sur la gestion de la délivrabilité lors du démarrage d'une nouvelle plateforme avec Adobe Campaign.
 topics: Deliverability
 doc-type: article
@@ -8,12 +8,12 @@ team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
 TQID: https://experienceleague.adobe.com/cQa5nOTSJwxDGX-QkXGez5dpm5N-8I7QZ-LsEW0FRLo
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -42,14 +42,12 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '682'
 ht-degree: 49%
-
 ---
-
-# Démarrage d’une nouvelle plateforme {#starting-new-platform}
+# Démarrer une nouvelle plateforme {#starting-new-platform}
 
 Le maintien de la réputation de votre domaine et de votre adresse IP est essentiel lors de la configuration d’une nouvelle plateforme à utiliser avec Adobe Campaign.
 
@@ -70,9 +68,9 @@ Vous trouverez ci-dessous la liste des principaux principes à suivre lors du d�
 * Si vous disposez de ces informations, **importez des adresses non valides dans la table des quarantaines**.
 Le démarrage d&#39;une plateforme s&#39;effectue souvent lors de la première utilisation d&#39;une liste d&#39;adresses qui n&#39;est pas entièrement qualifiée. Si vous envoyez des messages à des adresses non valides ou à des adresses servant de leurres, cela contribuera à affaiblir la réputation de la plateforme.
 
-   * Si vous disposez d’une liste d’adresses non valides, il est dans votre intérêt de l’importer dans la table de quarantaine avant de l’envoyer pour la première fois. La table des quarantaines est accessible à partir des menus **[!UICONTROL Administration > Gestion de campagnes > Gestion des échecs > Échecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** (Campaign Standard).
+  * Si vous disposez d’une liste d’adresses non valides, il est dans votre intérêt de l’importer dans la table de quarantaine avant de l’envoyer pour la première fois. La table des quarantaines est accessible à partir des menus **[!UICONTROL Administration > Gestion de campagnes > Gestion des échecs > Échecs et adresses]** (Campaign Classic) et **[!UICONTROL Administration > Canaux > Quarantaines > Adresses]** (Campaign Standard).
 
-   * Si on souhaite malgré tout requalifier les adresses invalides, il est nettement préférable de le faire une fois la réputation de la plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l&#39;usage des mauvaises adresses.
+  * Si on souhaite malgré tout requalifier les adresses non valides, il est nettement préférable de le faire une fois la réputation de la plateforme établie et par petites parties afin de &quot;diluer&quot; dans le temps l’usage des mauvaises adresses.
 
 * **Limitez le débit** en limitant le nombre de mtachilds. Pour plus d’informations sur la modification de ce paramètre technique, contactez votre administrateur Adobe Campaign.
 
@@ -97,6 +95,6 @@ Pour plus d’informations sur les principes répertoriés ci-dessus et leur mis
 
 **Adobe Campaign Standard**
 
-* [Optimisation de votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr#optimizing-your-delivery-through-quarantines)
+* [Optimisation de votre diffusion par le biais de quarantaines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
 * [Identifier les adresses en quarantaine pour l&#39;ensemble de la plateforme](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=fr)
-* [Contrôler une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=fr-FR)
+* [r une diffusion](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=fr-FR)

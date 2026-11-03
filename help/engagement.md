@@ -12,12 +12,12 @@ team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
 TQID: https://experienceleague.adobe.com/n9Vw-9SRtvqrwlohQOu07-u8ZlR5vY7kbexQlMemTk0
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -42,13 +42,11 @@ topic_v2:
     internal-label: Email marketing
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 962
+source-wordcount: '962'
 ht-degree: 2%
-
 ---
-
 # Engagement
 
 L’engagement est devenu le facteur le plus important ayant une incidence sur les décisions d’emplacement de boîte de réception. Au fil des ans, les FAI ont délaissé les filtres liés au contenu pour adopter un modèle comportemental, reposant largement sur des actions d&#39;engagement positives et négatives. L’engagement positif comprend principalement les ouvertures, les clics, les transferts et les réponses. L’engagement négatif inclut la suppression sans ouverture, ignorance, désabonnement et marquage comme spam. Recevoir une autorisation explicite est la base de l’engagement positif des e-mails. Une fois qu’une marque a obtenu l’autorisation, cette relation doit être entretenue en mesurant régulièrement la fréquence et le contenu des attentes des clients et en y répondant.
@@ -91,13 +89,13 @@ Un dernier élément clé de la stratégie « répondre à » est que si vous di
 
 **Adobe Campaign Classic**
 
-* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=fr#communication-channels)
-* [Règles de pression](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=fr)
+* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
+* [Règles de pression](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
 
 **Adobe Campaign Standard**
 
-* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=fr)
-* [Règles de fatigue](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html?lang=fr)
+* [Définition de lʼaudience appropriée](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
+* [Règles de fatigue](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
 
 ## Ressources supplémentaires
 

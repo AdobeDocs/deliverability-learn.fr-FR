@@ -12,12 +12,12 @@ team: ACS
 exl-id: 7d61c81c-aa40-47a6-9869-1953a6ad22b2
 TQID: https://experienceleague.adobe.com/d-g20BCwyBJuEoiyccvHXRWxoEKSsxAkUPYV2Dw6OPw
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
     internal-label: Resources
@@ -27,13 +27,11 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 161
+source-wordcount: '161'
 ht-degree: 17%
-
 ---
-
 # Considérations spécifiques aux fournisseurs d’accès (FAI) lors du préchauffage des adresses IP
 
 Les FAI ont des règles différentes et des manières différentes d&#39;examiner leur trafic. Par exemple, Gmail est l’un des FAI les plus sophistiqués, car il examine l’engagement de manière très stricte (ouvertures et clics) en plus de toutes les autres mesures de réputation. Cela nécessite un plan personnalisé qui ne cible que les utilisateurs les plus engagés au début. D’autres FAI peuvent également exiger la même chose. Contactez votre consultant Adobe en délivrabilité pour un plan spécifique.

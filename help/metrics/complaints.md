@@ -10,12 +10,12 @@ team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
 TQID: https://experienceleague.adobe.com/W9G0ZPGeIm5KmVHu5-VuMd-Kb-4x4f7qhBPnpskxqqA
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
     internal-label: Reporting
@@ -32,20 +32,18 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 307
+source-wordcount: '307'
 ht-degree: 100%
-
 ---
-
 # Plaintes
 
-Les plaintes sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. Cette action d’abonné est généralement consignée par le client de messagerie de l’abonné lorsqu’il clique sur le bouton des messages indésirables ou via un système de signalement de messages indésirables tiers.
+Les plaintes sont enregistrées lorsqu’un utilisateur indique qu’un email est indésirable ou inattendu. Cette action de l’abonné est généralement enregistrée par son client de messagerie lorsqu’il clique sur le bouton de signalement comme spam, ou par l’intermédiaire d’un système tiers de signalement du spam.
 
 ## Plaintes des FAI
 
-La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méthode de signalement des courriers indésirables à leurs utilisateurs, car les processus d&#39;opt-out et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse email. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ce système est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL. Il permet à Adobe Campaign d&#39;ajouter automatiquement des adresses email à l’origine d’une plainte à la table de mise en quarantaine pour suppression. Les pics des plaintes des FAI peuvent indiquer des listes de mauvaise qualité, des méthodes de collecte de listes qui ne sont pas optimales ou des politiques d&#39;engagement inadaptées. Ils sont également souvent remarqués lorsque le contenu n’est pas pertinent.
+La plupart des FAI de niveau 1 et certains FAI de niveau 2 proposent une méthode de signalement des courriers indésirables à leurs utilisateurs, car les processus d&#39;opt-out et de désabonnement ont été utilisés de manière malveillante dans le passé pour valider une adresse email. Adobe Campaign reçoit ces plaintes via les FBL des FAI. Ce système est établi pendant le processus de configuration pour tous les FAI qui fournissent des FBL. Il permet à Adobe Campaign d’ajouter automatiquement des adresses e-mail à l’origine d’une plainte à la table de quarantaine pour suppression. Les pics des plaintes des FAI peuvent indiquer des listes de mauvaise qualité, des méthodes de collecte de listes qui ne sont pas optimales ou des politiques d&#39;engagement inadaptées. Ils sont également souvent remarqués lorsque le contenu n’est pas pertinent.
 
 ## Plaintes de tiers
 

@@ -10,12 +10,12 @@ team: ACS
 exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
 TQID: https://experienceleague.adobe.com/mNz7Z6yQjlK7-NShGkgXNR8hp9kKUXDl9nHzMG4j3Q4
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -31,18 +31,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '327'
 ht-degree: 100%
-
 ---
-
 # Envoi vers les courriers indésirables et blocage
 
 ## Envoi vers les courriers indésirables
 
-L&#39;envoi vers les courriers indésirables est la diffusion de l&#39;email dans le dossier des spams ou de courrier indésirable d&#39;un FAI. Il est identifiable lorsqu’un taux d’ouverture inférieur à la normale (et parfois un taux de clics) est associé à un taux de diffusion élevé. Les raisons pour lesquelles les emails sont envoyés vers les courriers indésirables varient selon le FAI. En règle générale, cependant, si des messages sont placés dans le dossier d&#39;envoi vers les courriers indésirables, un indicateur qui influence la réputation d&#39;envoi (l&#39;hygiène de liste, par exemple) doit être réévalué. Il s’agit d’un signal indiquant que la réputation diminue, ce qui est un problème qui doit être corrigé immédiatement avant d’affecter d’autres campagnes. Travaillez avec votre consultant Adobe en délivrabilité pour résoudre les problèmes d&#39;envoi vers les courriers indésirables en fonction de votre situation.
+L&#39;envoi vers les courriers indésirables est la diffusion de l&#39;email dans le dossier des spams ou de courrier indésirable d&#39;un FAI. Il est identifiable lorsqu’un taux d’ouverture inférieur à la normale (et parfois un taux de clics) est associé à un taux de diffusion élevé. Les raisons pour lesquelles les emails sont envoyés vers les courriers indésirables varient selon le FAI. En règle générale, cependant, si des messages sont placés dans le dossier spam, un indicateur qui influence la réputation d’envoi (l’hygiène de liste, par exemple) doit être réévalué. Il s’agit d’un signal indiquant que la réputation diminue, ce qui est un problème qui doit être corrigé immédiatement avant d’affecter d’autres campagnes. Travaillez avec votre consultant Adobe en délivrabilité pour résoudre les problèmes d&#39;envoi vers les courriers indésirables en fonction de votre situation.
 
 ## Blocage
 
@@ -50,7 +48,7 @@ Un blocage survient lorsque les indicateurs de courriers indésirables atteignen
 
 ## Liste bloquée
 
-Une liste bloquée se produit lorsqu’un responsable de listes bloquées tiers enregistre un comportement de type spammer associé à un expéditeur. La cause d&#39;une liste bloquée est parfois publiée par le parti de liste bloquée. Une liste est généralement basée sur l’adresse IP, mais dans les cas les plus graves, elle peut être établie par plage d’adresses IP ou même par domaine d’envoi. La résolution d&#39;une liste bloquée doit faire appel à l&#39;assistance de votre consultant Adobe en délivrabilité afin de résoudre et d&#39;empêcher toute nouvelle liste. Certaines listes sont extrêmement sévères et peuvent causer des problèmes de réputation à long terme, qui sont difficiles à résoudre. Le résultat d&#39;une liste bloquée varie selon la liste bloquée mais peut avoir un impact sur la diffusion de tous les emails.
+Une liste bloquée se produit lorsqu’un responsable de listes bloquées tiers enregistre un comportement de type spammer associé à un expéditeur. La cause d&#39;une liste bloquée est parfois publiée par le parti de liste bloquée. Une inscription sur une liste de blocage est généralement basée sur l’adresse IP, mais dans les cas les plus graves, elle peut être établie par plage d’adresses IP ou même par domaine d’envoi. La résolution d&#39;une liste bloquée doit faire appel à l&#39;assistance de votre consultant Adobe en délivrabilité afin de résoudre et d&#39;empêcher toute nouvelle liste. Certaines listes sont extrêmement sévères et peuvent causer des problèmes de réputation à long terme, qui sont difficiles à résoudre. Le résultat d&#39;une liste bloquée varie selon la liste bloquée mais peut avoir un impact sur la diffusion de tous les emails.
 
 ## Ressources supplémentaires
 
