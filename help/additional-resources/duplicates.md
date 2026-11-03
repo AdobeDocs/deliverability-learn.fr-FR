@@ -8,12 +8,12 @@ team: ACS
 exl-id: f89dbb38-a8d4-4294-b017-6fed72591593
 TQID: https://experienceleague.adobe.com/7KlDe-wQmAih6L4bl4xrw-lVS35-wNzyyxneyFbSo0A
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: b0bb9048-d951-48d8-8232-45cf248a7e27
     internal-label: Forms
@@ -29,23 +29,21 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 57%
-
 ---
-
 # Doublons {#duplicates}
 
 L’existence de doublons pour une adresse e-mail peut avoir plusieurs conséquences :
 
 * Envois multiples du même message. Même si Adobe effectue une procédure de déduplication par défaut avant l’envoi, rien n’empêche l’envoi d’un même message par différentes actions ayant le même contenu lorsqu’une cible est fractionnée.
-* Non-respect de la désinscription. Si une personne se désinscrit suite à la réception d’un message, son profil en double sera quant à lui toujours éligible aux envois.
+* Demandes de désinscription non honorées. Si une personne se désinscrit suite à la réception d’un message, son profil en double sera quant à lui toujours éligible aux envois.
 
 Outre le non-respect de l’opt-in, cette situation amènera probablement les utilisateurs à considérer les messages comme du spam et déclencher une action de placement sur liste bloquée de la part du FAI.
 
-Il faut être particulièrement prudent lors d&#39;opérations sur la base :
+Il faut être particulièrement prudent lors d’opérations sur la base de données :
 
 * Les imports doivent être soigneusement paramétrés, en particulier dans le choix de la clé de réconciliation.
 * Les modifications d’adresses e-mail peuvent également être source de doublons. En particulier, deux adresses ayant des domaines différents peuvent être acheminées vers la même boîte aux lettres, par exemple si une société a changé de nom et a conservé l&#39;ancien domaine pendant un certain temps : joe.doe@amce-co.com et joe.doe@acme-rebranded.com.

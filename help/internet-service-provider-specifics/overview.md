@@ -11,12 +11,12 @@ team: TM
 exl-id: cf0c9ccf-ae67-4f95-a8cf-1e23b657aa16
 TQID: https://experienceleague.adobe.com/jDzYZLNiq1nBtLQQQt0iCb3LErxuWERpGxmgJOjyEd4
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -27,13 +27,11 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 156
+source-wordcount: '156'
 ht-degree: 14%
-
 ---
-
 # Éléments spécifiques aux FAI
 
 Les FAI ne sont pas tous les mêmes. Ils se concentrent sur différentes choses lors de la détermination de l’e-mail à autoriser à passer dans la boîte de réception de leurs utilisateurs et de l’e-mail qui est filtré dans le dossier spam ou qui ne l’est pas du tout.

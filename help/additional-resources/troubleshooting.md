@@ -8,12 +8,12 @@ team: ACS
 exl-id: 4cc85124-e7e4-4cd5-99a9-23d2d8cf08fe
 TQID: https://experienceleague.adobe.com/EDzTRrQeFbp-5GFRMxRDqwoMx37ykI2auNz6ZH9EmF8
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: c5f60233-d5ea-4453-a799-0ad258b4d399
     internal-label: Database
@@ -30,13 +30,11 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: '688'
 ht-degree: 87%
-
 ---
-
 # Résolution des problèmes de délivrabilité {#troubleshooting}
 
 Vous trouverez ci-dessous quelques bonnes pratiques pour mieux identifier et résoudre les problèmes de délivrabilité.
@@ -61,7 +59,7 @@ Posez-vous les questions suivantes pour identifier les causes possibles de votre
 * Le problème peut-il être dû au contenu de mon message ?
 * Est-ce que j’envoie des emails assez souvent pour maintenir le rodage des adresses IP ?
 * Ai-je segmenté mes envois par activité/engagement ou ai-je envoyé des fichiers complets ?
-* Quel est le segment « sûr » de mon dossier en termes de récence ?
+* Quel est le segment « sûr » de mon fichier en termes de récence ?
 * Des stratégies de réactivation et de reconfirmation sont-elles en place pour les segments qui ne sont pas définis comme sûrs ?
 
 ## Résoudre le problème {#address-issue}
@@ -78,14 +76,14 @@ Les expéditeurs peuvent recueillir une mine d’informations à partir des plai
 * Il est important de regrouper les données et de rechercher des schémas dans des éléments comme la source d’opt-in, la durée d’abonnement à l’adresse, ou même certains comportements liés aux données démographiques.
 * Les plaintes permettent souvent d’identifier une source ou un segment de données à risque dans le fichier. Le risque se définit comme une probabilité maximale de plainte, ce qui peut nuire à la réputation, et en retour, aux taux de placement en boîte de réception.
 
-Les plaintes proviennent aussi des abonnés qui ne veulent tout simplement plus recevoir d’emails :
+Les plaintes proviennent aussi des abonnés et abonnées qui ne veulent tout simplement plus recevoir d’e-mails :
 * Souvent, cette situation découle d’un nombre excessif de messages, de leur perception par les abonnés, du caractère inattendu des messages ou de l’oubli par les abonnés de leur accord préalable.
 * Par ailleurs, il est important de vérifier que tous les points de collecte sont clairs et qu’il n’y a pas de cases précochées dans vos points d’acquisition.
 * Vous devez également envoyer un e-mail de bienvenue aux abonnés qui donnent leur accord préalable pour leur expliquer à quelle fréquence ils peuvent s’attendre à recevoir des e-mails de votre part.
 
 ### Validité des données
 
-Les **rebonds définitifs** se produisent lorsque vous effectuez un envoi à une **adresse en échec** d’un FAI. Une adresse peut être en échec pour de nombreuses raisons, notamment :
+Les **rebonds définitifs** se produisent lorsque vous effectuez un envoi à une **adresse en échec** d’un FAI. Une adresse peut être non distribuable pour de nombreuses raisons, notamment :
 * Adresse mal orthographiée. Il est possible de résoudre ce problème grâce à un service de validation des données en temps réel ou à l’obligation de confirmer l’accord préalable avant d’envoyer des e-mails marketing à cette adresse.
 * Liste ou source de données incorrecte. Si les adresses proviennent d’une nouvelle source, vérifiez comment elles ont été collectées et assurez-vous que leur utilisation a été autorisée.
 * Envoi à une adresse active à un moment donné, mais fermée ou supprimée suite à une période d’inactivité.
@@ -97,7 +95,7 @@ Outre les plaintes et la validité des données, les FAI privilégient plus que 
 Dans le cadre de la gestion permanente de la réputation, il est important de comprendre le niveau d’engagement des abonnés de votre liste et d’établir une **hiérarchie des risques liés à la récence** pour les abonnés de chaque fichier. La récence est définie comme la date d’ouverture/de clic/de transaction ou d’abonnement la plus récente. Cette période peut différer selon la verticale. Pour ce faire :
 
 1. Déterminez les segments actifs (« sûrs ») pour chaque verticale. Il s’agit généralement d’abonnés qui ont été actifs au cours des 3 à 6 derniers mois.
-1. Réduisez la fréquence au niveau des inactifs.
+1. Réduisez la fréquence pour les inactifs.
 1. Créez une série de [réengagements](/help/additional-resources/re-engagement.md) pour les inactifs à risque modéré. Cela correspond généralement à une période de 6 à 9 mois sans engagement.
 1. Développez une campagne de reconfirmation pour les inactifs à risque élevé. Il s’agit généralement d’abonnés qui ne se sont pas engagés par email depuis 9 à 12 mois.
 1. Enfin, définissez une règle d’abandon et supprimez les abonnés qui n’ont pas ouvert vos emails depuis « x » mois. Nous recommandons généralement une durée de 12 mois, mais cela peut varier en fonction des ventes et du cycle d’achat.

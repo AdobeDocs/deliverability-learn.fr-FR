@@ -10,12 +10,12 @@ team: TM
 exl-id: 3dc3528b-13c8-4d18-afe1-b647bc5f8082
 TQID: https://experienceleague.adobe.com/W3-BNKyDVwl8aSlzrkmX-lwyxVeql6Y00cpzdLpbsuY
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -27,16 +27,14 @@ level_v2:
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 168
+source-wordcount: '168'
 ht-degree: 4%
-
 ---
-
 # Premières impressions : collecte de listes et e-mails de bienvenue
 
-Lorsque vous cherchez à construire une nouvelle relation, faire une bonne première impression est crucial. Sans cela, rien de ce que vous direz ou ferez ne se verra accorder une chance. La relation entre une marque et ceux qui choisissent d&#39;interagir avec elle n&#39;est pas différente. Tout commence quelque part. Et lorsqu’il s’agit d’exécuter un programme de messagerie, il commence par collecter des adresses e-mail et par souhaiter la bienvenue aux abonnés de votre programme. Découvrez comment vous préparer à l’exécution d’un programme d’e-mail réussi en faisant bonne impression dans ces domaines.
+Lorsque vous cherchez à construire une nouvelle relation, faire une bonne première impression est crucial. Sans cela, rien de ce que vous direz ou ferez ne se verra accorder une chance. La relation entre une marque et ceux qui choisissent d&#39;interagir avec elle n&#39;est pas différente. Tout commence quelque part. Et lorsqu’il s’agit d’exécuter un programme de messagerie, il commence par collecter des adresses e-mail et par souhaiter la bienvenue aux abonnés de votre programme. Voyons comment vous pouvez vous préparer à l’exécution d’un programme d’e-mail réussi en faisant bonne impression dans ces domaines.
 
 Étape 1 : [collecte d&#39;adresses et croissance de la liste](/help/first-impressions/address-collection-and-list-growth.md) :
 *Découvrez les meilleures sources d’adresses e-mail, comment garantir une qualité élevée des données et l’alignement sur les directives juridiques.*

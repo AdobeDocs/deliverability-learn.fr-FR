@@ -7,12 +7,12 @@ level: Beginner
 exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 TQID: https://experienceleague.adobe.com/gvO7rHqY-Dm6nUq9ssccY7Kt1xobV-pqLc26iITgmRA
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: e2290edd-b061-4880-9d79-dee306cf5aa9
     internal-label: Implementation
@@ -33,20 +33,18 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 1326
+source-wordcount: '1326'
 ht-degree: 17%
-
 ---
-
 # Implémentation de [!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
 
 L’objectif de ce document est de fournir au lecteur des informations supplémentaires sur la méthode d’authentification des e-mails, DMARC. En expliquant le fonctionnement de DMARC et ses différentes options de stratégie, les lecteurs pourront mieux comprendre l’impact de DMARC sur la délivrabilité des e-mails.
 
 ## Qu’est-ce que DMARC ? {#about}
 
-Domain-based Message Authentication, Reporting and Conformance est une méthode d’authentification d’e-mail qui permet aux propriétaires de domaine de protéger leur domaine contre une utilisation non autorisée. DMARC fournit également des commentaires sur le statut d’authentification des e-mails et permet aux expéditeurs et expéditrices de contrôler ce qui arrive aux e-mails qui ne parviennent pas à s’authentifier. Cela inclut des options de surveillance, de mise en quarantaine ou de rejet du courrier, selon la politique DMARC mise en œuvre.
+Domain-based Message Authentication, Reporting and Conformance est une méthode d’authentification d’e-mail qui permet aux propriétaires de domaine de protéger leur domaine contre une utilisation non autorisée. DMARC fournit également des informations sur le statut d’authentification des e-mails et permet aux expéditeurs et expéditrices de contrôler ce qui arrive aux e-mails qui échouent à l’authentification. Cela inclut des options de surveillance, de mise en quarantaine ou de rejet du courrier, selon la politique DMARC mise en œuvre.
 
 DMARC propose trois options de politique :
 
@@ -56,7 +54,7 @@ DMARC propose trois options de politique :
 
 ## Comment DMARC fonctionne-t-il ? {#how}
 
-SPF et DKIM sont tous deux utilisés pour associer un e-mail à un domaine et permettent d’authentifier les e-mails. DMARC va encore plus loin et permet d’éviter les usurpations en faisant correspondre le domaine vérifié par DKIM et SPF. Pour passer DMARC, un message doit passer SPF ou DKIM. Si l’authentification des deux échoue, DMARC échoue et l’e-mail est envoyé conformément à la politique DMARC que vous avez sélectionnée.
+SPF et DKIM sont tous deux utilisés pour associer un e-mail à un domaine et permettent d’authentifier les e-mails. DMARC va encore plus loin et permet d’éviter les usurpations en faisant correspondre le domaine vérifié par DKIM et SPF. Pour réussir DMARC, un message doit réussir SPF ou DKIM. Si l’authentification des deux échoue, DMARC échoue et l’e-mail est envoyé conformément à la politique DMARC que vous avez sélectionnée.
 
 >[!NOTE]
 >

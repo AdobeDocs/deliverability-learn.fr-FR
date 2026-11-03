@@ -12,12 +12,12 @@ team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
 TQID: https://experienceleague.adobe.com/piIfp9yQkAa1F1bkO9zM7PcOConZhTrwARo4Y8wtMsQ
 product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
 feature_v2:
   - id: e64968b2-4ee5-47f9-8cae-0588f184b9eb
     internal-label: Programs
@@ -31,13 +31,11 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+source-git-commit: e42624dbef2c89b15908bc1cf2f590b6ca347447
 workflow-type: tm+mt
-source-wordcount: 600
+source-wordcount: '600'
 ht-degree: 4%
-
 ---
-
 # Volume
 
 Le volume d&#39;e-mails que vous envoyez est essentiel pour établir une réputation positive. Mettez-vous à la place d&#39;un FAI : si vous commencez à voir une tonne de trafic provenant d&#39;une personne que vous ne connaissez pas, ce serait alarmant. L’envoi immédiat d’un grand volume d’e-mails est risqué et entraîne à coup sûr des problèmes de réputation souvent difficiles à résoudre. Il peut s’avérer frustrant, long et coûteux de se sortir d’une mauvaise réputation et de générer du trafic et de bloquer des problèmes résultant d’un envoi trop précoce.
@@ -54,7 +52,7 @@ Voici une liste d’astuces et de conseils pour une transition en douceur :
 * **Surveiller votre compte de messagerie de réponse**. Utiliser noreply@xyz.com ou ne pas répondre est une mauvaise expérience pour votre client.
 * Les adresses inactives peuvent avoir un impact négatif sur la délivrabilité. **Réactiver et réautoriser sur votre plateforme actuelle** et non sur vos nouvelles adresses IP.
 * **Domaines** — utilisez un domaine d&#39;envoi qui est un sous-domaine du domaine réel de votre entreprise
-   * Par exemple, si le domaine de votre société est xyz.com, email.xyz.com offre plus de crédibilité aux FAI que xyzemail.com
+  * Par exemple, si le domaine de votre société est xyz.com, email.xyz.com offre plus de crédibilité aux FAI que xyzemail.com
 * **Transparence** — les informations d&#39;enregistrement de votre domaine de messagerie doivent être disponibles publiquement et ne doivent pas être privées.
 
 Dans de nombreuses circonstances, le courrier transactionnel ne suit pas l’approche traditionnelle de réchauffement promotionnel. Il est évidemment difficile de contrôler le volume des e-mails transactionnels en raison de leur nature, car cela nécessite généralement une interaction de l’utilisateur pour déclencher le contact avec l’e-mail. Dans certains cas, le courrier transactionnel peut simplement être transféré sans plan formel. Dans d’autres cas, il peut être préférable de transitionner chaque type de message au fil du temps pour augmenter lentement le volume. Par exemple, vous pouvez effectuer la transition comme suit :
